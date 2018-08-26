@@ -14,22 +14,29 @@
     </url>
 
     <url>
+        <loc>https://dullyshin.github.io/categories/Programming/Github/</loc>
+        <lastmod>2018-08-26T15:45:21.237Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://dullyshin.github.io/categories/Programming/SQL/</loc>
-        <lastmod>2018-08-26T15:06:03.122Z</lastmod>
+        <lastmod>2018-08-26T18:23:00.095Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://dullyshin.github.io/categories/Programming/</loc>
-        <lastmod>2018-08-26T15:45:21.237Z</lastmod>
+        <lastmod>2018-08-26T18:34:07.362Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/categories/Programming/Github/</loc>
-        <lastmod>2018-08-26T15:45:21.237Z</lastmod>
+        <loc>https://dullyshin.github.io/categories/Programming/HTML/</loc>
+        <lastmod>2018-08-26T18:34:07.362Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
