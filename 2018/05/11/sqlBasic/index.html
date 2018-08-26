@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    
+
+    
+    <title>SQL basic | Hyejin Shin</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="sql, query, sql 기본" />
+    
+    <meta name="description" content="SQL 기본 문제 &amp;amp; 답 SQL문에 대해 공부하시는 분은 질문을 보고 저와 같이 답을 생각해보시길 바랍니다!  테이블을 생성하고 제약조건 생성 및 연결 스크립트를 작성하세요.  1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253">
+<meta name="keywords" content="sql, query, sql 기본">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SQL basic">
+<meta property="og:url" content="https://dullyshin.github.io/2018/05/11/sqlBasic/index.html">
+<meta property="og:site_name" content="Hyejin Shin">
+<meta property="og:description" content="SQL 기본 문제 &amp;amp; 답 SQL문에 대해 공부하시는 분은 질문을 보고 저와 같이 답을 생각해보시길 바랍니다!  테이블을 생성하고 제약조건 생성 및 연결 스크립트를 작성하세요.  1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://ojc.asia/data/editor/1709/6667802be190d6f8ebd1c4330633ba3b_1504326537_592.jpg">
+<meta property="og:updated_time" content="2018-08-26T14:29:13.623Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="SQL basic">
+<meta name="twitter:description" content="SQL 기본 문제 &amp;amp; 답 SQL문에 대해 공부하시는 분은 질문을 보고 저와 같이 답을 생각해보시길 바랍니다!  테이블을 생성하고 제약조건 생성 및 연결 스크립트를 작성하세요.  1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253">
+<meta name="twitter:image" content="http://ojc.asia/data/editor/1709/6667802be190d6f8ebd1c4330633ba3b_1504326537_592.jpg">
+    
+    <link rel="canonical" href="https://dullyshin.github.io/2018/05/11/sqlbasic/"/>
+    
+
+    
+        <link rel="icon" href="/like.png" />
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+        <script type="text/javascript">
+(function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-124602183-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+    
+    
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">IT blog / Thanks to everyone!</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">Home</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Hexo/">Hexo</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Programming/">Programming</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Programming/Github/">Github</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Programming/SQL/">SQL</a></li></ul></li></ul>
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="https://about.me/hyejin_shin">About</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/Programming/SQL/">SQL</a>
+    </h1>
+</div>
+                        <div class="main-body-content">
+                            <article id="post-sqlBasic" class="article article-single article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+    
+        <h1 class="article-title" itemprop="name">
+        SQL basic
+        </h1>
+    
+
+      </header>
+      
+        
+          <div class="article-meta">
+            
+    <div class="article-date">
+        <a href="/2018/05/11/sqlBasic/" class="article-date">
+            <time datetime="2018-05-11T09:36:46.000Z" itemprop="datePublished">2018-05-11</time>
+        </a>
+    </div>
+
+              
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/sql-query-sql-기본/">sql, query, sql 기본</a>
+    </div>
+
+          </div>
+          
+            
+              <div class="article-entry" itemprop="articleBody">
+                <h1 id="SQL-기본-문제-amp-답"><a href="#SQL-기본-문제-amp-답" class="headerlink" title="SQL 기본 문제 &amp; 답"></a>SQL 기본 문제 &amp; 답</h1><p><img src="http://ojc.asia/data/editor/1709/6667802be190d6f8ebd1c4330633ba3b_1504326537_592.jpg" alt="table"></p>
+<p>SQL문에 대해 공부하시는 분은 질문을 보고 저와 같이 답을 생각해보시길 바랍니다!</p>
+<ol>
+<li>테이블을 생성하고 제약조건 생성 및 연결 스크립트를 작성하세요.</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br></pre></td><td class="code"><pre><span class="line">create table product (</span><br><span class="line"></span><br><span class="line">    product_id number(6) constraint pk_product primary key,</span><br><span class="line"></span><br><span class="line">    description varchar2(30));</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">create table job (</span><br><span class="line"></span><br><span class="line">    job_id number(3) constraint pk_job primary key,</span><br><span class="line"></span><br><span class="line">    function varchar2(30));</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">create table location (</span><br><span class="line"></span><br><span class="line">    location_id number(3) constraint pk_location primary key,</span><br><span class="line"></span><br><span class="line">    regional_group varchar2(20));</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">create table department (</span><br><span class="line"></span><br><span class="line">    department_id number(3) constraint pk_department primary key,</span><br><span class="line"></span><br><span class="line">    name varchar2(14),</span><br><span class="line"></span><br><span class="line">    location_id number(3) constraint department_location_id_fk references location);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">create table employee (</span><br><span class="line"></span><br><span class="line">    employee_id number(4) constraint pk_employee primary key,</span><br><span class="line"></span><br><span class="line">    last_name varchar2(15),</span><br><span class="line"></span><br><span class="line">    first_name varchar2(15),</span><br><span class="line"></span><br><span class="line">    middle_initial varchar2 (1),</span><br><span class="line"></span><br><span class="line">    job_id number(3) constraint employee_job_id_fk references job,</span><br><span class="line"></span><br><span class="line">    manager_id number(4),</span><br><span class="line"></span><br><span class="line">    hire_date date,</span><br><span class="line"></span><br><span class="line">    salary number(7,2),</span><br><span class="line"></span><br><span class="line">    commission number(7,2),</span><br><span class="line"></span><br><span class="line">    department_id number(3) constraint employee_department_id_fk references department</span><br><span class="line"></span><br><span class="line">    );</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">create table customer (</span><br><span class="line"></span><br><span class="line">    customer_id number(6) constraint pk_customer primary key,</span><br><span class="line"></span><br><span class="line">    name varchar2(45),</span><br><span class="line"></span><br><span class="line">    address varchar2(40),</span><br><span class="line"></span><br><span class="line">    city varchar2 (30),</span><br><span class="line"></span><br><span class="line">    state varchar2 (2),</span><br><span class="line"></span><br><span class="line">    zip_code varchar2 (9),</span><br><span class="line"></span><br><span class="line">    area_code number (3),</span><br><span class="line"></span><br><span class="line">    phone_number number (7),</span><br><span class="line"></span><br><span class="line">    salesperson_id number(4) references employee(employee_id),</span><br><span class="line"></span><br><span class="line">    credit_limit number(3,2),</span><br><span class="line"></span><br><span class="line">    hire_date date,</span><br><span class="line"></span><br><span class="line">    comments long</span><br><span class="line"></span><br><span class="line">    );</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">create table sales_order (</span><br><span class="line"></span><br><span class="line">    order_id number(4) constraint pk_sales_order primary key,</span><br><span class="line"></span><br><span class="line">    order_date date,</span><br><span class="line"></span><br><span class="line">    name varchar2(14),</span><br><span class="line"></span><br><span class="line">    customer_id number(3) references customer(customer_id),</span><br><span class="line"></span><br><span class="line">    ship_date date,</span><br><span class="line"></span><br><span class="line">    total number(8,2)</span><br><span class="line"></span><br><span class="line">    );</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">create table price (</span><br><span class="line"></span><br><span class="line">    product_id number(6) constraint price_product_id_fk references product,</span><br><span class="line"></span><br><span class="line">    list_price number(8,2),</span><br><span class="line"></span><br><span class="line">    min_price number(8,2),</span><br><span class="line"></span><br><span class="line">    start_date date,</span><br><span class="line"></span><br><span class="line">    constraint pk_price primary key(start_date, product_id),</span><br><span class="line"></span><br><span class="line">    end_date date</span><br><span class="line"></span><br><span class="line">    );</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">create table item (</span><br><span class="line"></span><br><span class="line">    order_id number(4) constraint item_order_id_fk references sales_order,</span><br><span class="line"></span><br><span class="line">    item_id number(4),</span><br><span class="line"></span><br><span class="line">    product_id number(6) constraint item_id_fk references product,</span><br><span class="line"></span><br><span class="line">    actual_price number(8,2),</span><br><span class="line"></span><br><span class="line">    quantity number(8),</span><br><span class="line"></span><br><span class="line">    total number(8,2),</span><br><span class="line"></span><br><span class="line">    constraint pk_item primary key(order_id, item_id)</span><br><span class="line"></span><br><span class="line">    );</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>1번에서 생성한 테이블중 EMPLOYEES 테이블에 INSERT, UPDATE,DELETE, SELECT 하는 SQL문장과 실행결과를 작성하세요.</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line">insert into</span><br><span class="line"></span><br><span class="line">location(location_id, regional_group)</span><br><span class="line"></span><br><span class="line">values(01, &apos;seoul&apos;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">insert into</span><br><span class="line"></span><br><span class="line">location(location_id, regional_group)</span><br><span class="line"></span><br><span class="line">values(02, &apos;busan&apos;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">insert into</span><br><span class="line"></span><br><span class="line">department(department_id, name, location_id)</span><br><span class="line"></span><br><span class="line">values(1, &apos;accounting&apos;, 02);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">insert into</span><br><span class="line"></span><br><span class="line">department(department_id, name, location_id)</span><br><span class="line"></span><br><span class="line">values(2, &apos;management&apos;, 01);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">select * from department;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">insert into job(job_id, function) values(1,&apos;계산&apos;);</span><br><span class="line"></span><br><span class="line">insert into job(job_id, function) values(2,&apos;연산&apos;);</span><br><span class="line"></span><br><span class="line">select * from job;</span><br><span class="line"></span><br><span class="line">select * from department;</span><br><span class="line"></span><br><span class="line">select * from employee;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">insert into</span><br><span class="line"></span><br><span class="line">employee(employee_id, last_name, first_name, middle_initial, job_id, manager_id, hire_date, salary, commission, department_id)</span><br><span class="line"></span><br><span class="line">values(0001, &apos;park&apos;, &apos;smith&apos;, &apos;p&apos;, 1, 0003, sysdate, 10000, 100, 1);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">update employee set commission = 3000 where employee_id =1;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">delete from employee where employee_id = 1;</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li><p>TCL을 구별하여 설명하고 EMPLOYEES 테이블에 TCL 명령어의 SQL문장과 실행 결과를 작성하세요.</p>
+<ul>
+<li><p>TCL이란 ?<br>TCL(transaction control language)이란 DML(INSERT,UPDATE, DELETE, MERGE)에 의해 변화되는 데이터 관리를 위한 기능</p>
+</li>
+<li><p>TCL종류 ?<br>COMMIT, ROLLBACK</p>
+</li>
+<li><p>TCL종류 각각 사용 예제</p>
+</li>
+</ul>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">INSERT INTO EMPLOYEE (	EMPLOYEE_ID, LAST_NAME, FIRST_NAME, MIDDLE_INITIAL, JOB_ID, MANAGER_ID, HIRE_DATE, SALARY, COMMISION, DEPARTMENT_ID)</span><br><span class="line"></span><br><span class="line">VALUES (1000, &apos;LASTNM&apos;, &apos;FIRSTNM&apos;, &apos;FL&apos;, 1, 100, TO_DATE(20180308), 5000000, 500, 10);</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>1번에서 생성한 제약조건을 조회하는 SQL문장과 실행결과를 작성하세요. (테이블명, 제약조건명, 제약조건 타입 조회할 것)</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">select table_name, constraint_name, constraint_type</span><br><span class="line"></span><br><span class="line">from user_constraints</span><br><span class="line"></span><br><span class="line">where table_name = &apos;EMPLOYEE&apos;;</span><br></pre></td></tr></table></figure>
+<ol start="5">
+<li>DEPARTMENT 테이블에 부서번호, 부서명을 수강생이름, 주소를  추가하세요.  EMPLOYEES  테이블에 위에 입력한 부서번호에 해당하는 사원정보를 INSERT, UPDATE, DELETE, SELECT 하는 SQL문장과 실행결과를 작성하세요.</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE department ADD (department_no VARCHAR2(14));</span><br><span class="line"></span><br><span class="line">ALTER TABLE department ADD (address VARCHAR2(20));</span><br><span class="line"></span><br><span class="line">INSERT INTO department (DEPARTMENT_ID, NAME, LOCATION_ID) VALUES (3,&apos;총무부&apos;,1);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">INSERT INTO EMPLOYEE (	EMPLOYEE_ID, LAST_NAME, FIRST_NAME, MIDDLE_INITIAL, JOB_ID, MANAGER_ID, HIRE_DATE, SALARY, COMMISSION, DEPARTMENT_ID)</span><br><span class="line"></span><br><span class="line">              VALUES (2000, &apos;BBBBBNM&apos;, &apos;AAAAANM&apos;, &apos;A&apos;, 1, 100, TO_DATE(20180308), 3000, 300, 1);</span><br><span class="line"></span><br><span class="line">INSERT INTO EMPLOYEE (	EMPLOYEE_ID, LAST_NAME, FIRST_NAME, MIDDLE_INITIAL, JOB_ID, MANAGER_ID, HIRE_DATE, SALARY, COMMISSION, DEPARTMENT_ID)</span><br><span class="line"></span><br><span class="line">              VALUES (2, &apos;BBB&apos;, &apos;AAA&apos;, &apos;A&apos;, 2, 2000, TO_DATE(20180503), 3000, 300, 1);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">UPDATE EMPLOYEE SET HIRE_DATE  = TO_DATE(20180309) WHERE EMPLOYEE_ID = 2000;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">DELETE FROM EMPLOYEE WHERE EMPLOYEE_ID = 2000;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">SELECT * FROM job;</span><br><span class="line"></span><br><span class="line">SELECT * FROM EMPLOYEE;</span><br></pre></td></tr></table></figure>
+<ol start="7">
+<li>아래의 질문에 SQL문을 작성하세요.</li>
+</ol>
+<ul>
+<li>EMPLOYEES 테이블에서 수당을 받지 않는 사원들의 부서를 중복값은 제거해서 출력하세요.</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select distinct(department_id) from employee</span><br><span class="line"></span><br><span class="line">where COMMISSION is null;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>EMPLOYEES 테이블에서 DEPTNO 별로 최대급여를 출력하는데, 최대급여가 높은 것부터 출력하시오</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">select department_id, max(salary)</span><br><span class="line"></span><br><span class="line">from employee</span><br><span class="line"></span><br><span class="line">group by department_id</span><br><span class="line"></span><br><span class="line">order by max(salary) desc;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>EMPLOYEES 테이블에서 사원이 2명 이상인 부서에 대해 부서별 평균급여를 계산하시오.</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">select department_id, avg(salary)</span><br><span class="line"></span><br><span class="line">from employee</span><br><span class="line"></span><br><span class="line">group by department_id</span><br><span class="line"></span><br><span class="line">having count(*) &gt;=2;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>EMPLOYEES 테이블에서 입사년도가 1981년보다 큰 사원의 수는?</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from employee where hire_date &gt; &apos;1981/01/01&apos;;</span><br></pre></td></tr></table></figure>
+
+              </div>
+<p class="related-posts-none">No related post.</p>
+                <footer class="article-footer">
+                    
+
+
+
+    <a data-url="https://dullyshin.github.io/2018/05/11/sqlBasic/" data-id="cjlb1owzo000bb0uywzp4r0dn" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+                </footer>
+  </div>
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
+
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>follow:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="google" href="mailto:sgj00038@google.com" target="_blank" rel="noopener">
+                        <i class="icon fa fa-google"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="envelope" href="mailto:sgj00038@naver.com" target="_blank" rel="noopener">
+                        <i class="icon fa fa-envelope"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="female" href="https://about.me/hyejin_shin" target="_blank" rel="noopener">
+                        <i class="icon fa fa-female"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/DullyShin?tab=repositories" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2018/08/25/markdown/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
+        <p class="article-nav-title">
+        
+            markdown
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2018/05/11/sqlAdvanced/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">sqlAdvanced</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">recents</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/08/27/MarkdownEditor/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://i.imgur.com/LzjQHrK.png)" alt="MarkdownEditor" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/Github/">Github</a></p>
+                            <p class="item-title"><a href="/2018/08/27/MarkdownEditor/" class="title">MarkdownEditor</a></p>
+                            <p class="item-date"><time datetime="2018-08-26T15:19:53.000Z" itemprop="datePublished">2018-08-27</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/08/26/Theme/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://futurecreator.github.io/images/hexo/hexo_example.jpg)" alt="Hexo Theme Hueman" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Hexo/">Hexo</a></p>
+                            <p class="item-title"><a href="/2018/08/26/Theme/" class="title">Hexo Theme Hueman</a></p>
+                            <p class="item-date"><time datetime="2018-08-26T03:57:16.000Z" itemprop="datePublished">2018-08-26</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/08/26/error/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://futurecreator.github.io/images/hexo/hexo_index.png)" alt="Hexo error" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Hexo/">Hexo</a></p>
+                            <p class="item-title"><a href="/2018/08/26/error/" class="title">Hexo error</a></p>
+                            <p class="item-date"><time datetime="2018-08-26T03:57:16.000Z" itemprop="datePublished">2018-08-26</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/08/26/hello-world/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://kdydesign.github.io/2017/06/23/start-hexo-blog/cover.png)" alt="Hexo 처음 포스트하기" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Hexo/">Hexo</a></p>
+                            <p class="item-title"><a href="/2018/08/26/hello-world/" class="title">Hexo 처음 포스트하기</a></p>
+                            <p class="item-date"><time datetime="2018-08-25T16:23:03.687Z" itemprop="datePublished">2018-08-26</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/08/25/markdown/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/1200px-Markdown-mark.svg.png)" alt="markdown" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/Github/">Github</a></p>
+                            <p class="item-title"><a href="/2018/08/25/markdown/" class="title">markdown</a></p>
+                            <p class="item-date"><time datetime="2018-08-25T05:32:45.000Z" itemprop="datePublished">2018-08-25</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/">Programming</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/Github/">Github</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/SQL/">SQL</a><span class="category-list-count">2</span></li></ul></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">archives</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">2</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">tags</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo-Hexo-Theme-Hueman-Hexo-Theme-Hueman-사용법/">hexo, Hexo Theme Hueman, Hexo Theme, Hueman 사용법</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo-헥소-에러-헥소-언어-설정-hexo-language-set/">hexo, 헥소 에러, 헥소 언어 설정, hexo language set</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown-마크다운-사용법-마크다운-마크다운-에디터-markdown-editor/">markdown, 마크다운 사용법, 마크다운, 마크다운 에디터, markdown editor</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sql-query-sql-기본/">sql, query, sql 기본</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/hexo-Hexo-Theme-Hueman-Hexo-Theme-Hueman-사용법/" style="font-size: 10px;">hexo, Hexo Theme Hueman, Hexo Theme, Hueman 사용법</a> <a href="/tags/hexo-헥소-에러-헥소-언어-설정-hexo-language-set/" style="font-size: 10px;">hexo, 헥소 에러, 헥소 언어 설정, hexo language set</a> <a href="/tags/markdown-마크다운-사용법-마크다운-마크다운-에디터-markdown-editor/" style="font-size: 10px;">markdown, 마크다운 사용법, 마크다운, 마크다운 에디터, markdown editor</a> <a href="/tags/sql-query-sql-기본/" style="font-size: 10px;">sql, query, sql 기본</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">links</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2018 Hyejin Shin</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            </div>
+            <div class="footer-plugins">
+              
+    
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+        
+    
+    <script>
+    var disqus_shortname = 'https-dullyshin-github-io';
+    
+    
+    var disqus_url = 'https://dullyshin.github.io/2018/05/11/sqlBasic/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>

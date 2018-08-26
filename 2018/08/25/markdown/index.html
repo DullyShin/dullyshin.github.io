@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    
+
+    
+    <title>markdown | Hyejin Shin</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="markdown, 마크다운 사용법, 마크다운, 마크다운 에디터, markdown editor" />
+    
+    <meta name="description" content="Markdown 사용법마크다운 / Markdown?Github을 사용하시면 README.md 파일을 통해 만나게 됩니다.마크다운(markdown)은 일반 텍스트 문서의 양식을 편집하는 문법입니다. README 파일이나 온라인 문서, 혹은 일반 텍스트 편집기로 문서 양식을 편집할 때 쓰입니다. 마크다운을 이용해 작성된 문서는 쉽게 HTML 등 다른 문서형태로">
+<meta name="keywords" content="markdown, 마크다운 사용법, 마크다운, 마크다운 에디터, markdown editor">
+<meta property="og:type" content="article">
+<meta property="og:title" content="markdown">
+<meta property="og:url" content="https://dullyshin.github.io/2018/08/25/markdown/index.html">
+<meta property="og:site_name" content="Hyejin Shin">
+<meta property="og:description" content="Markdown 사용법마크다운 / Markdown?Github을 사용하시면 README.md 파일을 통해 만나게 됩니다.마크다운(markdown)은 일반 텍스트 문서의 양식을 편집하는 문법입니다. README 파일이나 온라인 문서, 혹은 일반 텍스트 편집기로 문서 양식을 편집할 때 쓰입니다. 마크다운을 이용해 작성된 문서는 쉽게 HTML 등 다른 문서형태로">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/1200px-Markdown-mark.svg.png">
+<meta property="og:updated_time" content="2018-08-26T15:25:35.745Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="markdown">
+<meta name="twitter:description" content="Markdown 사용법마크다운 / Markdown?Github을 사용하시면 README.md 파일을 통해 만나게 됩니다.마크다운(markdown)은 일반 텍스트 문서의 양식을 편집하는 문법입니다. README 파일이나 온라인 문서, 혹은 일반 텍스트 편집기로 문서 양식을 편집할 때 쓰입니다. 마크다운을 이용해 작성된 문서는 쉽게 HTML 등 다른 문서형태로">
+<meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/1200px-Markdown-mark.svg.png">
+    
+    <link rel="canonical" href="https://dullyshin.github.io/2018/08/25/markdown/"/>
+    
+
+    
+        <link rel="icon" href="/like.png" />
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+        <script type="text/javascript">
+(function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-124602183-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+    
+    
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">IT blog / Thanks to everyone!</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">Home</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Hexo/">Hexo</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Programming/">Programming</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Programming/Github/">Github</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Programming/SQL/">SQL</a></li></ul></li></ul>
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="https://about.me/hyejin_shin">About</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/Programming/Github/">Github</a>
+    </h1>
+</div>
+                        <div class="main-body-content">
+                            <article id="post-markdown" class="article article-single article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+    
+        <h1 class="article-title" itemprop="name">
+        markdown
+        </h1>
+    
+
+      </header>
+      
+        
+          <div class="article-meta">
+            
+    <div class="article-date">
+        <a href="/2018/08/25/markdown/" class="article-date">
+            <time datetime="2018-08-25T05:32:45.000Z" itemprop="datePublished">2018-08-25</time>
+        </a>
+    </div>
+
+              
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/markdown-마크다운-사용법-마크다운-마크다운-에디터-markdown-editor/">markdown, 마크다운 사용법, 마크다운, 마크다운 에디터, markdown editor</a>
+    </div>
+
+          </div>
+          
+            
+              <div class="article-entry" itemprop="articleBody">
+                <h1 id="Markdown-사용법"><a href="#Markdown-사용법" class="headerlink" title="Markdown 사용법"></a>Markdown 사용법</h1><h4 id="마크다운-Markdown"><a href="#마크다운-Markdown" class="headerlink" title="마크다운 / Markdown?"></a>마크다운 / Markdown?</h4><p>Github을 사용하시면 README.md 파일을 통해 만나게 됩니다.<br>마크다운(markdown)은 일반 텍스트 문서의 양식을 편집하는 문법입니다. README 파일이나 온라인 문서, 혹은 일반 텍스트 편집기로 문서 양식을 편집할 때 쓰입니다. 마크다운을 이용해 작성된 문서는 쉽게 HTML 등 다른 문서형태로 변환이 가능합니다.</p>
+<hr>
+<h4 id="마크다운-사용법-Markdown-Syntax"><a href="#마크다운-사용법-Markdown-Syntax" class="headerlink" title="마크다운 사용법 / Markdown Syntax"></a>마크다운 사용법 / Markdown Syntax</h4><h1 id="큰-제목-This-is-an-H1"><a href="#큰-제목-This-is-an-H1" class="headerlink" title="큰 제목 This is an H1"></a>큰 제목 This is an H1</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">큰 제목 This is an H1</span><br><span class="line">======================</span><br></pre></td></tr></table></figure>
+<h2 id="작은-제목-This-is-an-H2"><a href="#작은-제목-This-is-an-H2" class="headerlink" title="작은 제목 This is an H2"></a>작은 제목 This is an H2</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">작은 제목 This is an H2</span><br><span class="line">-------------</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>글머리: 1~6까지만 지원합니다.</p>
+<h1 id="This-is-a-H1"><a href="#This-is-a-H1" class="headerlink" title="This is a H1"></a>This is a H1</h1><h2 id="This-is-a-H2"><a href="#This-is-a-H2" class="headerlink" title="This is a H2"></a>This is a H2</h2><h3 id="This-is-a-H3"><a href="#This-is-a-H3" class="headerlink" title="This is a H3"></a>This is a H3</h3><h4 id="This-is-a-H4"><a href="#This-is-a-H4" class="headerlink" title="This is a H4"></a>This is a H4</h4><h5 id="This-is-a-H5"><a href="#This-is-a-H5" class="headerlink" title="This is a H5"></a>This is a H5</h5><h6 id="This-is-a-H6"><a href="#This-is-a-H6" class="headerlink" title="This is a H6"></a>This is a H6</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># This is a H1</span><br><span class="line">## This is a H2</span><br><span class="line">### This is a H3</span><br><span class="line">#### This is a H4</span><br><span class="line">##### This is a H5</span><br><span class="line">###### This is a H6</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>테이블</p>
+</li>
+</ul>
+<p><a href="https://www.tablesgenerator.com/markdown_tables" target="_blank" rel="noopener">Markdown table generator</a>에서 아주 편하게 markdown 테이블을 만들어 낼 수 있습니다.</p>
+<table>
+<thead>
+<tr>
+<th>dosi</th>
+<th>sales</th>
+<th>sale_date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>seoul</td>
+<td>1500</td>
+<td>2015/02/02</td>
+</tr>
+<tr>
+<td>pusan</td>
+<td>1200</td>
+<td>2015/01/01</td>
+</tr>
+<tr>
+<td>pusan</td>
+<td>1100</td>
+<td>2015/02/08</td>
+</tr>
+<tr>
+<td>inchon</td>
+<td>500</td>
+<td>2015/01/30</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">| dosi   | sales | sale_date  |</span><br><span class="line">|--------|-------|------------|</span><br><span class="line">| seoul  | 1500  | 2015/02/02 |</span><br><span class="line">| pusan  | 1200  | 2015/01/01 |</span><br><span class="line">| pusan  | 1100  | 2015/02/08 |</span><br><span class="line">| inchon | 500   | 2015/01/30 |</span><br></pre></td></tr></table></figure>
+<ul>
+<li>인용문 BlockQuote : 이메일에서 사용하는 &gt; 블럭인용문자를 이용합니다.</li>
+</ul>
+<blockquote>
+<p>This is a blockqute.</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; This is a blockqute.</span><br></pre></td></tr></table></figure>
+<ul>
+<li>목록 List :  숫자를 순서대로 작성하지 않아도 내림차순으로 정렬됩니다.</li>
+</ul>
+<ol>
+<li>First</li>
+<li>Second</li>
+<li>Third</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. First</span><br><span class="line">2. Second</span><br><span class="line">3. Third</span><br></pre></td></tr></table></figure>
+<ul>
+<li>빨강<ul>
+<li>녹색<ul>
+<li>파랑</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>빨강<ul>
+<li>노랑<ul>
+<li>파랑</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>빨강<ul>
+<li>노랑<ul>
+<li>파랑</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">* 빨강</span><br><span class="line">  * 노랑</span><br><span class="line">    * 파랑</span><br><span class="line"></span><br><span class="line">+ 빨강</span><br><span class="line">  + 노랑</span><br><span class="line">    + 파랑</span><br><span class="line"></span><br><span class="line">- 빨강</span><br><span class="line">  - 노랑</span><br><span class="line">    - 파랑</span><br></pre></td></tr></table></figure>
+<ul>
+<li>수평선 : 아래와 같은 다양한 방법이 있습니다.</li>
+</ul>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">* * *</span><br><span class="line"></span><br><span class="line">***</span><br><span class="line"></span><br><span class="line">*****</span><br><span class="line"></span><br><span class="line">- - -</span><br><span class="line"></span><br><span class="line">---------------------------------------</span><br></pre></td></tr></table></figure>
+<ul>
+<li>링크</li>
+</ul>
+<p><a href="http://google.com" target="_blank" rel="noopener">Google</a><br><a href="http://example.com/" target="_blank" rel="noopener">http://example.com/</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[Google](http://google.com)</span><br><span class="line">&lt;http://example.com/&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>글꼴 스타일</li>
+</ul>
+<p><em>single asterisks</em><br><em>single underscores</em><br><strong>double asterisks</strong><br><strong>double underscores</strong><br>++underline++<br><del>cancelline</del></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">*single asterisks*</span><br><span class="line">_single underscores_</span><br><span class="line">**double asterisks**</span><br><span class="line">__double underscores__</span><br><span class="line">++underline++</span><br><span class="line">~~cancelline~~</span><br></pre></td></tr></table></figure>
+<ul>
+<li>이미지<br><img src="https://t1.daumcdn.net/cfile/tistory/24923A33597F7BB71E" alt="카카오 라이언"></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">![카카오 라이언](https://t1.daumcdn.net/cfile/tistory/24923A33597F7BB71E)</span><br><span class="line">이미지 사이즈 조절 방법 : &lt;img width=&quot;&quot; height=&quot;&quot;&gt;&lt;/img&gt;</span><br></pre></td></tr></table></figure>
+<hr>
+<h4 id="마크다운-Tip-Markdown-Tip"><a href="#마크다운-Tip-Markdown-Tip" class="headerlink" title="마크다운 Tip / Markdown Tip"></a>마크다운 Tip / Markdown Tip</h4><p>마크다운에서는 엔터키 한 번은 먹지 않는다. 문장이 같은 줄에 연이어 표시된다.</p>
+<p>줄바꿈은 빈 칸 두 개로 구분한다.</p>
+<p>문단과 문단 사이는 빈 줄(엔터키 두 번)로 구분한다.</p>
+<h4 id="다음-포스트에-마크다운-에디터를-추천합니다"><a href="#다음-포스트에-마크다운-에디터를-추천합니다" class="headerlink" title="다음 포스트에 마크다운 에디터를 추천합니다."></a>다음 포스트에 마크다운 에디터를 추천합니다.</h4><p>&lt;%- list_related_posts([options]) %&gt;</p>
+<hr>
+<h4 id="참조"><a href="#참조" class="headerlink" title="참조"></a>참조</h4><p><a href="https://ko.wikipedia.org/" target="_blank" rel="noopener">https://ko.wikipedia.org/</a></p>
+<p><a href="https://nolboo.kim/blog/2013/09/07/john-gruber-markdown/" target="_blank" rel="noopener">https://nolboo.kim/blog/2013/09/07/john-gruber-markdown/</a></p>
+<p><a href="https://gist.github.com/ihoneymon/652be052a0727ad59601" target="_blank" rel="noopener">https://gist.github.com/ihoneymon/652be052a0727ad59601</a></p>
+<p><a href="http://macnews.tistory.com/2419" target="_blank" rel="noopener">http://macnews.tistory.com/2419</a></p>
+
+              </div>
+<p class="related-posts-none">No related post.</p>
+                <footer class="article-footer">
+                    
+
+
+
+    <a data-url="https://dullyshin.github.io/2018/08/25/markdown/" data-id="cjlb1owzc0006b0uyzn6vbmff" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+                </footer>
+  </div>
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
+
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>follow:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="google" href="mailto:sgj00038@google.com" target="_blank" rel="noopener">
+                        <i class="icon fa fa-google"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="envelope" href="mailto:sgj00038@naver.com" target="_blank" rel="noopener">
+                        <i class="icon fa fa-envelope"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="female" href="https://about.me/hyejin_shin" target="_blank" rel="noopener">
+                        <i class="icon fa fa-female"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/DullyShin?tab=repositories" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2018/08/26/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
+        <p class="article-nav-title">
+        
+            Hexo 처음 포스트하기
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2018/05/11/sqlBasic/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">SQL basic</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">recents</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/08/27/MarkdownEditor/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://i.imgur.com/LzjQHrK.png)" alt="MarkdownEditor" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/Github/">Github</a></p>
+                            <p class="item-title"><a href="/2018/08/27/MarkdownEditor/" class="title">MarkdownEditor</a></p>
+                            <p class="item-date"><time datetime="2018-08-26T15:19:53.000Z" itemprop="datePublished">2018-08-27</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/08/26/Theme/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://futurecreator.github.io/images/hexo/hexo_example.jpg)" alt="Hexo Theme Hueman" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Hexo/">Hexo</a></p>
+                            <p class="item-title"><a href="/2018/08/26/Theme/" class="title">Hexo Theme Hueman</a></p>
+                            <p class="item-date"><time datetime="2018-08-26T03:57:16.000Z" itemprop="datePublished">2018-08-26</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/08/26/error/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://futurecreator.github.io/images/hexo/hexo_index.png)" alt="Hexo error" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Hexo/">Hexo</a></p>
+                            <p class="item-title"><a href="/2018/08/26/error/" class="title">Hexo error</a></p>
+                            <p class="item-date"><time datetime="2018-08-26T03:57:16.000Z" itemprop="datePublished">2018-08-26</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/08/26/hello-world/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://kdydesign.github.io/2017/06/23/start-hexo-blog/cover.png)" alt="Hexo 처음 포스트하기" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Hexo/">Hexo</a></p>
+                            <p class="item-title"><a href="/2018/08/26/hello-world/" class="title">Hexo 처음 포스트하기</a></p>
+                            <p class="item-date"><time datetime="2018-08-25T16:23:03.687Z" itemprop="datePublished">2018-08-26</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/08/25/markdown/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/1200px-Markdown-mark.svg.png)" alt="markdown" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/Github/">Github</a></p>
+                            <p class="item-title"><a href="/2018/08/25/markdown/" class="title">markdown</a></p>
+                            <p class="item-date"><time datetime="2018-08-25T05:32:45.000Z" itemprop="datePublished">2018-08-25</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/">Programming</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/Github/">Github</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/SQL/">SQL</a><span class="category-list-count">2</span></li></ul></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">archives</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">2</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">tags</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo-Hexo-Theme-Hueman-Hexo-Theme-Hueman-사용법/">hexo, Hexo Theme Hueman, Hexo Theme, Hueman 사용법</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo-헥소-에러-헥소-언어-설정-hexo-language-set/">hexo, 헥소 에러, 헥소 언어 설정, hexo language set</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown-마크다운-사용법-마크다운-마크다운-에디터-markdown-editor/">markdown, 마크다운 사용법, 마크다운, 마크다운 에디터, markdown editor</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sql-query-sql-기본/">sql, query, sql 기본</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/hexo-Hexo-Theme-Hueman-Hexo-Theme-Hueman-사용법/" style="font-size: 10px;">hexo, Hexo Theme Hueman, Hexo Theme, Hueman 사용법</a> <a href="/tags/hexo-헥소-에러-헥소-언어-설정-hexo-language-set/" style="font-size: 10px;">hexo, 헥소 에러, 헥소 언어 설정, hexo language set</a> <a href="/tags/markdown-마크다운-사용법-마크다운-마크다운-에디터-markdown-editor/" style="font-size: 10px;">markdown, 마크다운 사용법, 마크다운, 마크다운 에디터, markdown editor</a> <a href="/tags/sql-query-sql-기본/" style="font-size: 10px;">sql, query, sql 기본</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">links</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2018 Hyejin Shin</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            </div>
+            <div class="footer-plugins">
+              
+    
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+        
+    
+    <script>
+    var disqus_shortname = 'https-dullyshin-github-io';
+    
+    
+    var disqus_url = 'https://dullyshin.github.io/2018/08/25/markdown/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
