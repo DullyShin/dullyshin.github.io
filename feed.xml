@@ -138,44 +138,15 @@
       <category term="Github" scheme="https://dullyshin.github.io/categories/Programming/Github/"/>
     
     
-      <category term="마크다운 에디터" scheme="https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%97%90%EB%94%94%ED%84%B0/"/>
-    
       <category term="Programming" scheme="https://dullyshin.github.io/tags/Programming/"/>
     
       <category term="Github" scheme="https://dullyshin.github.io/tags/Github/"/>
     
       <category term="markdown Editors" scheme="https://dullyshin.github.io/tags/markdown-Editors/"/>
     
+      <category term="마크다운 에디터" scheme="https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%97%90%EB%94%94%ED%84%B0/"/>
+    
       <category term="마크다운 테이블" scheme="https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%ED%85%8C%EC%9D%B4%EB%B8%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo error</title>
-    <link href="https://dullyshin.github.io/2018/08/26/Hexo-error/"/>
-    <id>https://dullyshin.github.io/2018/08/26/Hexo-error/</id>
-    <published>2018-08-26T03:57:16.000Z</published>
-    <updated>2018-08-26T18:40:03.856Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Hexo-Error"><a href="#Hexo-Error" class="headerlink" title="Hexo Error"></a>Hexo Error</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ Hexo server</span><br></pre></td></tr></table></figure><p>Hexo server를 시작하고 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 에서 메뉴가 About이 아니라 Quant a , Home이 Inici로 보일 수 있습니다. 또는 다른 언어로 보일 수 있습니다.</p><p>메뉴 화면<br><img src="C:\web\myBlog\source\images/navbar.JPG" alt="navbar"></p><p>myBlog\themes\hueman\languages\ca.yml<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">index:</span><br><span class="line">    home: &apos;Inici&apos;</span><br><span class="line">    about: &apos;Quant a&apos;</span><br><span class="line">    search: &apos;Cercar&apos;</span><br><span class="line">    archive: &apos;Arxiu&apos;</span><br><span class="line">    category: &apos;Categoria&apos;</span><br><span class="line">    uncategorized: &apos;Sense categoria&apos;</span><br><span class="line">    tag: &apos;Etiqueta&apos;</span><br></pre></td></tr></table></figure></p><p>이는 _config.yml에 언어 설정으로 인해 변경될 수 있습니다. 아래의 language 설정을 en으로 바꾸어 주시면 됩니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: Hyejin Shin #제목</span><br><span class="line">subtitle: IT blog / Thanks to everyone! #부제목</span><br><span class="line">description: IT blog for everyone #설명</span><br><span class="line">keywords: Portfolio, programmer, web #키워드</span><br><span class="line">author: Hyejin Shin #이름</span><br><span class="line">language: en #언어 설정</span><br><span class="line">timezone: Asia/Seoul #시간 설정</span><br></pre></td></tr></table></figure><p>저는 언어 설정을 처음부터 en으로 했는데도 되지 않아서 구글링으로 해결책을 찾아보았는데요.</p><blockquote><p>변경한 후에도 언어 설정이 적용되지 않을 경우, <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 에서만 적용되지 않고 배포한 파일은 정상적으로 작동될 수 있습니다.</p></blockquote><p>잠시 후 실행된 서버를 끄고 배포한 파일은 정상 작동되는 것을 확인했습니다. Hexo 언어설정으로 고생하는 분 없길 바랍니다!</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;Hexo-Error&quot;&gt;&lt;a href=&quot;#Hexo-Error&quot; class=&quot;headerlink&quot; title=&quot;Hexo Error&quot;&gt;&lt;/a&gt;Hexo Error&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;t
-      
-    
-    </summary>
-    
-      <category term="Hexo" scheme="https://dullyshin.github.io/categories/Hexo/"/>
-    
-    
-      <category term="hexo 에러" scheme="https://dullyshin.github.io/tags/hexo-%EC%97%90%EB%9F%AC/"/>
-    
-      <category term="헥소 언어 설정" scheme="https://dullyshin.github.io/tags/%ED%97%A5%EC%86%8C-%EC%96%B8%EC%96%B4-%EC%84%A4%EC%A0%95/"/>
-    
-      <category term="hexo language set" scheme="https://dullyshin.github.io/tags/hexo-language-set/"/>
     
   </entry>
   
@@ -207,6 +178,35 @@
       <category term="Hexo Theme" scheme="https://dullyshin.github.io/tags/Hexo-Theme/"/>
     
       <category term="Hueman 사용법" scheme="https://dullyshin.github.io/tags/Hueman-%EC%82%AC%EC%9A%A9%EB%B2%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo error</title>
+    <link href="https://dullyshin.github.io/2018/08/26/Hexo-error/"/>
+    <id>https://dullyshin.github.io/2018/08/26/Hexo-error/</id>
+    <published>2018-08-26T03:57:16.000Z</published>
+    <updated>2018-08-26T18:40:03.856Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Hexo-Error"><a href="#Hexo-Error" class="headerlink" title="Hexo Error"></a>Hexo Error</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ Hexo server</span><br></pre></td></tr></table></figure><p>Hexo server를 시작하고 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 에서 메뉴가 About이 아니라 Quant a , Home이 Inici로 보일 수 있습니다. 또는 다른 언어로 보일 수 있습니다.</p><p>메뉴 화면<br><img src="C:\web\myBlog\source\images/navbar.JPG" alt="navbar"></p><p>myBlog\themes\hueman\languages\ca.yml<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">index:</span><br><span class="line">    home: &apos;Inici&apos;</span><br><span class="line">    about: &apos;Quant a&apos;</span><br><span class="line">    search: &apos;Cercar&apos;</span><br><span class="line">    archive: &apos;Arxiu&apos;</span><br><span class="line">    category: &apos;Categoria&apos;</span><br><span class="line">    uncategorized: &apos;Sense categoria&apos;</span><br><span class="line">    tag: &apos;Etiqueta&apos;</span><br></pre></td></tr></table></figure></p><p>이는 _config.yml에 언어 설정으로 인해 변경될 수 있습니다. 아래의 language 설정을 en으로 바꾸어 주시면 됩니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: Hyejin Shin #제목</span><br><span class="line">subtitle: IT blog / Thanks to everyone! #부제목</span><br><span class="line">description: IT blog for everyone #설명</span><br><span class="line">keywords: Portfolio, programmer, web #키워드</span><br><span class="line">author: Hyejin Shin #이름</span><br><span class="line">language: en #언어 설정</span><br><span class="line">timezone: Asia/Seoul #시간 설정</span><br></pre></td></tr></table></figure><p>저는 언어 설정을 처음부터 en으로 했는데도 되지 않아서 구글링으로 해결책을 찾아보았는데요.</p><blockquote><p>변경한 후에도 언어 설정이 적용되지 않을 경우, <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 에서만 적용되지 않고 배포한 파일은 정상적으로 작동될 수 있습니다.</p></blockquote><p>잠시 후 실행된 서버를 끄고 배포한 파일은 정상 작동되는 것을 확인했습니다. Hexo 언어설정으로 고생하는 분 없길 바랍니다!</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Hexo-Error&quot;&gt;&lt;a href=&quot;#Hexo-Error&quot; class=&quot;headerlink&quot; title=&quot;Hexo Error&quot;&gt;&lt;/a&gt;Hexo Error&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;t
+      
+    
+    </summary>
+    
+      <category term="Hexo" scheme="https://dullyshin.github.io/categories/Hexo/"/>
+    
+    
+      <category term="hexo 에러" scheme="https://dullyshin.github.io/tags/hexo-%EC%97%90%EB%9F%AC/"/>
+    
+      <category term="헥소 언어 설정" scheme="https://dullyshin.github.io/tags/%ED%97%A5%EC%86%8C-%EC%96%B8%EC%96%B4-%EC%84%A4%EC%A0%95/"/>
+    
+      <category term="hexo language set" scheme="https://dullyshin.github.io/tags/hexo-language-set/"/>
     
   </entry>
   
@@ -258,13 +258,13 @@
       <category term="Github" scheme="https://dullyshin.github.io/categories/Programming/Github/"/>
     
     
+      <category term="마크다운 에디터" scheme="https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%97%90%EB%94%94%ED%84%B0/"/>
+    
       <category term="markdown" scheme="https://dullyshin.github.io/tags/markdown/"/>
     
       <category term="마크다운 사용법" scheme="https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%82%AC%EC%9A%A9%EB%B2%95/"/>
     
       <category term="마크다운" scheme="https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4/"/>
-    
-      <category term="마크다운 에디터" scheme="https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%97%90%EB%94%94%ED%84%B0/"/>
     
       <category term="markdown editor" scheme="https://dullyshin.github.io/tags/markdown-editor/"/>
     
@@ -293,13 +293,13 @@
       <category term="SQL" scheme="https://dullyshin.github.io/categories/Programming/SQL/"/>
     
     
+      <category term="my sql" scheme="https://dullyshin.github.io/tags/my-sql/"/>
+    
       <category term="sql" scheme="https://dullyshin.github.io/tags/sql/"/>
     
       <category term="query" scheme="https://dullyshin.github.io/tags/query/"/>
     
       <category term="sql 기본" scheme="https://dullyshin.github.io/tags/sql-%EA%B8%B0%EB%B3%B8/"/>
-    
-      <category term="my sql" scheme="https://dullyshin.github.io/tags/my-sql/"/>
     
   </entry>
   
@@ -326,11 +326,11 @@
       <category term="SQL" scheme="https://dullyshin.github.io/categories/Programming/SQL/"/>
     
     
+      <category term="my sql" scheme="https://dullyshin.github.io/tags/my-sql/"/>
+    
       <category term="sql" scheme="https://dullyshin.github.io/tags/sql/"/>
     
       <category term="query" scheme="https://dullyshin.github.io/tags/query/"/>
-    
-      <category term="my sql" scheme="https://dullyshin.github.io/tags/my-sql/"/>
     
   </entry>
   
