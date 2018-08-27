@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://dullyshin.github.io/"/>
-  <updated>2018-08-26T18:36:53.010Z</updated>
+  <updated>2018-08-27T14:12:43.981Z</updated>
   <id>https://dullyshin.github.io/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PostgreSql 란?</title>
+    <link href="https://dullyshin.github.io/2018/08/27/PostgreSQL-Basic/"/>
+    <id>https://dullyshin.github.io/2018/08/27/PostgreSQL-Basic/</id>
+    <published>2018-08-27T13:36:57.000Z</published>
+    <updated>2018-08-27T14:12:43.981Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="PostgreSql-란"><a href="#PostgreSql-란" class="headerlink" title="PostgreSql 란"></a>PostgreSql 란</h1><p>우선 PostgreSQL은 포스트-그레스-큐엘 [Post-Gres-Q-L]로 발음한다. PostgreSQL은 확장 가능성 및 표준 준수를 강조하는 객체-관계형 데이터베이스 관리 시스템(ORDBMS)의 하나이다. BSD 허가권으로 배포되며 오픈소스 개발자 및 관련 회사들이 개발에 참여하고 있다.</p><hr><h4 id="특징점"><a href="#특징점" class="headerlink" title="특징점"></a>특징점</h4><h6 id="유연한-객체-생성"><a href="#유연한-객체-생성" class="headerlink" title="유연한 객체 생성"></a>유연한 객체 생성</h6><p>다른 관계형 데이터베이스 시스템과 달리, 연산자, 복합 자료형, 집계 함수, 자료형 변환자, 확장 기능 등 다양한 데이터베이스 객체를 사용자가 임의로 만들 수 있는 기능을 SQL 차원에서 제공한다.</p><p>이런 특징은 단순한 자료 저장소로써의 기능을 넘어 마치 하나의 새로운 프로그래밍 언어처럼 개발자의 창의성에 따라 무한한 기능을 손쉽게 구현할 수 있도록 한다.</p><h6 id="상속"><a href="#상속" class="headerlink" title="상속"></a>상속</h6><p>java 또는 C++ 프로그래밍 언어와 같이 테이블을 만들어 그 테이블 상속 기능을 이용해 하위 테이블을 만들 수 있다.</p><p>테이블에 저장된 자료는 상위 테이블을 조회하면, 해당 테이블의 하위 테이블에 포함된 모든 자료를 조회할 수 있으며, 하위 테이블을 만들 때, 상위 테이블의 칼럼을 그대로 상속 받으면서, 하위 테이블에만 속하는 칼럼을 추가로 만들 수 있다.</p><h6 id="함수"><a href="#함수" class="headerlink" title="함수"></a>함수</h6><p>때때로, ‘저장 프로시저’라고 불리는 SQL문으로 작성된 함수를 서버환경에서 사용할 수 있다. 비록 다른 언어와는 달리 제어문과 반복문을 사용하지는 못하지만, 다른 언어와 결합시킬 수 있다. 일부 언어에서는 심지어 트리거 내부에서 실행시킬 수 있다.</p><p>이러한 언어의 예는 다음과 같다.</p><ul><li>PL/pgSQL (오라클의 PL/SQL과 유사하다)</li><li>스크립트 언어를 통한 지원 (예, PL/Python, PL/php, PL/Perl)</li><li>컴파일 언어를 통한 지원 (예, C/C++, PL/Java)</li><li>통계적 언어를 통한 지원 (예, PL/R)</li></ul><p>PostgreSQL은 테이블에 대한 질의 결과를 반환하기 위한 ‘행 반환 함수’를 지원한다.</p><p>실행권한은 함수 작성자 및, 실행자 모두에게 있다.</p><p>참조<br><a href="http://www.gurubee.net/lecture/2929" target="_blank" rel="noopener">http://www.gurubee.net/lecture/2929</a><br><a href="https://d2.naver.com/helloworld/227936" target="_blank" rel="noopener">https://d2.naver.com/helloworld/227936</a><br><a href="https://ko.wikipedia.org/wiki/PostgreSQL" target="_blank" rel="noopener">https://ko.wikipedia.org/wiki/PostgreSQL</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;PostgreSql-란&quot;&gt;&lt;a href=&quot;#PostgreSql-란&quot; class=&quot;headerlink&quot; title=&quot;PostgreSql 란&quot;&gt;&lt;/a&gt;PostgreSql 란&lt;/h1&gt;&lt;p&gt;우선 PostgreSQL은 포스트-그레스-큐엘 [Pos
+      
+    
+    </summary>
+    
+      <category term="Programming" scheme="https://dullyshin.github.io/categories/Programming/"/>
+    
+      <category term="SQL" scheme="https://dullyshin.github.io/categories/Programming/SQL/"/>
+    
+    
+      <category term="Programming" scheme="https://dullyshin.github.io/tags/Programming/"/>
+    
+      <category term="SQL" scheme="https://dullyshin.github.io/tags/SQL/"/>
+    
+      <category term="PostgreSQL_Basic" scheme="https://dullyshin.github.io/tags/PostgreSQL-Basic/"/>
+    
+      <category term="PostgreSQL" scheme="https://dullyshin.github.io/tags/PostgreSQL/"/>
+    
+  </entry>
   
   <entry>
     <title>Mailto 태그</title>

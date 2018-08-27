@@ -58,13 +58,6 @@
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/tags/Programming/</loc>
-        <lastmod>2018-08-26T18:38:54.810Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://dullyshin.github.io/tags/Github/</loc>
         <lastmod>2018-08-26T18:38:54.810Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -165,6 +158,34 @@
     <url>
         <loc>https://dullyshin.github.io/tags/markdown-editor/</loc>
         <lastmod>2018-08-26T18:42:28.398Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/Programming/</loc>
+        <lastmod>2018-08-27T14:12:43.981Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/SQL/</loc>
+        <lastmod>2018-08-27T14:12:43.981Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/PostgreSQL-Basic/</loc>
+        <lastmod>2018-08-27T14:12:43.981Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/PostgreSQL/</loc>
+        <lastmod>2018-08-27T14:12:43.981Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
