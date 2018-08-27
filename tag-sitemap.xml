@@ -9,29 +9,162 @@
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/tags/hexo-%ED%97%A5%EC%86%8C-%EC%97%90%EB%9F%AC-%ED%97%A5%EC%86%8C-%EC%96%B8%EC%96%B4-%EC%84%A4%EC%A0%95-hexo-language-set/</loc>
-        <lastmod>2018-08-26T08:34:00.125Z</lastmod>
+        <loc>https://dullyshin.github.io/tags/Mailto-%ED%83%9C%EA%B7%B8/</loc>
+        <lastmod>2018-08-26T18:36:53.010Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/tags/hexo-Hexo-Theme-Hueman-Hexo-Theme-Hueman-%EC%82%AC%EC%9A%A9%EB%B2%95/</loc>
-        <lastmod>2018-08-26T12:35:43.511Z</lastmod>
+        <loc>https://dullyshin.github.io/tags/html-tags/</loc>
+        <lastmod>2018-08-26T18:36:53.010Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/tags/sql-query-sql-%EA%B8%B0%EB%B3%B8/</loc>
-        <lastmod>2018-08-26T14:29:13.623Z</lastmod>
+        <loc>https://dullyshin.github.io/tags/html-%ED%83%9C%EA%B7%B8/</loc>
+        <lastmod>2018-08-26T18:36:53.010Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/tags/markdown-%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%82%AC%EC%9A%A9%EB%B2%95-%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%97%90%EB%94%94%ED%84%B0-markdown-editor/</loc>
-        <lastmod>2018-08-26T15:25:35.745Z</lastmod>
+        <loc>https://dullyshin.github.io/tags/sql-%EA%B8%B0%EB%B3%B8/</loc>
+        <lastmod>2018-08-26T18:37:56.119Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/my-sql/</loc>
+        <lastmod>2018-08-26T18:38:02.223Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/sql/</loc>
+        <lastmod>2018-08-26T18:38:02.223Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/query/</loc>
+        <lastmod>2018-08-26T18:38:02.223Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/Programming/</loc>
+        <lastmod>2018-08-26T18:38:54.810Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/Github/</loc>
+        <lastmod>2018-08-26T18:38:54.810Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/markdown-Editors/</loc>
+        <lastmod>2018-08-26T18:38:54.810Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%ED%85%8C%EC%9D%B4%EB%B8%94/</loc>
+        <lastmod>2018-08-26T18:38:54.810Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/hexo-%EC%97%90%EB%9F%AC/</loc>
+        <lastmod>2018-08-26T18:40:03.856Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/%ED%97%A5%EC%86%8C-%EC%96%B8%EC%96%B4-%EC%84%A4%EC%A0%95/</loc>
+        <lastmod>2018-08-26T18:40:03.856Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/hexo-language-set/</loc>
+        <lastmod>2018-08-26T18:40:03.856Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/Hexo/</loc>
+        <lastmod>2018-08-26T18:41:00.841Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/Hexo-Theme-Hueman/</loc>
+        <lastmod>2018-08-26T18:41:00.841Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/Hexo-Theme/</loc>
+        <lastmod>2018-08-26T18:41:00.841Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/Hueman-%EC%82%AC%EC%9A%A9%EB%B2%95/</loc>
+        <lastmod>2018-08-26T18:41:00.841Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%97%90%EB%94%94%ED%84%B0/</loc>
+        <lastmod>2018-08-26T18:42:28.398Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/markdown/</loc>
+        <lastmod>2018-08-26T18:42:28.398Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%82%AC%EC%9A%A9%EB%B2%95/</loc>
+        <lastmod>2018-08-26T18:42:28.398Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4/</loc>
+        <lastmod>2018-08-26T18:42:28.398Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/markdown-editor/</loc>
+        <lastmod>2018-08-26T18:42:28.398Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
