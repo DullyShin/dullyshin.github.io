@@ -2,13 +2,6 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>https://dullyshin.github.io/tags/hexo/</loc>
-        <lastmod>2018-08-25T16:43:38.143Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://dullyshin.github.io/tags/Mailto-%ED%83%9C%EA%B7%B8/</loc>
         <lastmod>2018-08-26T18:36:53.010Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -186,6 +179,48 @@
     <url>
         <loc>https://dullyshin.github.io/tags/PostgreSQL/</loc>
         <lastmod>2018-08-27T14:12:43.981Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/hexo/</loc>
+        <lastmod>2018-08-27T16:26:39.591Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/Hexo-Tag-Plugins/</loc>
+        <lastmod>2018-08-27T16:26:39.591Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/Block-Quote/</loc>
+        <lastmod>2018-08-27T16:26:39.591Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/Gist/</loc>
+        <lastmod>2018-08-27T16:26:39.591Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/jsFiddle/</loc>
+        <lastmod>2018-08-27T16:26:39.591Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/YouTube/</loc>
+        <lastmod>2018-08-27T16:26:39.591Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
