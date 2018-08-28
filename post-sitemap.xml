@@ -7,8 +7,16 @@
     </url>
 
     <url>
+        <loc>https://dullyshin.github.io/2018/08/28/Engineer-Information-Processing/</loc>
+        <lastmod>2018-08-28T16:07:38.074Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://dullyshin.github.io/2018/08/28/Hexo-tags/</loc>
-        <lastmod>2018-08-27T16:26:39.591Z</lastmod>
+        <lastmod>2018-08-28T14:16:53.821Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -64,6 +72,14 @@
 
     <url>
         <loc>https://dullyshin.github.io/2018/05/11/SQL-sqlBasic/</loc>
+        <lastmod>2018-08-26T18:37:56.119Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/2018/05/11/test/</loc>
         <lastmod>2018-08-26T18:37:56.119Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
