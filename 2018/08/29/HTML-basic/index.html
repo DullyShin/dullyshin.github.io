@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+
+  
+
+    
+      <title>
+        
+          HTML 기초 알아봅시다! |
+            
+              Hyejin Shin
+      </title>
+      
+          <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+          
+            <meta name="keywords" content="HTML 기초,HTML 기초적인 구조,웹 브라우져,DOCTYPE,DOCTYPE html" />
+            
+              <meta name="description" content="HTML에 기초부터 배워 봅시다.오늘은 HTML에 대해서 배워봅시다. 정말 쉽고 간단하니 누구가 배울 수 있습니다. 차근차근 알아봅시다! HTML 기초적인 구조123456789101112&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html&amp;gt;&amp;lt;head&amp;gt;&amp;lt;title&amp;gt;Page Title&amp;lt;/title&amp;gt;&amp;lt;/head&amp;gt;&amp;">
+<meta name="keywords" content="HTML 기초,HTML 기초적인 구조,웹 브라우져,DOCTYPE,DOCTYPE html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML 기초 알아봅시다!">
+<meta property="og:url" content="https://dullyshin.github.io/2018/08/29/HTML-basic/index.html">
+<meta property="og:site_name" content="Hyejin Shin">
+<meta property="og:description" content="HTML에 기초부터 배워 봅시다.오늘은 HTML에 대해서 배워봅시다. 정말 쉽고 간단하니 누구가 배울 수 있습니다. 차근차근 알아봅시다! HTML 기초적인 구조123456789101112&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html&amp;gt;&amp;lt;head&amp;gt;&amp;lt;title&amp;gt;Page Title&amp;lt;/title&amp;gt;&amp;lt;/head&amp;gt;&amp;">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://png.icons8.com/metro/1600/html.png">
+<meta property="og:updated_time" content="2018-08-29T14:58:26.451Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTML 기초 알아봅시다!">
+<meta name="twitter:description" content="HTML에 기초부터 배워 봅시다.오늘은 HTML에 대해서 배워봅시다. 정말 쉽고 간단하니 누구가 배울 수 있습니다. 차근차근 알아봅시다! HTML 기초적인 구조123456789101112&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html&amp;gt;&amp;lt;head&amp;gt;&amp;lt;title&amp;gt;Page Title&amp;lt;/title&amp;gt;&amp;lt;/head&amp;gt;&amp;">
+<meta name="twitter:image" content="https://png.icons8.com/metro/1600/html.png">
+                
+                  <link rel="canonical" href="https://dullyshin.github.io/2018/08/29/html-basic/"/>
+                    
+
+                        
+                          <link rel="icon" href="/like.png" />
+                          
+
+
+                            <!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9342495295140046",
+    enable_page_level_ads: true
+  });
+</script>
+ -->
+                            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                            <script>
+                              (adsbygoogle = window.adsbygoogle || []).push({
+                                google_ad_client: "ca-pub-9342495295140046",
+                                enable_page_level_ads: true
+                              });
+                            </script>
+
+                            <meta property="og:type" content="website">
+                            <meta property="og:title" content="Hyejin Shin">
+                            <meta property="og:description" content="Hyejin IT blog">
+                            <meta property="og:image" content="images/logo-header.png">
+                            <meta property="og:url" content="https://dullyshin.github.io/">
+
+                            <!-- naver-site-verification -->
+                            <meta name="naver-site-verification" content="f7ff6e0a4a618ed07a18908eb35d85df4b752ab6" />
+
+
+                            <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+                              <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+                                <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+                                  <link rel="stylesheet" href="/css/style.css">
+
+                                    <script src="/libs/jquery/3.3.1/jquery.min.js"></script>
+                                      
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+        <script type="text/javascript">
+(function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-124602183-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+    
+    
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">IT blog / Thanks to everyone!</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">Home</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Hexo/">Hexo</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Programming/">Programming</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Programming/Github/">Github</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Programming/HTML/">HTML</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Programming/SQL/">SQL</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Review/">Review</a></li></ul>
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="https://about.me/hyejin_shin">About</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/Programming/HTML/">HTML</a>
+    </h1>
+</div>
+                        <div class="main-body-content">
+                            <article id="post-HTML-basic" class="article article-single article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+    
+        <h1 class="article-title" itemprop="name">
+        HTML 기초 알아봅시다!
+        </h1>
+    
+
+      </header>
+      
+        
+          <div class="article-meta">
+            
+    <div class="article-date">
+        <a href="/2018/08/29/HTML-basic/" class="article-date">
+            <time datetime="2018-08-29T09:17:32.000Z" itemprop="datePublished">2018-08-29</time>
+        </a>
+    </div>
+
+              
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/DOCTYPE/">DOCTYPE</a>, <a class="tag-link" href="/tags/DOCTYPE-html/">DOCTYPE html</a>, <a class="tag-link" href="/tags/HTML-기초/">HTML 기초</a>, <a class="tag-link" href="/tags/HTML-기초적인-구조/">HTML 기초적인 구조</a>, <a class="tag-link" href="/tags/웹-브라우져/">웹 브라우져</a>
+    </div>
+
+          </div>
+          
+            
+                <div class="article-entry" itemprop="articleBody">
+                  <h1 id="HTML에-기초부터-배워-봅시다"><a href="#HTML에-기초부터-배워-봅시다" class="headerlink" title="HTML에 기초부터 배워 봅시다."></a>HTML에 기초부터 배워 봅시다.</h1><p>오늘은 HTML에 대해서 배워봅시다. 정말 쉽고 간단하니 누구가 배울 수 있습니다. 차근차근 알아봅시다!</p>
+<h4 id="HTML-기초적인-구조"><a href="#HTML-기초적인-구조" class="headerlink" title="HTML 기초적인 구조"></a>HTML 기초적인 구조</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;title&gt;Page Title&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;h1&gt;제목을 쓰는 태그 H1&lt;/h1&gt;</span><br><span class="line">&lt;p&gt;내용을 작성할 때 사용하는 p 태그&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="위에서-사용한-태그-설명"><a href="#위에서-사용한-태그-설명" class="headerlink" title="위에서 사용한 태그 설명"></a>위에서 사용한 태그 설명</h4><ul>
+<li><code>&lt;!DOCTYPE html&gt;</code> : 이 문서를 html로 정의 합니다.</li>
+<li><code>&lt;html&gt;</code> : html 페이지의 루트 요소 입니다.</li>
+<li><code>&lt;head&gt;</code> : 문서에 대한 메타 정보가 포함되어 있습니다.</li>
+<li><code>&lt;title&gt;</code> : 문서의 제목을 지정합니다.</li>
+<li><code>&lt;body&gt;</code> : 표시되는 페이지 내용이 포함되어 있습니다.</li>
+<li><code>&lt;h1&gt;</code> : 클 글씨를 작성할 수 있습니다. 주로 제목을 쓸 때 사용합니다.</li>
+<li><code>&lt;p&gt;</code> : 내용을 작성할때 주로 사용 됩니다.</li>
+</ul>
+<h4 id="HTML-태그"><a href="#HTML-태그" class="headerlink" title="HTML 태그"></a>HTML 태그</h4><p>Html 태그는 보통 아래와 같이 생겼습니다.</p>
+<blockquote>
+<p>&lt;태그 이름&gt;내용을 적습니다…&lt;/태그 이름&gt;</p>
+</blockquote>
+<ul>
+<li>html 태그는 보통 짝을 이루어 사용 됩니다. 작성하실 내용 앞과 뒤에 사용하실 태그를 이렇게 <code>&lt;p&gt;내용&lt;/p&gt;</code> 붙이면 됩니다.</li>
+<li>첫 번쨰 태그는 시작태그, 두번째 태그는 끝 태그라 부릅니다.</li>
+</ul>
+<h4 id="웹-브라우져"><a href="#웹-브라우져" class="headerlink" title="웹 브라우져"></a>웹 브라우져</h4><p>웹브라우져(크롬, 인터넷익스플로어, 파이어 폭스, 사파리)의 목적은 html태그를 읽고 보여주는 것입니다.</p>
+<p>브라우져는 html 태그를 보여주지는 않지만 그 태그를 사용하여 사용자에게 어떻게 보여줄지 결정합니다.</p>
+<p>위의 결과를 브라우저에서 보면 아래와 같습니다.</p>
+<p><img src="https://www.w3schools.com/html/img_chrome.png" alt="결과"></p>
+<h4 id="HTML-페이지-구조"><a href="#HTML-페이지-구조" class="headerlink" title="HTML 페이지 구조"></a>HTML 페이지 구조</h4><p><img src="https://cdn-images-1.medium.com/max/800/0*qGP573TczgtT5gMK." alt="html 페이지 구조"></p>
+<blockquote>
+<p>주의 : <code>&lt;body&gt;</code> 태그안에 흰색으로 칠해진 부분만 브라우져에 표시 됩니다.</p>
+</blockquote>
+<h4 id="‘-lt-DOCTYPE-html-gt-’"><a href="#‘-lt-DOCTYPE-html-gt-’" class="headerlink" title="‘&lt;!DOCTYPE html&gt;’ ??"></a>‘&lt;!DOCTYPE html&gt;’ ??</h4><p>‘&lt;!DOCTYPE&gt;’ 자체가 문서의 타입을 나타냅니다. 그래서 브라우져가 웹페이지를 정확하게 보여줄 수 있죠.<br>딱 한번만 사용하고 보통 html 문서에 맨 위에 작성됩니다. (html 태그를 사용하기 전에 사용하면 됩니다.)<br>대문자 소문자 상관없이 사용하셔도 괜찮습니다. HTML5 에서는 ‘&lt;!DOCTYPE html&gt;’으로 정의 합니다.</p>
+<p>다음은 html 에디터에 대해서 알아 봅시다. 궁금하신 점 있으면 물어봐 주세요.</p>
+<h2 id="Related-posts"><a href="#Related-posts" class="headerlink" title="Related posts"></a>Related posts</h2><a href="/2018/08/29/HTML-Editor/" title="HTML에디터 (jsFiddle,메모장)">HTML에디터 (jsFiddle,메모장)</a>
+
+                </div>
+                  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9342495295140046",
+    enable_page_level_ads: true
+  });
+</script>
+
+                    <footer class="article-footer">
+                      
+
+
+
+    <a data-url="https://dullyshin.github.io/2018/08/29/HTML-basic/" data-id="cjlff8kjr00053guyfbnnpc4p" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+                    </footer>
+                    
+                        
+<nav id="article-nav">
+    
+        <a href="/2018/08/29/HTML-Editor/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
+        <p class="article-nav-title">
+        
+            HTML 에디터 (jsFiddle,메모장)
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2018/08/28/Engineer-Information-Processing/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">정보처리기사 비전공자 합격 후기</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+
+  </div>
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
+
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>follow:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="google" href="mailto:sgj00038@google.com" target="_blank" rel="noopener">
+                        <i class="icon fa fa-google"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="envelope" href="mailto:sgj00038@naver.com" target="_blank" rel="noopener">
+                        <i class="icon fa fa-envelope"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="user" href="https://about.me/hyejin_shin" target="_blank" rel="noopener">
+                        <i class="icon fa fa-user"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/DullyShin?tab=repositories" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2018/08/29/HTML-Editor/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
+        <p class="article-nav-title">
+        
+            HTML 에디터 (jsFiddle,메모장)
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2018/08/28/Engineer-Information-Processing/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">정보처리기사 비전공자 합격 후기</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">recents</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/08/30/HTML-imgLink/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://image.flaticon.com/icons/svg/282/282100.svg)" alt="HTML 이미지 링크거는 법" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/HTML/">HTML</a></p>
+                            <p class="item-title"><a href="/2018/08/30/HTML-imgLink/" class="title">HTML 이미지 링크거는 법</a></p>
+                            <p class="item-date"><time datetime="2018-08-29T16:46:13.000Z" itemprop="datePublished">2018-08-30</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/08/29/HTML-Editor/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://png.icons8.com/metro/1600/html.png)" alt="HTML 에디터 (jsFiddle,메모장)" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/HTML/">HTML</a></p>
+                            <p class="item-title"><a href="/2018/08/29/HTML-Editor/" class="title">HTML 에디터 (jsFiddle,메모장)</a></p>
+                            <p class="item-date"><time datetime="2018-08-29T10:03:41.000Z" itemprop="datePublished">2018-08-29</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/08/29/HTML-basic/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://png.icons8.com/metro/1600/html.png)" alt="HTML 기초 알아봅시다!" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/HTML/">HTML</a></p>
+                            <p class="item-title"><a href="/2018/08/29/HTML-basic/" class="title">HTML 기초 알아봅시다!</a></p>
+                            <p class="item-date"><time datetime="2018-08-29T09:17:32.000Z" itemprop="datePublished">2018-08-29</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/08/28/Engineer-Information-Processing/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://is2-ssl.mzstatic.com/image/thumb/Purple62/v4/d2/0f/9d/d20f9d78-7594-c665-c4f5-57538f7b46f5/source/512x512bb.jpg)" alt="정보처리기사 비전공자 합격 후기" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Review/">Review</a></p>
+                            <p class="item-title"><a href="/2018/08/28/Engineer-Information-Processing/" class="title">정보처리기사 비전공자 합격 후기</a></p>
+                            <p class="item-date"><time datetime="2018-08-28T14:12:33.000Z" itemprop="datePublished">2018-08-28</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/08/28/Hexo-tags/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://sylvainleroy.com/wp-content/uploads/2017/12/hexo.jpg)" alt="Hexo에서 사용 가능한 태그들" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Hexo/">Hexo</a></p>
+                            <p class="item-title"><a href="/2018/08/28/Hexo-tags/" class="title">Hexo에서 사용 가능한 태그들</a></p>
+                            <p class="item-date"><time datetime="2018-08-27T15:18:39.000Z" itemprop="datePublished">2018-08-28</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/">Programming</a><span class="category-list-count">10</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/Github/">Github</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/HTML/">HTML</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/SQL/">SQL</a><span class="category-list-count">4</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Review/">Review</a><span class="category-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">archives</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">12</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">3</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/Block-Quote/" style="font-size: 10px;">Block Quote</a> <a href="/tags/DOCTYPE/" style="font-size: 10px;">DOCTYPE</a> <a href="/tags/DOCTYPE-html/" style="font-size: 10px;">DOCTYPE html</a> <a href="/tags/Engineer-Information-Processing/" style="font-size: 10px;">Engineer-Information-Processing</a> <a href="/tags/Gist/" style="font-size: 10px;">Gist</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/HTML-기초/" style="font-size: 10px;">HTML 기초</a> <a href="/tags/HTML-기초적인-구조/" style="font-size: 10px;">HTML 기초적인 구조</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Hexo-Tag-Plugins/" style="font-size: 10px;">Hexo Tag Plugins</a> <a href="/tags/Hexo-Theme/" style="font-size: 10px;">Hexo Theme</a> <a href="/tags/Hexo-Theme-Hueman/" style="font-size: 10px;">Hexo Theme Hueman</a> <a href="/tags/Hueman-사용법/" style="font-size: 10px;">Hueman 사용법</a> <a href="/tags/Mailto-태그/" style="font-size: 10px;">Mailto 태그</a> <a href="/tags/PostgreSQL/" style="font-size: 10px;">PostgreSQL</a> <a href="/tags/PostgreSQL-Basic/" style="font-size: 10px;">PostgreSQL_Basic</a> <a href="/tags/Programming/" style="font-size: 15px;">Programming</a> <a href="/tags/SQL/" style="font-size: 10px;">SQL</a> <a href="/tags/YouTube/" style="font-size: 10px;">YouTube</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/hexo-language-set/" style="font-size: 10px;">hexo language set</a> <a href="/tags/hexo-에러/" style="font-size: 10px;">hexo 에러</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/html-tags/" style="font-size: 10px;">html tags</a> <a href="/tags/html-링크/" style="font-size: 10px;">html 링크</a> <a href="/tags/html-링크걸기/" style="font-size: 10px;">html 링크걸기</a> <a href="/tags/html-에디터/" style="font-size: 10px;">html 에디터</a> <a href="/tags/html-이미지/" style="font-size: 10px;">html 이미지</a> <a href="/tags/html-이미지-링크/" style="font-size: 10px;">html 이미지 링크</a> <a href="/tags/html-태그/" style="font-size: 10px;">html 태그</a> <a href="/tags/jsFiddle/" style="font-size: 15px;">jsFiddle</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/markdown-Editors/" style="font-size: 10px;">markdown Editors</a> <a href="/tags/markdown-editor/" style="font-size: 10px;">markdown editor</a> <a href="/tags/my-sql/" style="font-size: 20px;">my sql</a> <a href="/tags/query/" style="font-size: 20px;">query</a> <a href="/tags/sql/" style="font-size: 20px;">sql</a> <a href="/tags/sql-기본/" style="font-size: 15px;">sql 기본</a> <a href="/tags/마크다운/" style="font-size: 10px;">마크다운</a> <a href="/tags/마크다운-사용법/" style="font-size: 10px;">마크다운 사용법</a> <a href="/tags/마크다운-에디터/" style="font-size: 15px;">마크다운 에디터</a> <a href="/tags/마크다운-테이블/" style="font-size: 10px;">마크다운 테이블</a> <a href="/tags/메모장/" style="font-size: 10px;">메모장</a> <a href="/tags/비전공자-정보처리기사/" style="font-size: 10px;">비전공자 정보처리기사</a> <a href="/tags/웹-브라우져/" style="font-size: 10px;">웹 브라우져</a> <a href="/tags/이미지-링크걸기/" style="font-size: 10px;">이미지 링크걸기</a> <a href="/tags/정보처리기사-공부법/" style="font-size: 10px;">정보처리기사 공부법</a> <a href="/tags/정보처리기사-단기간/" style="font-size: 10px;">정보처리기사 단기간</a> <a href="/tags/정보처리기사-독학/" style="font-size: 10px;">정보처리기사 독학</a> <a href="/tags/정보처리기사-필기/" style="font-size: 10px;">정보처리기사 필기</a> <a href="/tags/헥소-언어-설정/" style="font-size: 10px;">헥소 언어 설정</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">links</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://about.me/hyejin_shin">about HYEJIN</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9342495295140046",
+    enable_page_level_ads: true
+  });
+</script>
+
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2018 Hyejin Shin</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            </div>
+            <div class="footer-plugins">
+              
+    
+
+
+            </div>          
+        </div>
+    </div>
+</footer>
+
+        
+    
+    <script>
+    var disqus_shortname = 'https-dullyshin-github-io';
+    
+    
+    var disqus_url = 'https://dullyshin.github.io/2018/08/29/HTML-basic/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
