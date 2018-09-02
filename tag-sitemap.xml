@@ -30,27 +30,6 @@
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/tags/sql/</loc>
-        <lastmod>2018-08-26T18:38:02.223Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/query/</loc>
-        <lastmod>2018-08-26T18:38:02.223Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/my-sql/</loc>
-        <lastmod>2018-08-26T18:38:02.223Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://dullyshin.github.io/tags/Github/</loc>
         <lastmod>2018-08-26T18:38:54.810Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -205,41 +184,6 @@
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/tags/hexo/</loc>
-        <lastmod>2018-08-29T14:55:26.425Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/Hexo-Tag-Plugins/</loc>
-        <lastmod>2018-08-29T14:55:26.425Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/Block-Quote/</loc>
-        <lastmod>2018-08-29T14:55:26.425Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/Gist/</loc>
-        <lastmod>2018-08-29T14:55:26.425Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/YouTube/</loc>
-        <lastmod>2018-08-29T14:55:26.425Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://dullyshin.github.io/tags/html/</loc>
         <lastmod>2018-08-29T14:57:48.705Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -248,13 +192,6 @@
 
     <url>
         <loc>https://dullyshin.github.io/tags/html-%EC%97%90%EB%94%94%ED%84%B0/</loc>
-        <lastmod>2018-08-29T14:57:48.705Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/jsFiddle/</loc>
         <lastmod>2018-08-29T14:57:48.705Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -354,6 +291,104 @@
     <url>
         <loc>https://dullyshin.github.io/tags/html-%EB%A7%81%ED%81%AC%EA%B1%B8%EA%B8%B0/</loc>
         <lastmod>2018-08-29T17:34:34.087Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/jsFiddle/</loc>
+        <lastmod>2018-09-02T15:59:15.550Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/hexo/</loc>
+        <lastmod>2018-09-02T15:59:15.550Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/Hexo-Tag-Plugins/</loc>
+        <lastmod>2018-09-02T15:59:15.550Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/Block-Quote/</loc>
+        <lastmod>2018-09-02T15:59:15.550Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/Gist/</loc>
+        <lastmod>2018-09-02T15:59:15.550Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/YouTube/</loc>
+        <lastmod>2018-09-02T15:59:15.550Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/my-sql/</loc>
+        <lastmod>2018-09-02T16:00:56.403Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/sql/</loc>
+        <lastmod>2018-09-02T16:00:56.403Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/query/</loc>
+        <lastmod>2018-09-02T16:00:56.403Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/my-sql-%EC%A1%B0%EC%9D%B8%EB%AC%B8/</loc>
+        <lastmod>2018-09-02T16:00:56.403Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/Join%EB%AC%B8-%EA%B8%B0%EC%B4%88/</loc>
+        <lastmod>2018-09-02T16:35:36.107Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/JOIN-%EC%A2%85%EB%A5%98/</loc>
+        <lastmod>2018-09-02T16:35:36.107Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC-SQL%EB%AC%B8%EC%9E%A5/</loc>
+        <lastmod>2018-09-02T16:35:36.107Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/%ED%85%8C%EC%9D%B4%EB%B8%94-3%EA%B0%9C-%EC%A1%B0%EC%9D%B8/</loc>
+        <lastmod>2018-09-02T16:35:36.107Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
