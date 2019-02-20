@@ -7,6 +7,14 @@
     </url>
 
     <url>
+        <loc>https://dullyshin.github.io/2019/02/20/MSSQL-InsertPlusOne/</loc>
+        <lastmod>2019-02-20T13:21:37.804Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://dullyshin.github.io/2018/09/10/spring-springIoc/</loc>
         <lastmod>2018-09-10T14:30:40.377Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -112,14 +120,6 @@
 
     <url>
         <loc>https://dullyshin.github.io/2018/05/11/SQL-sqlBasic/</loc>
-        <lastmod>2018-08-26T18:37:56.119Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/2018/05/11/test/</loc>
         <lastmod>2018-08-26T18:37:56.119Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
