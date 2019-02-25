@@ -8,7 +8,39 @@
 
     <url>
         <loc>https://dullyshin.github.io/2019/02/20/MSSQL-InsertPlusOne/</loc>
-        <lastmod>2019-02-20T13:21:37.804Z</lastmod>
+        <lastmod>2019-02-25T15:47:50.966Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/2019/02/26/jQuery-Traversing/</loc>
+        <lastmod>2019-02-25T15:44:01.178Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/2019/02/25/JSTL-ForEach/</loc>
+        <lastmod>2019-02-25T15:19:18.897Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/2019/02/25/JavaScript-TernaryOperator/</loc>
+        <lastmod>2019-02-25T14:45:48.055Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/2019/02/25/Hexo-MarkdownTable/</loc>
+        <lastmod>2019-02-25T13:45:02.457Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
