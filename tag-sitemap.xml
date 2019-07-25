@@ -3,6 +3,34 @@
 
 
     <url>
+        <loc>https://dullyshin.github.io/tags/error/</loc>
+        <lastmod>2019-07-25T02:43:30.297Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/PostgreSQL/</loc>
+        <lastmod>2019-07-25T02:43:30.297Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/PostgreSQL-Basic/</loc>
+        <lastmod>2019-07-25T02:43:30.297Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/SQL/</loc>
+        <lastmod>2019-07-25T02:43:30.297Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://dullyshin.github.io/tags/%EB%AA%A8%EB%93%A0-%EC%9A%94%EC%86%8C-%EC%84%A0%ED%83%9D/</loc>
         <lastmod>2019-07-25T02:22:50.058Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -726,27 +754,6 @@
     <url>
         <loc>https://dullyshin.github.io/tags/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC-%ED%95%84%EA%B8%B0/</loc>
         <lastmod>2018-08-28T16:07:38.074Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/PostgreSQL/</loc>
-        <lastmod>2018-08-27T14:12:43.981Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/PostgreSQL-Basic/</loc>
-        <lastmod>2018-08-27T14:12:43.981Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/SQL/</loc>
-        <lastmod>2018-08-27T14:12:43.981Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

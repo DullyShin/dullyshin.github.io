@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://dullyshin.github.io/"/>
-  <updated>2019-07-25T02:22:50.058Z</updated>
+  <updated>2019-07-25T02:43:30.297Z</updated>
   <id>https://dullyshin.github.io/</id>
   
   <author>
@@ -15,6 +15,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[error]The content of elements must consist of well-formed character data or markup.</title>
+    <link href="https://dullyshin.github.io/2019/07/25/PostgreSql-error1/"/>
+    <id>https://dullyshin.github.io/2019/07/25/PostgreSql-error1/</id>
+    <published>2019-07-25T02:29:34.000Z</published>
+    <updated>2019-07-25T02:43:30.297Z</updated>
+    
+    <content type="html"><![CDATA[<p>자바에러가 아래와 같이 발생한다면</p><blockquote><p>[error]The content of elements must consist of well-formed character data or markup.</p></blockquote><p>쿼리문을 확인할 필요가 있습니다.</p><p>XML에서는 &lt; 부등호를 TAG로 인식하기 때문에 “The content of elements must consist of well-formed character data or markup.”라는 에러가 발생합니다. 이와 같은 문제를 해결하기 위해서는 Query안에 사용되고 있는 부등호가 문자열이라것을 의미하게 <!--[CDATA[  내용  ]]--> “으로 감싸준다.</p><h3 id="예시"><a href="#예시" class="headerlink" title="예시"></a>예시</h3><figure class="highlight sql"><figcaption><span>수정 전</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> *</span><br><span class="line"><span class="keyword">from</span> test_tbl</span><br><span class="line"><span class="keyword">where</span> data_tm &gt; <span class="string">'20190101'</span></span><br></pre></td></tr></table></figure><figure class="highlight sql"><figcaption><span>수정 후</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> *</span><br><span class="line"><span class="keyword">from</span> test_tbl</span><br><span class="line"><span class="keyword">where</span> data_tm &lt;![CDATA[  &gt;  ]]&gt; <span class="string">'20190101'</span></span><br></pre></td></tr></table></figure><h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><ul><li><a href="https://wonzopein.com/59" target="_blank" rel="noopener">https://wonzopein.com/59</a> [wonzopein.com]</li></ul><h3 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h3><ul><li></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;자바에러가 아래와 같이 발생한다면&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[error]The content of elements must consist of well-formed character data or markup.&lt;/p&gt;
+&lt;/blockqu
+      
+    
+    </summary>
+    
+      <category term="Programming" scheme="https://dullyshin.github.io/categories/Programming/"/>
+    
+      <category term="SQL" scheme="https://dullyshin.github.io/categories/Programming/SQL/"/>
+    
+    
+      <category term="SQL" scheme="https://dullyshin.github.io/tags/SQL/"/>
+    
+      <category term="PostgreSQL_Basic" scheme="https://dullyshin.github.io/tags/PostgreSQL-Basic/"/>
+    
+      <category term="PostgreSQL" scheme="https://dullyshin.github.io/tags/PostgreSQL/"/>
+    
+      <category term="error" scheme="https://dullyshin.github.io/tags/error/"/>
+    
+  </entry>
   
   <entry>
     <title>(jQuery)제이쿼리 셀렉터 총정리 02편! jQuery Selector</title>
@@ -88,8 +124,6 @@
     
       <category term="제이쿼리 셀렉터" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0/"/>
     
-      <category term="제이쿼리 셀렉터 여러개" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0-%EC%97%AC%EB%9F%AC%EA%B0%9C/"/>
-    
       <category term="제이쿼리 선택자" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%84%A0%ED%83%9D%EC%9E%90/"/>
     
       <category term="셀렉터" scheme="https://dullyshin.github.io/tags/%EC%85%80%EB%A0%89%ED%84%B0/"/>
@@ -101,6 +135,8 @@
       <category term="All Selector" scheme="https://dullyshin.github.io/tags/All-Selector/"/>
     
       <category term="모든 요소 선택" scheme="https://dullyshin.github.io/tags/%EB%AA%A8%EB%93%A0-%EC%9A%94%EC%86%8C-%EC%84%A0%ED%83%9D/"/>
+    
+      <category term="제이쿼리 셀렉터 여러개" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0-%EC%97%AC%EB%9F%AC%EA%B0%9C/"/>
     
   </entry>
   
@@ -704,37 +740,6 @@
       <category term="마크다운 에디터" scheme="https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%97%90%EB%94%94%ED%84%B0/"/>
     
       <category term="마크다운 테이블" scheme="https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%ED%85%8C%EC%9D%B4%EB%B8%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo Theme Hueman</title>
-    <link href="https://dullyshin.github.io/2018/08/26/Hexo-Theme/"/>
-    <id>https://dullyshin.github.io/2018/08/26/Hexo-Theme/</id>
-    <published>2018-08-26T03:57:16.000Z</published>
-    <updated>2018-08-26T18:41:00.841Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Hexo-Theme-Hueman"><a href="#Hexo-Theme-Hueman" class="headerlink" title="Hexo Theme Hueman"></a>Hexo Theme Hueman</h1><p>지금 Hexo Theme Hueman 설정을 어떻게 하는지 알아보도록 하겠습니다.<br>테마를 적용하시려면 아래의 링크를 들어가서 확인 부탁드리겠습니다. 제가 Hexo 시작할때 큰 도움을 받은 곳 입니다.<br><a href="https://futurecreator.github.io/2016/06/14/hexo-apply-hueman-theme/" target="_blank" rel="noopener">Hexo Hueman 테마 적용하기</a></p><h2 id="Menu-메뉴"><a href="#Menu-메뉴" class="headerlink" title="Menu 메뉴"></a>Menu 메뉴</h2><p><img src="https://camo.githubusercontent.com/c89c5becd6e5d7cad15a7380815fcb2d6a779eb8/68747470733a2f2f6f6f6f2e306f302e6f6f6f2f323031362f30312f31332f353639373334303065346439342e706e67" alt="hueman manu"></p><p>메뉴는 마카이브, 카테고리, 커스텀 페이지로 직접 연결합니다. 메뉴는 간단하게 이름을 추가하거나 링크 주소를 메뉴에 추가합니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">    Home: /hexo-theme-hueman/</span><br><span class="line">    About: /hexo-theme-hueman/about/index.html</span><br><span class="line">+   GitHub: https://github.com</span><br></pre></td></tr></table></figure><blockquote><p>상대주소와 절대주소를 모두 사용할 수 있습니다.</p></blockquote><p>Hueman은 메뉴안 카테고리에 쉽게 추가할 수 있습니다. 그냥 카테고리를 추가하세요 그리면 메뉴와 서브 카테고리가 추가될 것 입니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">    Home: /hexo-theme-hueman/</span><br><span class="line">+   Categories:</span><br><span class="line">    About: /hexo-theme-hueman/about/index.html</span><br></pre></td></tr></table></figure><h2 id="커스터마이즈"><a href="#커스터마이즈" class="headerlink" title="커스터마이즈"></a>커스터마이즈</h2><p>테마를 수정해서 커스터마이즈 할 수 있습니다.</p><h3 id="Logo-로고"><a href="#Logo-로고" class="headerlink" title="Logo 로고"></a>Logo 로고</h3><p>원하는 이미지를 가지고 로고를 바꿀 수 있습니다. 이미지 크기는 픽셀로 설정되있습니다. 그리고 url에 파일 경로를 입력해주세요.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">logo:</span><br><span class="line">    width: 165</span><br><span class="line">    height: 60</span><br><span class="line">    url: images/logo-header.png</span><br></pre></td></tr></table></figure><p>‘width’와 ‘height’에 숫자만 입력해세요. 다른 설정을 입력해도 작동하지 않습니다.</p><h3 id="Theme-Color-테마-컬러"><a href="#Theme-Color-테마-컬러" class="headerlink" title="Theme Color 테마 컬러"></a>Theme Color 테마 컬러</h3><p>링크의 색과 소셜링크 색을 변경할 수 있습니다. RGB로 색을 바꿀 수 있습니다.</p><p><img src="https://camo.githubusercontent.com/a4a5f524e9989a60a4a027df88eb438ce0c7c3df/68747470733a2f2f6f6f6f2e306f302e6f6f6f2f323031362f30312f31342f353639376131383733313933312e706e67" alt="theme color"></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme_color: &apos;#d35&apos;</span><br></pre></td></tr></table></figure><h3 id="Highlight-하이라이트"><a href="#Highlight-하이라이트" class="headerlink" title="Highlight 하이라이트"></a>Highlight 하이라이트</h3><p><img src="https://camo.githubusercontent.com/29244be9b08db085cc83244e9add325eaf5d0945/68747470733a2f2f6f6f6f2e306f302e6f6f6f2f323031362f30312f31342f353639373362663136383064312e706e67" alt="Highlight"></p><p>60가지 넘는 하이라이트 설정을 할 수 있습니다. 코드 블럭안에 색 설정을 말합니다. ‘hueman/source/css/_highlight’ 폴더에 들어가면 가능한 옵션을 확인 할 수 있습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- highlight: androidstudio</span><br><span class="line">+ highlight: tomorrow</span><br></pre></td></tr></table></figure><h3 id="Sidebar-사이드-바"><a href="#Sidebar-사이드-바" class="headerlink" title="Sidebar 사이드 바"></a>Sidebar 사이드 바</h3><p>사이드바의 위치를 조정할 수 있습니다. 옵션은 ‘left’ &amp; ‘right’ 2가지 입니다..</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sidebar: left</span><br></pre></td></tr></table></figure><h3 id="Thumbnail-썸네일"><a href="#Thumbnail-썸네일" class="headerlink" title="Thumbnail 썸네일"></a>Thumbnail 썸네일</h3><p>포스트의 썸네일 표시를 사용하지 않을 수도 있습니다. 옵션은 ‘true’와 ‘false’ 입니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">thumbnail: true</span><br></pre></td></tr></table></figure><h5 id="어떻게-썸네일-이미지를-넣을-수-있을까요"><a href="#어떻게-썸네일-이미지를-넣을-수-있을까요" class="headerlink" title="어떻게 썸네일 이미지를 넣을 수 있을까요?"></a>어떻게 썸네일 이미지를 넣을 수 있을까요?</h5><p>Hueman은 자동으로 당신의 포스트의 첫번째 이미지를 썸네일로 사용할 것입니다. 아니면 포스트의 자동으로 추가되는 front-matter부분에서 이미지를 직접 지정할 수 있습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: Hello World</span><br><span class="line">date: 2013/7/13 20:46:25</span><br><span class="line">+ thumbnail: https://example.com/image.jpg</span><br></pre></td></tr></table></figure><hr><h2 id="Favicon-파비콘"><a href="#Favicon-파비콘" class="headerlink" title="Favicon 파비콘"></a>Favicon 파비콘</h2><p>파비콘을 사이트에 추가해 봅시다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">favicon: favicon.png</span><br><span class="line">e.g: 만약 파비콘 이미지를 source/css/images에 넣었다면, Path 설정을 &quot;css/image/favicon.png&quot; 으로 설정합니다.</span><br></pre></td></tr></table></figure><h2 id="Social-Links-소셜링크"><a href="#Social-Links-소셜링크" class="headerlink" title="Social Links 소셜링크"></a>Social Links 소셜링크</h2><p><img src="https://camo.githubusercontent.com/a0d6d26c42120a7c175bdd61b2219b332b6941c0/68747470733a2f2f6f6f6f2e306f302e6f6f6f2f323031362f30312f31342f353639373430396336353834392e706e67" alt="Social Links"></p><p>소셜링크는 사이드 바 위쪽에서 확인 할 수 있습니다. 링크 이름과 링크 주소를 설정에 추가 할 수 있고 <a href="https://fontawesome.com/" target="_blank" rel="noopener">FontAwesome icon</a> 에서 고를 수 있습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">social_links:</span><br><span class="line">    github: https://github.com/ppoffice/hexo-theme-hueman</span><br><span class="line">+   youtube: https://youtube.com</span><br></pre></td></tr></table></figure><ul><li>참고 &amp; 출처<br><a href="https://github.com/ppoffice/hexo-theme-hueman/wiki/Theme" target="_blank" rel="noopener">https://github.com/ppoffice/hexo-theme-hueman/wiki/Theme</a><br><a href="https://futurecreator.github.io/2016/06/14/hexo-apply-hueman-theme/" target="_blank" rel="noopener">https://futurecreator.github.io/2016/06/14/hexo-apply-hueman-theme/</a></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;Hexo-Theme-Hueman&quot;&gt;&lt;a href=&quot;#Hexo-Theme-Hueman&quot; class=&quot;headerlink&quot; title=&quot;Hexo Theme Hueman&quot;&gt;&lt;/a&gt;Hexo Theme Hueman&lt;/h1&gt;&lt;p&gt;지금 Hexo Th
-      
-    
-    </summary>
-    
-      <category term="Hexo" scheme="https://dullyshin.github.io/categories/Hexo/"/>
-    
-    
-      <category term="Hexo" scheme="https://dullyshin.github.io/tags/Hexo/"/>
-    
-      <category term="Hexo Theme Hueman" scheme="https://dullyshin.github.io/tags/Hexo-Theme-Hueman/"/>
-    
-      <category term="Hexo Theme" scheme="https://dullyshin.github.io/tags/Hexo-Theme/"/>
-    
-      <category term="Hueman 사용법" scheme="https://dullyshin.github.io/tags/Hueman-%EC%82%AC%EC%9A%A9%EB%B2%95/"/>
     
   </entry>
   
