@@ -18,19 +18,19 @@
           
             <meta name="keywords" content="sql,query,my sql,my sql 조인문">
             
-              <meta name="description" content="고급 SQL 실습sales , geography 테이블, 데이터 직접 생성하신 후 실습하세요.(이미 있다면 삭제 후 생성해주세요.) 아래의 SQL을 실행한 후에 문제에 답을 생각해봅시다.12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849drop ta">
+              <meta name="description" content="고급 SQL 실습sales , geography 테이블, 데이터 직접 생성하신 후 실습하세요.(이미 있다면 삭제 후 생성해주세요.) 아래의 SQL을 실행한 후에 문제에 답을 생각해봅시다. 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849drop t">
 <meta name="keywords" content="sql,query,my sql,my sql 조인문">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SQL Advanced">
 <meta property="og:url" content="https://dullyshin.github.io/2018/05/11/SQL-sqlAdvanced/index.html">
 <meta property="og:site_name" content="Hyejin Shin">
-<meta property="og:description" content="고급 SQL 실습sales , geography 테이블, 데이터 직접 생성하신 후 실습하세요.(이미 있다면 삭제 후 생성해주세요.) 아래의 SQL을 실행한 후에 문제에 답을 생각해봅시다.12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849drop ta">
+<meta property="og:description" content="고급 SQL 실습sales , geography 테이블, 데이터 직접 생성하신 후 실습하세요.(이미 있다면 삭제 후 생성해주세요.) 아래의 SQL을 실행한 후에 문제에 답을 생각해봅시다. 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849drop t">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://byrony.github.io/figure/SQL.png">
 <meta property="og:updated_time" content="2018-09-02T16:00:56.403Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SQL Advanced">
-<meta name="twitter:description" content="고급 SQL 실습sales , geography 테이블, 데이터 직접 생성하신 후 실습하세요.(이미 있다면 삭제 후 생성해주세요.) 아래의 SQL을 실행한 후에 문제에 답을 생각해봅시다.12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849drop ta">
+<meta name="twitter:description" content="고급 SQL 실습sales , geography 테이블, 데이터 직접 생성하신 후 실습하세요.(이미 있다면 삭제 후 생성해주세요.) 아래의 SQL을 실행한 후에 문제에 답을 생각해봅시다. 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849drop t">
 <meta name="twitter:image" content="https://byrony.github.io/figure/SQL.png">
                 
                   <link rel="canonical" href="https://dullyshin.github.io/2018/05/11/sql-sqladvanced/">
@@ -206,7 +206,9 @@ ga('send', 'pageview');
           
             
                 <div class="article-entry" itemprop="articleBody">
-                  <h1 id="고급-SQL-실습"><a href="#고급-SQL-실습" class="headerlink" title="고급 SQL 실습"></a>고급 SQL 실습</h1><p>sales , geography 테이블, 데이터 직접 생성하신 후 실습하세요.(이미 있다면 삭제 후 생성해주세요.) 아래의 SQL을 실행한 후에 문제에 답을 생각해봅시다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">drop table sales;</span><br><span class="line"></span><br><span class="line">drop table geography;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">create table sales (</span><br><span class="line"></span><br><span class="line">  dosi varchar2(20),</span><br><span class="line"></span><br><span class="line">  sales number,</span><br><span class="line"></span><br><span class="line">  sale_date date</span><br><span class="line"></span><br><span class="line">) ;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">INSERT INTO sales (dosi,sales,sale_date) values (&apos;seoul&apos;,1500,&apos;2015/02/02&apos;);</span><br><span class="line"></span><br><span class="line">INSERT INTO sales (dosi,sales,sale_date) values (&apos;pusan&apos;,1200,&apos;2015/01/01&apos;);</span><br><span class="line"></span><br><span class="line">INSERT INTO sales (dosi,sales,sale_date) values (&apos;pusan&apos;,1100,&apos;2015/02/08&apos;);</span><br><span class="line"></span><br><span class="line">INSERT INTO sales (dosi,sales,sale_date) values (&apos;inchon&apos;,500,&apos;2015/01/30&apos;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">create table geography (</span><br><span class="line"></span><br><span class="line">  region varchar2(10),</span><br><span class="line"></span><br><span class="line">  dosi varchar2(20)</span><br><span class="line"></span><br><span class="line">) ;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">INSERT INTO geography (region,dosi) VALUES (&apos;east&apos;,&apos;pusan&apos;);</span><br><span class="line"></span><br><span class="line">INSERT INTO geography (region,dosi) VALUES (&apos;east&apos;,&apos;sokcho&apos;);</span><br><span class="line"></span><br><span class="line">INSERT INTO geography (region,dosi) VALUES (&apos;west&apos;,&apos;seoul&apos;);</span><br><span class="line"></span><br><span class="line">INSERT INTO geography (region,dosi) VALUES (&apos;west&apos;,&apos;inchon&apos;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">COMMIT;</span><br></pre></td></tr></table></figure></p>
+                  <h1 id="고급-SQL-실습"><a href="#고급-SQL-실습" class="headerlink" title="고급 SQL 실습"></a>고급 SQL 실습</h1><p>sales , geography 테이블, 데이터 직접 생성하신 후 실습하세요.(이미 있다면 삭제 후 생성해주세요.) 아래의 SQL을 실행한 후에 문제에 답을 생각해봅시다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">drop table sales;</span><br><span class="line"></span><br><span class="line">drop table geography;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">create table sales (</span><br><span class="line"></span><br><span class="line">  dosi varchar2(20),</span><br><span class="line"></span><br><span class="line">  sales number,</span><br><span class="line"></span><br><span class="line">  sale_date date</span><br><span class="line"></span><br><span class="line">) ;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">INSERT INTO sales (dosi,sales,sale_date) values (&apos;seoul&apos;,1500,&apos;2015/02/02&apos;);</span><br><span class="line"></span><br><span class="line">INSERT INTO sales (dosi,sales,sale_date) values (&apos;pusan&apos;,1200,&apos;2015/01/01&apos;);</span><br><span class="line"></span><br><span class="line">INSERT INTO sales (dosi,sales,sale_date) values (&apos;pusan&apos;,1100,&apos;2015/02/08&apos;);</span><br><span class="line"></span><br><span class="line">INSERT INTO sales (dosi,sales,sale_date) values (&apos;inchon&apos;,500,&apos;2015/01/30&apos;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">create table geography (</span><br><span class="line"></span><br><span class="line">  region varchar2(10),</span><br><span class="line"></span><br><span class="line">  dosi varchar2(20)</span><br><span class="line"></span><br><span class="line">) ;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">INSERT INTO geography (region,dosi) VALUES (&apos;east&apos;,&apos;pusan&apos;);</span><br><span class="line"></span><br><span class="line">INSERT INTO geography (region,dosi) VALUES (&apos;east&apos;,&apos;sokcho&apos;);</span><br><span class="line"></span><br><span class="line">INSERT INTO geography (region,dosi) VALUES (&apos;west&apos;,&apos;seoul&apos;);</span><br><span class="line"></span><br><span class="line">INSERT INTO geography (region,dosi) VALUES (&apos;west&apos;,&apos;inchon&apos;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">COMMIT;</span><br></pre></td></tr></table></figure>
+
 <p> 위의 쿼리문을 잘 따라하셨으면 아래의 테이블과 같은 결과를 확인할 수 있습니다.</p>
 <h6 id="sales-테이블-조회-결과"><a href="#sales-테이블-조회-결과" class="headerlink" title="sales 테이블 조회 결과"></a>sales 테이블 조회 결과</h6><table>
 <thead>
@@ -216,8 +218,7 @@ ga('send', 'pageview');
 <th>sale_date</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>seoul</td>
 <td>1500</td>
 <td>2015/02/02</td>
@@ -237,8 +238,7 @@ ga('send', 'pageview');
 <td>500</td>
 <td>2015/01/30</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h6 id="geography-테이블-조회-결과"><a href="#geography-테이블-조회-결과" class="headerlink" title="geography 테이블 조회 결과"></a>geography 테이블 조회 결과</h6><table>
 <thead>
 <tr>
@@ -246,8 +246,7 @@ ga('send', 'pageview');
 <th>dosi</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>east</td>
 <td>pusan</td>
 </tr>
@@ -263,18 +262,19 @@ ga('send', 'pageview');
 <td>west</td>
 <td>inchon</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <hr>
 <h2 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h2><ol>
 <li>sales,geography 테이블에 PK Index, Normal Index 를 생성 후 인덱스를 조회하는 SQL문장과 실행결과를 작성하세요.</li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">CREATE UNIQUE INDEX IDX_GEOGRAPHY_REGION_DOSI ON GEOGRAPHY(REGION, DOSI);</span><br><span class="line">CREATE INDEX IDX_SALES_DOSI ON SALES(DOSI);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">SELECT A.INDEX_NAME</span><br><span class="line">FROM USER_IND_COLUMNS A</span><br><span class="line">	, USER_INDEXES B</span><br><span class="line">WHERE A.TABLE_NAME = &apos;SALES&apos;</span><br><span class="line">    AND A.INDEX_NAME = B.INDEX_NAME</span><br><span class="line">    AND A.COLUMN_NAME = &apos;DOSI&apos;;</span><br><span class="line"></span><br><span class="line">INDEX_NAME</span><br><span class="line">--------------------</span><br><span class="line">IDX_SALES_DOSI</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">SELECT A.INDEX_NAME</span><br><span class="line">FROM USER_IND_COLUMNS A, USER_INDEXES B</span><br><span class="line">WHERE A.TABLE_NAME = &apos;GEOGRAPHY&apos;</span><br><span class="line">    AND A.INDEX_NAME = B.INDEX_NAME</span><br><span class="line">    AND A.COLUMN_NAME = &apos;REGION&apos;;</span><br><span class="line"></span><br><span class="line">INDEX_NAME</span><br><span class="line">--------------------</span><br><span class="line">IDX_GEOGRAPHY_REGION_DOSI</span><br></pre></td></tr></table></figure>
+
 <hr>
 <ol start="2">
 <li>sales, geography 테이블을 조인하여 조회하는 뷰를 생성하는 SQL문장을 작성하세요.</li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">CREATE OR REPLACE VIEW V_SALES_GEOGRAPHY (SALES, DOSI, SALES_DATE, REGION)</span><br><span class="line">AS</span><br><span class="line">SELECT S.SALES, S.DOSI, S.SALE_DATE, G.REGION</span><br><span class="line">FROM SALES S, GEOGRAPHY G</span><br><span class="line">WHERE S.DOSI = G.DOSI</span><br><span class="line">ORDER BY S.DOSI;</span><br></pre></td></tr></table></figure>
+
 <hr>
 <ol start="3">
 <li>다음 결과를 출력하는 SQL을 작성하세요.(집합연산자 사용)</li>
@@ -288,8 +288,7 @@ ga('send', 'pageview');
 <th>sales</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>201501</td>
 <td>east</td>
 <td>1200</td>
@@ -309,16 +308,17 @@ ga('send', 'pageview');
 <td>west</td>
 <td>1500</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <ul>
 <li>조인 SQL문장</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">SELECT TO_CHAR(S.SALE_DATE, &apos;YYYYMM&apos;) AS YYYYMM</span><br><span class="line">	  , G.REGION</span><br><span class="line">	  , SUM(S.SALES)    AS SALES</span><br><span class="line">FROM SALES S</span><br><span class="line">	 , GEOGRAPHY G</span><br><span class="line">WHERE S.DOSI = G.DOSI</span><br><span class="line">GROUP BY TO_CHAR(S.SALE_DATE,&apos;YYYYMM&apos;), G.REGION;</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>서브쿼리 SQL문장</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">SELECT TO_CHAR(S. SALE_DATE, &apos;YYYYMM&apos;) AS YYYYMM</span><br><span class="line">    , ( SELECT REGION</span><br><span class="line">        FROM GEOGRAPHY G</span><br><span class="line">        WHERE G.DOSI = S.DOSI ) REGION</span><br><span class="line">    , S.SALES</span><br><span class="line">FROM SALES S</span><br><span class="line">ORDER BY TO_CHAR(S.SALE_DATE,&apos;YYYYMM&apos;), REGION ASC;</span><br></pre></td></tr></table></figure>
+
 <hr>
 <ol start="4">
 <li>도시별 매출합계</li>
@@ -333,8 +333,7 @@ ga('send', 'pageview');
 <th>sales</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>sokcho</td>
 <td>매출없음</td>
 </tr>
@@ -350,9 +349,9 @@ ga('send', 'pageview');
 <td>seoul</td>
 <td>1500</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">SELECT G.DOSI</span><br><span class="line">	 , NVL( TO_CHAR(Z.SUM_SALES),  &apos;매출없음&apos; )</span><br><span class="line">FROM GEOGRAPHY G</span><br><span class="line">LEFT OUTER JOIN</span><br><span class="line">	( SELECT DOSI</span><br><span class="line">            , SUM(SALES) AS SUM_SALES</span><br><span class="line">	FROM SALES</span><br><span class="line">    GROUP BY DOSI</span><br><span class="line">    ORDER BY DOSI</span><br><span class="line">) Z</span><br><span class="line">ON G.DOSI = Z.DOSI</span><br><span class="line">ORDER BY Z.SUM_SALES ASC NULLS FIRST;</span><br></pre></td></tr></table></figure>
+
 <hr>
 <ol start="5">
 <li>도시별 매출합계</li>
@@ -367,8 +366,7 @@ ga('send', 'pageview');
 <th>sales</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>sokcho</td>
 <td>매출없음</td>
 </tr>
@@ -384,9 +382,9 @@ ga('send', 'pageview');
 <td>seoul</td>
 <td>1500</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">SELECT G.DOSI	AS DOSI</span><br><span class="line">	, NVL(( SELECT TO_CHAR( SUM(S.SALES) )</span><br><span class="line">			FROM SALES S</span><br><span class="line">			GROUP BY S.DOSI</span><br><span class="line">			HAVING  G.DOSI = DOSI), &apos;매출없음&apos;) AS SALES</span><br><span class="line">FROM GEOGRAPHY G</span><br><span class="line">ORDER BY SALES DESC NULLS FIRST;</span><br></pre></td></tr></table></figure>
+
 <hr>
 <ol start="6">
 <li>WITH구문을 이용하여 다음 결과를 출력하는 SQL을 작성하세요.</li>
@@ -400,8 +398,7 @@ ga('send', 'pageview');
 <th>sales</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>east</td>
 <td>201501</td>
 <td>1200</td>
@@ -411,9 +408,9 @@ ga('send', 'pageview');
 <td>201501</td>
 <td>1200</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">WITH W_SALES AS (</span><br><span class="line">	SELECT G.REGION</span><br><span class="line">		 , TO_CHAR(S.SALE_DATE,&apos;YYYYMM&apos;) YYYYMM</span><br><span class="line">		 , S.SALES</span><br><span class="line">	FROM SALES S, GEOGRAPHY G</span><br><span class="line">	WHERE S.DOSI = G.DOSI</span><br><span class="line">		AND S.SALES &gt;= 1200</span><br><span class="line">	ORDER BY G.REGION, TO_CHAR(S.SALE_DATE,&apos;YYYYMM&apos;)</span><br><span class="line">)</span><br><span class="line">SELECT * FROM W_SALES;</span><br></pre></td></tr></table></figure>
+
 
                 </div>
                   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -429,7 +426,7 @@ ga('send', 'pageview');
 
 
 
-    <a data-url="https://dullyshin.github.io/2018/05/11/SQL-sqlAdvanced/" data-id="cjskj1emn00178suyg9uobyv1" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://dullyshin.github.io/2018/05/11/SQL-sqlAdvanced/" data-id="cjyhzrpzc000iz0v03gjtg9oi" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {

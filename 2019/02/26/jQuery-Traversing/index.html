@@ -18,19 +18,19 @@
           
             <meta name="keywords" content="jquery 트래버싱,jQuery,제이쿼리 돔 횡단,트레버싱,트래버,traversing">
             
-              <meta name="description" content="[jQuery] 제이쿼리 트레버싱 .eq() 제이쿼리는 아주 멋져요. “write less, do more. Jquery” 얼마나 좋아요. 적게 쓰고 많이 활용할 수 있다는 거죠.그 많은 기능들 중에서 지금은 트래버싱 eq()에 대해 알아봅시다. 트래버싱이란 돔을 자유자재로 이동한다고 생각하면 됩니다. 1234567&amp;lt;ul&amp;gt;  &amp;lt;li&amp;gt;l">
+              <meta name="description" content="[jQuery] 제이쿼리 트레버싱 .eq()  제이쿼리는 아주 멋져요. “write less, do more. Jquery” 얼마나 좋아요. 적게 쓰고 많이 활용할 수 있다는 거죠.그 많은 기능들 중에서 지금은 트래버싱 eq()에 대해 알아봅시다. 트래버싱이란 돔을 자유자재로 이동한다고 생각하면 됩니다. 1234567&amp;lt;ul&amp;gt;  &amp;lt;li&amp;gt;">
 <meta name="keywords" content="jquery 트래버싱,jQuery,제이쿼리 돔 횡단,트레버싱,트래버,traversing">
 <meta property="og:type" content="article">
 <meta property="og:title" content="(jQuery) 제이쿼리 트래버싱 Traversing">
 <meta property="og:url" content="https://dullyshin.github.io/2019/02/26/jQuery-Traversing/index.html">
 <meta property="og:site_name" content="Hyejin Shin">
-<meta property="og:description" content="[jQuery] 제이쿼리 트레버싱 .eq() 제이쿼리는 아주 멋져요. “write less, do more. Jquery” 얼마나 좋아요. 적게 쓰고 많이 활용할 수 있다는 거죠.그 많은 기능들 중에서 지금은 트래버싱 eq()에 대해 알아봅시다. 트래버싱이란 돔을 자유자재로 이동한다고 생각하면 됩니다. 1234567&amp;lt;ul&amp;gt;  &amp;lt;li&amp;gt;l">
+<meta property="og:description" content="[jQuery] 제이쿼리 트레버싱 .eq()  제이쿼리는 아주 멋져요. “write less, do more. Jquery” 얼마나 좋아요. 적게 쓰고 많이 활용할 수 있다는 거죠.그 많은 기능들 중에서 지금은 트래버싱 eq()에 대해 알아봅시다. 트래버싱이란 돔을 자유자재로 이동한다고 생각하면 됩니다. 1234567&amp;lt;ul&amp;gt;  &amp;lt;li&amp;gt;">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://cdn-images-1.medium.com/max/1200/0*s1Goua9K1MuNuapv.jpg">
 <meta property="og:updated_time" content="2019-02-25T15:44:01.178Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="(jQuery) 제이쿼리 트래버싱 Traversing">
-<meta name="twitter:description" content="[jQuery] 제이쿼리 트레버싱 .eq() 제이쿼리는 아주 멋져요. “write less, do more. Jquery” 얼마나 좋아요. 적게 쓰고 많이 활용할 수 있다는 거죠.그 많은 기능들 중에서 지금은 트래버싱 eq()에 대해 알아봅시다. 트래버싱이란 돔을 자유자재로 이동한다고 생각하면 됩니다. 1234567&amp;lt;ul&amp;gt;  &amp;lt;li&amp;gt;l">
+<meta name="twitter:description" content="[jQuery] 제이쿼리 트레버싱 .eq()  제이쿼리는 아주 멋져요. “write less, do more. Jquery” 얼마나 좋아요. 적게 쓰고 많이 활용할 수 있다는 거죠.그 많은 기능들 중에서 지금은 트래버싱 eq()에 대해 알아봅시다. 트래버싱이란 돔을 자유자재로 이동한다고 생각하면 됩니다. 1234567&amp;lt;ul&amp;gt;  &amp;lt;li&amp;gt;">
 <meta name="twitter:image" content="https://cdn-images-1.medium.com/max/1200/0*s1Goua9K1MuNuapv.jpg">
                 
                   <link rel="canonical" href="https://dullyshin.github.io/2019/02/26/jquery-traversing/">
@@ -206,14 +206,18 @@ ga('send', 'pageview');
           
             
                 <div class="article-entry" itemprop="articleBody">
-                  <h2 id="jQuery-제이쿼리-트레버싱-eq"><a href="#jQuery-제이쿼리-트레버싱-eq" class="headerlink" title="[jQuery] 제이쿼리 트레버싱 .eq()"></a>[jQuery] 제이쿼리 트레버싱 .eq()</h2><p><img src="https://cdn-images-1.medium.com/max/1200/0*s1Goua9K1MuNuapv.jpg" alt="write less, do more. Jquery" width="500"></p>
+                  <h2 id="jQuery-제이쿼리-트레버싱-eq"><a href="#jQuery-제이쿼리-트레버싱-eq" class="headerlink" title="[jQuery] 제이쿼리 트레버싱 .eq()"></a>[jQuery] 제이쿼리 트레버싱 .eq()</h2><img src="https://cdn-images-1.medium.com/max/1200/0*s1Goua9K1MuNuapv.jpg" alt="write less, do more. Jquery" width="500">
+
 <p>제이쿼리는 아주 멋져요. “write less, do more. Jquery” 얼마나 좋아요. 적게 쓰고 많이 활용할 수 있다는 거죠.<br>그 많은 기능들 중에서 지금은 트래버싱 eq()에 대해 알아봅시다. 트래버싱이란 돔을 자유자재로 이동한다고 생각하면 됩니다.</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul&gt;</span><br><span class="line">  &lt;li&gt;list item 1&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;list item 2&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;list item 3&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;list item 4&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;list item 5&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure>
+
 <p>이중에서 2번째 <code>li</code> 태그를 찾으려면 어떻게 해야 할까요?</p>
 <p>바로 jQuery에 .eq() 기능을 이용할 수 있습니다.</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$( <span class="string">"li"</span> ).eq( <span class="number">1</span> ).css( <span class="string">"background-color"</span>, <span class="string">"red"</span> );</span><br><span class="line"><span class="comment">// eq 괄호안 인덱스는 0에서 시작합니다. (ex. 0, 1, 2, 3, 4, ...)</span></span><br><span class="line"><span class="comment">// 인덱스가 '0'으로 시작하는 것을 영어로 `zero-based index` 라고 합니다.</span></span><br></pre></td></tr></table></figure>
+
 <p>위와 같이 입력한다면 2번째 li 태그에 배경이 빨간색이 됩니다.<br>하지만 만약 li 태그가 1334205230개 정도 되고 그 중 뒤에서 2번째 <code>li</code> 태그를 찾으려면 아래와 같이 찾으면 됩니다. 앞에서 부터 하나하나 몇번째 태그인 다 셀 수 없으니깐요.</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$( <span class="string">"li"</span> ).eq( -<span class="number">1</span> ).css( <span class="string">"background-color"</span>, <span class="string">"red"</span> );</span><br></pre></td></tr></table></figure>
+
 <p>예시 하나를 확인해 봅시다. Result를 누르면 결과를 확인할 수 있습니다.</p>
 <script async src="//jsfiddle.net/knh5c8pL/1/embed/"></script>
 
@@ -246,7 +250,7 @@ ga('send', 'pageview');
 
 
 
-    <a data-url="https://dullyshin.github.io/2019/02/26/jQuery-Traversing/" data-id="cjskj1emd000z8suy7l1yp9ey" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://dullyshin.github.io/2019/02/26/jQuery-Traversing/" data-id="cjyhzrpzd000jz0v0ehh1hidj" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {

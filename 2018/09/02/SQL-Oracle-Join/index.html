@@ -220,22 +220,26 @@ ga('send', 'pageview');
 <p>TIP. 테이블 날짜가 2015/02/02 형식으로 되어있지만 이 중에서 년과 월만을 출력하고 싶다면 SELECT 문에서 <code>TO_CHAR(S.SALE_DATE, &#39;YYYYMM&#39;) AS YYYYMM</code> 이렇게 작성하시면 됩니다.</p>
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">SELECT TO_CHAR(S.SALE_DATE, &apos;YYYYMM&apos;) AS YYYYMM</span><br><span class="line">	  , G.REGION</span><br><span class="line">	  , SUM(S.SALES)    AS SALES</span><br><span class="line">FROM SALES S</span><br><span class="line">	 , GEOGRAPHY G</span><br><span class="line">WHERE S.DOSI = G.DOSI</span><br><span class="line">GROUP BY TO_CHAR(S.SALE_DATE,&apos;YYYYMM&apos;), G.REGION;</span><br></pre></td></tr></table></figure>
+
 <h4 id="서브쿼리-SQL문장"><a href="#서브쿼리-SQL문장" class="headerlink" title="서브쿼리 SQL문장"></a>서브쿼리 SQL문장</h4><blockquote>
 <p>TIP. ORDER BY에서 맨 끝에 <code>ASC</code>는 오름차순으로 정렬하는 것을 뜻합니다. 만약 내림차순으로 정렬하고 싶다면 <code>DESC</code>를 사용하시면 됩니다. 끝에 아무 것도 적지 않으면 자동으로 오름차순 정렬 됩니다.</p>
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">SELECT TO_CHAR(S. SALE_DATE, &apos;YYYYMM&apos;) AS YYYYMM</span><br><span class="line">    , ( SELECT REGION</span><br><span class="line">        FROM GEOGRAPHY G</span><br><span class="line">        WHERE G.DOSI = S.DOSI ) REGION</span><br><span class="line">    , S.SALES</span><br><span class="line">FROM SALES S</span><br><span class="line">ORDER BY TO_CHAR(S.SALE_DATE,&apos;YYYYMM&apos;), REGION ASC;</span><br></pre></td></tr></table></figure>
+
 <h4 id="테이블-3개-조인"><a href="#테이블-3개-조인" class="headerlink" title="테이블 3개 조인"></a>테이블 3개 조인</h4><ul>
 <li><p>INNER JOIN 쿼리</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">SELECT A.ID, A.NAME, B.DPTNAME, C.SALARY</span><br><span class="line">FROM EMPLOYEE A INNER JOIN DEPARTMENT B</span><br><span class="line">ON A.DPID = B.DPID</span><br><span class="line">INNER JOIN SALARYINFO C</span><br><span class="line">ON A.ID = C.PID;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>비표준 쿼리</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT A.ID, A.NAME, B.DPTNAME, C.SALARY</span><br><span class="line">FROM EMPLOYEE A, DEPARTMENT B, SALARYINFO</span><br><span class="line">WHERE  A.DPID = B.DPID AND A.ID = C.PID;</span><br></pre></td></tr></table></figure>
+
 </li>
 </ul>
 <p>혹시나 궁금하신 점 있다면 댓글로 물어봐 주세요!</p>
 <h3 id="RELATED-POSTS"><a href="#RELATED-POSTS" class="headerlink" title="RELATED POSTS"></a>RELATED POSTS</h3><ul>
 <li><a href="/2018/05/11/SQL-sqlBasic/" title="SQL basic">SQL basic</a></li>
 <li><a href="/2018/05/11/SQL-sqlAdvanced/" title="SQL Advanced">SQL Advanced</a>
+
 </li>
 </ul>
 <h5 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h5><ul>
@@ -258,7 +262,7 @@ ga('send', 'pageview');
 
 
 
-    <a data-url="https://dullyshin.github.io/2018/09/02/SQL-Oracle-Join/" data-id="cjskj1em7000v8suy2cep1j34" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://dullyshin.github.io/2018/09/02/SQL-Oracle-Join/" data-id="cjyhzrpza000gz0v0itlv75kc" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
