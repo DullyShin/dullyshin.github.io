@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
     <url>
         <loc>https://dullyshin.github.io</loc>
         <changefreq>daily</changefreq>
@@ -7,57 +8,8 @@
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/categories/Programming/Github/</loc>
-        <lastmod>2018-08-26T18:42:28.398Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/categories/Review/</loc>
-        <lastmod>2018-08-28T16:07:38.074Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/categories/Programming/HTML/</loc>
-        <lastmod>2018-08-29T17:34:34.087Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/categories/Programming/Spring-Framework/</loc>
-        <lastmod>2018-09-10T14:30:40.377Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/categories/Hexo/</loc>
-        <lastmod>2019-02-25T13:45:02.457Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/categories/Programming/JavaScript/</loc>
-        <lastmod>2019-02-25T14:45:48.055Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/categories/Programming/JSTL/</loc>
-        <lastmod>2019-02-25T15:19:18.897Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/categories/Programming/jQuery/</loc>
-        <lastmod>2019-02-25T15:44:01.178Z</lastmod>
+        <loc>https://dullyshin.github.io/categories/Programming/SQL/</loc>
+        <lastmod>2019-02-25T15:47:50.966Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -70,8 +22,57 @@
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/categories/Programming/SQL/</loc>
-        <lastmod>2019-02-25T15:47:50.966Z</lastmod>
+        <loc>https://dullyshin.github.io/categories/Programming/jQuery/</loc>
+        <lastmod>2019-02-25T15:44:01.178Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/categories/Programming/JSTL/</loc>
+        <lastmod>2019-02-25T15:19:18.897Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/categories/Programming/JavaScript/</loc>
+        <lastmod>2019-02-25T14:45:48.055Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/categories/Hexo/</loc>
+        <lastmod>2019-02-25T13:45:02.457Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/categories/Programming/Spring-Framework/</loc>
+        <lastmod>2018-09-10T14:30:40.377Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/categories/Programming/HTML/</loc>
+        <lastmod>2018-08-29T17:34:34.087Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/categories/Review/</loc>
+        <lastmod>2018-08-28T16:07:38.074Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/categories/Programming/Github/</loc>
+        <lastmod>2018-08-26T18:42:28.398Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

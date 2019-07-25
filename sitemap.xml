@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+
     <sitemap>
         <loc>https://dullyshin.github.io/post-sitemap.xml</loc>
         <lastmod>2019-02-25T15:47:50.966Z</lastmod>
@@ -8,12 +9,12 @@
 
     <sitemap>
         <loc>https://dullyshin.github.io/category-sitemap.xml</loc>
-        <lastmod>2018-08-26T18:42:28.398Z</lastmod>
+        <lastmod>2019-02-25T15:47:50.966Z</lastmod>
     </sitemap>
 
     <sitemap>
         <loc>https://dullyshin.github.io/tag-sitemap.xml</loc>
-        <lastmod>2018-08-26T18:36:53.010Z</lastmod>
+        <lastmod>2019-02-25T15:47:50.966Z</lastmod>
     </sitemap>
 
 </sitemapindex>
