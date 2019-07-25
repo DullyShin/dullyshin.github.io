@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://dullyshin.github.io/"/>
-  <updated>2019-07-25T02:18:12.994Z</updated>
+  <updated>2019-07-25T02:22:50.058Z</updated>
   <id>https://dullyshin.github.io/</id>
   
   <author>
@@ -21,18 +21,17 @@
     <link href="https://dullyshin.github.io/2019/07/25/jQuery-selector2/"/>
     <id>https://dullyshin.github.io/2019/07/25/jQuery-selector2/</id>
     <published>2019-07-25T02:06:32.000Z</published>
-    <updated>2019-07-25T02:18:12.994Z</updated>
+    <updated>2019-07-25T02:22:50.058Z</updated>
     
-    <content type="html"><![CDATA[<p>###(jQuery)제이쿼리 셀렉터 총정리 02편! jQuery Selector</p><p>jQuery에서 필수적으로 사용하게 되는 셀렉터! 에 대해 알아보겠습니다.</p><hr><p>####버튼 셀렉터 :button Selector</p><blockquote><p><strong>jQuery( “:button” )</strong><br>Selects all button elements and elements of type button.<br>타입이 <code>button</code>인 모든 요소를 선택합니다.</p></blockquote><script async src="//jsfiddle.net/9zLqr4te/embed/"></script><hr><p>####체크박스 셀렉터 :checkbox Selector</p><blockquote><p><strong>jQuery( “:checkbox” )</strong><br>Selects all elements of type checkbox.<br>타입이 <code>checkbox</code>인 모든 요소를 선택합니다.</p></blockquote><script async src="//jsfiddle.net/9zLqr4te/1/embed/"></script><hr><p>####체크드 셀렉터 :checked Selector</p><blockquote><p><strong>jQuery( “:checked” )</strong><br>Matches all elements that are checked or selected.<br><code>checkbox</code>에서 선택된 요소들만 선택합니다.</p></blockquote><script async src="//jsfiddle.net/ngxh6bw7/embed/"></script><hr><p>####속성 컨테인 워드 셀렉터 Attribute Contains Word Selector [name~=”value”]</p><blockquote><p><strong>jQuery( “[attribute~=’value’]” )</strong><br>Selects elements that have the specified attribute with a value containing a given word, delimited by spaces.<br>속성에 원하는 문자를 선택하는데 공백으로 구분합니다. 문자가 앞에서 시작하든 중간에서 시작하든 상관없지만, 공백으로 나누어 있어야 합니다.</p></blockquote><script async src="//jsfiddle.net/wpn2mchb/embed/"></script><hr><p>####속성 엔드 셀렉터 Attribute Ends With Selector [name$=”value”]</p><blockquote><p><strong>jQuery( “[attribute$=’value’]” )</strong><br>Selects elements that have the specified attribute with a value ending exactly with a given string. The comparison is case sensitive.<br>속성에 원하는 문자열로 정확하게 끝나야 선택됩니다. 대소문자를 구별하여 선택됩니다.</p></blockquote><script async src="//jsfiddle.net/w5Lqrk9g/embed/"></script><hr><p>####속성 이퀄 셀렉터 Attribute Equals Selector [name=”value”]</p><blockquote><p><strong>jQuery( “[attribute=’value’]” )</strong><br>Selects elements that have the specified attribute with a value exactly equal to a certain value.<br>속성에 원하는 문자열로 정확 일치하는 요소를 선택합니다. 대소문자를 구별하여 선택됩니다.</p></blockquote><script async src="//jsfiddle.net/4s2oebcu/embed/"></script><hr><p>####속성 스타트 셀렉터 Attribute Starts With Selector [name^=”value”]</p><blockquote><p><strong>jQuery( “[attribute^=’value’]” )</strong><br>Selects elements that have the specified attribute with a value beginning exactly with a given string.<br>속성에 원하는 문자열로 정확하게 시작해야 선택됩니다. 대소문자를 구별하여 선택됩니다.</p></blockquote><script async src="//jsfiddle.net/edpj1qf3/embed/"></script><hr><iframe src="https://giphy.com/embed/l3V0gpbjA6fD7ym9W" width="300" height="331" frameborder="0" class="giphy-embed" allowfullscreen></iframe><p>더 많은 셀렉터는 다음 기회에 만나보겠습니다.</p><h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><ul><li><a href="https://api.jquery.com/category/selectors/" target="_blank" rel="noopener">https://api.jquery.com/category/selectors/</a></li></ul><h3 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h3><ul><li><a href="/2019/07/25/jQuery-selector1/" title="(jQuery)제이쿼리 셀렉터 총정리 01편! jQuery Selector">(jQuery)제이쿼리 셀렉터 총정리 01편! jQuery Selector</a></li><li><a href="/2019/02/26/jQuery-Traversing/" title="(jQuery) 제이쿼리 트래버싱 Traversing">(jQuery) 제이쿼리 트래버싱 Traversing</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<p>jQuery에서 필수적으로 사용하게 되는 셀렉터! 에 대해 알아보겠습니다.</p><hr><h4 id="버튼-셀렉터-button-Selector"><a href="#버튼-셀렉터-button-Selector" class="headerlink" title="버튼 셀렉터 :button Selector"></a>버튼 셀렉터 :button Selector</h4><blockquote><p><strong>jQuery( “:button” )</strong><br>Selects all button elements and elements of type button.<br>타입이 <code>button</code>인 모든 요소를 선택합니다.</p></blockquote><script async src="//jsfiddle.net/9zLqr4te/embed/"></script><hr><h4 id="체크박스-셀렉터-checkbox-Selector"><a href="#체크박스-셀렉터-checkbox-Selector" class="headerlink" title="체크박스 셀렉터 :checkbox Selector"></a>체크박스 셀렉터 :checkbox Selector</h4><blockquote><p><strong>jQuery( “:checkbox” )</strong><br>Selects all elements of type checkbox.<br>타입이 <code>checkbox</code>인 모든 요소를 선택합니다.</p></blockquote><script async src="//jsfiddle.net/9zLqr4te/1/embed/"></script><hr><h4 id="체크드-셀렉터-checked-Selector"><a href="#체크드-셀렉터-checked-Selector" class="headerlink" title="체크드 셀렉터 :checked Selector"></a>체크드 셀렉터 :checked Selector</h4><blockquote><p><strong>jQuery( “:checked” )</strong><br>Matches all elements that are checked or selected.<br><code>checkbox</code>에서 선택된 요소들만 선택합니다.</p></blockquote><script async src="//jsfiddle.net/ngxh6bw7/embed/"></script><hr><h4 id="속성-컨테인-워드-셀렉터-Attribute-Contains-Word-Selector-name-”value”"><a href="#속성-컨테인-워드-셀렉터-Attribute-Contains-Word-Selector-name-”value”" class="headerlink" title="속성 컨테인 워드 셀렉터 Attribute Contains Word Selector [name~=”value”]"></a>속성 컨테인 워드 셀렉터 Attribute Contains Word Selector [name~=”value”]</h4><blockquote><p><strong>jQuery( “[attribute~=’value’]” )</strong><br>Selects elements that have the specified attribute with a value containing a given word, delimited by spaces.<br>속성에 원하는 문자를 선택하는데 공백으로 구분합니다. 문자가 앞에서 시작하든 중간에서 시작하든 상관없지만, 공백으로 나누어 있어야 합니다.</p></blockquote><script async src="//jsfiddle.net/wpn2mchb/embed/"></script><hr><h4 id="속성-엔드-셀렉터-Attribute-Ends-With-Selector-name-”value”"><a href="#속성-엔드-셀렉터-Attribute-Ends-With-Selector-name-”value”" class="headerlink" title="속성 엔드 셀렉터 Attribute Ends With Selector [name$=”value”]"></a>속성 엔드 셀렉터 Attribute Ends With Selector [name$=”value”]</h4><blockquote><p><strong>jQuery( “[attribute$=’value’]” )</strong><br>Selects elements that have the specified attribute with a value ending exactly with a given string. The comparison is case sensitive.<br>속성에 원하는 문자열로 정확하게 끝나야 선택됩니다. 대소문자를 구별하여 선택됩니다.</p></blockquote><script async src="//jsfiddle.net/w5Lqrk9g/embed/"></script><hr><h4 id="속성-이퀄-셀렉터-Attribute-Equals-Selector-name-”value”"><a href="#속성-이퀄-셀렉터-Attribute-Equals-Selector-name-”value”" class="headerlink" title="속성 이퀄 셀렉터 Attribute Equals Selector [name=”value”]"></a>속성 이퀄 셀렉터 Attribute Equals Selector [name=”value”]</h4><blockquote><p><strong>jQuery( “[attribute=’value’]” )</strong><br>Selects elements that have the specified attribute with a value exactly equal to a certain value.<br>속성에 원하는 문자열로 정확 일치하는 요소를 선택합니다. 대소문자를 구별하여 선택됩니다.</p></blockquote><script async src="//jsfiddle.net/4s2oebcu/embed/"></script><hr><h4 id="속성-스타트-셀렉터-Attribute-Starts-With-Selector-name-”value”"><a href="#속성-스타트-셀렉터-Attribute-Starts-With-Selector-name-”value”" class="headerlink" title="속성 스타트 셀렉터 Attribute Starts With Selector [name^=”value”]"></a>속성 스타트 셀렉터 Attribute Starts With Selector [name^=”value”]</h4><blockquote><p><strong>jQuery( “[attribute^=’value’]” )</strong><br>Selects elements that have the specified attribute with a value beginning exactly with a given string.<br>속성에 원하는 문자열로 정확하게 시작해야 선택됩니다. 대소문자를 구별하여 선택됩니다.</p></blockquote><script async src="//jsfiddle.net/edpj1qf3/embed/"></script><hr><iframe src="https://giphy.com/embed/l3V0gpbjA6fD7ym9W" width="300" height="331" frameborder="0" class="giphy-embed" allowfullscreen></iframe><p>더 많은 셀렉터는 다음 기회에 만나보겠습니다.</p><h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><ul><li><a href="https://api.jquery.com/category/selectors/" target="_blank" rel="noopener">https://api.jquery.com/category/selectors/</a></li></ul><h3 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h3><ul><li><a href="/2019/07/25/jQuery-selector1/" title="(jQuery)제이쿼리 셀렉터 총정리 01편! jQuery Selector">(jQuery)제이쿼리 셀렉터 총정리 01편! jQuery Selector</a></li><li><a href="/2019/02/26/jQuery-Traversing/" title="(jQuery) 제이쿼리 트래버싱 Traversing">(jQuery) 제이쿼리 트래버싱 Traversing</a></li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;###(jQuery)제이쿼리 셀렉터 총정리 02편! jQuery Selector&lt;/p&gt;
-&lt;p&gt;jQuery에서 필수적으로 사용하게 되는 셀렉터! 에 대해 알아보겠습니다.&lt;/p&gt;
+        &lt;p&gt;jQuery에서 필수적으로 사용하게 되는 셀렉터! 에 대해 알아보겠습니다.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;####버튼 셀렉터 :button Selector&lt;/p&gt;
+&lt;h4 id=&quot;버튼-셀렉터-button-Selector&quot;&gt;&lt;a href=&quot;#버튼-셀렉터-button-Selector&quot; class=&quot;headerlink&quot; t
       
     
     </summary>
@@ -65,18 +64,17 @@
     <link href="https://dullyshin.github.io/2019/07/25/jQuery-selector1/"/>
     <id>https://dullyshin.github.io/2019/07/25/jQuery-selector1/</id>
     <published>2019-07-25T01:37:24.000Z</published>
-    <updated>2019-07-25T01:42:11.350Z</updated>
+    <updated>2019-07-25T02:22:27.646Z</updated>
     
-    <content type="html"><![CDATA[<p>###(jQuery)제이쿼리 셀렉터 총정리 01편! jQuery Selector</p><p>jQuery에서 필수적으로 사용하게 되는 셀렉터! 에 대해 알아보겠습니다.</p><hr><p>#####모든 셀렉터 All Selector (“*”)</p><blockquote><p><strong>jQuery( “*” )</strong><br>Selects all elements.<br>모든 요소를 선택합니다.</p></blockquote><script async src="//jsfiddle.net/srwtnhe8/embed/"></script><hr><p>#####속성 프리픽스 셀렉터 Prefix Selector [name|=”value”]</p><blockquote><p><strong>jQuery( “[attribute|=’value’]” )</strong><br>Selects elements that have the specified attribute with a value either equal to a given string or starting with that string followed by a hyphen (-).<br>특정한 속성값을 가진 요소를 선택합니다. 특정 문자열이 원하는 문자열로 시작하여 띄어쓰기로 나누어져 있거나 (-) 하이픈으로 나누어져 있어야 합니다.</p></blockquote><script async src="//jsfiddle.net/taw3e46n/embed/"></script><hr><p>#####속성 컨테인 셀렉터 Attribute Contains Selector [name*=”value”]</p><blockquote><p><strong>jQuery( “[attribute*=’value’]” )</strong><br>Selects elements that have the specified attribute with a value containing a given substring.<br>원하는 문자를 포함하고 있으면 선택됩니다.</p></blockquote><script async src="//jsfiddle.net/h5fbgu3m/embed/"></script><hr><p>#####속성 컨테인 워드 셀렉터 Attribute Contains Word Selector [name~=”value”]</p><blockquote><p><strong>jQuery( “[attribute~=’value’]” )</strong><br>Selects elements that have the specified attribute with a value containing a given word, delimited by spaces.<br>속성에 원하는 문자를 선택하는데 공백으로 구분합니다. 문자가 앞에서 시작하든 중간에서 시작하든 상관없지만, 공백으로 나누어 있어야 합니다.</p></blockquote><script async src="//jsfiddle.net/wpn2mchb/embed/"></script><hr><p>#####속성 엔드 셀렉터 Attribute Ends With Selector [name$=”value”]</p><blockquote><p><strong>jQuery( “[attribute$=’value’]” )</strong><br>Selects elements that have the specified attribute with a value ending exactly with a given string. The comparison is case sensitive.<br>속성에 원하는 문자열로 정확하게 끝나야 선택됩니다. 대소문자를 구별하여 선택됩니다.</p></blockquote><script async src="//jsfiddle.net/w5Lqrk9g/embed/"></script><hr><p>#####속성 이퀄 셀렉터 Attribute Equals Selector [name=”value”]</p><blockquote><p><strong>jQuery( “[attribute=’value’]” )</strong><br>Selects elements that have the specified attribute with a value exactly equal to a certain value.<br>속성에 원하는 문자열로 정확 일치하는 요소를 선택합니다. 대소문자를 구별하여 선택됩니다.</p></blockquote><script async src="//jsfiddle.net/4s2oebcu/embed/"></script><hr><p>#####속성 스타트 셀렉터 Attribute Starts With Selector [name^=”value”]</p><blockquote><p><strong>jQuery( “[attribute^=’value’]” )</strong><br>Selects elements that have the specified attribute with a value beginning exactly with a given string.<br>속성에 원하는 문자열로 정확하게 시작해야 선택됩니다. 대소문자를 구별하여 선택됩니다.</p></blockquote><script async src="//jsfiddle.net/edpj1qf3/embed/"></script><hr><iframe src="https://giphy.com/embed/l3V0gpbjA6fD7ym9W" width="300" height="331" frameborder="0" class="giphy-embed" allowfullscreen></iframe><p>더 많은 셀렉터는 다음 기회에 만나보겠습니다.</p><h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><ul><li><a href="https://api.jquery.com/category/selectors/" target="_blank" rel="noopener">https://api.jquery.com/category/selectors/</a></li></ul><h3 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h3><ul><li><a href="/2019/07/25/jQuery-tablerowdelete/" title="(jQuery) 테이블 행 추가, 삭제 / 랜덤함수 이용">(jQuery) 테이블 행 추가, 삭제 / 랜덤함수 이용</a></li><li><a href="/2019/02/26/jQuery-Traversing/" title="(jQuery) 제이쿼리 트래버싱 Traversing">(jQuery) 제이쿼리 트래버싱 Traversing</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<p>jQuery에서 필수적으로 사용하게 되는 셀렉터! 에 대해 알아보겠습니다.</p><hr><h3 id="모든-셀렉터-All-Selector-“-”"><a href="#모든-셀렉터-All-Selector-“-”" class="headerlink" title="모든 셀렉터 All Selector (“*”)"></a>모든 셀렉터 All Selector (“*”)</h3><blockquote><p><strong>jQuery( “*” )</strong><br>Selects all elements.<br>모든 요소를 선택합니다.</p></blockquote><script async src="//jsfiddle.net/srwtnhe8/embed/"></script><hr><h4 id="속성-프리픽스-셀렉터-Prefix-Selector-name-”value”"><a href="#속성-프리픽스-셀렉터-Prefix-Selector-name-”value”" class="headerlink" title="속성 프리픽스 셀렉터 Prefix Selector [name|=”value”]"></a>속성 프리픽스 셀렉터 Prefix Selector [name|=”value”]</h4><blockquote><p><strong>jQuery( “[attribute|=’value’]” )</strong><br>Selects elements that have the specified attribute with a value either equal to a given string or starting with that string followed by a hyphen (-).<br>특정한 속성값을 가진 요소를 선택합니다. 특정 문자열이 원하는 문자열로 시작하여 띄어쓰기로 나누어져 있거나 (-) 하이픈으로 나누어져 있어야 합니다.</p></blockquote><script async src="//jsfiddle.net/taw3e46n/embed/"></script><hr><h4 id="속성-컨테인-셀렉터-Attribute-Contains-Selector-name-”value”"><a href="#속성-컨테인-셀렉터-Attribute-Contains-Selector-name-”value”" class="headerlink" title="속성 컨테인 셀렉터 Attribute Contains Selector [name*=”value”]"></a>속성 컨테인 셀렉터 Attribute Contains Selector [name*=”value”]</h4><blockquote><p><strong>jQuery( “[attribute*=’value’]” )</strong><br>Selects elements that have the specified attribute with a value containing a given substring.<br>원하는 문자를 포함하고 있으면 선택됩니다.</p></blockquote><script async src="//jsfiddle.net/h5fbgu3m/embed/"></script><hr><h4 id="속성-컨테인-워드-셀렉터-Attribute-Contains-Word-Selector-name-”value”"><a href="#속성-컨테인-워드-셀렉터-Attribute-Contains-Word-Selector-name-”value”" class="headerlink" title="속성 컨테인 워드 셀렉터 Attribute Contains Word Selector [name~=”value”]"></a>속성 컨테인 워드 셀렉터 Attribute Contains Word Selector [name~=”value”]</h4><blockquote><p><strong>jQuery( “[attribute~=’value’]” )</strong><br>Selects elements that have the specified attribute with a value containing a given word, delimited by spaces.<br>속성에 원하는 문자를 선택하는데 공백으로 구분합니다. 문자가 앞에서 시작하든 중간에서 시작하든 상관없지만, 공백으로 나누어 있어야 합니다.</p></blockquote><script async src="//jsfiddle.net/wpn2mchb/embed/"></script><hr><h4 id="속성-엔드-셀렉터-Attribute-Ends-With-Selector-name-”value”"><a href="#속성-엔드-셀렉터-Attribute-Ends-With-Selector-name-”value”" class="headerlink" title="속성 엔드 셀렉터 Attribute Ends With Selector [name$=”value”]"></a>속성 엔드 셀렉터 Attribute Ends With Selector [name$=”value”]</h4><blockquote><p><strong>jQuery( “[attribute$=’value’]” )</strong><br>Selects elements that have the specified attribute with a value ending exactly with a given string. The comparison is case sensitive.<br>속성에 원하는 문자열로 정확하게 끝나야 선택됩니다. 대소문자를 구별하여 선택됩니다.</p></blockquote><script async src="//jsfiddle.net/w5Lqrk9g/embed/"></script><hr><h4 id="속성-이퀄-셀렉터-Attribute-Equals-Selector-name-”value”"><a href="#속성-이퀄-셀렉터-Attribute-Equals-Selector-name-”value”" class="headerlink" title="속성 이퀄 셀렉터 Attribute Equals Selector [name=”value”]"></a>속성 이퀄 셀렉터 Attribute Equals Selector [name=”value”]</h4><blockquote><p><strong>jQuery( “[attribute=’value’]” )</strong><br>Selects elements that have the specified attribute with a value exactly equal to a certain value.<br>속성에 원하는 문자열로 정확 일치하는 요소를 선택합니다. 대소문자를 구별하여 선택됩니다.</p></blockquote><script async src="//jsfiddle.net/4s2oebcu/embed/"></script><hr><h4 id="속성-스타트-셀렉터-Attribute-Starts-With-Selector-name-”value”"><a href="#속성-스타트-셀렉터-Attribute-Starts-With-Selector-name-”value”" class="headerlink" title="속성 스타트 셀렉터 Attribute Starts With Selector [name^=”value”]"></a>속성 스타트 셀렉터 Attribute Starts With Selector [name^=”value”]</h4><blockquote><p><strong>jQuery( “[attribute^=’value’]” )</strong><br>Selects elements that have the specified attribute with a value beginning exactly with a given string.<br>속성에 원하는 문자열로 정확하게 시작해야 선택됩니다. 대소문자를 구별하여 선택됩니다.</p></blockquote><script async src="//jsfiddle.net/edpj1qf3/embed/"></script><hr><iframe src="https://giphy.com/embed/l3V0gpbjA6fD7ym9W" width="300" height="331" frameborder="0" class="giphy-embed" allowfullscreen></iframe><p>더 많은 셀렉터는 다음 기회에 만나보겠습니다.</p><h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><ul><li><a href="https://api.jquery.com/category/selectors/" target="_blank" rel="noopener">https://api.jquery.com/category/selectors/</a></li></ul><h3 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h3><ul><li><a href="/2019/07/25/jQuery-tablerowdelete/" title="(jQuery) 테이블 행 추가, 삭제 / 랜덤함수 이용">(jQuery) 테이블 행 추가, 삭제 / 랜덤함수 이용</a></li><li><a href="/2019/02/26/jQuery-Traversing/" title="(jQuery) 제이쿼리 트래버싱 Traversing">(jQuery) 제이쿼리 트래버싱 Traversing</a></li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;###(jQuery)제이쿼리 셀렉터 총정리 01편! jQuery Selector&lt;/p&gt;
-&lt;p&gt;jQuery에서 필수적으로 사용하게 되는 셀렉터! 에 대해 알아보겠습니다.&lt;/p&gt;
+        &lt;p&gt;jQuery에서 필수적으로 사용하게 되는 셀렉터! 에 대해 알아보겠습니다.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;#####모든 셀렉터 All Selector (“*”)&lt;
+&lt;h3 id=&quot;모든-셀렉터-All-Selector-“-”&quot;&gt;&lt;a href=&quot;#모든-셀렉터-All-Selector-“-”&quot; class=&quot;headerlink&quot;
       
     
     </summary>
@@ -90,6 +88,8 @@
     
       <category term="제이쿼리 셀렉터" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0/"/>
     
+      <category term="제이쿼리 셀렉터 여러개" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0-%EC%97%AC%EB%9F%AC%EA%B0%9C/"/>
+    
       <category term="제이쿼리 선택자" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%84%A0%ED%83%9D%EC%9E%90/"/>
     
       <category term="셀렉터" scheme="https://dullyshin.github.io/tags/%EC%85%80%EB%A0%89%ED%84%B0/"/>
@@ -101,8 +101,6 @@
       <category term="All Selector" scheme="https://dullyshin.github.io/tags/All-Selector/"/>
     
       <category term="모든 요소 선택" scheme="https://dullyshin.github.io/tags/%EB%AA%A8%EB%93%A0-%EC%9A%94%EC%86%8C-%EC%84%A0%ED%83%9D/"/>
-    
-      <category term="제이쿼리 셀렉터 여러개" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0-%EC%97%AC%EB%9F%AC%EA%B0%9C/"/>
     
   </entry>
   
@@ -710,35 +708,6 @@
   </entry>
   
   <entry>
-    <title>Hexo error</title>
-    <link href="https://dullyshin.github.io/2018/08/26/Hexo-error/"/>
-    <id>https://dullyshin.github.io/2018/08/26/Hexo-error/</id>
-    <published>2018-08-26T03:57:16.000Z</published>
-    <updated>2018-08-29T15:44:28.165Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Hexo-Error"><a href="#Hexo-Error" class="headerlink" title="Hexo Error"></a>Hexo Error</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ Hexo server</span><br></pre></td></tr></table></figure><p>Hexo server를 시작하고 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 에서 메뉴가 About이 아니라 Quant a , Home이 Inici로 보일 수 있습니다. 또는 다른 언어로 보일 수 있습니다. 이는 Hexo의 언어 설정이 ca 로 설정되어 있어 자동으로 바꾸어 주는 기능이 작동했기 때문입니다.</p><p>en 버전<br><img src="/images/navbar.JPG" alt="navbar"></p><p>\themes\hueman\languages\ca.yml</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">index:</span><br><span class="line">    home: &apos;Inici&apos;</span><br><span class="line">    about: &apos;Quant a&apos;</span><br><span class="line">    search: &apos;Cercar&apos;</span><br><span class="line">    archive: &apos;Arxiu&apos;</span><br><span class="line">    category: &apos;Categoria&apos;</span><br><span class="line">    uncategorized: &apos;Sense categoria&apos;</span><br><span class="line">    tag: &apos;Etiqueta&apos;</span><br></pre></td></tr></table></figure><p>이는 처음 Hexo 블로그를 만들고 생성된 _config.yml에 언어 설정으로 인해 변경될 수 있습니다.(Theme 파일안에 _config.yml은 아닙니다.) 아래의 language 설정을 en으로 바꾸어 주시면 됩니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: Hyejin Shin #제목</span><br><span class="line">subtitle: IT blog / Thanks to everyone! #부제목</span><br><span class="line">description: IT blog for everyone #설명</span><br><span class="line">keywords: Portfolio, programmer, web #키워드</span><br><span class="line">author: Hyejin Shin #이름</span><br><span class="line">language: en #언어 설정</span><br><span class="line">timezone: Asia/Seoul #시간 설정</span><br></pre></td></tr></table></figure><p>저는 언어 설정을 처음부터 en으로 했는데도 되지 않아서 구글링으로 해결책을 찾아보았는데요.</p><blockquote><p>변경한 후에도 언어 설정이 적용되지 않을 경우, <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 에서만 언어 적용되지 않고 배포한 파일은 정상적으로 작동될 수 있습니다.</p></blockquote><p>잠시 후 실행된 서버를 끄고 아래의 hexo clean을 실행 한 후 정상 작동되는 것을 확인했습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure><p>Hexo 언어설정으로 고생하는 분 없길 바랍니다!</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;Hexo-Error&quot;&gt;&lt;a href=&quot;#Hexo-Error&quot; class=&quot;headerlink&quot; title=&quot;Hexo Error&quot;&gt;&lt;/a&gt;Hexo Error&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;t
-      
-    
-    </summary>
-    
-      <category term="Hexo" scheme="https://dullyshin.github.io/categories/Hexo/"/>
-    
-    
-      <category term="hexo 에러" scheme="https://dullyshin.github.io/tags/hexo-%EC%97%90%EB%9F%AC/"/>
-    
-      <category term="헥소 언어 설정" scheme="https://dullyshin.github.io/tags/%ED%97%A5%EC%86%8C-%EC%96%B8%EC%96%B4-%EC%84%A4%EC%A0%95/"/>
-    
-      <category term="hexo language set" scheme="https://dullyshin.github.io/tags/hexo-language-set/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Hexo Theme Hueman</title>
     <link href="https://dullyshin.github.io/2018/08/26/Hexo-Theme/"/>
     <id>https://dullyshin.github.io/2018/08/26/Hexo-Theme/</id>
@@ -766,6 +735,35 @@
       <category term="Hexo Theme" scheme="https://dullyshin.github.io/tags/Hexo-Theme/"/>
     
       <category term="Hueman 사용법" scheme="https://dullyshin.github.io/tags/Hueman-%EC%82%AC%EC%9A%A9%EB%B2%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo error</title>
+    <link href="https://dullyshin.github.io/2018/08/26/Hexo-error/"/>
+    <id>https://dullyshin.github.io/2018/08/26/Hexo-error/</id>
+    <published>2018-08-26T03:57:16.000Z</published>
+    <updated>2018-08-29T15:44:28.165Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Hexo-Error"><a href="#Hexo-Error" class="headerlink" title="Hexo Error"></a>Hexo Error</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ Hexo server</span><br></pre></td></tr></table></figure><p>Hexo server를 시작하고 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 에서 메뉴가 About이 아니라 Quant a , Home이 Inici로 보일 수 있습니다. 또는 다른 언어로 보일 수 있습니다. 이는 Hexo의 언어 설정이 ca 로 설정되어 있어 자동으로 바꾸어 주는 기능이 작동했기 때문입니다.</p><p>en 버전<br><img src="/images/navbar.JPG" alt="navbar"></p><p>\themes\hueman\languages\ca.yml</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">index:</span><br><span class="line">    home: &apos;Inici&apos;</span><br><span class="line">    about: &apos;Quant a&apos;</span><br><span class="line">    search: &apos;Cercar&apos;</span><br><span class="line">    archive: &apos;Arxiu&apos;</span><br><span class="line">    category: &apos;Categoria&apos;</span><br><span class="line">    uncategorized: &apos;Sense categoria&apos;</span><br><span class="line">    tag: &apos;Etiqueta&apos;</span><br></pre></td></tr></table></figure><p>이는 처음 Hexo 블로그를 만들고 생성된 _config.yml에 언어 설정으로 인해 변경될 수 있습니다.(Theme 파일안에 _config.yml은 아닙니다.) 아래의 language 설정을 en으로 바꾸어 주시면 됩니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: Hyejin Shin #제목</span><br><span class="line">subtitle: IT blog / Thanks to everyone! #부제목</span><br><span class="line">description: IT blog for everyone #설명</span><br><span class="line">keywords: Portfolio, programmer, web #키워드</span><br><span class="line">author: Hyejin Shin #이름</span><br><span class="line">language: en #언어 설정</span><br><span class="line">timezone: Asia/Seoul #시간 설정</span><br></pre></td></tr></table></figure><p>저는 언어 설정을 처음부터 en으로 했는데도 되지 않아서 구글링으로 해결책을 찾아보았는데요.</p><blockquote><p>변경한 후에도 언어 설정이 적용되지 않을 경우, <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 에서만 언어 적용되지 않고 배포한 파일은 정상적으로 작동될 수 있습니다.</p></blockquote><p>잠시 후 실행된 서버를 끄고 아래의 hexo clean을 실행 한 후 정상 작동되는 것을 확인했습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure><p>Hexo 언어설정으로 고생하는 분 없길 바랍니다!</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Hexo-Error&quot;&gt;&lt;a href=&quot;#Hexo-Error&quot; class=&quot;headerlink&quot; title=&quot;Hexo Error&quot;&gt;&lt;/a&gt;Hexo Error&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;t
+      
+    
+    </summary>
+    
+      <category term="Hexo" scheme="https://dullyshin.github.io/categories/Hexo/"/>
+    
+    
+      <category term="hexo 에러" scheme="https://dullyshin.github.io/tags/hexo-%EC%97%90%EB%9F%AC/"/>
+    
+      <category term="헥소 언어 설정" scheme="https://dullyshin.github.io/tags/%ED%97%A5%EC%86%8C-%EC%96%B8%EC%96%B4-%EC%84%A4%EC%A0%95/"/>
+    
+      <category term="hexo language set" scheme="https://dullyshin.github.io/tags/hexo-language-set/"/>
     
   </entry>
   

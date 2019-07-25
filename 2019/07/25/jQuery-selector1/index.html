@@ -16,21 +16,21 @@
       
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
           
-            <meta name="keywords" content="jQuery,제이쿼리 셀렉터,제이쿼리 선택자,셀렉터,제이쿼리 셀렉터 총정리,jQuery selector,All Selector,모든 요소 선택,제이쿼리 셀렉터 여러개">
+            <meta name="keywords" content="jQuery,제이쿼리 셀렉터,제이쿼리 셀렉터 여러개,제이쿼리 선택자,셀렉터,제이쿼리 셀렉터 총정리,jQuery selector,All Selector,모든 요소 선택">
             
-              <meta name="description" content="###(jQuery)제이쿼리 셀렉터 총정리 01편! jQuery Selector jQuery에서 필수적으로 사용하게 되는 셀렉터! 에 대해 알아보겠습니다.  #####모든 셀렉터 All Selector (“*”)  jQuery( “*” )Selects all elements.모든 요소를 선택합니다.     #####속성 프리픽스 셀렉터 Prefix Sele">
-<meta name="keywords" content="jQuery,제이쿼리 셀렉터,제이쿼리 선택자,셀렉터,제이쿼리 셀렉터 총정리,jQuery selector,All Selector,모든 요소 선택,제이쿼리 셀렉터 여러개">
+              <meta name="description" content="jQuery에서 필수적으로 사용하게 되는 셀렉터! 에 대해 알아보겠습니다.  모든 셀렉터 All Selector (“*”) jQuery( “*” )Selects all elements.모든 요소를 선택합니다.     속성 프리픽스 셀렉터 Prefix Selector [name|=”value”] jQuery( “[attribute|=’value’]” )Sel">
+<meta name="keywords" content="jQuery,제이쿼리 셀렉터,제이쿼리 셀렉터 여러개,제이쿼리 선택자,셀렉터,제이쿼리 셀렉터 총정리,jQuery selector,All Selector,모든 요소 선택">
 <meta property="og:type" content="article">
 <meta property="og:title" content="(jQuery)제이쿼리 셀렉터 총정리 01편! jQuery Selector">
 <meta property="og:url" content="https://dullyshin.github.io/2019/07/25/jQuery-selector1/index.html">
 <meta property="og:site_name" content="Hyejin Shin">
-<meta property="og:description" content="###(jQuery)제이쿼리 셀렉터 총정리 01편! jQuery Selector jQuery에서 필수적으로 사용하게 되는 셀렉터! 에 대해 알아보겠습니다.  #####모든 셀렉터 All Selector (“*”)  jQuery( “*” )Selects all elements.모든 요소를 선택합니다.     #####속성 프리픽스 셀렉터 Prefix Sele">
+<meta property="og:description" content="jQuery에서 필수적으로 사용하게 되는 셀렉터! 에 대해 알아보겠습니다.  모든 셀렉터 All Selector (“*”) jQuery( “*” )Selects all elements.모든 요소를 선택합니다.     속성 프리픽스 셀렉터 Prefix Selector [name|=”value”] jQuery( “[attribute|=’value’]” )Sel">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://cdn-images-1.medium.com/max/1200/0*s1Goua9K1MuNuapv.jpg">
-<meta property="og:updated_time" content="2019-07-25T01:42:11.350Z">
+<meta property="og:updated_time" content="2019-07-25T02:22:27.646Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="(jQuery)제이쿼리 셀렉터 총정리 01편! jQuery Selector">
-<meta name="twitter:description" content="###(jQuery)제이쿼리 셀렉터 총정리 01편! jQuery Selector jQuery에서 필수적으로 사용하게 되는 셀렉터! 에 대해 알아보겠습니다.  #####모든 셀렉터 All Selector (“*”)  jQuery( “*” )Selects all elements.모든 요소를 선택합니다.     #####속성 프리픽스 셀렉터 Prefix Sele">
+<meta name="twitter:description" content="jQuery에서 필수적으로 사용하게 되는 셀렉터! 에 대해 알아보겠습니다.  모든 셀렉터 All Selector (“*”) jQuery( “*” )Selects all elements.모든 요소를 선택합니다.     속성 프리픽스 셀렉터 Prefix Selector [name|=”value”] jQuery( “[attribute|=’value’]” )Sel">
 <meta name="twitter:image" content="https://cdn-images-1.medium.com/max/1200/0*s1Goua9K1MuNuapv.jpg">
                 
                   <link rel="canonical" href="https://dullyshin.github.io/2019/07/25/jquery-selector1/">
@@ -198,49 +198,41 @@ ga('send', 'pageview');
           
             
                 <div class="article-entry" itemprop="articleBody">
-                  <p>###(jQuery)제이쿼리 셀렉터 총정리 01편! jQuery Selector</p>
-<p>jQuery에서 필수적으로 사용하게 되는 셀렉터! 에 대해 알아보겠습니다.</p>
+                  <p>jQuery에서 필수적으로 사용하게 되는 셀렉터! 에 대해 알아보겠습니다.</p>
 <hr>
-<p>#####모든 셀렉터 All Selector (“*”)</p>
-<blockquote>
+<h3 id="모든-셀렉터-All-Selector-“-”"><a href="#모든-셀렉터-All-Selector-“-”" class="headerlink" title="모든 셀렉터 All Selector (“*”)"></a>모든 셀렉터 All Selector (“*”)</h3><blockquote>
 <p><strong>jQuery( “*” )</strong><br>Selects all elements.<br>모든 요소를 선택합니다.</p>
 </blockquote>
 <script async src="//jsfiddle.net/srwtnhe8/embed/"></script>
 
 <hr>
-<p>#####속성 프리픽스 셀렉터 Prefix Selector [name|=”value”]</p>
-<blockquote>
+<h4 id="속성-프리픽스-셀렉터-Prefix-Selector-name-”value”"><a href="#속성-프리픽스-셀렉터-Prefix-Selector-name-”value”" class="headerlink" title="속성 프리픽스 셀렉터 Prefix Selector [name|=”value”]"></a>속성 프리픽스 셀렉터 Prefix Selector [name|=”value”]</h4><blockquote>
 <p><strong>jQuery( “[attribute|=’value’]” )</strong><br>Selects elements that have the specified attribute with a value either equal to a given string or starting with that string followed by a hyphen (-).<br>특정한 속성값을 가진 요소를 선택합니다. 특정 문자열이 원하는 문자열로 시작하여 띄어쓰기로 나누어져 있거나 (-) 하이픈으로 나누어져 있어야 합니다.</p>
 </blockquote>
 <script async src="//jsfiddle.net/taw3e46n/embed/"></script>
 
 <hr>
-<p>#####속성 컨테인 셀렉터 Attribute Contains Selector [name*=”value”]</p>
-<blockquote>
+<h4 id="속성-컨테인-셀렉터-Attribute-Contains-Selector-name-”value”"><a href="#속성-컨테인-셀렉터-Attribute-Contains-Selector-name-”value”" class="headerlink" title="속성 컨테인 셀렉터 Attribute Contains Selector [name*=”value”]"></a>속성 컨테인 셀렉터 Attribute Contains Selector [name*=”value”]</h4><blockquote>
 <p><strong>jQuery( “[attribute*=’value’]” )</strong><br>Selects elements that have the specified attribute with a value containing a given substring.<br>원하는 문자를 포함하고 있으면 선택됩니다.</p>
 </blockquote>
 <script async src="//jsfiddle.net/h5fbgu3m/embed/"></script>
 <hr>
-<p>#####속성 컨테인 워드 셀렉터 Attribute Contains Word Selector [name~=”value”]</p>
-<blockquote>
+<h4 id="속성-컨테인-워드-셀렉터-Attribute-Contains-Word-Selector-name-”value”"><a href="#속성-컨테인-워드-셀렉터-Attribute-Contains-Word-Selector-name-”value”" class="headerlink" title="속성 컨테인 워드 셀렉터 Attribute Contains Word Selector [name~=”value”]"></a>속성 컨테인 워드 셀렉터 Attribute Contains Word Selector [name~=”value”]</h4><blockquote>
 <p><strong>jQuery( “[attribute~=’value’]” )</strong><br>Selects elements that have the specified attribute with a value containing a given word, delimited by spaces.<br>속성에 원하는 문자를 선택하는데 공백으로 구분합니다. 문자가 앞에서 시작하든 중간에서 시작하든 상관없지만, 공백으로 나누어 있어야 합니다.</p>
 </blockquote>
 <script async src="//jsfiddle.net/wpn2mchb/embed/"></script>
 <hr>
-<p>#####속성 엔드 셀렉터 Attribute Ends With Selector [name$=”value”]</p>
-<blockquote>
+<h4 id="속성-엔드-셀렉터-Attribute-Ends-With-Selector-name-”value”"><a href="#속성-엔드-셀렉터-Attribute-Ends-With-Selector-name-”value”" class="headerlink" title="속성 엔드 셀렉터 Attribute Ends With Selector [name$=”value”]"></a>속성 엔드 셀렉터 Attribute Ends With Selector [name$=”value”]</h4><blockquote>
 <p><strong>jQuery( “[attribute$=’value’]” )</strong><br>Selects elements that have the specified attribute with a value ending exactly with a given string. The comparison is case sensitive.<br>속성에 원하는 문자열로 정확하게 끝나야 선택됩니다. 대소문자를 구별하여 선택됩니다.</p>
 </blockquote>
 <script async src="//jsfiddle.net/w5Lqrk9g/embed/"></script>
 <hr>
-<p>#####속성 이퀄 셀렉터 Attribute Equals Selector [name=”value”]</p>
-<blockquote>
+<h4 id="속성-이퀄-셀렉터-Attribute-Equals-Selector-name-”value”"><a href="#속성-이퀄-셀렉터-Attribute-Equals-Selector-name-”value”" class="headerlink" title="속성 이퀄 셀렉터 Attribute Equals Selector [name=”value”]"></a>속성 이퀄 셀렉터 Attribute Equals Selector [name=”value”]</h4><blockquote>
 <p><strong>jQuery( “[attribute=’value’]” )</strong><br>Selects elements that have the specified attribute with a value exactly equal to a certain value.<br>속성에 원하는 문자열로 정확 일치하는 요소를 선택합니다. 대소문자를 구별하여 선택됩니다.</p>
 </blockquote>
 <script async src="//jsfiddle.net/4s2oebcu/embed/"></script>
 <hr>
-<p>#####속성 스타트 셀렉터 Attribute Starts With Selector [name^=”value”]</p>
-<blockquote>
+<h4 id="속성-스타트-셀렉터-Attribute-Starts-With-Selector-name-”value”"><a href="#속성-스타트-셀렉터-Attribute-Starts-With-Selector-name-”value”" class="headerlink" title="속성 스타트 셀렉터 Attribute Starts With Selector [name^=”value”]"></a>속성 스타트 셀렉터 Attribute Starts With Selector [name^=”value”]</h4><blockquote>
 <p><strong>jQuery( “[attribute^=’value’]” )</strong><br>Selects elements that have the specified attribute with a value beginning exactly with a given string.<br>속성에 원하는 문자열로 정확하게 시작해야 선택됩니다. 대소문자를 구별하여 선택됩니다.</p>
 </blockquote>
 <script async src="//jsfiddle.net/edpj1qf3/embed/"></script>
@@ -271,7 +263,7 @@ ga('send', 'pageview');
 
 
 
-    <a data-url="https://dullyshin.github.io/2019/07/25/jQuery-selector1/" data-id="cjyi1s7v9000l74v07mfix8ep" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://dullyshin.github.io/2019/07/25/jQuery-selector1/" data-id="cjyi1y4x2000k6kv0qeialj2q" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {

@@ -9,7 +9,15 @@
 
     <url>
         <loc>https://dullyshin.github.io/2019/07/25/jQuery-selector2/</loc>
-        <lastmod>2019-07-25T02:18:12.994Z</lastmod>
+        <lastmod>2019-07-25T02:22:50.058Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/2019/07/25/jQuery-selector1/</loc>
+        <lastmod>2019-07-25T02:22:27.646Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -18,14 +26,6 @@
     <url>
         <loc>https://dullyshin.github.io/2019/07/25/jQuery-tablerowdelete/</loc>
         <lastmod>2019-07-25T01:45:10.946Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/2019/07/25/jQuery-selector1/</loc>
-        <lastmod>2019-07-25T01:42:11.350Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
