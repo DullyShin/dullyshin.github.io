@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://dullyshin.github.io/"/>
-  <updated>2019-07-25T01:42:11.350Z</updated>
+  <updated>2019-07-25T02:08:13.901Z</updated>
   <id>https://dullyshin.github.io/</id>
   
   <author>
@@ -15,6 +15,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>(jQuery)제이쿼리 셀렉터 총정리 02편! jQuery Selector</title>
+    <link href="https://dullyshin.github.io/2019/07/25/jQuery-selector2/"/>
+    <id>https://dullyshin.github.io/2019/07/25/jQuery-selector2/</id>
+    <published>2019-07-25T02:06:32.000Z</published>
+    <updated>2019-07-25T02:08:13.901Z</updated>
+    
+    <content type="html"><![CDATA[<p>###(jQuery)제이쿼리 셀렉터 총정리 02편! jQuery Selector</p><p>jQuery에서 필수적으로 사용하게 되는 셀렉터! 에 대해 알아보겠습니다.</p><hr><p>#####버튼 셀렉터 :button Selector</p><blockquote><p><strong>jQuery( “:button” )</strong><br>Selects all button elements and elements of type button.<br>타입이 <code>button</code>인 모든 요소를 선택합니다.</p></blockquote><script async src="//jsfiddle.net/9zLqr4te/embed/"></script><hr><p>#####체크박스 셀렉터 :checkbox Selector</p><blockquote><p><strong>jQuery( “:checkbox” )</strong><br>Selects all elements of type checkbox.<br>타입이 <code>checkbox</code>인 모든 요소를 선택합니다.</p></blockquote><script async src="//jsfiddle.net/9zLqr4te/1/embed/"></script><hr><p>#####체크드 셀렉터 :checked Selector</p><blockquote><p><strong>jQuery( “:checked” )</strong><br>Matches all elements that are checked or selected.<br><code>checkbox</code>에서 선택된 요소들만 선택합니다.</p></blockquote><script async src="//jsfiddle.net/ngxh6bw7/embed/"></script> // 수정중!!!!!!!!!!!!!<hr><p>#####속성 컨테인 워드 셀렉터 Attribute Contains Word Selector [name~=”value”]</p><blockquote><p><strong>jQuery( “[attribute~=’value’]” )</strong><br>Selects elements that have the specified attribute with a value containing a given word, delimited by spaces.<br>속성에 원하는 문자를 선택하는데 공백으로 구분합니다. 문자가 앞에서 시작하든 중간에서 시작하든 상관없지만, 공백으로 나누어 있어야 합니다.</p></blockquote><script async src="//jsfiddle.net/wpn2mchb/embed/"></script><hr><p>#####속성 엔드 셀렉터 Attribute Ends With Selector [name$=”value”]</p><blockquote><p><strong>jQuery( “[attribute$=’value’]” )</strong><br>Selects elements that have the specified attribute with a value ending exactly with a given string. The comparison is case sensitive.<br>속성에 원하는 문자열로 정확하게 끝나야 선택됩니다. 대소문자를 구별하여 선택됩니다.</p></blockquote><script async src="//jsfiddle.net/w5Lqrk9g/embed/"></script><hr><p>#####속성 이퀄 셀렉터 Attribute Equals Selector [name=”value”]</p><blockquote><p><strong>jQuery( “[attribute=’value’]” )</strong><br>Selects elements that have the specified attribute with a value exactly equal to a certain value.<br>속성에 원하는 문자열로 정확 일치하는 요소를 선택합니다. 대소문자를 구별하여 선택됩니다.</p></blockquote><script async src="//jsfiddle.net/4s2oebcu/embed/"></script><hr><p>#####속성 스타트 셀렉터 Attribute Starts With Selector [name^=”value”]</p><blockquote><p><strong>jQuery( “[attribute^=’value’]” )</strong><br>Selects elements that have the specified attribute with a value beginning exactly with a given string.<br>속성에 원하는 문자열로 정확하게 시작해야 선택됩니다. 대소문자를 구별하여 선택됩니다.</p></blockquote><script async src="//jsfiddle.net/edpj1qf3/embed/"></script><hr><iframe src="https://giphy.com/embed/l3V0gpbjA6fD7ym9W" width="300" height="331" frameborder="0" class="giphy-embed" allowfullscreen></iframe><p>더 많은 셀렉터는 다음 기회에 만나보겠습니다.</p><h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><ul><li><a href="https://api.jquery.com/category/selectors/" target="_blank" rel="noopener">https://api.jquery.com/category/selectors/</a></li></ul><h3 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h3><ul><li><a href="/2019/07/25/jQuery-selector1/" title="(jQuery)제이쿼리 셀렉터 총정리 01편! jQuery Selector">(jQuery)제이쿼리 셀렉터 총정리 01편! jQuery Selector</a></li><li></li><li><a href="/2019/02/26/jQuery-Traversing/" title="(jQuery) 제이쿼리 트래버싱 Traversing">(jQuery) 제이쿼리 트래버싱 Traversing</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;###(jQuery)제이쿼리 셀렉터 총정리 02편! jQuery Selector&lt;/p&gt;
+&lt;p&gt;jQuery에서 필수적으로 사용하게 되는 셀렉터! 에 대해 알아보겠습니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;#####버튼 셀렉터 :button Selector&lt;/p
+      
+    
+    </summary>
+    
+      <category term="Programming" scheme="https://dullyshin.github.io/categories/Programming/"/>
+    
+      <category term="jQuery" scheme="https://dullyshin.github.io/categories/Programming/jQuery/"/>
+    
+    
+      <category term="jQuery" scheme="https://dullyshin.github.io/tags/jQuery/"/>
+    
+      <category term="제이쿼리 셀렉터" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0/"/>
+    
+      <category term="제이쿼리 선택자" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%84%A0%ED%83%9D%EC%9E%90/"/>
+    
+      <category term="셀렉터" scheme="https://dullyshin.github.io/tags/%EC%85%80%EB%A0%89%ED%84%B0/"/>
+    
+      <category term="제이쿼리 셀렉터 총정리" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0-%EC%B4%9D%EC%A0%95%EB%A6%AC/"/>
+    
+      <category term="jQuery selector" scheme="https://dullyshin.github.io/tags/jQuery-selector/"/>
+    
+      <category term="All Selector" scheme="https://dullyshin.github.io/tags/All-Selector/"/>
+    
+      <category term="모든 요소 선택" scheme="https://dullyshin.github.io/tags/%EB%AA%A8%EB%93%A0-%EC%9A%94%EC%86%8C-%EC%84%A0%ED%83%9D/"/>
+    
+  </entry>
   
   <entry>
     <title>(jQuery)제이쿼리 셀렉터 총정리 01편! jQuery Selector</title>
@@ -42,6 +86,8 @@
       <category term="jQuery" scheme="https://dullyshin.github.io/categories/Programming/jQuery/"/>
     
     
+      <category term="jQuery" scheme="https://dullyshin.github.io/tags/jQuery/"/>
+    
       <category term="제이쿼리 셀렉터" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0/"/>
     
       <category term="제이쿼리 셀렉터 여러개" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0-%EC%97%AC%EB%9F%AC%EA%B0%9C/"/>
@@ -51,8 +97,6 @@
       <category term="셀렉터" scheme="https://dullyshin.github.io/tags/%EC%85%80%EB%A0%89%ED%84%B0/"/>
     
       <category term="제이쿼리 셀렉터 총정리" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0-%EC%B4%9D%EC%A0%95%EB%A6%AC/"/>
-    
-      <category term="jQuery" scheme="https://dullyshin.github.io/tags/jQuery/"/>
     
       <category term="jQuery selector" scheme="https://dullyshin.github.io/tags/jQuery-selector/"/>
     
@@ -67,9 +111,9 @@
     <link href="https://dullyshin.github.io/2019/07/25/jQuery-tablerowdelete/"/>
     <id>https://dullyshin.github.io/2019/07/25/jQuery-tablerowdelete/</id>
     <published>2019-07-25T01:27:35.900Z</published>
-    <updated>2019-07-25T01:34:02.609Z</updated>
+    <updated>2019-07-25T01:45:10.946Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>(jQuery) 테이블 행 추가, 삭제 / 랜덤함수 이용</strong></p><p>테이블의 행을 추가한 후 선택한 행을 삭제해 보겠습니다. 결과를 확인하고 싶으시면 아래의 Result 버튼을 클릭하면 됩니다.</p><script async src="//jsfiddle.net/r9yn5efo/3/embed/"></script><p>좀 더 자세히 보자면 랜덤 함수를 통해 정수 값을 구했습니다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var randomInt = Math.floor(Math.random() * <span class="number">100</span>);</span><br><span class="line">  <span class="comment">// 0부터 99까지의 숫자를 출력합니다. floor함수를 사용하지 않으면 정수가 아닌 실수가 출력됩니다.</span></span><br><span class="line">randomInt += <span class="string">' %'</span>;</span><br><span class="line">$(<span class="string">"#humi tr td"</span>).eq(-<span class="number">2</span>).text(randomInt);</span><br></pre></td></tr></table></figure><p>그리고 아래의 함수를 바로 선언하면 JSFiddle에서 오류가 나서 밑에와 같이 window를 사용한 것입니다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//JSFiddle에 맞춘 함수</span></span><br><span class="line">window.fnDelTable = function(_this) &#123;</span><br><span class="line">    var _id = $(_this).closest(<span class="string">'table'</span>).attr(<span class="string">'id'</span>);</span><br><span class="line">    var tbody = $(_this).closest(<span class="string">'tbody'</span>);</span><br><span class="line"></span><br><span class="line">    $(_this).closest(<span class="string">'tr'</span>).remove();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>위와 아래의 함수는 같은 기능을 가지고 있습니다. 원래는 아래와 같이 사용한 것을 JSFiddle에 맞추어 약간 변형했습니다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//원래 사용한 방식</span></span><br><span class="line"><span class="function">function <span class="title">fnDelTable</span><span class="params">(_this)</span> </span>&#123;</span><br><span class="line">    var _id = $(_this).closest(<span class="string">'table'</span>).attr(<span class="string">'id'</span>);</span><br><span class="line">    var tbody = $(_this).closest(<span class="string">'tbody'</span>);</span><br><span class="line"></span><br><span class="line">    $(_this).closest(<span class="string">'tr'</span>).remove();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><iframe src="https://giphy.com/embed/26BoEPUKhrymfItMs" width="300" height="240" frameborder="0" class="giphy-embed" allowfullscreen></iframe><p>-Reference<br><a href="https://stackoverflow.com/questions/5468350/javascript-not-running-on-jsfiddle-net" target="_blank" rel="noopener">https://stackoverflow.com/questions/5468350/javascript-not-running-on-jsfiddle-net</a></p><p>eq</p>]]></content>
+    <content type="html"><![CDATA[<p><strong>(jQuery) 테이블 행 추가, 삭제 / 랜덤함수 이용</strong></p><p>테이블의 행을 추가한 후 선택한 행을 삭제해 보겠습니다. 결과를 확인하고 싶으시면 아래의 Result 버튼을 클릭하면 됩니다.</p><script async src="//jsfiddle.net/r9yn5efo/3/embed/"></script><p>좀 더 자세히 보자면 랜덤 함수를 통해 정수 값을 구했습니다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var randomInt = Math.floor(Math.random() * <span class="number">100</span>);</span><br><span class="line">  <span class="comment">// 0부터 99까지의 숫자를 출력합니다. floor함수를 사용하지 않으면 정수가 아닌 실수가 출력됩니다.</span></span><br><span class="line">randomInt += <span class="string">' %'</span>;</span><br><span class="line">$(<span class="string">"#humi tr td"</span>).eq(-<span class="number">2</span>).text(randomInt);</span><br></pre></td></tr></table></figure><p>그리고 아래의 함수를 바로 선언하면 JSFiddle에서 오류가 나서 밑에와 같이 window를 사용한 것입니다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//JSFiddle에 맞춘 함수</span></span><br><span class="line">window.fnDelTable = function(_this) &#123;</span><br><span class="line">    var _id = $(_this).closest(<span class="string">'table'</span>).attr(<span class="string">'id'</span>);</span><br><span class="line">    var tbody = $(_this).closest(<span class="string">'tbody'</span>);</span><br><span class="line"></span><br><span class="line">    $(_this).closest(<span class="string">'tr'</span>).remove();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>위와 아래의 함수는 같은 기능을 가지고 있습니다. 원래는 아래와 같이 사용한 것을 JSFiddle에 맞추어 약간 변형했습니다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//원래 사용한 방식</span></span><br><span class="line"><span class="function">function <span class="title">fnDelTable</span><span class="params">(_this)</span> </span>&#123;</span><br><span class="line">    var _id = $(_this).closest(<span class="string">'table'</span>).attr(<span class="string">'id'</span>);</span><br><span class="line">    var tbody = $(_this).closest(<span class="string">'tbody'</span>);</span><br><span class="line"></span><br><span class="line">    $(_this).closest(<span class="string">'tr'</span>).remove();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><iframe src="https://giphy.com/embed/26BoEPUKhrymfItMs" width="300" height="240" frameborder="0" class="giphy-embed" allowfullscreen></iframe><p>-Reference<br><a href="https://stackoverflow.com/questions/5468350/javascript-not-running-on-jsfiddle-net" target="_blank" rel="noopener">https://stackoverflow.com/questions/5468350/javascript-not-running-on-jsfiddle-net</a></p>]]></content>
     
     <summary type="html">
     
@@ -126,9 +170,9 @@
       <category term="jQuery" scheme="https://dullyshin.github.io/categories/Programming/jQuery/"/>
     
     
-      <category term="jQuery" scheme="https://dullyshin.github.io/tags/jQuery/"/>
-    
       <category term="jquery 트래버싱" scheme="https://dullyshin.github.io/tags/jquery-%ED%8A%B8%EB%9E%98%EB%B2%84%EC%8B%B1/"/>
+    
+      <category term="jQuery" scheme="https://dullyshin.github.io/tags/jQuery/"/>
     
       <category term="제이쿼리 돔 횡단" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EB%8F%94-%ED%9A%A1%EB%8B%A8/"/>
     
@@ -212,11 +256,11 @@
       <category term="Hexo" scheme="https://dullyshin.github.io/categories/Hexo/"/>
     
     
-      <category term="마크다운 테이블" scheme="https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%ED%85%8C%EC%9D%B4%EB%B8%94/"/>
-    
       <category term="markdown" scheme="https://dullyshin.github.io/tags/markdown/"/>
     
       <category term="마크다운" scheme="https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4/"/>
+    
+      <category term="마크다운 테이블" scheme="https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%ED%85%8C%EC%9D%B4%EB%B8%94/"/>
     
       <category term="markdown table" scheme="https://dullyshin.github.io/tags/markdown-table/"/>
     
@@ -653,46 +697,15 @@
       <category term="Github" scheme="https://dullyshin.github.io/categories/Programming/Github/"/>
     
     
+      <category term="마크다운 에디터" scheme="https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%97%90%EB%94%94%ED%84%B0/"/>
+    
       <category term="Programming" scheme="https://dullyshin.github.io/tags/Programming/"/>
     
       <category term="Github" scheme="https://dullyshin.github.io/tags/Github/"/>
     
       <category term="markdown Editors" scheme="https://dullyshin.github.io/tags/markdown-Editors/"/>
     
-      <category term="마크다운 에디터" scheme="https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%97%90%EB%94%94%ED%84%B0/"/>
-    
       <category term="마크다운 테이블" scheme="https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%ED%85%8C%EC%9D%B4%EB%B8%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo Theme Hueman</title>
-    <link href="https://dullyshin.github.io/2018/08/26/Hexo-Theme/"/>
-    <id>https://dullyshin.github.io/2018/08/26/Hexo-Theme/</id>
-    <published>2018-08-26T03:57:16.000Z</published>
-    <updated>2018-08-26T18:41:00.841Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Hexo-Theme-Hueman"><a href="#Hexo-Theme-Hueman" class="headerlink" title="Hexo Theme Hueman"></a>Hexo Theme Hueman</h1><p>지금 Hexo Theme Hueman 설정을 어떻게 하는지 알아보도록 하겠습니다.<br>테마를 적용하시려면 아래의 링크를 들어가서 확인 부탁드리겠습니다. 제가 Hexo 시작할때 큰 도움을 받은 곳 입니다.<br><a href="https://futurecreator.github.io/2016/06/14/hexo-apply-hueman-theme/" target="_blank" rel="noopener">Hexo Hueman 테마 적용하기</a></p><h2 id="Menu-메뉴"><a href="#Menu-메뉴" class="headerlink" title="Menu 메뉴"></a>Menu 메뉴</h2><p><img src="https://camo.githubusercontent.com/c89c5becd6e5d7cad15a7380815fcb2d6a779eb8/68747470733a2f2f6f6f6f2e306f302e6f6f6f2f323031362f30312f31332f353639373334303065346439342e706e67" alt="hueman manu"></p><p>메뉴는 마카이브, 카테고리, 커스텀 페이지로 직접 연결합니다. 메뉴는 간단하게 이름을 추가하거나 링크 주소를 메뉴에 추가합니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">    Home: /hexo-theme-hueman/</span><br><span class="line">    About: /hexo-theme-hueman/about/index.html</span><br><span class="line">+   GitHub: https://github.com</span><br></pre></td></tr></table></figure><blockquote><p>상대주소와 절대주소를 모두 사용할 수 있습니다.</p></blockquote><p>Hueman은 메뉴안 카테고리에 쉽게 추가할 수 있습니다. 그냥 카테고리를 추가하세요 그리면 메뉴와 서브 카테고리가 추가될 것 입니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">    Home: /hexo-theme-hueman/</span><br><span class="line">+   Categories:</span><br><span class="line">    About: /hexo-theme-hueman/about/index.html</span><br></pre></td></tr></table></figure><h2 id="커스터마이즈"><a href="#커스터마이즈" class="headerlink" title="커스터마이즈"></a>커스터마이즈</h2><p>테마를 수정해서 커스터마이즈 할 수 있습니다.</p><h3 id="Logo-로고"><a href="#Logo-로고" class="headerlink" title="Logo 로고"></a>Logo 로고</h3><p>원하는 이미지를 가지고 로고를 바꿀 수 있습니다. 이미지 크기는 픽셀로 설정되있습니다. 그리고 url에 파일 경로를 입력해주세요.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">logo:</span><br><span class="line">    width: 165</span><br><span class="line">    height: 60</span><br><span class="line">    url: images/logo-header.png</span><br></pre></td></tr></table></figure><p>‘width’와 ‘height’에 숫자만 입력해세요. 다른 설정을 입력해도 작동하지 않습니다.</p><h3 id="Theme-Color-테마-컬러"><a href="#Theme-Color-테마-컬러" class="headerlink" title="Theme Color 테마 컬러"></a>Theme Color 테마 컬러</h3><p>링크의 색과 소셜링크 색을 변경할 수 있습니다. RGB로 색을 바꿀 수 있습니다.</p><p><img src="https://camo.githubusercontent.com/a4a5f524e9989a60a4a027df88eb438ce0c7c3df/68747470733a2f2f6f6f6f2e306f302e6f6f6f2f323031362f30312f31342f353639376131383733313933312e706e67" alt="theme color"></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme_color: &apos;#d35&apos;</span><br></pre></td></tr></table></figure><h3 id="Highlight-하이라이트"><a href="#Highlight-하이라이트" class="headerlink" title="Highlight 하이라이트"></a>Highlight 하이라이트</h3><p><img src="https://camo.githubusercontent.com/29244be9b08db085cc83244e9add325eaf5d0945/68747470733a2f2f6f6f6f2e306f302e6f6f6f2f323031362f30312f31342f353639373362663136383064312e706e67" alt="Highlight"></p><p>60가지 넘는 하이라이트 설정을 할 수 있습니다. 코드 블럭안에 색 설정을 말합니다. ‘hueman/source/css/_highlight’ 폴더에 들어가면 가능한 옵션을 확인 할 수 있습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- highlight: androidstudio</span><br><span class="line">+ highlight: tomorrow</span><br></pre></td></tr></table></figure><h3 id="Sidebar-사이드-바"><a href="#Sidebar-사이드-바" class="headerlink" title="Sidebar 사이드 바"></a>Sidebar 사이드 바</h3><p>사이드바의 위치를 조정할 수 있습니다. 옵션은 ‘left’ &amp; ‘right’ 2가지 입니다..</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sidebar: left</span><br></pre></td></tr></table></figure><h3 id="Thumbnail-썸네일"><a href="#Thumbnail-썸네일" class="headerlink" title="Thumbnail 썸네일"></a>Thumbnail 썸네일</h3><p>포스트의 썸네일 표시를 사용하지 않을 수도 있습니다. 옵션은 ‘true’와 ‘false’ 입니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">thumbnail: true</span><br></pre></td></tr></table></figure><h5 id="어떻게-썸네일-이미지를-넣을-수-있을까요"><a href="#어떻게-썸네일-이미지를-넣을-수-있을까요" class="headerlink" title="어떻게 썸네일 이미지를 넣을 수 있을까요?"></a>어떻게 썸네일 이미지를 넣을 수 있을까요?</h5><p>Hueman은 자동으로 당신의 포스트의 첫번째 이미지를 썸네일로 사용할 것입니다. 아니면 포스트의 자동으로 추가되는 front-matter부분에서 이미지를 직접 지정할 수 있습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: Hello World</span><br><span class="line">date: 2013/7/13 20:46:25</span><br><span class="line">+ thumbnail: https://example.com/image.jpg</span><br></pre></td></tr></table></figure><hr><h2 id="Favicon-파비콘"><a href="#Favicon-파비콘" class="headerlink" title="Favicon 파비콘"></a>Favicon 파비콘</h2><p>파비콘을 사이트에 추가해 봅시다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">favicon: favicon.png</span><br><span class="line">e.g: 만약 파비콘 이미지를 source/css/images에 넣었다면, Path 설정을 &quot;css/image/favicon.png&quot; 으로 설정합니다.</span><br></pre></td></tr></table></figure><h2 id="Social-Links-소셜링크"><a href="#Social-Links-소셜링크" class="headerlink" title="Social Links 소셜링크"></a>Social Links 소셜링크</h2><p><img src="https://camo.githubusercontent.com/a0d6d26c42120a7c175bdd61b2219b332b6941c0/68747470733a2f2f6f6f6f2e306f302e6f6f6f2f323031362f30312f31342f353639373430396336353834392e706e67" alt="Social Links"></p><p>소셜링크는 사이드 바 위쪽에서 확인 할 수 있습니다. 링크 이름과 링크 주소를 설정에 추가 할 수 있고 <a href="https://fontawesome.com/" target="_blank" rel="noopener">FontAwesome icon</a> 에서 고를 수 있습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">social_links:</span><br><span class="line">    github: https://github.com/ppoffice/hexo-theme-hueman</span><br><span class="line">+   youtube: https://youtube.com</span><br></pre></td></tr></table></figure><ul><li>참고 &amp; 출처<br><a href="https://github.com/ppoffice/hexo-theme-hueman/wiki/Theme" target="_blank" rel="noopener">https://github.com/ppoffice/hexo-theme-hueman/wiki/Theme</a><br><a href="https://futurecreator.github.io/2016/06/14/hexo-apply-hueman-theme/" target="_blank" rel="noopener">https://futurecreator.github.io/2016/06/14/hexo-apply-hueman-theme/</a></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;Hexo-Theme-Hueman&quot;&gt;&lt;a href=&quot;#Hexo-Theme-Hueman&quot; class=&quot;headerlink&quot; title=&quot;Hexo Theme Hueman&quot;&gt;&lt;/a&gt;Hexo Theme Hueman&lt;/h1&gt;&lt;p&gt;지금 Hexo Th
-      
-    
-    </summary>
-    
-      <category term="Hexo" scheme="https://dullyshin.github.io/categories/Hexo/"/>
-    
-    
-      <category term="Hexo" scheme="https://dullyshin.github.io/tags/Hexo/"/>
-    
-      <category term="Hexo Theme Hueman" scheme="https://dullyshin.github.io/tags/Hexo-Theme-Hueman/"/>
-    
-      <category term="Hexo Theme" scheme="https://dullyshin.github.io/tags/Hexo-Theme/"/>
-    
-      <category term="Hueman 사용법" scheme="https://dullyshin.github.io/tags/Hueman-%EC%82%AC%EC%9A%A9%EB%B2%95/"/>
     
   </entry>
   
@@ -726,19 +739,19 @@
   </entry>
   
   <entry>
-    <title>Hexo 처음 포스트하기</title>
-    <link href="https://dullyshin.github.io/2018/08/26/Hexo-hello-world/"/>
-    <id>https://dullyshin.github.io/2018/08/26/Hexo-hello-world/</id>
-    <published>2018-08-25T16:23:03.687Z</published>
-    <updated>2018-08-25T16:43:38.143Z</updated>
+    <title>Hexo Theme Hueman</title>
+    <link href="https://dullyshin.github.io/2018/08/26/Hexo-Theme/"/>
+    <id>https://dullyshin.github.io/2018/08/26/Hexo-Theme/</id>
+    <published>2018-08-26T03:57:16.000Z</published>
+    <updated>2018-08-26T18:41:00.841Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>를 시작한 것을 환영합니다! 더 많은 정보를 원하신다면 <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a>를 확인해보세요 . Hexo를 사용하실때 불편함을 느끼셨다면, <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> 여기에서 답을 찾을 수 있어요 아니면  <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>을 통해 질문해주세요.</p><h2 id="Quick-Start-빠른-시작"><a href="#Quick-Start-빠른-시작" class="headerlink" title="Quick Start 빠른 시작"></a>Quick Start 빠른 시작</h2><h3 id="Create-a-new-post-새로운-포스트-만들기"><a href="#Create-a-new-post-새로운-포스트-만들기" class="headerlink" title="Create a new post 새로운 포스트 만들기"></a>Create a new post 새로운 포스트 만들기</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server-서버-시작하기"><a href="#Run-server-서버-시작하기" class="headerlink" title="Run server 서버 시작하기"></a>Run server 서버 시작하기</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files-정적인-파일들-생성하기"><a href="#Generate-static-files-정적인-파일들-생성하기" class="headerlink" title="Generate static files 정적인 파일들 생성하기"></a>Generate static files 정적인 파일들 생성하기</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites-원격-사이트들-배포하기"><a href="#Deploy-to-remote-sites-원격-사이트들-배포하기" class="headerlink" title="Deploy to remote sites 원격 사이트들 배포하기"></a>Deploy to remote sites 원격 사이트들 배포하기</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Hexo-Theme-Hueman"><a href="#Hexo-Theme-Hueman" class="headerlink" title="Hexo Theme Hueman"></a>Hexo Theme Hueman</h1><p>지금 Hexo Theme Hueman 설정을 어떻게 하는지 알아보도록 하겠습니다.<br>테마를 적용하시려면 아래의 링크를 들어가서 확인 부탁드리겠습니다. 제가 Hexo 시작할때 큰 도움을 받은 곳 입니다.<br><a href="https://futurecreator.github.io/2016/06/14/hexo-apply-hueman-theme/" target="_blank" rel="noopener">Hexo Hueman 테마 적용하기</a></p><h2 id="Menu-메뉴"><a href="#Menu-메뉴" class="headerlink" title="Menu 메뉴"></a>Menu 메뉴</h2><p><img src="https://camo.githubusercontent.com/c89c5becd6e5d7cad15a7380815fcb2d6a779eb8/68747470733a2f2f6f6f6f2e306f302e6f6f6f2f323031362f30312f31332f353639373334303065346439342e706e67" alt="hueman manu"></p><p>메뉴는 마카이브, 카테고리, 커스텀 페이지로 직접 연결합니다. 메뉴는 간단하게 이름을 추가하거나 링크 주소를 메뉴에 추가합니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">    Home: /hexo-theme-hueman/</span><br><span class="line">    About: /hexo-theme-hueman/about/index.html</span><br><span class="line">+   GitHub: https://github.com</span><br></pre></td></tr></table></figure><blockquote><p>상대주소와 절대주소를 모두 사용할 수 있습니다.</p></blockquote><p>Hueman은 메뉴안 카테고리에 쉽게 추가할 수 있습니다. 그냥 카테고리를 추가하세요 그리면 메뉴와 서브 카테고리가 추가될 것 입니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">    Home: /hexo-theme-hueman/</span><br><span class="line">+   Categories:</span><br><span class="line">    About: /hexo-theme-hueman/about/index.html</span><br></pre></td></tr></table></figure><h2 id="커스터마이즈"><a href="#커스터마이즈" class="headerlink" title="커스터마이즈"></a>커스터마이즈</h2><p>테마를 수정해서 커스터마이즈 할 수 있습니다.</p><h3 id="Logo-로고"><a href="#Logo-로고" class="headerlink" title="Logo 로고"></a>Logo 로고</h3><p>원하는 이미지를 가지고 로고를 바꿀 수 있습니다. 이미지 크기는 픽셀로 설정되있습니다. 그리고 url에 파일 경로를 입력해주세요.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">logo:</span><br><span class="line">    width: 165</span><br><span class="line">    height: 60</span><br><span class="line">    url: images/logo-header.png</span><br></pre></td></tr></table></figure><p>‘width’와 ‘height’에 숫자만 입력해세요. 다른 설정을 입력해도 작동하지 않습니다.</p><h3 id="Theme-Color-테마-컬러"><a href="#Theme-Color-테마-컬러" class="headerlink" title="Theme Color 테마 컬러"></a>Theme Color 테마 컬러</h3><p>링크의 색과 소셜링크 색을 변경할 수 있습니다. RGB로 색을 바꿀 수 있습니다.</p><p><img src="https://camo.githubusercontent.com/a4a5f524e9989a60a4a027df88eb438ce0c7c3df/68747470733a2f2f6f6f6f2e306f302e6f6f6f2f323031362f30312f31342f353639376131383733313933312e706e67" alt="theme color"></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme_color: &apos;#d35&apos;</span><br></pre></td></tr></table></figure><h3 id="Highlight-하이라이트"><a href="#Highlight-하이라이트" class="headerlink" title="Highlight 하이라이트"></a>Highlight 하이라이트</h3><p><img src="https://camo.githubusercontent.com/29244be9b08db085cc83244e9add325eaf5d0945/68747470733a2f2f6f6f6f2e306f302e6f6f6f2f323031362f30312f31342f353639373362663136383064312e706e67" alt="Highlight"></p><p>60가지 넘는 하이라이트 설정을 할 수 있습니다. 코드 블럭안에 색 설정을 말합니다. ‘hueman/source/css/_highlight’ 폴더에 들어가면 가능한 옵션을 확인 할 수 있습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- highlight: androidstudio</span><br><span class="line">+ highlight: tomorrow</span><br></pre></td></tr></table></figure><h3 id="Sidebar-사이드-바"><a href="#Sidebar-사이드-바" class="headerlink" title="Sidebar 사이드 바"></a>Sidebar 사이드 바</h3><p>사이드바의 위치를 조정할 수 있습니다. 옵션은 ‘left’ &amp; ‘right’ 2가지 입니다..</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sidebar: left</span><br></pre></td></tr></table></figure><h3 id="Thumbnail-썸네일"><a href="#Thumbnail-썸네일" class="headerlink" title="Thumbnail 썸네일"></a>Thumbnail 썸네일</h3><p>포스트의 썸네일 표시를 사용하지 않을 수도 있습니다. 옵션은 ‘true’와 ‘false’ 입니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">thumbnail: true</span><br></pre></td></tr></table></figure><h5 id="어떻게-썸네일-이미지를-넣을-수-있을까요"><a href="#어떻게-썸네일-이미지를-넣을-수-있을까요" class="headerlink" title="어떻게 썸네일 이미지를 넣을 수 있을까요?"></a>어떻게 썸네일 이미지를 넣을 수 있을까요?</h5><p>Hueman은 자동으로 당신의 포스트의 첫번째 이미지를 썸네일로 사용할 것입니다. 아니면 포스트의 자동으로 추가되는 front-matter부분에서 이미지를 직접 지정할 수 있습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: Hello World</span><br><span class="line">date: 2013/7/13 20:46:25</span><br><span class="line">+ thumbnail: https://example.com/image.jpg</span><br></pre></td></tr></table></figure><hr><h2 id="Favicon-파비콘"><a href="#Favicon-파비콘" class="headerlink" title="Favicon 파비콘"></a>Favicon 파비콘</h2><p>파비콘을 사이트에 추가해 봅시다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">favicon: favicon.png</span><br><span class="line">e.g: 만약 파비콘 이미지를 source/css/images에 넣었다면, Path 설정을 &quot;css/image/favicon.png&quot; 으로 설정합니다.</span><br></pre></td></tr></table></figure><h2 id="Social-Links-소셜링크"><a href="#Social-Links-소셜링크" class="headerlink" title="Social Links 소셜링크"></a>Social Links 소셜링크</h2><p><img src="https://camo.githubusercontent.com/a0d6d26c42120a7c175bdd61b2219b332b6941c0/68747470733a2f2f6f6f6f2e306f302e6f6f6f2f323031362f30312f31342f353639373430396336353834392e706e67" alt="Social Links"></p><p>소셜링크는 사이드 바 위쪽에서 확인 할 수 있습니다. 링크 이름과 링크 주소를 설정에 추가 할 수 있고 <a href="https://fontawesome.com/" target="_blank" rel="noopener">FontAwesome icon</a> 에서 고를 수 있습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">social_links:</span><br><span class="line">    github: https://github.com/ppoffice/hexo-theme-hueman</span><br><span class="line">+   youtube: https://youtube.com</span><br></pre></td></tr></table></figure><ul><li>참고 &amp; 출처<br><a href="https://github.com/ppoffice/hexo-theme-hueman/wiki/Theme" target="_blank" rel="noopener">https://github.com/ppoffice/hexo-theme-hueman/wiki/Theme</a><br><a href="https://futurecreator.github.io/2016/06/14/hexo-apply-hueman-theme/" target="_blank" rel="noopener">https://futurecreator.github.io/2016/06/14/hexo-apply-hueman-theme/</a></li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;를 시작한 것을 환영합니다! 더 많은 정보를 원하신다면 &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;
+        &lt;h1 id=&quot;Hexo-Theme-Hueman&quot;&gt;&lt;a href=&quot;#Hexo-Theme-Hueman&quot; class=&quot;headerlink&quot; title=&quot;Hexo Theme Hueman&quot;&gt;&lt;/a&gt;Hexo Theme Hueman&lt;/h1&gt;&lt;p&gt;지금 Hexo Th
       
     
     </summary>
@@ -746,7 +759,13 @@
       <category term="Hexo" scheme="https://dullyshin.github.io/categories/Hexo/"/>
     
     
-      <category term="hexo" scheme="https://dullyshin.github.io/tags/hexo/"/>
+      <category term="Hexo" scheme="https://dullyshin.github.io/tags/Hexo/"/>
+    
+      <category term="Hexo Theme Hueman" scheme="https://dullyshin.github.io/tags/Hexo-Theme-Hueman/"/>
+    
+      <category term="Hexo Theme" scheme="https://dullyshin.github.io/tags/Hexo-Theme/"/>
+    
+      <category term="Hueman 사용법" scheme="https://dullyshin.github.io/tags/Hueman-%EC%82%AC%EC%9A%A9%EB%B2%95/"/>
     
   </entry>
   
