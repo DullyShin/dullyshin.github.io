@@ -3,6 +3,34 @@
 
 
     <url>
+        <loc>https://dullyshin.github.io/tags/echart-%ED%95%9C%EA%B8%80/</loc>
+        <lastmod>2019-07-26T07:34:56.844Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/echart/</loc>
+        <lastmod>2019-07-26T07:34:56.844Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/%EC%9D%B4%EC%B0%A8%ED%8A%B8/</loc>
+        <lastmod>2019-07-26T07:34:56.844Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/Echarts/</loc>
+        <lastmod>2019-07-26T07:34:56.844Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://dullyshin.github.io/tags/error/</loc>
         <lastmod>2019-07-25T02:43:30.297Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -542,6 +570,13 @@
     </url>
 
     <url>
+        <loc>https://dullyshin.github.io/tags/my-sql/</loc>
+        <lastmod>2018-09-02T16:00:56.403Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://dullyshin.github.io/tags/query/</loc>
         <lastmod>2018-09-02T16:00:56.403Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -550,13 +585,6 @@
 
     <url>
         <loc>https://dullyshin.github.io/tags/sql/</loc>
-        <lastmod>2018-09-02T16:00:56.403Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/my-sql/</loc>
         <lastmod>2018-09-02T16:00:56.403Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>

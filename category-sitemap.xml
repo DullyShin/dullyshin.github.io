@@ -8,14 +8,21 @@
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/categories/Programming/SQL/</loc>
-        <lastmod>2019-07-25T02:43:30.297Z</lastmod>
+        <loc>https://dullyshin.github.io/categories/Programming/Echarts/</loc>
+        <lastmod>2019-07-26T07:34:56.844Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://dullyshin.github.io/categories/Programming/</loc>
+        <lastmod>2019-07-26T07:34:56.844Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/categories/Programming/SQL/</loc>
         <lastmod>2019-07-25T02:43:30.297Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
