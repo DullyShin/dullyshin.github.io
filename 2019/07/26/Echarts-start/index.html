@@ -26,7 +26,7 @@
 <meta property="og:site_name" content="Hyejin Shin">
 <meta property="og:description" content="ECharts를 통해 5분안에 차트를 만들자!Echarts 에 있는 튜토리얼을 한글로 번역하였습니다. ECharts 다운로드우선, 아래의 방법 중 하나를 선택하여 다운로드 받습니다:  official download page, 공식 홈페이지에서 다운로드 받습니다. 만약 모든 패키지를 다운받고 싶다면 the full minified version에 들어가 확">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-07-26T07:34:56.844Z">
+<meta property="og:updated_time" content="2019-07-26T08:04:41.722Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ECharts를 통해 5분안에 차트를 만들자!">
 <meta name="twitter:description" content="ECharts를 통해 5분안에 차트를 만들자!Echarts 에 있는 튜토리얼을 한글로 번역하였습니다. ECharts 다운로드우선, 아래의 방법 중 하나를 선택하여 다운로드 받습니다:  official download page, 공식 홈페이지에서 다운로드 받습니다. 만약 모든 패키지를 다운받고 싶다면 the full minified version에 들어가 확">
@@ -55,7 +55,6 @@
                                   <link rel="stylesheet" href="/css/style.css">
 
                                     <script src="/libs/jquery/3.3.1/jquery.min.js"></script>
-									<script src="/libs/echarts.min.js"></script>
 									<script src="/libs/echarts.min.js"></script>
                                       
     
@@ -227,52 +226,44 @@ ga('send', 'pageview');
 <p>ECharts 객체를 echarts.init 을 사용해 준비합니다, setOption을 통해 간단한 bar 차트를 만듭시다. 아래에 전체 코드가 있습니다.</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;ECharts&lt;/title&gt;</span><br><span class="line">    &lt;!-- 다운받은 echarts 파일 --&gt;</span><br><span class="line">    &lt;script src=&quot;echarts.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;!-- 높이와 너비가 지정된 Dom 을 생성합니다 --&gt;</span><br><span class="line">&lt;div id=&quot;main&quot; style=&quot;width: 600px;height:400px;&quot;&gt;&lt;/div&gt;</span><br><span class="line">    &lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">        // DOM을 준비하고 echart 객체를 만듭니다.</span><br><span class="line">        var myChart = echarts.init(document.getElementById(&apos;main&apos;));</span><br><span class="line"></span><br><span class="line">        // 차트 속성과 데이터를 지정합니다.</span><br><span class="line">        var option = &#123;</span><br><span class="line">            title: &#123;</span><br><span class="line">            	text: &apos;ECharts entry example&apos;</span><br><span class="line">            &#125;,</span><br><span class="line">            tooltip: &#123;&#125;,</span><br><span class="line">            legend: &#123;</span><br><span class="line">            	data:[&apos;Sales&apos;]</span><br><span class="line">            &#125;,</span><br><span class="line">            xAxis: &#123;</span><br><span class="line">            	data: [&quot;shirt&quot;,&quot;cardign&quot;,&quot;chiffon shirt&quot;,&quot;pants&quot;,&quot;heels&quot;,&quot;socks&quot;]</span><br><span class="line">            &#125;,</span><br><span class="line">            yAxis: &#123;&#125;,</span><br><span class="line">            series: [&#123;</span><br><span class="line">                name: &apos;Sales&apos;,</span><br><span class="line">                type: &apos;bar&apos;,</span><br><span class="line">                data: [5, 20, 36, 10, 10, 20]</span><br><span class="line">            &#125;]</span><br><span class="line">        &#125;;</span><br><span class="line"></span><br><span class="line">        // 위에서 설정한 속성을 차트에 반영합니다.</span><br><span class="line">        myChart.setOption(option);</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 
-<!DOCTYPE html>
-<html>
-<head><meta name="generator" content="Hexo 3.9.0">
-    <meta charset="utf-8">
-    <title>ECharts</title>
-    <!-- 다운받은 echarts 파일 -->
-    <script src="echarts.js"></script>
-</head>
-<body>
 <!-- 높이와 너비가 지정된 Dom 을 생성합니다 -->
 <div id="main" style="width: 600px;height:400px;"></div>
-    <script type="text/javascript">
-        // DOM을 준비하고 echart 객체를 만듭니다.
-        var myChart = echarts.init(document.getElementById('main'));
 
-<pre><code>    // 차트 속성과 데이터를 지정합니다.
+<script type="text/javascript">
+    // DOM을 준비하고 echart 객체를 만듭니다.
+    var myChart = echarts.init(document.getElementById('main'));
+
+    // 차트 속성과 데이터를 지정합니다.
     var option = {
         title: {
-            text: &apos;ECharts entry example&apos;
+            text: 'ECharts entry example'
         },
         tooltip: {},
         legend: {
-            data:[&apos;Sales&apos;]
+            data:['Sales']
         },
         xAxis: {
-            data: [&quot;shirt&quot;,&quot;cardign&quot;,&quot;chiffon shirt&quot;,&quot;pants&quot;,&quot;heels&quot;,&quot;socks&quot;]
+            data: ["shirt","cardign","chiffon shirt","pants","heels","socks"]
         },
         yAxis: {},
         series: [{
-            name: &apos;Sales&apos;,
-            type: &apos;bar&apos;,
+            name: 'Sales',
+            type: 'bar',
             data: [5, 20, 36, 10, 10, 20]
         }]
     };
 
     // 위에서 설정한 속성을 차트에 반영합니다.
     myChart.setOption(option);
-&lt;/script&gt;
-&lt;/body&gt;</code></pre></html>
+</script>
 
 
-<p>자 처음으로 완성된 차트 입니다!<br>더 많은 예제는 <a href="https://echarts.apache.org/examples/en/">ECharts Gallery</a>에서 확인할 수 있습니다!</p>
+
+<p>자 처음으로 완성된 차트 입니다!<br>더 많은 예제는 <a href="https://echarts.apache.org/examples/en/" target="_blank" rel="noopener">ECharts Gallery</a>에서 확인할 수 있습니다!</p>
 <h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><ul>
-<li><a href="https://echarts.apache.org/en/tutorial.html#Get%20Started%20with%20ECharts%20in%205%20minutes">https://echarts.apache.org/en/tutorial.html#Get%20Started%20with%20ECharts%20in%205%20minutes</a></li>
+<li><a href="https://echarts.apache.org/en/tutorial.html#Get%20Started%20with%20ECharts%20in%205%20minutes" target="_blank" rel="noopener">https://echarts.apache.org/en/tutorial.html#Get%20Started%20with%20ECharts%20in%205%20minutes</a></li>
 </ul>
-</script></body></html>
+
                 </div>
 				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
