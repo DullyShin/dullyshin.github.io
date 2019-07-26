@@ -570,13 +570,6 @@
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/tags/my-sql/</loc>
-        <lastmod>2018-09-02T16:00:56.403Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://dullyshin.github.io/tags/query/</loc>
         <lastmod>2018-09-02T16:00:56.403Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -585,6 +578,13 @@
 
     <url>
         <loc>https://dullyshin.github.io/tags/sql/</loc>
+        <lastmod>2018-09-02T16:00:56.403Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/my-sql/</loc>
         <lastmod>2018-09-02T16:00:56.403Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
