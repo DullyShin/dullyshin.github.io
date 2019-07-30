@@ -101,13 +101,6 @@
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/tags/jQuery/</loc>
-        <lastmod>2019-07-25T02:22:50.058Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0-%EC%B4%9D%EC%A0%95%EB%A6%AC/</loc>
         <lastmod>2019-07-25T02:22:50.058Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -130,6 +123,13 @@
 
     <url>
         <loc>https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0/</loc>
+        <lastmod>2019-07-25T02:22:50.058Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/jQuery/</loc>
         <lastmod>2019-07-25T02:22:50.058Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
