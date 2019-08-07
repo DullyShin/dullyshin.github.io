@@ -272,16 +272,13 @@ code {
   clear: both;
 }
 .logo {
-  display: block;
-  padding: 10px 0;
-  width: 165px;
-  height: 60px;
-  background-image: url("images/logo-header.png");
-  background-position: 0px 10px;
+  width: 171px;
+  height: 77px;
+  background-position: -44px -78px;
   background-repeat: no-repeat;
-  -webkit-background-size: 165px 60px;
-  -moz-background-size: 165px 60px;
-  background-size: 165px 60px;
+  -webkit-background-size: 150%;
+  -moz-background-size: 150%;
+  background-size: 150%;
 }
 .main-body {
   margin-top: -60px;
