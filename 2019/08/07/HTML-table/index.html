@@ -9,7 +9,7 @@
     
       <title>
         
-          HTML-table |
+          HTML-표 만들기 |
             
               Hyejin Shin
       </title>
@@ -18,18 +18,20 @@
           
             <meta name="keywords" content="HTML 표 만들기,html 테이블 만들기,HTML 표 그리기,html 테이블 그리기,html 테이블,html 표,html table,html chart">
             
-              <meta name="description" content="*, *:before, *:after {   -moz-box-sizing: border-box;   -webkit-box-sizing: border-box;   box-sizing: border-box; }  body {   font-family: &apos;Lato&apos;, sans-serif;   color: #333;   font-weight: 400;   fon">
+              <meta name="description" content="HTML 표 만들기Overview표 형식으로 데이터를 표현하는 것을 웹사이트에서 쉽게 찾아 볼 수 있습니다. 오늘은 그 표를 html 형식으로 어떻게 만드는지 알아보겠습니다.저의 차트에는 CSS가 미리 적용되어 있습니다. 만약 필요하시다면 아래의 ‘CSS 확인하기’를 클릭하여 확인해주세요.  CSS 확인하기   1234567891011121314151617">
 <meta name="keywords" content="HTML 표 만들기,html 테이블 만들기,HTML 표 그리기,html 테이블 그리기,html 테이블,html 표,html table,html chart">
 <meta property="og:type" content="article">
-<meta property="og:title" content="HTML-table">
+<meta property="og:title" content="HTML-표 만들기">
 <meta property="og:url" content="https://dullyshin.github.io/2019/08/07/HTML-table/index.html">
 <meta property="og:site_name" content="Hyejin Shin">
-<meta property="og:description" content="*, *:before, *:after {   -moz-box-sizing: border-box;   -webkit-box-sizing: border-box;   box-sizing: border-box; }  body {   font-family: &apos;Lato&apos;, sans-serif;   color: #333;   font-weight: 400;   fon">
+<meta property="og:description" content="HTML 표 만들기Overview표 형식으로 데이터를 표현하는 것을 웹사이트에서 쉽게 찾아 볼 수 있습니다. 오늘은 그 표를 html 형식으로 어떻게 만드는지 알아보겠습니다.저의 차트에는 CSS가 미리 적용되어 있습니다. 만약 필요하시다면 아래의 ‘CSS 확인하기’를 클릭하여 확인해주세요.  CSS 확인하기   1234567891011121314151617">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-07T06:56:45.684Z">
+<meta property="og:image" content="https://dullyshin.github.io/images/chart1.png">
+<meta property="og:updated_time" content="2019-08-07T07:08:18.683Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="HTML-table">
-<meta name="twitter:description" content="*, *:before, *:after {   -moz-box-sizing: border-box;   -webkit-box-sizing: border-box;   box-sizing: border-box; }  body {   font-family: &apos;Lato&apos;, sans-serif;   color: #333;   font-weight: 400;   fon">
+<meta name="twitter:title" content="HTML-표 만들기">
+<meta name="twitter:description" content="HTML 표 만들기Overview표 형식으로 데이터를 표현하는 것을 웹사이트에서 쉽게 찾아 볼 수 있습니다. 오늘은 그 표를 html 형식으로 어떻게 만드는지 알아보겠습니다.저의 차트에는 CSS가 미리 적용되어 있습니다. 만약 필요하시다면 아래의 ‘CSS 확인하기’를 클릭하여 확인해주세요.  CSS 확인하기   1234567891011121314151617">
+<meta name="twitter:image" content="https://dullyshin.github.io/images/chart1.png">
                 
                   <link rel="canonical" href="https://dullyshin.github.io/2019/08/07/html-table/">
                     
@@ -179,7 +181,7 @@ ga('send', 'pageview');
         
     
         <h1 class="article-title" itemprop="name">
-        HTML-table
+        HTML-표 만들기
         </h1>
     
 
@@ -205,57 +207,7 @@ ga('send', 'pageview');
 	
 	
 	<div class="article-entry" itemprop="articleBody">
-		<style>
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Lato', sans-serif;
-  color: #333;
-  font-weight: 400;
-  font-size: 16px;
-}
-
-table {
-  max-width: 950px;
-  margin: 80px auto;
-}
-
-caption {
-  font-size: 18px;
-  font-weight: 400;
-  padding: 12px 0;
-}
-
-thead th {
-  background: #0c3390;
-  color: #fff;
-  font-weight: initial;
-}
-
-tr { background: #f1f1f1; }
-
-tr:nth-child(2n) { background: #e0e0e0; }
-
-th, td {
-  text-align: left;
-  padding: 24px;
-}
-
-tfoot tr { background: none; }
-
-tfoot td {
-  padding: 12px 2px;
-  font-style: italic;
-  color: #8a97a0;
-}
-</style>
-
-
-<h2 id="HTML-표-만들기"><a href="#HTML-표-만들기" class="headerlink" title="HTML 표 만들기"></a>HTML 표 만들기</h2><h4 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h4><p>표 형식으로 데이터를 표현하는 것을 웹사이트에서 쉽게 찾아 볼 수 있습니다. 오늘은 그 표를 html 형식으로 어떻게 만드는지 알아보겠습니다.<br>저의 차트에는 CSS가 미리 적용되어 있습니다. 만약 필요하시다면 아래의 ‘CSS 확인하기’를 클릭하여 확인해주세요.</p>
+		<h2 id="HTML-표-만들기"><a href="#HTML-표-만들기" class="headerlink" title="HTML 표 만들기"></a>HTML 표 만들기</h2><h4 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h4><p>표 형식으로 데이터를 표현하는 것을 웹사이트에서 쉽게 찾아 볼 수 있습니다. 오늘은 그 표를 html 형식으로 어떻게 만드는지 알아보겠습니다.<br>저의 차트에는 CSS가 미리 적용되어 있습니다. 만약 필요하시다면 아래의 ‘CSS 확인하기’를 클릭하여 확인해주세요.</p>
 <details>
 <summary>CSS 확인하기</summary>
 <div markdown="1">
@@ -274,137 +226,26 @@ tfoot td {
 <p>그러면 한 줄의 테이블안에 각 cell을 만들기위해서는 <code>&lt;td&gt;</code> 태그가 필요합니다. <code>&lt;td&gt;</code>태그는 표의 세로줄을 뜻합니다.<br>위에서 알려준 방법으로 표를 그려보았어요.</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">td</span>&gt;</span>No<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>Name<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>Age<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">td</span>&gt;</span>1<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>둘리<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>43<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">td</span>&gt;</span>2<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>곰돌이 푸<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>52<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">td</span>&gt;</span>3<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>스티치<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>15<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<table>
-    <tr>
-        <td>No</td>
-        <td>Name</td>
-        <td>Age</td>
-    </tr>
-     <tr>
-        <td>1</td>
-        <td>둘리</td>
-        <td>43</td>
-    </tr>
-     <tr>
-        <td>2</td>
-        <td>곰돌이 푸</td>
-        <td>52</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>스티치</td>
-        <td>15</td>
-    </tr>
-</table>
+<img src="/images/chart1.png" alt="html 기초 차트 그리기">
 
 <h4 id="Table-Header-Element"><a href="#Table-Header-Element" class="headerlink" title="Table Header Element"></a>Table Header Element</h4><p>아주 기초적인 테이블을 만들었지만 아직 표의 맨 윗줄이 표 속성의 이름을 나타낸다는 표시가 안되어있어 컬럼 명인지 내용인지 구분이 가지 않습니다.</p>
 <p>이때 Table Header Element인 <code>&lt;thead&gt;</code>를 사용하여 다른 데이터들과 구분지여서 사용할 수 있습니다. 가장 위쪽의 <code>&lt;tr&gt;</code> 태그를  <code>&lt;thead&gt;</code>로 감싸주세요. 그 후 <code>&lt;thead&gt;</code>안에 있는 <code>&lt;td&gt;</code> 태그를 <code>&lt;th&gt;</code> 태그로 바꾸어 주세요. 자 지금 우리는 테이블의 머리를 구분하였습니다. 그러면 몸통부분도 분리할 수 있겠죠. <code>&lt;tbody&gt;</code> 태그를 사용하시면 됩니다. <code>&lt;tbody&gt;</code>를 사용해 표의 나머지 부분을 감싸 주세요.</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">thead</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">th</span>&gt;</span>No<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">th</span>&gt;</span>Name<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">th</span>&gt;</span>Age<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">thead</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tbody</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>1<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>둘리<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>43<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>2<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>곰돌이 푸<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>52<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>3<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>스티치<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>15<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tbody</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<table>
-    <thead>
-        <tr>
-            <th>No</th>
-            <th>Name</th>
-            <th>Age</th>
-         </tr>
-    </thead>
-    <tbody>
-         <tr>
-            <td>1</td>
-            <td>둘리</td>
-            <td>43</td>
-        </tr>
-         <tr>
-            <td>2</td>
-            <td>곰돌이 푸</td>
-            <td>52</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>스티치</td>
-            <td>15</td>
-        </tr>
-    </tbody>
-</table>
+<img src="/images/chart2.png" alt="thead와 tbody를 사용한 표">
+
 
 <h4 id="Table-Foot-Element"><a href="#Table-Foot-Element" class="headerlink" title="Table Foot Element"></a>Table Foot Element</h4><p>표의 머리와 몸통을 구분하였다면 당연하게도 발부분 ‘foot’ 이 존재하겠죠. <code>&lt;tfoot&gt;</code>태그로 사용됩니다. 하지만 언제 사용될까요?</p>
 <p>일반적으로 테이블의 개요, 테이블을 요약할때 사용합니다. 테이블의 총합, 평균등을 나타낼 수 있겠죠. 아니면 테이블을 만든 사람의 Copyright 를 적을 수 있습니다.</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">thead</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">th</span>&gt;</span>No<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">th</span>&gt;</span>Name<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">th</span>&gt;</span>Age<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">thead</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tbody</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>1<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>둘리<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>43<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>2<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>곰돌이 푸<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>52<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>3<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>스티치<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>15<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tbody</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">tfoot</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">        	<span class="tag">&lt;<span class="name">td</span>&gt;</span></span><br><span class="line">    			나이의 총 합은 110 입니다.</span><br><span class="line">        	<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tfoot</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<table>
-    <thead>
-        <tr>
-            <th>No</th>
-            <th>Name</th>
-            <th>Age</th>
-         </tr>
-    </thead>
-    <tbody>
-         <tr>
-            <td>1</td>
-            <td>둘리</td>
-            <td>43</td>
-        </tr>
-         <tr>
-            <td>2</td>
-            <td>곰돌이 푸</td>
-            <td>52</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>스티치</td>
-            <td>15</td>
-        </tr>
-    </tbody>
-      <tfoot>
-        <tr>
-            <td>
-                나이의 총 합은 110 입니다.
-            </td>
-        </tr>
-    </tfoot>
-</table>
+<img src="/images/chart3.png" alt="tfoor를 사용한 표">
+
 
 <h4 id="Caption-Element"><a href="#Caption-Element" class="headerlink" title="Caption Element"></a>Caption Element</h4><p>자 이제 마지막 입니다. <code>&lt;caption&gt;</code> 그를 사용해서 표의 제목을 나타낼수 있습니다. 기본적으로 <code>&lt;table&gt;</code> 태그의 바로 뒤에 붙여서 사용합니다.</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">caption</span>&gt;</span></span><br><span class="line">    	아주 쉬운 표 만들기</span><br><span class="line">    <span class="tag">&lt;/<span class="name">caption</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">thead</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">th</span>&gt;</span>No<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">th</span>&gt;</span>Name<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">th</span>&gt;</span>Age<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">thead</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tbody</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>1<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>둘리<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>43<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>2<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>곰돌이 푸<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>52<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>3<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>스티치<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>15<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tbody</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tfoot</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">        	<span class="tag">&lt;<span class="name">td</span>&gt;</span></span><br><span class="line">    			나이의 총 합은 110 입니다.</span><br><span class="line">        	<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tfoot</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<table>
-    <caption>
-        아주 쉬운 표 만들기
-    </caption>
-    <thead>
-        <tr>
-            <th>No</th>
-            <th>Name</th>
-            <th>Age</th>
-         </tr>
-    </thead>
-    <tbody>
-         <tr>
-            <td>1</td>
-            <td>둘리</td>
-            <td>43</td>
-        </tr>
-         <tr>
-            <td>2</td>
-            <td>곰돌이 푸</td>
-            <td>52</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>스티치</td>
-            <td>15</td>
-        </tr>
-    </tbody>
-    <tfoot>
-        <tr>
-            <td>
-                나이의 총 합은 110 입니다.
-            </td>
-        </tr>
-    </tfoot>
-</table>
+<img src="/images/chart4.png" alt="caption 태그를 사용해 제목을 표현">
 
 
 <p>HTML에 관련되어 더 궁금한 점이 있다면 아래의 링크를 확인해주세요. 감사합니다!</p>
@@ -593,7 +434,7 @@ tfoot td {
                             <a href="/2019/08/07/HTML-table/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(/images/chart1.png)" alt="HTML-표 만들기" class="thumbnail-image"></span>
     
     
 </a>
@@ -602,7 +443,7 @@ tfoot td {
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/HTML/">HTML</a></p>
-                            <p class="item-title"><a href="/2019/08/07/HTML-table/" class="title">HTML-table</a></p>
+                            <p class="item-title"><a href="/2019/08/07/HTML-table/" class="title">HTML-표 만들기</a></p>
                             <p class="item-date"><time datetime="2019-08-07T06:00:45.000Z" itemprop="datePublished">2019-08-07</time></p>
                         </div>
                     </li>
