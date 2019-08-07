@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://dullyshin.github.io/2018/08/30/HTML-imgLink/</loc>
+        <lastmod>2019-08-07T06:57:03.052Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://dullyshin.github.io/2019/08/07/HTML-table/</loc>
-        <lastmod>2019-08-07T06:42:20.800Z</lastmod>
+        <lastmod>2019-08-07T06:56:45.684Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -130,14 +138,6 @@
     <url>
         <loc>https://dullyshin.github.io/2018/08/28/Hexo-tags/</loc>
         <lastmod>2018-09-02T15:59:15.550Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/2018/08/30/HTML-imgLink/</loc>
-        <lastmod>2018-08-29T17:34:34.087Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
