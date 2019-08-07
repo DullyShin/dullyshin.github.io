@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://dullyshin.github.io/"/>
-  <updated>2019-07-30T08:15:25.735Z</updated>
+  <updated>2019-08-07T06:42:20.800Z</updated>
   <id>https://dullyshin.github.io/</id>
   
   <author>
@@ -15,6 +15,55 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HTML-table</title>
+    <link href="https://dullyshin.github.io/2019/08/07/HTML-table/"/>
+    <id>https://dullyshin.github.io/2019/08/07/HTML-table/</id>
+    <published>2019-08-07T06:00:45.000Z</published>
+    <updated>2019-08-07T06:42:20.800Z</updated>
+    
+    <content type="html"><![CDATA[<style>*, *:before, *:after {  -moz-box-sizing: border-box;  -webkit-box-sizing: border-box;  box-sizing: border-box;}body {  font-family: 'Lato', sans-serif;  color: #333;  font-weight: 400;  font-size: 16px;}table {  max-width: 960px;  margin: 80px auto;}caption {  font-size: 18px;  font-weight: 400;  padding: 12px 0;}thead th {  background: #0c3390;  color: #fff;  font-weight: initial;}tr { background: #f1f1f1; }tr:nth-child(2n) { background: #e0e0e0; }th, td {  text-align: left;  padding: 24px;}tfoot tr { background: none; }tfoot td {  padding: 12px 2px;  font-style: italic;  color: #8a97a0;}</style><h2 id="HTML-표-만들기"><a href="#HTML-표-만들기" class="headerlink" title="HTML 표 만들기"></a>HTML 표 만들기</h2><h4 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h4><p>표 형식으로 데이터를 표현하는 것을 웹사이트에서 쉽게 찾아 볼 수 있습니다. 오늘은 그 표를 html 형식으로 어떻게 만드는지 알아보겠습니다.<br>저의 차트에는 CSS가 미리 적용되어 있습니다. 만약 필요하시다면 아래의 ‘CSS 확인하기’를 클릭하여 확인해주세요.</p><details><summary>CSS 확인하기</summary><div markdown="1"><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">*, *:before, *:after &#123;</span><br><span class="line">  -moz-box-sizing: border-box;</span><br><span class="line">  -webkit-box-sizing: border-box;</span><br><span class="line">  box-sizing: border-box;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">body &#123;</span><br><span class="line">  font-family: &apos;Lato&apos;, sans-serif;</span><br><span class="line">  color: #333;</span><br><span class="line">  font-weight: 400;</span><br><span class="line">  font-size: 16px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">table &#123;</span><br><span class="line">  max-width: 960px;</span><br><span class="line">  margin: 80px auto;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">caption &#123;</span><br><span class="line">  font-size: 18px;</span><br><span class="line">  font-weight: 400;</span><br><span class="line">  padding: 12px 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">thead th &#123;</span><br><span class="line">  background: #0c3390;</span><br><span class="line">  color: #fff;</span><br><span class="line">  font-weight: initial;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">tr &#123; background: #f1f1f1; &#125;</span><br><span class="line"></span><br><span class="line">tr:nth-child(2n) &#123; background: #e0e0e0; &#125;</span><br><span class="line"></span><br><span class="line">th, td &#123;</span><br><span class="line">  text-align: left;</span><br><span class="line">  padding: 24px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">tfoot tr &#123; background: none; &#125;</span><br><span class="line"></span><br><span class="line">tfoot td &#123;</span><br><span class="line">  padding: 12px 2px;</span><br><span class="line">  font-style: italic;</span><br><span class="line">  color: #8a97a0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></details><h4 id="Basic-Table"><a href="#Basic-Table" class="headerlink" title="Basic Table"></a>Basic Table</h4><p>HTML <code>&lt;table&gt;</code>태그를 사용하여 표를 만들 수 있습니다. 시작태그와 끝태그가 존재하고, 그 안에 테이블 row, cell이 들어갑니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;table&gt;&lt;/table&gt;</span><br></pre></td></tr></table></figure><p>이제 테이블의 row 를 만들어 봅시다. 간단히 생각해서 테이블의 가로를 생각하시면 됩니다. <code>&lt;tr&gt;</code> 태그를 사용하면 표의 가로줄을 만들 수 있습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;table&gt;</span><br><span class="line">&lt;tr&gt;&lt;/tr&gt;</span><br><span class="line">&lt;/table&gt;</span><br></pre></td></tr></table></figure><p>그러면 한 줄의 테이블안에 각 cell을 만들기위해서는 <code>&lt;td&gt;</code> 태그가 필요합니다. <code>&lt;td&gt;</code>태그는 표의 세로줄을 뜻합니다.<br>위에서 알려준 방법으로 표를 그려보았어요.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&lt;table&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">    &lt;td&gt;No&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;Name&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;Age&lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">     &lt;tr&gt;</span><br><span class="line">    &lt;td&gt;1&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;둘리&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;43&lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">     &lt;tr&gt;</span><br><span class="line">    &lt;td&gt;2&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;곰돌이 푸&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;52&lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">    &lt;td&gt;3&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;스티치&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;15&lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">&lt;/table&gt;</span><br></pre></td></tr></table></figure><table>    <tr>        <td>No</td>        <td>Name</td>        <td>Age</td>    </tr>     <tr>        <td>1</td>        <td>둘리</td>        <td>43</td>    </tr>     <tr>        <td>2</td>        <td>곰돌이 푸</td>        <td>52</td>    </tr>    <tr>        <td>3</td>        <td>스티치</td>        <td>15</td>    </tr></table><h4 id="Table-Header-Element"><a href="#Table-Header-Element" class="headerlink" title="Table Header Element"></a>Table Header Element</h4><p>아주 기초적인 테이블을 만들었지만 아직 표의 맨 윗줄이 표 속성의 이름을 나타낸다는 표시가 안되어있어 컬럼 명인지 내용인지 구분이 가지 않습니다.</p><p>이때 Table Header Element인 <code>&lt;thead&gt;</code>를 사용하여 다른 데이터들과 구분지여서 사용할 수 있습니다. 가장 위쪽의 <code>&lt;tr&gt;</code> 태그를  <code>&lt;thead&gt;</code>로 감싸주세요. 자 지금 우리는 테이블의 머리를 구분하였습니다. 그러면 몸통부분도 분리할 수 있겠죠. <code>&lt;tbody&gt;</code> 태그를 사용하시면 됩니다. <code>&lt;tbody&gt;</code>를 사용해 표의 나머지 부분을 감싸 주세요.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&lt;table&gt;</span><br><span class="line">    &lt;thead&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">            &lt;td&gt;No&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;Name&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;Age&lt;/td&gt;</span><br><span class="line">         &lt;/tr&gt;</span><br><span class="line">    &lt;/thead&gt;</span><br><span class="line">    &lt;tbody&gt;</span><br><span class="line">         &lt;tr&gt;</span><br><span class="line">            &lt;td&gt;1&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;둘리&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;43&lt;/td&gt;</span><br><span class="line">        &lt;/tr&gt;</span><br><span class="line">         &lt;tr&gt;</span><br><span class="line">            &lt;td&gt;2&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;곰돌이 푸&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;52&lt;/td&gt;</span><br><span class="line">        &lt;/tr&gt;</span><br><span class="line">        &lt;tr&gt;</span><br><span class="line">            &lt;td&gt;3&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;스티치&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;15&lt;/td&gt;</span><br><span class="line">        &lt;/tr&gt;</span><br><span class="line">    &lt;/tbody&gt;</span><br><span class="line">&lt;/table&gt;</span><br></pre></td></tr></table></figure><table>    <thead>        <tr>            <td>No</td>            <td>Name</td>            <td>Age</td>         </tr>    </thead>    <tbody>         <tr>            <td>1</td>            <td>둘리</td>            <td>43</td>        </tr>         <tr>            <td>2</td>            <td>곰돌이 푸</td>            <td>52</td>        </tr>        <tr>            <td>3</td>            <td>스티치</td>            <td>15</td>        </tr>    </tbody></table><h4 id="Table-Foot-Element"><a href="#Table-Foot-Element" class="headerlink" title="Table Foot Element"></a>Table Foot Element</h4><p>표의 머리와 몸통을 구분하였다면 당연하게도 발부분 ‘foot’ 이 존재하겠죠. <code>&lt;tfoot&gt;</code>태그로 사용됩니다. 하지만 언제 사용될까요?</p><p>일반적으로 테이블의 개요, 테이블을 요약할때 사용합니다. 테이블의 총합, 평균등을 나타낼 수 있겠죠. 아니면 테이블을 만든 사람의 Copyright 를 적을 수 있습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">&lt;table&gt;</span><br><span class="line">    &lt;thead&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">            &lt;td&gt;No&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;Name&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;Age&lt;/td&gt;</span><br><span class="line">         &lt;/tr&gt;</span><br><span class="line">    &lt;/thead&gt;</span><br><span class="line">    &lt;tbody&gt;</span><br><span class="line">         &lt;tr&gt;</span><br><span class="line">            &lt;td&gt;1&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;둘리&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;43&lt;/td&gt;</span><br><span class="line">        &lt;/tr&gt;</span><br><span class="line">         &lt;tr&gt;</span><br><span class="line">            &lt;td&gt;2&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;곰돌이 푸&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;52&lt;/td&gt;</span><br><span class="line">        &lt;/tr&gt;</span><br><span class="line">        &lt;tr&gt;</span><br><span class="line">            &lt;td&gt;3&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;스티치&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;15&lt;/td&gt;</span><br><span class="line">        &lt;/tr&gt;</span><br><span class="line">    &lt;/tbody&gt;</span><br><span class="line">    &lt;tfoot&gt;</span><br><span class="line">    나이의 총 합은 110 입니다.</span><br><span class="line">    &lt;/tfoot&gt;</span><br><span class="line">&lt;/table&gt;</span><br></pre></td></tr></table></figure><table>    <thead>        <tr>            <td>No</td>            <td>Name</td>            <td>Age</td>         </tr>    </thead>    <tbody>         <tr>            <td>1</td>            <td>둘리</td>            <td>43</td>        </tr>         <tr>            <td>2</td>            <td>곰돌이 푸</td>            <td>52</td>        </tr>        <tr>            <td>3</td>            <td>스티치</td>            <td>15</td>        </tr>    </tbody>    <tfoot>        나이의 총 합은 110 입니다.    </tfoot></table><h4 id="Caption-Element"><a href="#Caption-Element" class="headerlink" title="Caption Element"></a>Caption Element</h4><p>자 이제 마지막 입니다. <code>&lt;caption&gt;&#39; 그를 사용해서 표의 제목을 나타낼수 있습니다. 기본적으로</code><table>` 태그의 바로 뒤에 붙여서 사용합니다.</table></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">&lt;table&gt;</span><br><span class="line">&lt;caption&gt;</span><br><span class="line">    아주 쉬운 표 만들기</span><br><span class="line">    &lt;/caption&gt;</span><br><span class="line">    &lt;thead&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">            &lt;td&gt;No&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;Name&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;Age&lt;/td&gt;</span><br><span class="line">         &lt;/tr&gt;</span><br><span class="line">    &lt;/thead&gt;</span><br><span class="line">    &lt;tbody&gt;</span><br><span class="line">         &lt;tr&gt;</span><br><span class="line">            &lt;td&gt;1&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;둘리&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;43&lt;/td&gt;</span><br><span class="line">        &lt;/tr&gt;</span><br><span class="line">         &lt;tr&gt;</span><br><span class="line">            &lt;td&gt;2&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;곰돌이 푸&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;52&lt;/td&gt;</span><br><span class="line">        &lt;/tr&gt;</span><br><span class="line">        &lt;tr&gt;</span><br><span class="line">            &lt;td&gt;3&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;스티치&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;15&lt;/td&gt;</span><br><span class="line">        &lt;/tr&gt;</span><br><span class="line">    &lt;/tbody&gt;</span><br><span class="line">    &lt;tfoot&gt;</span><br><span class="line">    나이의 총 합은 110 입니다.</span><br><span class="line">    &lt;/tfoot&gt;</span><br><span class="line">&lt;/table&gt;</span><br></pre></td></tr></table></figure><table>    <caption>        아주 쉬운 표 만들기    </caption>    <thead>        <tr>            <td>No</td>            <td>Name</td>            <td>Age</td>         </tr>    </thead>    <tbody>         <tr>            <td>1</td>            <td>둘리</td>            <td>43</td>        </tr>         <tr>            <td>2</td>            <td>곰돌이 푸</td>            <td>52</td>        </tr>        <tr>            <td>3</td>            <td>스티치</td>            <td>15</td>        </tr>    </tbody>    <tfoot>        나이의 총 합은 110 입니다.    </tfoot></table><p>HTML에 관련되어 더 궁금한 점이 있다면 아래의 링크를 확인해주세요. 감사합니다!</p><h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><ul><li><a href="https://www.freecodecamp.org/news/a-step-by-step-guide-to-getting-started-with-html-tables-7f43b18f962b/" target="_blank" rel="noopener">https://www.freecodecamp.org/news/a-step-by-step-guide-to-getting-started-with-html-tables-7f43b18f962b/</a></li></ul><h3 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h3><ul><li><a href="/2018/08/30/HTML-imgLink/" title="HTML 이미지 링크거는 법">HTML 이미지 링크거는 법</a></li><li><a href="/2018/08/29/HTML-Editor/" title="HTML 에디터 (jsFiddle,메모장)">HTML 에디터 (jsFiddle,메모장)</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;style&gt;
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-f
+      
+    
+    </summary>
+    
+      <category term="Programming" scheme="https://dullyshin.github.io/categories/Programming/"/>
+    
+      <category term="HTML" scheme="https://dullyshin.github.io/categories/Programming/HTML/"/>
+    
+    
+      <category term="HTML 표 만들기" scheme="https://dullyshin.github.io/tags/HTML-%ED%91%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0/"/>
+    
+      <category term="html 테이블 만들기" scheme="https://dullyshin.github.io/tags/html-%ED%85%8C%EC%9D%B4%EB%B8%94-%EB%A7%8C%EB%93%A4%EA%B8%B0/"/>
+    
+      <category term="HTML 표 그리기" scheme="https://dullyshin.github.io/tags/HTML-%ED%91%9C-%EA%B7%B8%EB%A6%AC%EA%B8%B0/"/>
+    
+      <category term="html 테이블 그리기" scheme="https://dullyshin.github.io/tags/html-%ED%85%8C%EC%9D%B4%EB%B8%94-%EA%B7%B8%EB%A6%AC%EA%B8%B0/"/>
+    
+      <category term="html 테이블" scheme="https://dullyshin.github.io/tags/html-%ED%85%8C%EC%9D%B4%EB%B8%94/"/>
+    
+      <category term="html 표" scheme="https://dullyshin.github.io/tags/html-%ED%91%9C/"/>
+    
+      <category term="html table" scheme="https://dullyshin.github.io/tags/html-table/"/>
+    
+      <category term="html chart" scheme="https://dullyshin.github.io/tags/html-chart/"/>
+    
+  </entry>
   
   <entry>
     <title>ECharts를 통해 5분안에 차트를 만들자!</title>
@@ -150,8 +199,6 @@
       <category term="jQuery" scheme="https://dullyshin.github.io/categories/Programming/jQuery/"/>
     
     
-      <category term="jQuery" scheme="https://dullyshin.github.io/tags/jQuery/"/>
-    
       <category term="제이쿼리 셀렉터" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0/"/>
     
       <category term="제이쿼리 선택자" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%84%A0%ED%83%9D%EC%9E%90/"/>
@@ -159,6 +206,8 @@
       <category term="셀렉터" scheme="https://dullyshin.github.io/tags/%EC%85%80%EB%A0%89%ED%84%B0/"/>
     
       <category term="제이쿼리 셀렉터 총정리" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0-%EC%B4%9D%EC%A0%95%EB%A6%AC/"/>
+    
+      <category term="jQuery" scheme="https://dullyshin.github.io/tags/jQuery/"/>
     
       <category term="jQuery selector" scheme="https://dullyshin.github.io/tags/jQuery-selector/"/>
     
@@ -193,9 +242,9 @@
       <category term="jQuery" scheme="https://dullyshin.github.io/categories/Programming/jQuery/"/>
     
     
-      <category term="jQuery" scheme="https://dullyshin.github.io/tags/jQuery/"/>
-    
       <category term="제이쿼리 셀렉터" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0/"/>
+    
+      <category term="제이쿼리 셀렉터 여러개" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0-%EC%97%AC%EB%9F%AC%EA%B0%9C/"/>
     
       <category term="제이쿼리 선택자" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%84%A0%ED%83%9D%EC%9E%90/"/>
     
@@ -203,13 +252,13 @@
     
       <category term="제이쿼리 셀렉터 총정리" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0-%EC%B4%9D%EC%A0%95%EB%A6%AC/"/>
     
+      <category term="jQuery" scheme="https://dullyshin.github.io/tags/jQuery/"/>
+    
       <category term="jQuery selector" scheme="https://dullyshin.github.io/tags/jQuery-selector/"/>
     
       <category term="All Selector" scheme="https://dullyshin.github.io/tags/All-Selector/"/>
     
       <category term="모든 요소 선택" scheme="https://dullyshin.github.io/tags/%EB%AA%A8%EB%93%A0-%EC%9A%94%EC%86%8C-%EC%84%A0%ED%83%9D/"/>
-    
-      <category term="제이쿼리 셀렉터 여러개" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0-%EC%97%AC%EB%9F%AC%EA%B0%9C/"/>
     
   </entry>
   
@@ -277,9 +326,9 @@
       <category term="jQuery" scheme="https://dullyshin.github.io/categories/Programming/jQuery/"/>
     
     
-      <category term="jquery 트래버싱" scheme="https://dullyshin.github.io/tags/jquery-%ED%8A%B8%EB%9E%98%EB%B2%84%EC%8B%B1/"/>
-    
       <category term="jQuery" scheme="https://dullyshin.github.io/tags/jQuery/"/>
+    
+      <category term="jquery 트래버싱" scheme="https://dullyshin.github.io/tags/jquery-%ED%8A%B8%EB%9E%98%EB%B2%84%EC%8B%B1/"/>
     
       <category term="제이쿼리 돔 횡단" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EB%8F%94-%ED%9A%A1%EB%8B%A8/"/>
     
@@ -747,37 +796,6 @@
       <category term="PostgreSQL_Basic" scheme="https://dullyshin.github.io/tags/PostgreSQL-Basic/"/>
     
       <category term="PostgreSQL" scheme="https://dullyshin.github.io/tags/PostgreSQL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mailto 태그</title>
-    <link href="https://dullyshin.github.io/2018/08/27/HTML-MailtoTag/"/>
-    <id>https://dullyshin.github.io/2018/08/27/HTML-MailtoTag/</id>
-    <published>2018-08-26T18:25:29.000Z</published>
-    <updated>2018-08-26T18:36:53.010Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="mailto-태그를-잘-활용하는-방법"><a href="#mailto-태그를-잘-활용하는-방법" class="headerlink" title="mailto 태그를 잘 활용하는 방법"></a>mailto 태그를 잘 활용하는 방법</h1><p>대부분의 사람들이 mailto 태그를 사용할 때 수신자 속성만 정의하고 사용할 때가 많다. 하지만 참조,<br>숨은 참조, 제목, 본문 내용까지 이 태그 안에 다 정의할 수가 있다. 이 방법에 대해 간단히 살펴 보도록 하자.</p><ol><li>가장 기본적인 형태는 다음과 같다:</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;A href=&quot;mailto:sgj00038@naver.com&quot;&gt;sgj00038에게 이메일을 보내자.&lt;/a&gt;</span><br></pre></td></tr></table></figure><ol start="2"><li>다음으로는 참조를 삽입해 보자. 단순히 이메일 주소에 ?cc= 부분에 참조 이메일 주소를 적어주면 된다:</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;A href=&quot;mailto:sgj00038@naver.com?cc=another@naver.com&quot;&gt;sgj00038에게 이메일을 보내자.&lt;/a&gt;</span><br></pre></td></tr></table></figure><ol start="3"><li>이제 여기다 숨은 참조를 붙여보도록 하자:</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;A href=&quot;mailto:sgj00038@naver.com?cc=another@naver.com&amp;bcc=theother@naver.com&quot;&gt;sgj00038에게 이메일을 보내자.&lt;/a&gt;</span><br></pre></td></tr></table></figure><ol start="4"><li>이번엔 여러 사람에게 메일을 보내는 경우를 살펴 보자:</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;A href=&quot;mailto:sgj00038@naver.com,</span><br><span class="line">another@naver.com?cc=another0120@naver.com,</span><br><span class="line">sgj00038@naver.com&amp;bcc=theother@naver.com&quot;&gt;sgj00038에게 이메일을 보내자.&lt;/a&gt;</span><br></pre></td></tr></table></figure><ol start="5"><li>이제 제목란에 적당한 제목을 붙여 보도록 하자:</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;A href=&quot;mailto:sgj00038@naver.com?cc=another@naver.com&amp;bcc=theother@naver.com&amp;subject=문의가 있습니다!&quot;&gt;sgj00038에게 이메일을 보내자.&lt;/a&gt;</span><br></pre></td></tr></table></figure><ol start="6"><li>이제 여기에 메일 본문 내용까지 붙여보도록 하자:</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;A href=&quot;mailto:sgj00038@naver.com?cc=another@naver.com&amp;bcc=theother@naver.com&amp;subject=문의가 있습니다!&amp;body=mailto 태그 사용 방법에 대해 자세히 알고 싶습니다&quot;&gt;sgj00038에게 이메일을 보내자.&lt;/a&gt;</span><br></pre></td></tr></table></figure><p>출처 : jdmastermind.tistory.com</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;mailto-태그를-잘-활용하는-방법&quot;&gt;&lt;a href=&quot;#mailto-태그를-잘-활용하는-방법&quot; class=&quot;headerlink&quot; title=&quot;mailto 태그를 잘 활용하는 방법&quot;&gt;&lt;/a&gt;mailto 태그를 잘 활용하는 방법&lt;/h1&gt;&lt;
-      
-    
-    </summary>
-    
-      <category term="Programming" scheme="https://dullyshin.github.io/categories/Programming/"/>
-    
-      <category term="HTML" scheme="https://dullyshin.github.io/categories/Programming/HTML/"/>
-    
-    
-      <category term="Mailto 태그" scheme="https://dullyshin.github.io/tags/Mailto-%ED%83%9C%EA%B7%B8/"/>
-    
-      <category term="html tags" scheme="https://dullyshin.github.io/tags/html-tags/"/>
-    
-      <category term="html 태그" scheme="https://dullyshin.github.io/tags/html-%ED%83%9C%EA%B7%B8/"/>
     
   </entry>
   
