@@ -8,8 +8,24 @@
     </url>
 
     <url>
+        <loc>https://dullyshin.github.io/2019/08/07/HTML-buttonLink/</loc>
+        <lastmod>2019-08-07T07:59:22.488Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/2018/08/29/HTML-Editor/</loc>
+        <lastmod>2019-08-07T07:41:35.281Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://dullyshin.github.io/2019/08/07/HTML-table/</loc>
-        <lastmod>2019-08-07T07:33:46.618Z</lastmod>
+        <lastmod>2019-08-07T07:38:23.033Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +33,7 @@
 
     <url>
         <loc>https://dullyshin.github.io/2018/08/30/HTML-imgLink/</loc>
-        <lastmod>2019-08-07T07:05:26.024Z</lastmod>
+        <lastmod>2019-08-07T07:10:36.864Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -154,14 +170,6 @@
     <url>
         <loc>https://dullyshin.github.io/2018/08/29/HTML-basic/</loc>
         <lastmod>2018-08-29T14:58:26.451Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/2018/08/29/HTML-Editor/</loc>
-        <lastmod>2018-08-29T14:57:48.705Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
