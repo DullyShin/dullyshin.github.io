@@ -80,8 +80,8 @@ ga('send', 'pageview');
     
 
 
-							<link rel="stylesheet" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.css">
-
+							<link rel="stylesheet" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.css">	
+							<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css">
 </head>
 </html>
 <body>
@@ -219,10 +219,14 @@ ga('send', 'pageview');
 </blockquote>
 <p>쿼리문을 확인할 필요가 있습니다.</p>
 <p>XML에서는 &lt; 부등호를 TAG로 인식하기 때문에 “The content of elements must consist of well-formed character data or markup.”라는 에러가 발생합니다. 이와 같은 문제를 해결하기 위해서는 Query안에 사용되고 있는 부등호가 문자열이라것을 의미하게 <!--[CDATA[  내용  ]]--> “으로 감싸준다.</p>
-<h3 id="예시"><a href="#예시" class="headerlink" title="예시"></a>예시</h3><figure class="highlight sql"><figcaption><span>수정 전</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> *</span><br><span class="line"><span class="keyword">from</span> test_tbl</span><br><span class="line"><span class="keyword">where</span> data_tm &gt; <span class="string">'20190101'</span></span><br></pre></td></tr></table></figure>
+<h3 id="예시"><a href="#예시" class="headerlink" title="예시"></a>예시</h3><pre><code>select *
+from test_tbl
+where data_tm &gt; &#39;20190101&#39;</code></pre>
 
 
-<figure class="highlight sql"><figcaption><span>수정 후</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> *</span><br><span class="line"><span class="keyword">from</span> test_tbl</span><br><span class="line"><span class="keyword">where</span> data_tm &lt;![CDATA[  &gt;  ]]&gt; <span class="string">'20190101'</span></span><br></pre></td></tr></table></figure>
+<pre><code>select *
+from test_tbl
+where data_tm &lt;![CDATA[  &gt;  ]]&gt; &#39;20190101&#39;</code></pre>
 
 
 <h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><ul>
@@ -239,7 +243,7 @@ ga('send', 'pageview');
 
 
 
-    <a data-url="https://dullyshin.github.io/2019/07/25/PostgreSql-error1/" data-id="cjz0yp1bi000ja8v03f3rbf2s" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://dullyshin.github.io/2019/07/25/PostgreSql-error1/" data-id="cjz20rbzz000jkcv0l8bfb7er" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -303,11 +307,11 @@ ga('send', 'pageview');
 	
 <nav id="article-nav">
     
-        <a href="/2019/07/26/Echarts-start/" id="article-nav-newer" class="article-nav-link-wrap">
+        <a href="/2019/07/26/Echarts-heatmap/" id="article-nav-newer" class="article-nav-link-wrap">
         <strong class="article-nav-caption">newer</strong>
         <p class="article-nav-title">
         
-            ECharts를 통해 5분안에 차트를 만들자!
+            ECharts를 통해 간단한 Heatmap 만들기!
         
         </p>
         <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
@@ -383,11 +387,11 @@ ga('send', 'pageview');
         
 <nav id="article-nav">
     
-        <a href="/2019/07/26/Echarts-start/" id="article-nav-newer" class="article-nav-link-wrap">
+        <a href="/2019/07/26/Echarts-heatmap/" id="article-nav-newer" class="article-nav-link-wrap">
         <strong class="article-nav-caption">newer</strong>
         <p class="article-nav-title">
         
-            ECharts를 통해 5분안에 차트를 만들자!
+            ECharts를 통해 간단한 Heatmap 만들기!
         
         </p>
         <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
@@ -458,26 +462,6 @@ ga('send', 'pageview');
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2019/07/26/Echarts-heatmap/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/images/echarts_logo.png)" alt="ECharts를 통해 간단한 Heatmap 만들기!" class="thumbnail-image"></span>
-    
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/Echarts/">Echarts</a></p>
-                            <p class="item-title"><a href="/2019/07/26/Echarts-heatmap/" class="title">ECharts를 통해 간단한 Heatmap 만들기!</a></p>
-                            <p class="item-date"><time datetime="2019-07-26T06:32:51.000Z" itemprop="datePublished">2019-07-26</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
                             <a href="/2019/07/26/Echarts-start/" class="thumbnail">
     
     
@@ -491,6 +475,26 @@ ga('send', 'pageview');
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/Echarts/">Echarts</a></p>
                             <p class="item-title"><a href="/2019/07/26/Echarts-start/" class="title">ECharts를 통해 5분안에 차트를 만들자!</a></p>
+                            <p class="item-date"><time datetime="2019-07-26T06:32:51.000Z" itemprop="datePublished">2019-07-26</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/07/26/Echarts-heatmap/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/echarts_logo.png)" alt="ECharts를 통해 간단한 Heatmap 만들기!" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/Echarts/">Echarts</a></p>
+                            <p class="item-title"><a href="/2019/07/26/Echarts-heatmap/" class="title">ECharts를 통해 간단한 Heatmap 만들기!</a></p>
                             <p class="item-date"><time datetime="2019-07-26T06:32:51.000Z" itemprop="datePublished">2019-07-26</time></p>
                         </div>
                     </li>

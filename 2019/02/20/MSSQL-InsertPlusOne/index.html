@@ -18,19 +18,19 @@
           
             <meta name="keywords" content="mssql,max,isnull,sequence,널처리,삽입시 최대값 추가 +1,칼럼의 최대값 +1,insert 구문에 max 사용,insert할 때 최대값 +1,insert시 최대값 +1,삽입 구문에 max 사용,삽입할 때 최대값 +1,삽입시 최대값 +1">
             
-              <meta name="description" content="[MS SQL] 삽입시Insert 최대값 추가 +1 최대값에서 1을 더한 값을 삽입하고 싶을때 mssql에서는 Insert 문을 사용할때 시퀀스를 사용할 수도 있지만, 그렇지 않을 경우에 아래와 같은 쿼리를 사용할 수 있습니다.   123456789INSERT INTO user     (user     , age     , order)VALUES     (">
+              <meta name="description" content="[MS SQL] 삽입시Insert 최대값 추가 +1 최대값에서 1을 더한 값을 삽입하고 싶을때 mssql에서는 Insert 문을 사용할때 시퀀스를 사용할 수도 있지만, 그렇지 않을 경우에 아래와 같은 쿼리를 사용할 수 있습니다.   INSERT INTO user      (user      , age      , order) VALUES      (&amp;#39">
 <meta name="keywords" content="mssql,max,isnull,sequence,널처리,삽입시 최대값 추가 +1,칼럼의 최대값 +1,insert 구문에 max 사용,insert할 때 최대값 +1,insert시 최대값 +1,삽입 구문에 max 사용,삽입할 때 최대값 +1,삽입시 최대값 +1">
 <meta property="og:type" content="article">
 <meta property="og:title" content="(MS SQL) 삽입시Insert 최대값 추가 +1">
 <meta property="og:url" content="https://dullyshin.github.io/2019/02/20/MSSQL-InsertPlusOne/index.html">
 <meta property="og:site_name" content="Hyejin Shin">
-<meta property="og:description" content="[MS SQL] 삽입시Insert 최대값 추가 +1 최대값에서 1을 더한 값을 삽입하고 싶을때 mssql에서는 Insert 문을 사용할때 시퀀스를 사용할 수도 있지만, 그렇지 않을 경우에 아래와 같은 쿼리를 사용할 수 있습니다.   123456789INSERT INTO user     (user     , age     , order)VALUES     (">
+<meta property="og:description" content="[MS SQL] 삽입시Insert 최대값 추가 +1 최대값에서 1을 더한 값을 삽입하고 싶을때 mssql에서는 Insert 문을 사용할때 시퀀스를 사용할 수도 있지만, 그렇지 않을 경우에 아래와 같은 쿼리를 사용할 수 있습니다.   INSERT INTO user      (user      , age      , order) VALUES      (&amp;#39">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://www.handybackup.net/images/icons/mssql-backup.png">
 <meta property="og:updated_time" content="2019-02-25T15:47:50.966Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="(MS SQL) 삽입시Insert 최대값 추가 +1">
-<meta name="twitter:description" content="[MS SQL] 삽입시Insert 최대값 추가 +1 최대값에서 1을 더한 값을 삽입하고 싶을때 mssql에서는 Insert 문을 사용할때 시퀀스를 사용할 수도 있지만, 그렇지 않을 경우에 아래와 같은 쿼리를 사용할 수 있습니다.   123456789INSERT INTO user     (user     , age     , order)VALUES     (">
+<meta name="twitter:description" content="[MS SQL] 삽입시Insert 최대값 추가 +1 최대값에서 1을 더한 값을 삽입하고 싶을때 mssql에서는 Insert 문을 사용할때 시퀀스를 사용할 수도 있지만, 그렇지 않을 경우에 아래와 같은 쿼리를 사용할 수 있습니다.   INSERT INTO user      (user      , age      , order) VALUES      (&amp;#39">
 <meta name="twitter:image" content="https://www.handybackup.net/images/icons/mssql-backup.png">
                 
                   <link rel="canonical" href="https://dullyshin.github.io/2019/02/20/mssql-insertplusone/">
@@ -80,8 +80,8 @@ ga('send', 'pageview');
     
 
 
-							<link rel="stylesheet" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.css">
-
+							<link rel="stylesheet" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.css">	
+							<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css">
 </head>
 </html>
 <body>
@@ -217,25 +217,30 @@ ga('send', 'pageview');
 <p>최대값에서 1을 더한 값을 삽입하고 싶을때 mssql에서는 Insert 문을 사용할때 시퀀스를 사용할 수도 있지만, 그렇지 않을 경우에 아래와 같은 쿼리를 사용할 수 있습니다.</p>
 <br>
 
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">INSERT INTO user</span><br><span class="line">     (user</span><br><span class="line">     , age</span><br><span class="line">     , order)</span><br><span class="line">VALUES</span><br><span class="line">     (&apos;dully&apos;</span><br><span class="line">     , 29</span><br><span class="line">     , (SELECT ISNULL(MAX(order) + 1, 1) FROM user))</span><br><span class="line">;</span><br></pre></td></tr></table></figure>
-
-<p>여기서 주의 깊게 봐야하는 쿼리는 <span style="color:red">SELECT ISNULL(MAX(order) + 1, 1) FROM user</span>  입니다.<br>아주 간단한 ISNULL()과 MAX()를 함께 사용하는데요.</p>
+<pre><code>INSERT INTO user
+     (user
+     , age
+     , order)
+VALUES
+     (&#39;dully&#39;
+     , 29
+     , (SELECT ISNULL(MAX(order) + 1, 1) FROM user))
+;</code></pre><p>여기서 주의 깊게 봐야하는 쿼리는 <span style="color:red">SELECT ISNULL(MAX(order) + 1, 1) FROM user</span>  입니다.<br>아주 간단한 ISNULL()과 MAX()를 함께 사용하는데요.</p>
 <br>
 
 <h3 id="ISNULL"><a href="#ISNULL" class="headerlink" title="-ISNULL()"></a>-ISNULL()</h3><p>ISNULL()은 데이터가 null인 부분을 조회하는 쿼리 입니다. 반대의 예시는 아래와 같습니다. 값이 있는 부분을 조회하는 쿼리죠.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SELECT FirstName, LastName, MiddleName</span><br><span class="line">FROM DIMEmployee</span><br><span class="line">WHERE MiddleName IS NOT NULL</span><br><span class="line">ORDER BY LastName DESC;</span><br></pre></td></tr></table></figure>
-
-<h3 id="MAX"><a href="#MAX" class="headerlink" title="-MAX()"></a>-MAX()</h3><p>MAX()는 데이터 중 가장 큰 값을 조회합니다. 간단한 예시는 아래와 같습니다. () 괄효 안에 조회하고 싶은 컬럼 이름을 적으시면 됩니다.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT MAX(TaxRate)</span><br><span class="line">FROM Sales.SalesTaxRate;</span><br></pre></td></tr></table></figure>
-
-<br>
+<pre><code>SELECT FirstName, LastName, MiddleName
+FROM DIMEmployee
+WHERE MiddleName IS NOT NULL
+ORDER BY LastName DESC;</code></pre><h3 id="MAX"><a href="#MAX" class="headerlink" title="-MAX()"></a>-MAX()</h3><p>MAX()는 데이터 중 가장 큰 값을 조회합니다. 간단한 예시는 아래와 같습니다. () 괄효 안에 조회하고 싶은 컬럼 이름을 적으시면 됩니다.</p>
+<pre><code>SELECT MAX(TaxRate)
+FROM Sales.SalesTaxRate;</code></pre><br>
 ### -Result
 
 
 <p><code>SELECT MAX(order) + 1 FROM user</code> 으로도 최대값에 1을 더한 값을 구할 수 있지만, 위의 order의 값이 null일 경우를 대비해서 null일 경우에 1을 삽입하도록 하였습니다.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT ISNULL(MAX(order) + 1, 1) FROM user</span><br><span class="line">//SELECT ISNULL(&apos;null이 아닐경우 실행 됨&apos;, &apos;null일때 실행됨&apos;) FROM user</span><br></pre></td></tr></table></figure>
-
-<hr>
+<pre><code> SELECT ISNULL(MAX(order) + 1, 1) FROM user
+ //SELECT ISNULL(&#39;null이 아닐경우 실행 됨&#39;, &#39;null일때 실행됨&#39;) FROM user</code></pre><hr>
 <ul>
 <li><p>More Info</p>
 <ol>
@@ -260,7 +265,7 @@ ga('send', 'pageview');
 
 
 
-    <a data-url="https://dullyshin.github.io/2019/02/20/MSSQL-InsertPlusOne/" data-id="cjz0yp1bh000ia8v0kavifoh3" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://dullyshin.github.io/2019/02/20/MSSQL-InsertPlusOne/" data-id="cjz20rbzw000fkcv0te4kmcgs" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -479,26 +484,6 @@ ga('send', 'pageview');
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2019/07/26/Echarts-heatmap/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/images/echarts_logo.png)" alt="ECharts를 통해 간단한 Heatmap 만들기!" class="thumbnail-image"></span>
-    
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/Echarts/">Echarts</a></p>
-                            <p class="item-title"><a href="/2019/07/26/Echarts-heatmap/" class="title">ECharts를 통해 간단한 Heatmap 만들기!</a></p>
-                            <p class="item-date"><time datetime="2019-07-26T06:32:51.000Z" itemprop="datePublished">2019-07-26</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
                             <a href="/2019/07/26/Echarts-start/" class="thumbnail">
     
     
@@ -512,6 +497,26 @@ ga('send', 'pageview');
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/Echarts/">Echarts</a></p>
                             <p class="item-title"><a href="/2019/07/26/Echarts-start/" class="title">ECharts를 통해 5분안에 차트를 만들자!</a></p>
+                            <p class="item-date"><time datetime="2019-07-26T06:32:51.000Z" itemprop="datePublished">2019-07-26</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/07/26/Echarts-heatmap/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/echarts_logo.png)" alt="ECharts를 통해 간단한 Heatmap 만들기!" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/Echarts/">Echarts</a></p>
+                            <p class="item-title"><a href="/2019/07/26/Echarts-heatmap/" class="title">ECharts를 통해 간단한 Heatmap 만들기!</a></p>
                             <p class="item-date"><time datetime="2019-07-26T06:32:51.000Z" itemprop="datePublished">2019-07-26</time></p>
                         </div>
                     </li>

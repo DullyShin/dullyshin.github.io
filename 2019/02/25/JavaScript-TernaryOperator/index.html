@@ -18,19 +18,19 @@
           
             <meta name="keywords" content="삼항 연산자,if,자바 삼항 연산자,if...else,Ternary operator,여러 if...else를 사용할 경우,자바스크립트 else if,자바스크립트 if">
             
-              <meta name="description" content="##[JavaScript] 삼항 연산자 - 삼항 연산자(Ternary operator)   if문을 줄여서 사용할 수 있는 삼항 연산자! 아래와 같이 사용할 수 있습니다. 1( 조건 ) ? 명령문1 : 명령문2; // 삼항연산자의 표현  조건 : 참 또는 거짓으로 평가되는 표현식입니다.명령문1 : 조건이 참으로 평가될 경우 실행되는 문입니다.명령문2 : 이">
+              <meta name="description" content="##[JavaScript] 삼항 연산자 - 삼항 연산자(Ternary operator)   if문을 줄여서 사용할 수 있는 삼항 연산자! 아래와 같이 사용할 수 있습니다. ( 조건 ) ? 명령문1 : 명령문2; // 삼항연산자의 표현조건 : 참 또는 거짓으로 평가되는 표현식입니다.명령문1 : 조건이 참으로 평가될 경우 실행되는 문입니다.명령문2 : 이 구문">
 <meta name="keywords" content="삼항 연산자,if,자바 삼항 연산자,if...else,Ternary operator,여러 if...else를 사용할 경우,자바스크립트 else if,자바스크립트 if">
 <meta property="og:type" content="article">
 <meta property="og:title" content="(JavaScript) 삼항 연산자 Ternary Operator">
 <meta property="og:url" content="https://dullyshin.github.io/2019/02/25/JavaScript-TernaryOperator/index.html">
 <meta property="og:site_name" content="Hyejin Shin">
-<meta property="og:description" content="##[JavaScript] 삼항 연산자 - 삼항 연산자(Ternary operator)   if문을 줄여서 사용할 수 있는 삼항 연산자! 아래와 같이 사용할 수 있습니다. 1( 조건 ) ? 명령문1 : 명령문2; // 삼항연산자의 표현  조건 : 참 또는 거짓으로 평가되는 표현식입니다.명령문1 : 조건이 참으로 평가될 경우 실행되는 문입니다.명령문2 : 이">
+<meta property="og:description" content="##[JavaScript] 삼항 연산자 - 삼항 연산자(Ternary operator)   if문을 줄여서 사용할 수 있는 삼항 연산자! 아래와 같이 사용할 수 있습니다. ( 조건 ) ? 명령문1 : 명령문2; // 삼항연산자의 표현조건 : 참 또는 거짓으로 평가되는 표현식입니다.명령문1 : 조건이 참으로 평가될 경우 실행되는 문입니다.명령문2 : 이 구문">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://dojang.io/pluginfile.php/202/mod_page/content/19/unit20-1.png">
 <meta property="og:updated_time" content="2019-02-25T14:45:48.055Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="(JavaScript) 삼항 연산자 Ternary Operator">
-<meta name="twitter:description" content="##[JavaScript] 삼항 연산자 - 삼항 연산자(Ternary operator)   if문을 줄여서 사용할 수 있는 삼항 연산자! 아래와 같이 사용할 수 있습니다. 1( 조건 ) ? 명령문1 : 명령문2; // 삼항연산자의 표현  조건 : 참 또는 거짓으로 평가되는 표현식입니다.명령문1 : 조건이 참으로 평가될 경우 실행되는 문입니다.명령문2 : 이">
+<meta name="twitter:description" content="##[JavaScript] 삼항 연산자 - 삼항 연산자(Ternary operator)   if문을 줄여서 사용할 수 있는 삼항 연산자! 아래와 같이 사용할 수 있습니다. ( 조건 ) ? 명령문1 : 명령문2; // 삼항연산자의 표현조건 : 참 또는 거짓으로 평가되는 표현식입니다.명령문1 : 조건이 참으로 평가될 경우 실행되는 문입니다.명령문2 : 이 구문">
 <meta name="twitter:image" content="https://dojang.io/pluginfile.php/202/mod_page/content/19/unit20-1.png">
                 
                   <link rel="canonical" href="https://dullyshin.github.io/2019/02/25/javascript-ternaryoperator/">
@@ -80,8 +80,8 @@ ga('send', 'pageview');
     
 
 
-							<link rel="stylesheet" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.css">
-
+							<link rel="stylesheet" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.css">	
+							<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css">
 </head>
 </html>
 <body>
@@ -218,32 +218,54 @@ ga('send', 'pageview');
 
 
 <p>if문을 줄여서 사용할 수 있는 삼항 연산자! 아래와 같이 사용할 수 있습니다.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">( 조건 ) ? 명령문1 : 명령문2; // 삼항연산자의 표현</span><br></pre></td></tr></table></figure>
-
-<p>조건 : 참 또는 거짓으로 평가되는 표현식입니다.<br>명령문1 : 조건이 참으로 평가될 경우 실행되는 문입니다.<br>명령문2 : 이 구문은 조건이 거짓일경우 다른 조항이 있을 때 실행되는 구문입니다.</p>
+<pre><code>( 조건 ) ? 명령문1 : 명령문2; // 삼항연산자의 표현</code></pre><p>조건 : 참 또는 거짓으로 평가되는 표현식입니다.<br>명령문1 : 조건이 참으로 평가될 경우 실행되는 문입니다.<br>명령문2 : 이 구문은 조건이 거짓일경우 다른 조항이 있을 때 실행되는 구문입니다.</p>
 <p>예시를 들어 봅시다.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int b1 = (5&gt;4) ? 50 : 40; // 결과 result : 50</span><br></pre></td></tr></table></figure>
-
-<p>조건이 참(true)여서 결과는 50이 됩니다. 위의 삼항 연산자를 if문으로 바꿔 사용하면 아래와 같습니다.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">int b2 = 0;</span><br><span class="line">if(5 &gt; 4)&#123;</span><br><span class="line">    b2 = 50;</span><br><span class="line">&#125;else&#123;</span><br><span class="line">    b2 = 40;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>저는 삼항 연산자를 아래와 같이 자주 사용합니다. 만약 action_type이 modify면 읽을 수 밖에 없고 그 외에는 input 박스를 입력 가능하도록 합니다.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=&quot;text&quot; name=&quot;country&quot; value=&quot;Norway&quot; $&#123;action_type == &apos;modify&apos; ? &apos;readonly&apos; : &apos;&apos; &#125;&gt;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h4 id="if…else"><a href="#if…else" class="headerlink" title="- if…else"></a>- if…else</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">if (조건)&#123;</span><br><span class="line">   명령문1 //true</span><br><span class="line">&#125;else &#123;</span><br><span class="line">   명령문2 //false</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>조건 : 참 또는 거짓으로 평가되는 표현식입니다.<br>명령문1 : 조건이 참으로 평가될 경우 실행되는 문입니다.<br>명령문2 : 이 구문은 조건이 거짓일경우 다른 조항이 있을 때 실행되는 구문입니다.</p>
-<h4 id="여러-if…else를-사용할-경우"><a href="#여러-if…else를-사용할-경우" class="headerlink" title="- 여러 if…else를 사용할 경우"></a>- 여러 if…else를 사용할 경우</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">if (조건1)&#123;</span><br><span class="line">   명령문1</span><br><span class="line">&#125;else if (조건2)&#123;</span><br><span class="line">   명령문2</span><br><span class="line">&#125;else if (조건3)&#123;</span><br><span class="line">   명령문3</span><br><span class="line">&#125;else</span><br><span class="line">   명령문N</span><br></pre></td></tr></table></figure>
-
-<p>조건 1, 2, 3 : 참 또는 거짓으로 평가되는 표현식입니다.<br>명령문 1, 2, 3 : 조건이 참으로 평가될 경우 실행되는 문입니다.<br>조건문 N : 모든 조건에 맞지 않을때 실행됩니다.</p>
+<pre><code>int b1 = (5&gt;4) ? 50 : 40; // 결과 result : 50
+</code></pre><p>조건이 참(true)여서 결과는 50이 됩니다. 위의 삼항 연산자를 if문으로 바꿔 사용하면 아래와 같습니다.</p>
+<pre><code>int b2 = 0;
+if(5 &gt; 4){
+    b2 = 50;
+}else{
+    b2 = 40;
+}
+</code></pre><p>저는 삼항 연산자를 아래와 같이 자주 사용합니다. 만약 action_type이 modify면 읽을 수 밖에 없고 그 외에는 input 박스를 입력 가능하도록 합니다.</p>
+<pre><code>&lt;input type=&quot;text&quot; name=&quot;country&quot; value=&quot;Norway&quot; ${action_type == &#39;modify&#39; ? &#39;readonly&#39; : &#39;&#39; }&gt;</code></pre><hr>
+<h4 id="if…else"><a href="#if…else" class="headerlink" title="- if…else"></a>- if…else</h4><pre><code>if (조건){
+   명령문1 //true
+}else {
+   명령문2 //false
+}</code></pre><p>조건 : 참 또는 거짓으로 평가되는 표현식입니다.<br>명령문1 : 조건이 참으로 평가될 경우 실행되는 문입니다.<br>명령문2 : 이 구문은 조건이 거짓일경우 다른 조항이 있을 때 실행되는 구문입니다.</p>
+<h4 id="여러-if…else를-사용할-경우"><a href="#여러-if…else를-사용할-경우" class="headerlink" title="- 여러 if…else를 사용할 경우"></a>- 여러 if…else를 사용할 경우</h4><pre><code>if (조건1){
+   명령문1
+}else if (조건2){
+   명령문2
+}else if (조건3){
+   명령문3
+}else
+   명령문N</code></pre><p>조건 1, 2, 3 : 참 또는 거짓으로 평가되는 표현식입니다.<br>명령문 1, 2, 3 : 조건이 참으로 평가될 경우 실행되는 문입니다.<br>조건문 N : 모든 조건에 맞지 않을때 실행됩니다.</p>
 <h4 id="else-if"><a href="#else-if" class="headerlink" title="- else if"></a>- else if</h4><p>자바 스크립트에는 <code>elseif</code> 구문이 없습니다. 대신 <code>else if</code> 를 사용할 수 있습니다.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">if (x &gt; 5) &#123;</span><br><span class="line"></span><br><span class="line">&#125; else if (x &gt; 50) &#123;</span><br><span class="line"></span><br><span class="line">&#125; else &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code>if (x &gt; 5) {
 
-<p>예시를 확인해 볼까요?</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">function example(…) &#123;</span><br><span class="line">    return condition1 ? value1</span><br><span class="line">         : condition2 ? value2</span><br><span class="line">         : condition3 ? value3</span><br><span class="line">         : value4;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 위의 example함수는 아래와 같습니다. Equivalent to:</span><br><span class="line"></span><br><span class="line">function example(…) &#123;</span><br><span class="line">    if (condition1) &#123; return value1; &#125;</span><br><span class="line">    else if (condition2) &#123; return value2; &#125;</span><br><span class="line">    else if (condition3) &#123; return value3; &#125;</span><br><span class="line">    else &#123; return value4; &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+} else if (x &gt; 50) {
 
-<p>아주 자주 사용하게 되는 if 문 삼항연산자에 대해 알아보았습니다. </p>
+} else {
+
+}</code></pre><p>예시를 확인해 볼까요?</p>
+<pre><code>function example(…) {
+    return condition1 ? value1
+         : condition2 ? value2
+         : condition3 ? value3
+         : value4;
+}
+
+// 위의 example함수는 아래와 같습니다. Equivalent to:
+
+function example(…) {
+    if (condition1) { return value1; }
+    else if (condition2) { return value2; }
+    else if (condition3) { return value3; }
+    else { return value4; }
+}</code></pre><p>아주 자주 사용하게 되는 if 문 삼항연산자에 대해 알아보았습니다. </p>
 <h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><ul>
 <li><a href="https://dojang.io/mod/page/view.php?id=145" target="_blank" rel="noopener">https://dojang.io/mod/page/view.php?id=145</a></li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator</a></li>
@@ -255,7 +277,7 @@ ga('send', 'pageview');
 
 
 
-    <a data-url="https://dullyshin.github.io/2019/02/25/JavaScript-TernaryOperator/" data-id="cjz0yp1bf000ga8v00j930o4q" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://dullyshin.github.io/2019/02/25/JavaScript-TernaryOperator/" data-id="cjz20rbzv000ekcv0mqbxc80b" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -474,26 +496,6 @@ ga('send', 'pageview');
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2019/07/26/Echarts-heatmap/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/images/echarts_logo.png)" alt="ECharts를 통해 간단한 Heatmap 만들기!" class="thumbnail-image"></span>
-    
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/Echarts/">Echarts</a></p>
-                            <p class="item-title"><a href="/2019/07/26/Echarts-heatmap/" class="title">ECharts를 통해 간단한 Heatmap 만들기!</a></p>
-                            <p class="item-date"><time datetime="2019-07-26T06:32:51.000Z" itemprop="datePublished">2019-07-26</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
                             <a href="/2019/07/26/Echarts-start/" class="thumbnail">
     
     
@@ -507,6 +509,26 @@ ga('send', 'pageview');
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/Echarts/">Echarts</a></p>
                             <p class="item-title"><a href="/2019/07/26/Echarts-start/" class="title">ECharts를 통해 5분안에 차트를 만들자!</a></p>
+                            <p class="item-date"><time datetime="2019-07-26T06:32:51.000Z" itemprop="datePublished">2019-07-26</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/07/26/Echarts-heatmap/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/echarts_logo.png)" alt="ECharts를 통해 간단한 Heatmap 만들기!" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/Echarts/">Echarts</a></p>
+                            <p class="item-title"><a href="/2019/07/26/Echarts-heatmap/" class="title">ECharts를 통해 간단한 Heatmap 만들기!</a></p>
                             <p class="item-date"><time datetime="2019-07-26T06:32:51.000Z" itemprop="datePublished">2019-07-26</time></p>
                         </div>
                     </li>

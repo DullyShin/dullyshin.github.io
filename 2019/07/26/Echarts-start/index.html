@@ -80,8 +80,8 @@ ga('send', 'pageview');
     
 
 
-							<link rel="stylesheet" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.css">
-
+							<link rel="stylesheet" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.css">	
+							<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css">
 </head>
 </html>
 <body>
@@ -225,16 +225,59 @@ ga('send', 'pageview');
 </ul>
 <hr>
 <h3 id="ECharts-소개"><a href="#ECharts-소개" class="headerlink" title="ECharts 소개"></a>ECharts 소개</h3><p>ECharts 3는 더 이상 AMD을 사용하지 않습니다. 대신, ECharts는 전통적인 <code>&lt;script&gt;</code> tag를 사용합니다. html 에 맨 위에 있는 head 태그안에 아래와 같이 적어주세요:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">    	&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">   		&lt;!-- including ECharts file --&gt;</span><br><span class="line">    	&lt;script src=&quot;echarts.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-
-<hr>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+           &lt;!-- including ECharts file --&gt;
+        &lt;script src=&quot;echarts.min.js&quot;&gt;&lt;/script&gt;
+    &lt;/head&gt;
+&lt;/html&gt;</code></pre><hr>
 <h3 id="간단한-차트-그리기"><a href="#간단한-차트-그리기" class="headerlink" title="간단한 차트 그리기"></a>간단한 차트 그리기</h3><p>차트를 그리기 전에, 우리는 DOM container를 준비해야합니다. 그리고 꼭 넓이와 높이를 지정해 주세요. 지정하지 않는다면 너무 작게 그려져 화면에 차트가 보이지 않을 수 있습니다.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">&lt;!-- 높이와 너비가 지정된 Dom 을 생성합니다 --&gt;</span><br><span class="line">	&lt;div id=&quot;main&quot; style=&quot;width:600px; height:400px;&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<pre><code>&lt;body&gt;
+&lt;!-- 높이와 너비가 지정된 Dom 을 생성합니다 --&gt;
+    &lt;div id=&quot;main&quot; style=&quot;width:600px; height:400px;&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;</code></pre><p>ECharts 객체를 echarts.init 을 사용해 준비합니다. setOption을 통해 간단한 bar 차트를 만듭시다. 아래에 전체 코드가 있습니다.</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;ECharts&lt;/title&gt;
+    &lt;!-- 다운받은 echarts 파일 --&gt;
+    &lt;script src=&quot;echarts.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!-- 높이와 너비가 지정된 Dom 을 생성합니다 --&gt;
+&lt;div id=&quot;main&quot; style=&quot;width: 600px;height:400px;&quot;&gt;&lt;/div&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        // DOM을 준비하고 echart 객체를 만듭니다.
+        var myChart = echarts.init(document.getElementById(&#39;main&#39;));
 
-<p>ECharts 객체를 echarts.init 을 사용해 준비합니다. setOption을 통해 간단한 bar 차트를 만듭시다. 아래에 전체 코드가 있습니다.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;ECharts&lt;/title&gt;</span><br><span class="line">    &lt;!-- 다운받은 echarts 파일 --&gt;</span><br><span class="line">    &lt;script src=&quot;echarts.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;!-- 높이와 너비가 지정된 Dom 을 생성합니다 --&gt;</span><br><span class="line">&lt;div id=&quot;main&quot; style=&quot;width: 600px;height:400px;&quot;&gt;&lt;/div&gt;</span><br><span class="line">    &lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">        // DOM을 준비하고 echart 객체를 만듭니다.</span><br><span class="line">        var myChart = echarts.init(document.getElementById(&apos;main&apos;));</span><br><span class="line"></span><br><span class="line">        // 차트 속성과 데이터를 지정합니다.</span><br><span class="line">        var option = &#123;</span><br><span class="line">            title: &#123;</span><br><span class="line">            	text: &apos;ECharts entry example&apos;</span><br><span class="line">            &#125;,</span><br><span class="line">            tooltip: &#123;&#125;,</span><br><span class="line">            legend: &#123;</span><br><span class="line">            	data:[&apos;Sales&apos;]</span><br><span class="line">            &#125;,</span><br><span class="line">            xAxis: &#123;</span><br><span class="line">            	data: [&quot;shirt&quot;,&quot;cardign&quot;,&quot;chiffon shirt&quot;,&quot;pants&quot;,&quot;heels&quot;,&quot;socks&quot;]</span><br><span class="line">            &#125;,</span><br><span class="line">            yAxis: &#123;&#125;,</span><br><span class="line">            series: [&#123;</span><br><span class="line">                name: &apos;Sales&apos;,</span><br><span class="line">                type: &apos;bar&apos;,</span><br><span class="line">                data: [5, 20, 36, 10, 10, 20]</span><br><span class="line">            &#125;]</span><br><span class="line">        &#125;;</span><br><span class="line"></span><br><span class="line">        // 위에서 설정한 속성을 차트에 반영합니다.</span><br><span class="line">        myChart.setOption(option);</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+        // 차트 속성과 데이터를 지정합니다.
+        var option = {
+            title: {
+                text: &#39;ECharts entry example&#39;
+            },
+            tooltip: {},
+            legend: {
+                data:[&#39;Sales&#39;]
+            },
+            xAxis: {
+                data: [&quot;shirt&quot;,&quot;cardign&quot;,&quot;chiffon shirt&quot;,&quot;pants&quot;,&quot;heels&quot;,&quot;socks&quot;]
+            },
+            yAxis: {},
+            series: [{
+                name: &#39;Sales&#39;,
+                type: &#39;bar&#39;,
+                data: [5, 20, 36, 10, 10, 20]
+            }]
+        };
 
-<!-- 높이와 너비가 지정된 Dom 을 생성합니다 -->
+        // 위에서 설정한 속성을 차트에 반영합니다.
+        myChart.setOption(option);
+    &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre><!-- 높이와 너비가 지정된 Dom 을 생성합니다 -->
 <div id="mainechart" style="width: 500px; height:500px;"></div>
 
 
@@ -281,7 +324,7 @@ ga('send', 'pageview');
 
 
 
-    <a data-url="https://dullyshin.github.io/2019/07/26/Echarts-start/" data-id="cjz0yp1ao0002a8v0cem1jp6a" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://dullyshin.github.io/2019/07/26/Echarts-start/" data-id="cjz20rbz90000kcv0oygyvgdp" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -345,20 +388,20 @@ ga('send', 'pageview');
 	
 <nav id="article-nav">
     
-        <a href="/2019/07/26/Echarts-heatmap/" id="article-nav-newer" class="article-nav-link-wrap">
+        <a href="/2019/08/07/HTML-table/" id="article-nav-newer" class="article-nav-link-wrap">
         <strong class="article-nav-caption">newer</strong>
         <p class="article-nav-title">
         
-            ECharts를 통해 간단한 Heatmap 만들기!
+            HTML 간단하게 표 만들기
         
         </p>
         <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
     </a>
     
     
-        <a href="/2019/07/25/PostgreSql-error1/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2019/07/26/Echarts-heatmap/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">[error]The content of elements must consist of well-formed character data or markup.</p>
+        <p class="article-nav-title">ECharts를 통해 간단한 Heatmap 만들기!</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -425,20 +468,20 @@ ga('send', 'pageview');
         
 <nav id="article-nav">
     
-        <a href="/2019/07/26/Echarts-heatmap/" id="article-nav-newer" class="article-nav-link-wrap">
+        <a href="/2019/08/07/HTML-table/" id="article-nav-newer" class="article-nav-link-wrap">
         <strong class="article-nav-caption">newer</strong>
         <p class="article-nav-title">
         
-            ECharts를 통해 간단한 Heatmap 만들기!
+            HTML 간단하게 표 만들기
         
         </p>
         <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
     </a>
     
     
-        <a href="/2019/07/25/PostgreSql-error1/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2019/07/26/Echarts-heatmap/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">[error]The content of elements must consist of well-formed character data or markup.</p>
+        <p class="article-nav-title">ECharts를 통해 간단한 Heatmap 만들기!</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -500,26 +543,6 @@ ga('send', 'pageview');
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2019/07/26/Echarts-heatmap/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/images/echarts_logo.png)" alt="ECharts를 통해 간단한 Heatmap 만들기!" class="thumbnail-image"></span>
-    
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/Echarts/">Echarts</a></p>
-                            <p class="item-title"><a href="/2019/07/26/Echarts-heatmap/" class="title">ECharts를 통해 간단한 Heatmap 만들기!</a></p>
-                            <p class="item-date"><time datetime="2019-07-26T06:32:51.000Z" itemprop="datePublished">2019-07-26</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
                             <a href="/2019/07/26/Echarts-start/" class="thumbnail">
     
     
@@ -533,6 +556,26 @@ ga('send', 'pageview');
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/Echarts/">Echarts</a></p>
                             <p class="item-title"><a href="/2019/07/26/Echarts-start/" class="title">ECharts를 통해 5분안에 차트를 만들자!</a></p>
+                            <p class="item-date"><time datetime="2019-07-26T06:32:51.000Z" itemprop="datePublished">2019-07-26</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/07/26/Echarts-heatmap/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/echarts_logo.png)" alt="ECharts를 통해 간단한 Heatmap 만들기!" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/Echarts/">Echarts</a></p>
+                            <p class="item-title"><a href="/2019/07/26/Echarts-heatmap/" class="title">ECharts를 통해 간단한 Heatmap 만들기!</a></p>
                             <p class="item-date"><time datetime="2019-07-26T06:32:51.000Z" itemprop="datePublished">2019-07-26</time></p>
                         </div>
                     </li>

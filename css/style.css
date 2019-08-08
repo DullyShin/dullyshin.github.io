@@ -230,7 +230,7 @@ body,
 }
 body {
   background: #eaeaea;
-  font: 14px "Titillium Web", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+  font: 14px NanumSquareRound, "Helvetica Neue", sans-serif;
   -webkit-text-size-adjust: 100%;
 }
 code {
@@ -239,7 +239,7 @@ code {
   padding: 3px 5px;
   font-size: 0.8em;
   border-radius: 2px;
-  font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+  font-family: "Source Code Pro", NanumSquareRound, Consolas;
   background-color: #f8f8f8;
 }
 .container {
@@ -274,14 +274,14 @@ code {
 .logo {
   display: block;
   padding: 10px 0;
-  width: 165px;
-  height: 60px;
+  width: 180px;
+  height: 70px;
   background-image: url("images/logo-header.png");
   background-position: 0px 10px;
   background-repeat: no-repeat;
-  -webkit-background-size: 165px 60px;
-  -moz-background-size: 165px 60px;
-  background-size: 165px 60px;
+  -webkit-background-size: 180px 70px;
+  -moz-background-size: 180px 70px;
+  background-size: 180px 70px;
 }
 .main-body {
   margin-top: -60px;
@@ -378,7 +378,7 @@ code {
 #header-title .subtitle {
   font-size: 16px;
   font-style: italic;
-  line-height: 70px;
+  line-height: 80px;
   color: rgba(255,255,255,0.7);
   text-shadow: 0 1px rgba(0,0,0,0.2);
 }
@@ -533,7 +533,7 @@ code {
   -moz-transition: 0.2s ease-in;
   -ms-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
-  font: 16px "Titillium Web", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+  font: 16px NanumSquareRound, "Helvetica Neue", sans-serif;
   color: rgba(255,255,255,0.7);
 }
 .search-form-input:focus,
@@ -1210,7 +1210,7 @@ a.article-title:hover {
 .article-entry blockquote footer {
   font-size: 14px;
   margin: 1.6em 0;
-  font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+  font-family: NanumSquareRound, "Helvetica Neue", sans-serif;
 }
 .article-entry blockquote footer cite:before {
   content: "—";
@@ -1322,7 +1322,7 @@ a.article-title:hover {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font: 14px "Titillium Web", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+  font: 14px NanumSquareRound, "Helvetica Neue", sans-serif;
   padding: 0 15px;
   color: #555;
   outline: none;
@@ -1658,11 +1658,11 @@ a.article-title:hover {
   line-height: 22px;
 }
 #footer .logo {
-  width: 132px;
-  height: 48px;
-  -webkit-background-size: 132px 48px;
-  -moz-background-size: 132px 48px;
-  background-size: 132px 48px;
+  width: 144px;
+  height: 56px;
+  -webkit-background-size: 144px 56px;
+  -moz-background-size: 144px 56px;
+  background-size: 144px 56px;
 }
 i.icon {
   display: inline-block;
@@ -1818,7 +1818,7 @@ i.icon:before {
   overflow-x: auto;
   padding: 15px 20px;
   font-size: 14px;
-  font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+  font-family: "Source Code Pro", NanumSquareRound, Consolas;
   line-height: 22.400000000000002px;
 }
 .highlight table {
@@ -1843,52 +1843,49 @@ i.icon:before {
   height: 1.6em;
 }
 .highlight {
-  color: #a9b7c6;
-  background: #282b2e;
-}
-.highlight .code .number,
-.highlight .code .literal,
-.highlight .code .symbol,
-.highlight .code .bullet {
-  color: #6897bb;
+  color: #00193a;
+  background: #eaeef3;
 }
 .highlight .code .keyword,
 .highlight .code .selector-tag,
-.highlight .code .deletion {
-  color: #cc7832;
+.highlight .code .title,
+.highlight .code .section,
+.highlight .code .doctag,
+.highlight .code .name,
+.highlight .code .strong {
+  font-weight: bold;
 }
-.highlight .code .variable,
-.highlight .code .template-variable,
-.highlight .code .link {
-  color: #629755;
-}
-.highlight .code .comment,
-.highlight .code .quote {
-  color: #808080;
-}
-.highlight .code .meta {
-  color: #bbb529;
+.highlight .code .comment {
+  color: #738191;
 }
 .highlight .code .string,
-.highlight .code .attribute,
-.highlight .code .addition {
-  color: #6a8759;
-}
-.highlight .code .section,
 .highlight .code .title,
-.highlight .code .type {
-  color: #ffc66d;
-}
+.highlight .code .section,
+.highlight .code .built_in,
+.highlight .code .literal,
+.highlight .code .type,
+.highlight .code .addition,
+.highlight .code .tag,
+.highlight .code .quote,
 .highlight .code .name,
 .highlight .code .selector-id,
 .highlight .code .selector-class {
-  color: #e8bf6a;
+  color: #0048ab;
+}
+.highlight .code .meta,
+.highlight .code .subst,
+.highlight .code .symbol,
+.highlight .code .regexp,
+.highlight .code .attribute,
+.highlight .code .deletion,
+.highlight .code .variable,
+.highlight .code .template-variable,
+.highlight .code .link,
+.highlight .code .bullet {
+  color: #4c81c9;
 }
 .highlight .code .emphasis {
   font-style: italic;
-}
-.highlight .code .strong {
-  font-weight: bold;
 }
 @media only screen and (min-width: 960px) {
   .nav-container-inner {
