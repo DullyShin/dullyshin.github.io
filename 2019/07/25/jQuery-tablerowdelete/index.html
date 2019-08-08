@@ -18,19 +18,19 @@
           
             <meta name="keywords" content="jQuery,jQuery_테이블_행_추가/삭제,.text(),.append(),.eq(),정수 랜덤,랜덤 정수">
             
-              <meta name="description" content="(jQuery) 테이블 행 추가, 삭제 / 랜덤함수 이용 테이블의 행을 추가한 후 선택한 행을 삭제해 보겠습니다. 결과를 확인하고 싶으시면 아래의 Result 버튼을 클릭하면 됩니다.    좀 더 자세히 보자면 랜덤 함수를 통해 정수 값을 구했습니다. var randomInt = Math.floor(Math.random() * 100);   // 0부터 9">
+              <meta name="description" content="(jQuery) 테이블 행 추가, 삭제 / 랜덤함수 이용 테이블의 행을 추가한 후 선택한 행을 삭제해 보겠습니다. 결과를 확인하고 싶으시면 아래의 Result 버튼을 클릭하면 됩니다.    좀 더 자세히 보자면 랜덤 함수를 통해 정수 값을 구했습니다. 1234var randomInt = Math.floor(Math.random() * 100);  // 0부">
 <meta name="keywords" content="jQuery,jQuery_테이블_행_추가&#x2F;삭제,.text(),.append(),.eq(),정수 랜덤,랜덤 정수">
 <meta property="og:type" content="article">
 <meta property="og:title" content="(jQuery) 테이블 행 추가, 삭제 &#x2F; 랜덤함수 이용">
 <meta property="og:url" content="https://dullyshin.github.io/2019/07/25/jQuery-tablerowdelete/index.html">
 <meta property="og:site_name" content="Hyejin Shin">
-<meta property="og:description" content="(jQuery) 테이블 행 추가, 삭제 / 랜덤함수 이용 테이블의 행을 추가한 후 선택한 행을 삭제해 보겠습니다. 결과를 확인하고 싶으시면 아래의 Result 버튼을 클릭하면 됩니다.    좀 더 자세히 보자면 랜덤 함수를 통해 정수 값을 구했습니다. var randomInt = Math.floor(Math.random() * 100);   // 0부터 9">
+<meta property="og:description" content="(jQuery) 테이블 행 추가, 삭제 / 랜덤함수 이용 테이블의 행을 추가한 후 선택한 행을 삭제해 보겠습니다. 결과를 확인하고 싶으시면 아래의 Result 버튼을 클릭하면 됩니다.    좀 더 자세히 보자면 랜덤 함수를 통해 정수 값을 구했습니다. 1234var randomInt = Math.floor(Math.random() * 100);  // 0부">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://cdn-images-1.medium.com/max/1200/0*s1Goua9K1MuNuapv.jpg">
 <meta property="og:updated_time" content="2019-07-25T01:45:10.946Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="(jQuery) 테이블 행 추가, 삭제 &#x2F; 랜덤함수 이용">
-<meta name="twitter:description" content="(jQuery) 테이블 행 추가, 삭제 / 랜덤함수 이용 테이블의 행을 추가한 후 선택한 행을 삭제해 보겠습니다. 결과를 확인하고 싶으시면 아래의 Result 버튼을 클릭하면 됩니다.    좀 더 자세히 보자면 랜덤 함수를 통해 정수 값을 구했습니다. var randomInt = Math.floor(Math.random() * 100);   // 0부터 9">
+<meta name="twitter:description" content="(jQuery) 테이블 행 추가, 삭제 / 랜덤함수 이용 테이블의 행을 추가한 후 선택한 행을 삭제해 보겠습니다. 결과를 확인하고 싶으시면 아래의 Result 버튼을 클릭하면 됩니다.    좀 더 자세히 보자면 랜덤 함수를 통해 정수 값을 구했습니다. 1234var randomInt = Math.floor(Math.random() * 100);  // 0부">
 <meta name="twitter:image" content="https://cdn-images-1.medium.com/max/1200/0*s1Goua9K1MuNuapv.jpg">
                 
                   <link rel="canonical" href="https://dullyshin.github.io/2019/07/25/jquery-tablerowdelete/">
@@ -221,29 +221,14 @@ ga('send', 'pageview');
 
 
 <p>좀 더 자세히 보자면 랜덤 함수를 통해 정수 값을 구했습니다.</p>
-<pre><code class="java">var randomInt = Math.floor(Math.random() * 100);
-  // 0부터 99까지의 숫자를 출력합니다. floor함수를 사용하지 않으면 정수가 아닌 실수가 출력됩니다.
-randomInt += &#39; %&#39;;
-$(&quot;#humi tr td&quot;).eq(-2).text(randomInt);
-</code></pre>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var randomInt = Math.floor(Math.random() * <span class="number">100</span>);</span><br><span class="line">  <span class="comment">// 0부터 99까지의 숫자를 출력합니다. floor함수를 사용하지 않으면 정수가 아닌 실수가 출력됩니다.</span></span><br><span class="line">randomInt += <span class="string">' %'</span>;</span><br><span class="line">$(<span class="string">"#humi tr td"</span>).eq(-<span class="number">2</span>).text(randomInt);</span><br></pre></td></tr></table></figure>
+
 <p>그리고 아래의 함수를 바로 선언하면 JSFiddle에서 오류가 나서 밑에와 같이 window를 사용한 것입니다.</p>
-<pre><code class="java">//JSFiddle에 맞춘 함수
-window.fnDelTable = function(_this) {
-    var _id = $(_this).closest(&#39;table&#39;).attr(&#39;id&#39;);
-    var tbody = $(_this).closest(&#39;tbody&#39;);
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//JSFiddle에 맞춘 함수</span></span><br><span class="line">window.fnDelTable = function(_this) &#123;</span><br><span class="line">    var _id = $(_this).closest(<span class="string">'table'</span>).attr(<span class="string">'id'</span>);</span><br><span class="line">    var tbody = $(_this).closest(<span class="string">'tbody'</span>);</span><br><span class="line"></span><br><span class="line">    $(_this).closest(<span class="string">'tr'</span>).remove();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-    $(_this).closest(&#39;tr&#39;).remove();
-}
-</code></pre>
 <p>위와 아래의 함수는 같은 기능을 가지고 있습니다. 원래는 아래와 같이 사용한 것을 JSFiddle에 맞추어 약간 변형했습니다.</p>
-<pre><code class="java">//원래 사용한 방식
-function fnDelTable(_this) {
-    var _id = $(_this).closest(&#39;table&#39;).attr(&#39;id&#39;);
-    var tbody = $(_this).closest(&#39;tbody&#39;);
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//원래 사용한 방식</span></span><br><span class="line"><span class="function">function <span class="title">fnDelTable</span><span class="params">(_this)</span> </span>&#123;</span><br><span class="line">    var _id = $(_this).closest(<span class="string">'table'</span>).attr(<span class="string">'id'</span>);</span><br><span class="line">    var tbody = $(_this).closest(<span class="string">'tbody'</span>);</span><br><span class="line"></span><br><span class="line">    $(_this).closest(<span class="string">'tr'</span>).remove();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-    $(_this).closest(&#39;tr&#39;).remove();
-}
-</code></pre>
 <iframe src="https://giphy.com/embed/26BoEPUKhrymfItMs" width="300" height="240" frameborder="0" class="giphy-embed" allowfullscreen></iframe>
 
 
@@ -268,7 +253,7 @@ function fnDelTable(_this) {
 
 
 
-    <a data-url="https://dullyshin.github.io/2019/07/25/jQuery-tablerowdelete/" data-id="cjz20v6pl000pogv026ambugm" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://dullyshin.github.io/2019/07/25/jQuery-tablerowdelete/" data-id="cjz22v417000qrsv0ab0qo9h3" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -487,26 +472,6 @@ function fnDelTable(_this) {
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2019/07/26/Echarts-start/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/images/echarts_basicChart.png)" alt="ECharts를 통해 5분안에 차트를 만들자!" class="thumbnail-image"></span>
-    
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/Echarts/">Echarts</a></p>
-                            <p class="item-title"><a href="/2019/07/26/Echarts-start/" class="title">ECharts를 통해 5분안에 차트를 만들자!</a></p>
-                            <p class="item-date"><time datetime="2019-07-26T06:32:51.000Z" itemprop="datePublished">2019-07-26</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
                             <a href="/2019/07/26/Echarts-heatmap/" class="thumbnail">
     
     
@@ -520,6 +485,26 @@ function fnDelTable(_this) {
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/Echarts/">Echarts</a></p>
                             <p class="item-title"><a href="/2019/07/26/Echarts-heatmap/" class="title">ECharts를 통해 간단한 Heatmap 만들기!</a></p>
+                            <p class="item-date"><time datetime="2019-07-26T06:32:51.000Z" itemprop="datePublished">2019-07-26</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/07/26/Echarts-start/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/echarts_basicChart.png)" alt="ECharts를 통해 5분안에 차트를 만들자!" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/Echarts/">Echarts</a></p>
+                            <p class="item-title"><a href="/2019/07/26/Echarts-start/" class="title">ECharts를 통해 5분안에 차트를 만들자!</a></p>
                             <p class="item-date"><time datetime="2019-07-26T06:32:51.000Z" itemprop="datePublished">2019-07-26</time></p>
                         </div>
                     </li>

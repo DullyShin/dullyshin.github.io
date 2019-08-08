@@ -218,41 +218,45 @@ ga('send', 'pageview');
 		<h1 id="Hexo-Theme-Hueman"><a href="#Hexo-Theme-Hueman" class="headerlink" title="Hexo Theme Hueman"></a>Hexo Theme Hueman</h1><p>지금 Hexo Theme Hueman 설정을 어떻게 하는지 알아보도록 하겠습니다.<br>테마를 적용하시려면 아래의 링크를 들어가서 확인 부탁드리겠습니다. 제가 Hexo 시작할때 큰 도움을 받은 곳 입니다.<br><a href="https://futurecreator.github.io/2016/06/14/hexo-apply-hueman-theme/" target="_blank" rel="noopener">Hexo Hueman 테마 적용하기</a></p>
 <h2 id="Menu-메뉴"><a href="#Menu-메뉴" class="headerlink" title="Menu 메뉴"></a>Menu 메뉴</h2><p><img src="https://camo.githubusercontent.com/c89c5becd6e5d7cad15a7380815fcb2d6a779eb8/68747470733a2f2f6f6f6f2e306f302e6f6f6f2f323031362f30312f31332f353639373334303065346439342e706e67" alt="hueman manu"></p>
 <p>메뉴는 마카이브, 카테고리, 커스텀 페이지로 직접 연결합니다. 메뉴는 간단하게 이름을 추가하거나 링크 주소를 메뉴에 추가합니다.</p>
-<pre><code>menu:
-    Home: /hexo-theme-hueman/
-    About: /hexo-theme-hueman/about/index.html
-+   GitHub: https://github.com</code></pre><blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">    Home: /hexo-theme-hueman/</span><br><span class="line">    About: /hexo-theme-hueman/about/index.html</span><br><span class="line">+   GitHub: https://github.com</span><br></pre></td></tr></table></figure>
+
+<blockquote>
 <p>상대주소와 절대주소를 모두 사용할 수 있습니다.</p>
 </blockquote>
 <p>Hueman은 메뉴안 카테고리에 쉽게 추가할 수 있습니다. 그냥 카테고리를 추가하세요 그리면 메뉴와 서브 카테고리가 추가될 것 입니다.</p>
-<pre><code>menu:
-    Home: /hexo-theme-hueman/
-+   Categories:
-    About: /hexo-theme-hueman/about/index.html
-</code></pre><h2 id="커스터마이즈"><a href="#커스터마이즈" class="headerlink" title="커스터마이즈"></a>커스터마이즈</h2><p>테마를 수정해서 커스터마이즈 할 수 있습니다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">    Home: /hexo-theme-hueman/</span><br><span class="line">+   Categories:</span><br><span class="line">    About: /hexo-theme-hueman/about/index.html</span><br></pre></td></tr></table></figure>
+
+<h2 id="커스터마이즈"><a href="#커스터마이즈" class="headerlink" title="커스터마이즈"></a>커스터마이즈</h2><p>테마를 수정해서 커스터마이즈 할 수 있습니다.</p>
 <h3 id="Logo-로고"><a href="#Logo-로고" class="headerlink" title="Logo 로고"></a>Logo 로고</h3><p>원하는 이미지를 가지고 로고를 바꿀 수 있습니다. 이미지 크기는 픽셀로 설정되있습니다. 그리고 url에 파일 경로를 입력해주세요.</p>
-<pre><code>logo:
-    width: 165
-    height: 60
-    url: images/logo-header.png</code></pre><p>‘width’와 ‘height’에 숫자만 입력해세요. 다른 설정을 입력해도 작동하지 않습니다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">logo:</span><br><span class="line">    width: 165</span><br><span class="line">    height: 60</span><br><span class="line">    url: images/logo-header.png</span><br></pre></td></tr></table></figure>
+
+<p>‘width’와 ‘height’에 숫자만 입력해세요. 다른 설정을 입력해도 작동하지 않습니다.</p>
 <h3 id="Theme-Color-테마-컬러"><a href="#Theme-Color-테마-컬러" class="headerlink" title="Theme Color 테마 컬러"></a>Theme Color 테마 컬러</h3><p>링크의 색과 소셜링크 색을 변경할 수 있습니다. RGB로 색을 바꿀 수 있습니다.</p>
 <p><img src="https://camo.githubusercontent.com/a4a5f524e9989a60a4a027df88eb438ce0c7c3df/68747470733a2f2f6f6f6f2e306f302e6f6f6f2f323031362f30312f31342f353639376131383733313933312e706e67" alt="theme color"></p>
-<pre><code>theme_color: &#39;#d35&#39;</code></pre><h3 id="Highlight-하이라이트"><a href="#Highlight-하이라이트" class="headerlink" title="Highlight 하이라이트"></a>Highlight 하이라이트</h3><p><img src="https://camo.githubusercontent.com/29244be9b08db085cc83244e9add325eaf5d0945/68747470733a2f2f6f6f6f2e306f302e6f6f6f2f323031362f30312f31342f353639373362663136383064312e706e67" alt="Highlight"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme_color: &apos;#d35&apos;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Highlight-하이라이트"><a href="#Highlight-하이라이트" class="headerlink" title="Highlight 하이라이트"></a>Highlight 하이라이트</h3><p><img src="https://camo.githubusercontent.com/29244be9b08db085cc83244e9add325eaf5d0945/68747470733a2f2f6f6f6f2e306f302e6f6f6f2f323031362f30312f31342f353639373362663136383064312e706e67" alt="Highlight"></p>
 <p>60가지 넘는 하이라이트 설정을 할 수 있습니다. 코드 블럭안에 색 설정을 말합니다. ‘hueman/source/css/_highlight’ 폴더에 들어가면 가능한 옵션을 확인 할 수 있습니다.</p>
-<pre><code>- highlight: androidstudio
-+ highlight: tomorrow</code></pre><h3 id="Sidebar-사이드-바"><a href="#Sidebar-사이드-바" class="headerlink" title="Sidebar 사이드 바"></a>Sidebar 사이드 바</h3><p>사이드바의 위치를 조정할 수 있습니다. 옵션은 ‘left’ &amp; ‘right’ 2가지 입니다..</p>
-<pre><code>sidebar: left</code></pre><h3 id="Thumbnail-썸네일"><a href="#Thumbnail-썸네일" class="headerlink" title="Thumbnail 썸네일"></a>Thumbnail 썸네일</h3><p>포스트의 썸네일 표시를 사용하지 않을 수도 있습니다. 옵션은 ‘true’와 ‘false’ 입니다.</p>
-<pre><code>thumbnail: true</code></pre><h5 id="어떻게-썸네일-이미지를-넣을-수-있을까요"><a href="#어떻게-썸네일-이미지를-넣을-수-있을까요" class="headerlink" title="어떻게 썸네일 이미지를 넣을 수 있을까요?"></a>어떻게 썸네일 이미지를 넣을 수 있을까요?</h5><p>Hueman은 자동으로 당신의 포스트의 첫번째 이미지를 썸네일로 사용할 것입니다. 아니면 포스트의 자동으로 추가되는 front-matter부분에서 이미지를 직접 지정할 수 있습니다.</p>
-<pre><code>title: Hello World
-date: 2013/7/13 20:46:25
-+ thumbnail: https://example.com/image.jpg</code></pre><hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- highlight: androidstudio</span><br><span class="line">+ highlight: tomorrow</span><br></pre></td></tr></table></figure>
+
+<h3 id="Sidebar-사이드-바"><a href="#Sidebar-사이드-바" class="headerlink" title="Sidebar 사이드 바"></a>Sidebar 사이드 바</h3><p>사이드바의 위치를 조정할 수 있습니다. 옵션은 ‘left’ &amp; ‘right’ 2가지 입니다..</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sidebar: left</span><br></pre></td></tr></table></figure>
+
+<h3 id="Thumbnail-썸네일"><a href="#Thumbnail-썸네일" class="headerlink" title="Thumbnail 썸네일"></a>Thumbnail 썸네일</h3><p>포스트의 썸네일 표시를 사용하지 않을 수도 있습니다. 옵션은 ‘true’와 ‘false’ 입니다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">thumbnail: true</span><br></pre></td></tr></table></figure>
+
+<h5 id="어떻게-썸네일-이미지를-넣을-수-있을까요"><a href="#어떻게-썸네일-이미지를-넣을-수-있을까요" class="headerlink" title="어떻게 썸네일 이미지를 넣을 수 있을까요?"></a>어떻게 썸네일 이미지를 넣을 수 있을까요?</h5><p>Hueman은 자동으로 당신의 포스트의 첫번째 이미지를 썸네일로 사용할 것입니다. 아니면 포스트의 자동으로 추가되는 front-matter부분에서 이미지를 직접 지정할 수 있습니다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: Hello World</span><br><span class="line">date: 2013/7/13 20:46:25</span><br><span class="line">+ thumbnail: https://example.com/image.jpg</span><br></pre></td></tr></table></figure>
+
+<hr>
 <h2 id="Favicon-파비콘"><a href="#Favicon-파비콘" class="headerlink" title="Favicon 파비콘"></a>Favicon 파비콘</h2><p>파비콘을 사이트에 추가해 봅시다.</p>
-<pre><code>favicon: favicon.png
-e.g: 만약 파비콘 이미지를 source/css/images에 넣었다면, Path 설정을 &quot;css/image/favicon.png&quot; 으로 설정합니다.</code></pre><h2 id="Social-Links-소셜링크"><a href="#Social-Links-소셜링크" class="headerlink" title="Social Links 소셜링크"></a>Social Links 소셜링크</h2><p><img src="https://camo.githubusercontent.com/a0d6d26c42120a7c175bdd61b2219b332b6941c0/68747470733a2f2f6f6f6f2e306f302e6f6f6f2f323031362f30312f31342f353639373430396336353834392e706e67" alt="Social Links"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">favicon: favicon.png</span><br><span class="line">e.g: 만약 파비콘 이미지를 source/css/images에 넣었다면, Path 설정을 &quot;css/image/favicon.png&quot; 으로 설정합니다.</span><br></pre></td></tr></table></figure>
+
+<h2 id="Social-Links-소셜링크"><a href="#Social-Links-소셜링크" class="headerlink" title="Social Links 소셜링크"></a>Social Links 소셜링크</h2><p><img src="https://camo.githubusercontent.com/a0d6d26c42120a7c175bdd61b2219b332b6941c0/68747470733a2f2f6f6f6f2e306f302e6f6f6f2f323031362f30312f31342f353639373430396336353834392e706e67" alt="Social Links"></p>
 <p>소셜링크는 사이드 바 위쪽에서 확인 할 수 있습니다. 링크 이름과 링크 주소를 설정에 추가 할 수 있고 <a href="https://fontawesome.com/" target="_blank" rel="noopener">FontAwesome icon</a> 에서 고를 수 있습니다.</p>
-<pre><code>social_links:
-    github: https://github.com/ppoffice/hexo-theme-hueman
-+   youtube: https://youtube.com</code></pre><ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">social_links:</span><br><span class="line">    github: https://github.com/ppoffice/hexo-theme-hueman</span><br><span class="line">+   youtube: https://youtube.com</span><br></pre></td></tr></table></figure>
+
+<ul>
 <li>참고 &amp; 출처<br><a href="https://github.com/ppoffice/hexo-theme-hueman/wiki/Theme" target="_blank" rel="noopener">https://github.com/ppoffice/hexo-theme-hueman/wiki/Theme</a><br><a href="https://futurecreator.github.io/2016/06/14/hexo-apply-hueman-theme/" target="_blank" rel="noopener">https://futurecreator.github.io/2016/06/14/hexo-apply-hueman-theme/</a></li>
 </ul>
 
@@ -274,7 +278,7 @@ e.g: 만약 파비콘 이미지를 source/css/images에 넣었다면, Path 설�
 
 
 
-    <a data-url="https://dullyshin.github.io/2018/08/26/Hexo-Theme/" data-id="cjz20v6p7000cogv0f930mb7q" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://dullyshin.github.io/2018/08/26/Hexo-Theme/" data-id="cjz22v40m000arsv0xdjihsj8" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -338,20 +342,20 @@ e.g: 만약 파비콘 이미지를 source/css/images에 넣었다면, Path 설�
 	
 <nav id="article-nav">
     
-        <a href="/2018/08/27/Github-MarkdownEditor/" id="article-nav-newer" class="article-nav-link-wrap">
+        <a href="/2018/08/26/Hexo-error/" id="article-nav-newer" class="article-nav-link-wrap">
         <strong class="article-nav-caption">newer</strong>
         <p class="article-nav-title">
         
-            MarkdownEditor
+            Hexo error
         
         </p>
         <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
     </a>
     
     
-        <a href="/2018/08/26/Hexo-error/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2018/08/26/Hexo-hello-world/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">Hexo error</p>
+        <p class="article-nav-title">Hexo 처음 포스트하기</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -418,20 +422,20 @@ e.g: 만약 파비콘 이미지를 source/css/images에 넣었다면, Path 설�
         
 <nav id="article-nav">
     
-        <a href="/2018/08/27/Github-MarkdownEditor/" id="article-nav-newer" class="article-nav-link-wrap">
+        <a href="/2018/08/26/Hexo-error/" id="article-nav-newer" class="article-nav-link-wrap">
         <strong class="article-nav-caption">newer</strong>
         <p class="article-nav-title">
         
-            MarkdownEditor
+            Hexo error
         
         </p>
         <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
     </a>
     
     
-        <a href="/2018/08/26/Hexo-error/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2018/08/26/Hexo-hello-world/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">Hexo error</p>
+        <p class="article-nav-title">Hexo 처음 포스트하기</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -493,26 +497,6 @@ e.g: 만약 파비콘 이미지를 source/css/images에 넣었다면, Path 설�
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2019/07/26/Echarts-start/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/images/echarts_basicChart.png)" alt="ECharts를 통해 5분안에 차트를 만들자!" class="thumbnail-image"></span>
-    
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/Echarts/">Echarts</a></p>
-                            <p class="item-title"><a href="/2019/07/26/Echarts-start/" class="title">ECharts를 통해 5분안에 차트를 만들자!</a></p>
-                            <p class="item-date"><time datetime="2019-07-26T06:32:51.000Z" itemprop="datePublished">2019-07-26</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
                             <a href="/2019/07/26/Echarts-heatmap/" class="thumbnail">
     
     
@@ -526,6 +510,26 @@ e.g: 만약 파비콘 이미지를 source/css/images에 넣었다면, Path 설�
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/Echarts/">Echarts</a></p>
                             <p class="item-title"><a href="/2019/07/26/Echarts-heatmap/" class="title">ECharts를 통해 간단한 Heatmap 만들기!</a></p>
+                            <p class="item-date"><time datetime="2019-07-26T06:32:51.000Z" itemprop="datePublished">2019-07-26</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/07/26/Echarts-start/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/echarts_basicChart.png)" alt="ECharts를 통해 5분안에 차트를 만들자!" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/Echarts/">Echarts</a></p>
+                            <p class="item-title"><a href="/2019/07/26/Echarts-start/" class="title">ECharts를 통해 5분안에 차트를 만들자!</a></p>
                             <p class="item-date"><time datetime="2019-07-26T06:32:51.000Z" itemprop="datePublished">2019-07-26</time></p>
                         </div>
                     </li>
