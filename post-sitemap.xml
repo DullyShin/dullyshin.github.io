@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://dullyshin.github.io/2019/08/08/JSTL-substring/</loc>
+        <lastmod>2019-08-08T05:13:47.173Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://dullyshin.github.io/2019/02/25/JSTL-ForEach/</loc>
-        <lastmod>2019-08-08T04:25:29.861Z</lastmod>
+        <lastmod>2019-08-08T04:29:53.708Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +25,7 @@
 
     <url>
         <loc>https://dullyshin.github.io/2019/08/08/JSTL-if/</loc>
-        <lastmod>2019-08-08T04:24:43.923Z</lastmod>
+        <lastmod>2019-08-08T04:29:33.756Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
