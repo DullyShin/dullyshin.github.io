@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://dullyshin.github.io/"/>
-  <updated>2019-08-08T05:13:47.173Z</updated>
+  <updated>2019-08-08T05:26:11.104Z</updated>
   <id>https://dullyshin.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JavaScript-array</title>
+    <link href="https://dullyshin.github.io/2019/08/08/JavaScript-array/"/>
+    <id>https://dullyshin.github.io/2019/08/08/JavaScript-array/</id>
+    <published>2019-08-08T05:16:45.000Z</published>
+    <updated>2019-08-08T05:26:11.104Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="배열-만들기"><a href="#배열-만들기" class="headerlink" title="배열 만들기"></a>배열 만들기</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var fruits = [&apos;사과&apos;, &apos;바나나&apos;];</span><br><span class="line"></span><br><span class="line">console.log(fruits.length);</span><br><span class="line">// 2</span><br></pre></td></tr></table></figure><h5 id="인덱스로-배열의-항목에-접근하기"><a href="#인덱스로-배열의-항목에-접근하기" class="headerlink" title="인덱스로 배열의 항목에 접근하기"></a>인덱스로 배열의 항목에 접근하기</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var first = fruits[0];</span><br><span class="line">// 사과</span><br><span class="line"></span><br><span class="line">var last = fruits[fruits.length - 1];</span><br><span class="line">// 바나나</span><br></pre></td></tr></table></figure><h5 id="배열의-항목들을-순환하며-처리하기"><a href="#배열의-항목들을-순환하며-처리하기" class="headerlink" title="배열의 항목들을 순환하며 처리하기"></a>배열의 항목들을 순환하며 처리하기</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">fruits.forEach(function (item, index, array) &#123;</span><br><span class="line">  console.log(item, index);</span><br><span class="line">&#125;);</span><br><span class="line">// 사과 0</span><br><span class="line">// 바나나 1</span><br></pre></td></tr></table></figure><h5 id="배열-끝에-항목-추가하기"><a href="#배열-끝에-항목-추가하기" class="headerlink" title="배열 끝에 항목 추가하기"></a>배열 끝에 항목 추가하기</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var newLength = fruits.push(&apos;오렌지&apos;);</span><br><span class="line">// [&quot;사과&quot;, &quot;바나나&quot;, &quot;오렌지&quot;]</span><br></pre></td></tr></table></figure><h5 id="배열-끝에서부터-항목-제거하기"><a href="#배열-끝에서부터-항목-제거하기" class="headerlink" title="배열 끝에서부터 항목 제거하기"></a>배열 끝에서부터 항목 제거하기</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var last = fruits.pop(); // 끝에있던 &apos;오렌지&apos;를 제거</span><br><span class="line">// [&quot;사과&quot;, &quot;바나나&quot;];</span><br></pre></td></tr></table></figure><h5 id="배열-앞에서부터-항목-제거하기"><a href="#배열-앞에서부터-항목-제거하기" class="headerlink" title="배열 앞에서부터 항목 제거하기"></a>배열 앞에서부터 항목 제거하기</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var first = fruits.shift(); // 제일 앞의 &apos;사과&apos;를 제거</span><br><span class="line">// [&quot;바나나&quot;];</span><br></pre></td></tr></table></figure><h5 id="배열-앞에-항목-추가하기"><a href="#배열-앞에-항목-추가하기" class="headerlink" title="배열 앞에 항목 추가하기"></a>배열 앞에 항목 추가하기</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var newLength = fruits.unshift(&apos;딸기&apos;) // 앞에 추가</span><br><span class="line">// [&quot;딸기&quot;, &quot;바나나&quot;];</span><br></pre></td></tr></table></figure><h5 id="배열-안-항목의-인덱스-찾기"><a href="#배열-안-항목의-인덱스-찾기" class="headerlink" title="배열 안 항목의 인덱스 찾기"></a>배열 안 항목의 인덱스 찾기</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">fruits.push(&apos;망고&apos;);</span><br><span class="line">// [&quot;딸기&quot;, &quot;바나나&quot;, &quot;망고&quot;]</span><br><span class="line"></span><br><span class="line">var pos = fruits.indexOf(&quot;바나나&quot;);</span><br><span class="line">// 1</span><br></pre></td></tr></table></figure><h5 id="인덱스-위치에-있는-항목-제거하기"><a href="#인덱스-위치에-있는-항목-제거하기" class="headerlink" title="인덱스 위치에 있는 항목 제거하기"></a>인덱스 위치에 있는 항목 제거하기</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var removedItem = fruits.splice(pos, 1); // 항목을 제거하는 방법</span><br><span class="line"></span><br><span class="line">// [&quot;딸기&quot;, &quot;망고&quot;]</span><br></pre></td></tr></table></figure><h5 id="인덱스-위치에서부터-여러개의-항목-제거하기"><a href="#인덱스-위치에서부터-여러개의-항목-제거하기" class="headerlink" title="인덱스 위치에서부터 여러개의 항목 제거하기"></a>인덱스 위치에서부터 여러개의 항목 제거하기</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">var vegetables = [&apos;양배추&apos;, &apos;순무&apos;, &apos;무&apos;, &apos;당근&apos;];</span><br><span class="line">console.log(vegetables);</span><br><span class="line">// [&quot;양배추&quot;, &quot;순무&quot;, &quot;무&quot;, &quot;당근&quot;]</span><br><span class="line"></span><br><span class="line">var pos = 1, n = 2;</span><br><span class="line"></span><br><span class="line">var removedItems = vegetables.splice(pos, n);</span><br><span class="line">// 배열에서 항목을 제거하는 방법</span><br><span class="line">// pos 인덱스부터 n개의 항목을 제거함</span><br><span class="line"></span><br><span class="line">console.log(vegetables);</span><br><span class="line">// [&quot;양배추&quot;, &quot;당근&quot;] (원 배열 vegetables의 값이 변함)</span><br><span class="line"></span><br><span class="line">console.log(removedItems);</span><br><span class="line">// [&quot;순무&quot;, &quot;무&quot;]</span><br></pre></td></tr></table></figure><h5 id="배열-복사하기"><a href="#배열-복사하기" class="headerlink" title="배열 복사하기"></a>배열 복사하기</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var shallowCopy = fruits.slice(); // 사본을 만드는 방법</span><br><span class="line">// [&quot;딸기&quot;, &quot;망고&quot;]</span><br></pre></td></tr></table></figure><h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><ul><li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank" rel="noopener">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array</a></li></ul><h3 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h3><ul><li><a href="/2019/02/25/JavaScript-TernaryOperator/" title="(JavaScript) 삼항 연산자 Ternary Operator">(JavaScript) 삼항 연산자 Ternary Operator</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h5 id=&quot;배열-만들기&quot;&gt;&lt;a href=&quot;#배열-만들기&quot; class=&quot;headerlink&quot; title=&quot;배열 만들기&quot;&gt;&lt;/a&gt;배열 만들기&lt;/h5&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gut
+      
+    
+    </summary>
+    
+      <category term="Programming" scheme="https://dullyshin.github.io/categories/Programming/"/>
+    
+      <category term="JavaScript" scheme="https://dullyshin.github.io/categories/Programming/JavaScript/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>JSTL-substring 뒤에서 문자 자르기</title>
@@ -76,6 +101,10 @@
       <category term="JSTL" scheme="https://dullyshin.github.io/categories/Programming/JSTL/"/>
     
     
+      <category term="jstl" scheme="https://dullyshin.github.io/tags/jstl/"/>
+    
+      <category term="if" scheme="https://dullyshin.github.io/tags/if/"/>
+    
       <category term="JSTL if" scheme="https://dullyshin.github.io/tags/JSTL-if/"/>
     
       <category term="JSTL if문" scheme="https://dullyshin.github.io/tags/JSTL-if%EB%AC%B8/"/>
@@ -83,10 +112,6 @@
       <category term="jstl if else" scheme="https://dullyshin.github.io/tags/jstl-if-else/"/>
     
       <category term="jstl if else문" scheme="https://dullyshin.github.io/tags/jstl-if-else%EB%AC%B8/"/>
-    
-      <category term="jstl" scheme="https://dullyshin.github.io/tags/jstl/"/>
-    
-      <category term="if" scheme="https://dullyshin.github.io/tags/if/"/>
     
   </entry>
   
@@ -172,39 +197,6 @@ a.button {
   </entry>
   
   <entry>
-    <title>ECharts를 통해 5분안에 차트를 만들자!</title>
-    <link href="https://dullyshin.github.io/2019/07/26/Echarts-start/"/>
-    <id>https://dullyshin.github.io/2019/07/26/Echarts-start/</id>
-    <published>2019-07-26T06:32:51.000Z</published>
-    <updated>2019-07-30T08:15:25.735Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="ECharts를-통해-5분안에-차트를-만들자"><a href="#ECharts를-통해-5분안에-차트를-만들자" class="headerlink" title="ECharts를 통해 5분안에 차트를 만들자!"></a>ECharts를 통해 5분안에 차트를 만들자!</h2><p>Echarts 에 있는 튜토리얼을 한글로 번역하였습니다.</p><h3 id="ECharts-다운로드"><a href="#ECharts-다운로드" class="headerlink" title="ECharts 다운로드"></a>ECharts 다운로드</h3><p>우선, 아래의 방법 중 하나를 선택하여 다운로드 받습니다:</p><ul><li><p><a href="https://echarts.apache.org/en/download.html" target="_blank" rel="noopener">official download page</a>, 공식 홈페이지에서 다운로드 받습니다. 만약 모든 패키지를 다운받고 싶다면 <a href="https://echarts.baidu.com/dist/echarts.min.js" target="_blank" rel="noopener">the full minified version</a>에 들어가 확인하세요.</p></li><li><p>최신 파일은 <a href="https://github.com/apache/incubator-echarts" target="_blank" rel="noopener">GitHub</a> 에 올려져 있습니다. 접속한 후 dist경로 아래에 압축되어 있습니다.</p></li><li><p>npm을 사용할 수 있습니다: npm install echarts –save. Using ECharts with webpack</p></li></ul><hr><h3 id="ECharts-소개"><a href="#ECharts-소개" class="headerlink" title="ECharts 소개"></a>ECharts 소개</h3><p>ECharts 3는 더 이상 AMD을 사용하지 않습니다. 대신, ECharts는 전통적인 <code>&lt;script&gt;</code> tag를 사용합니다. html 에 맨 위에 있는 head 태그안에 아래와 같이 적어주세요:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">   &lt;!-- including ECharts file --&gt;</span><br><span class="line">    &lt;script src=&quot;echarts.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure><hr><h3 id="간단한-차트-그리기"><a href="#간단한-차트-그리기" class="headerlink" title="간단한 차트 그리기"></a>간단한 차트 그리기</h3><p>차트를 그리기 전에, 우리는 DOM container를 준비해야합니다. 그리고 꼭 넓이와 높이를 지정해 주세요. 지정하지 않는다면 너무 작게 그려져 화면에 차트가 보이지 않을 수 있습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">&lt;!-- 높이와 너비가 지정된 Dom 을 생성합니다 --&gt;</span><br><span class="line">&lt;div id=&quot;main&quot; style=&quot;width:600px; height:400px;&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure><p>ECharts 객체를 echarts.init 을 사용해 준비합니다. setOption을 통해 간단한 bar 차트를 만듭시다. 아래에 전체 코드가 있습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;ECharts&lt;/title&gt;</span><br><span class="line">    &lt;!-- 다운받은 echarts 파일 --&gt;</span><br><span class="line">    &lt;script src=&quot;echarts.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;!-- 높이와 너비가 지정된 Dom 을 생성합니다 --&gt;</span><br><span class="line">&lt;div id=&quot;main&quot; style=&quot;width: 600px;height:400px;&quot;&gt;&lt;/div&gt;</span><br><span class="line">    &lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">        // DOM을 준비하고 echart 객체를 만듭니다.</span><br><span class="line">        var myChart = echarts.init(document.getElementById(&apos;main&apos;));</span><br><span class="line"></span><br><span class="line">        // 차트 속성과 데이터를 지정합니다.</span><br><span class="line">        var option = &#123;</span><br><span class="line">            title: &#123;</span><br><span class="line">            text: &apos;ECharts entry example&apos;</span><br><span class="line">            &#125;,</span><br><span class="line">            tooltip: &#123;&#125;,</span><br><span class="line">            legend: &#123;</span><br><span class="line">            data:[&apos;Sales&apos;]</span><br><span class="line">            &#125;,</span><br><span class="line">            xAxis: &#123;</span><br><span class="line">            data: [&quot;shirt&quot;,&quot;cardign&quot;,&quot;chiffon shirt&quot;,&quot;pants&quot;,&quot;heels&quot;,&quot;socks&quot;]</span><br><span class="line">            &#125;,</span><br><span class="line">            yAxis: &#123;&#125;,</span><br><span class="line">            series: [&#123;</span><br><span class="line">                name: &apos;Sales&apos;,</span><br><span class="line">                type: &apos;bar&apos;,</span><br><span class="line">                data: [5, 20, 36, 10, 10, 20]</span><br><span class="line">            &#125;]</span><br><span class="line">        &#125;;</span><br><span class="line"></span><br><span class="line">        // 위에서 설정한 속성을 차트에 반영합니다.</span><br><span class="line">        myChart.setOption(option);</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure><!-- 높이와 너비가 지정된 Dom 을 생성합니다 --><div id="mainechart" style="width: 500px; height:500px;"></div><p>자 처음으로 완성된 차트 입니다! 차트위에 마우스를 올리면 툴팁이 생성되는걸 확인할 수 있습니다!<br>더 많은 예제는 <a href="https://echarts.apache.org/examples/en/" target="_blank" rel="noopener">ECharts Gallery</a>에서 확인할 수 있습니다!</p><h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><ul><li><a href="https://echarts.apache.org/en/tutorial.html#Get%20Started%20with%20ECharts%20in%205%20minutes" target="_blank" rel="noopener">https://echarts.apache.org/en/tutorial.html#Get%20Started%20with%20ECharts%20in%205%20minutes</a></li></ul><h3 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h3><ul><li><a href="/2019/07/26/Echarts-heatmap/" title="ECharts를 통해 간단한 Heatmap 만들기!">ECharts를 통해 간단한 Heatmap 만들기!</a></li></ul><script type="text/javascript">    // DOM을 준비하고 echart 객체를 만듭니다.    var myChart = echarts.init(document.getElementById('mainechart'));    // 차트 속성과 데이터를 지정합니다.    var option = {        title: {            text: 'ECharts entry example'        },        tooltip: {},        legend: {            data:['Sales']        },        xAxis: {            data: ["shirt","cardign","chiffon shirt","pants","heels","socks"]        },        yAxis: {},        series: [{            name: 'Sales',            type: 'bar',            data: [5, 20, 36, 10, 10, 20]        }]    };    // 위에서 설정한 속성을 차트에 반영합니다.    myChart.setOption(option);</script>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;ECharts를-통해-5분안에-차트를-만들자&quot;&gt;&lt;a href=&quot;#ECharts를-통해-5분안에-차트를-만들자&quot; class=&quot;headerlink&quot; title=&quot;ECharts를 통해 5분안에 차트를 만들자!&quot;&gt;&lt;/a&gt;ECharts를 통해 5
-      
-    
-    </summary>
-    
-      <category term="Programming" scheme="https://dullyshin.github.io/categories/Programming/"/>
-    
-      <category term="Echarts" scheme="https://dullyshin.github.io/categories/Programming/Echarts/"/>
-    
-    
-      <category term="Echarts" scheme="https://dullyshin.github.io/tags/Echarts/"/>
-    
-      <category term="이차트" scheme="https://dullyshin.github.io/tags/%EC%9D%B4%EC%B0%A8%ED%8A%B8/"/>
-    
-      <category term="echart" scheme="https://dullyshin.github.io/tags/echart/"/>
-    
-      <category term="echart 한글" scheme="https://dullyshin.github.io/tags/echart-%ED%95%9C%EA%B8%80/"/>
-    
-  </entry>
-  
-  <entry>
     <title>ECharts를 통해 간단한 Heatmap 만들기!</title>
     <link href="https://dullyshin.github.io/2019/07/26/Echarts-heatmap/"/>
     <id>https://dullyshin.github.io/2019/07/26/Echarts-heatmap/</id>
@@ -241,6 +233,39 @@ a.button {
       <category term="히트맵" scheme="https://dullyshin.github.io/tags/%ED%9E%88%ED%8A%B8%EB%A7%B5/"/>
     
       <category term="heatmap data" scheme="https://dullyshin.github.io/tags/heatmap-data/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ECharts를 통해 5분안에 차트를 만들자!</title>
+    <link href="https://dullyshin.github.io/2019/07/26/Echarts-start/"/>
+    <id>https://dullyshin.github.io/2019/07/26/Echarts-start/</id>
+    <published>2019-07-26T06:32:51.000Z</published>
+    <updated>2019-07-30T08:15:25.735Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="ECharts를-통해-5분안에-차트를-만들자"><a href="#ECharts를-통해-5분안에-차트를-만들자" class="headerlink" title="ECharts를 통해 5분안에 차트를 만들자!"></a>ECharts를 통해 5분안에 차트를 만들자!</h2><p>Echarts 에 있는 튜토리얼을 한글로 번역하였습니다.</p><h3 id="ECharts-다운로드"><a href="#ECharts-다운로드" class="headerlink" title="ECharts 다운로드"></a>ECharts 다운로드</h3><p>우선, 아래의 방법 중 하나를 선택하여 다운로드 받습니다:</p><ul><li><p><a href="https://echarts.apache.org/en/download.html" target="_blank" rel="noopener">official download page</a>, 공식 홈페이지에서 다운로드 받습니다. 만약 모든 패키지를 다운받고 싶다면 <a href="https://echarts.baidu.com/dist/echarts.min.js" target="_blank" rel="noopener">the full minified version</a>에 들어가 확인하세요.</p></li><li><p>최신 파일은 <a href="https://github.com/apache/incubator-echarts" target="_blank" rel="noopener">GitHub</a> 에 올려져 있습니다. 접속한 후 dist경로 아래에 압축되어 있습니다.</p></li><li><p>npm을 사용할 수 있습니다: npm install echarts –save. Using ECharts with webpack</p></li></ul><hr><h3 id="ECharts-소개"><a href="#ECharts-소개" class="headerlink" title="ECharts 소개"></a>ECharts 소개</h3><p>ECharts 3는 더 이상 AMD을 사용하지 않습니다. 대신, ECharts는 전통적인 <code>&lt;script&gt;</code> tag를 사용합니다. html 에 맨 위에 있는 head 태그안에 아래와 같이 적어주세요:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">   &lt;!-- including ECharts file --&gt;</span><br><span class="line">    &lt;script src=&quot;echarts.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure><hr><h3 id="간단한-차트-그리기"><a href="#간단한-차트-그리기" class="headerlink" title="간단한 차트 그리기"></a>간단한 차트 그리기</h3><p>차트를 그리기 전에, 우리는 DOM container를 준비해야합니다. 그리고 꼭 넓이와 높이를 지정해 주세요. 지정하지 않는다면 너무 작게 그려져 화면에 차트가 보이지 않을 수 있습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">&lt;!-- 높이와 너비가 지정된 Dom 을 생성합니다 --&gt;</span><br><span class="line">&lt;div id=&quot;main&quot; style=&quot;width:600px; height:400px;&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure><p>ECharts 객체를 echarts.init 을 사용해 준비합니다. setOption을 통해 간단한 bar 차트를 만듭시다. 아래에 전체 코드가 있습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;ECharts&lt;/title&gt;</span><br><span class="line">    &lt;!-- 다운받은 echarts 파일 --&gt;</span><br><span class="line">    &lt;script src=&quot;echarts.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;!-- 높이와 너비가 지정된 Dom 을 생성합니다 --&gt;</span><br><span class="line">&lt;div id=&quot;main&quot; style=&quot;width: 600px;height:400px;&quot;&gt;&lt;/div&gt;</span><br><span class="line">    &lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">        // DOM을 준비하고 echart 객체를 만듭니다.</span><br><span class="line">        var myChart = echarts.init(document.getElementById(&apos;main&apos;));</span><br><span class="line"></span><br><span class="line">        // 차트 속성과 데이터를 지정합니다.</span><br><span class="line">        var option = &#123;</span><br><span class="line">            title: &#123;</span><br><span class="line">            text: &apos;ECharts entry example&apos;</span><br><span class="line">            &#125;,</span><br><span class="line">            tooltip: &#123;&#125;,</span><br><span class="line">            legend: &#123;</span><br><span class="line">            data:[&apos;Sales&apos;]</span><br><span class="line">            &#125;,</span><br><span class="line">            xAxis: &#123;</span><br><span class="line">            data: [&quot;shirt&quot;,&quot;cardign&quot;,&quot;chiffon shirt&quot;,&quot;pants&quot;,&quot;heels&quot;,&quot;socks&quot;]</span><br><span class="line">            &#125;,</span><br><span class="line">            yAxis: &#123;&#125;,</span><br><span class="line">            series: [&#123;</span><br><span class="line">                name: &apos;Sales&apos;,</span><br><span class="line">                type: &apos;bar&apos;,</span><br><span class="line">                data: [5, 20, 36, 10, 10, 20]</span><br><span class="line">            &#125;]</span><br><span class="line">        &#125;;</span><br><span class="line"></span><br><span class="line">        // 위에서 설정한 속성을 차트에 반영합니다.</span><br><span class="line">        myChart.setOption(option);</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure><!-- 높이와 너비가 지정된 Dom 을 생성합니다 --><div id="mainechart" style="width: 500px; height:500px;"></div><p>자 처음으로 완성된 차트 입니다! 차트위에 마우스를 올리면 툴팁이 생성되는걸 확인할 수 있습니다!<br>더 많은 예제는 <a href="https://echarts.apache.org/examples/en/" target="_blank" rel="noopener">ECharts Gallery</a>에서 확인할 수 있습니다!</p><h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><ul><li><a href="https://echarts.apache.org/en/tutorial.html#Get%20Started%20with%20ECharts%20in%205%20minutes" target="_blank" rel="noopener">https://echarts.apache.org/en/tutorial.html#Get%20Started%20with%20ECharts%20in%205%20minutes</a></li></ul><h3 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h3><ul><li><a href="/2019/07/26/Echarts-heatmap/" title="ECharts를 통해 간단한 Heatmap 만들기!">ECharts를 통해 간단한 Heatmap 만들기!</a></li></ul><script type="text/javascript">    // DOM을 준비하고 echart 객체를 만듭니다.    var myChart = echarts.init(document.getElementById('mainechart'));    // 차트 속성과 데이터를 지정합니다.    var option = {        title: {            text: 'ECharts entry example'        },        tooltip: {},        legend: {            data:['Sales']        },        xAxis: {            data: ["shirt","cardign","chiffon shirt","pants","heels","socks"]        },        yAxis: {},        series: [{            name: 'Sales',            type: 'bar',            data: [5, 20, 36, 10, 10, 20]        }]    };    // 위에서 설정한 속성을 차트에 반영합니다.    myChart.setOption(option);</script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;ECharts를-통해-5분안에-차트를-만들자&quot;&gt;&lt;a href=&quot;#ECharts를-통해-5분안에-차트를-만들자&quot; class=&quot;headerlink&quot; title=&quot;ECharts를 통해 5분안에 차트를 만들자!&quot;&gt;&lt;/a&gt;ECharts를 통해 5
+      
+    
+    </summary>
+    
+      <category term="Programming" scheme="https://dullyshin.github.io/categories/Programming/"/>
+    
+      <category term="Echarts" scheme="https://dullyshin.github.io/categories/Programming/Echarts/"/>
+    
+    
+      <category term="Echarts" scheme="https://dullyshin.github.io/tags/Echarts/"/>
+    
+      <category term="이차트" scheme="https://dullyshin.github.io/tags/%EC%9D%B4%EC%B0%A8%ED%8A%B8/"/>
+    
+      <category term="echart" scheme="https://dullyshin.github.io/tags/echart/"/>
+    
+      <category term="echart 한글" scheme="https://dullyshin.github.io/tags/echart-%ED%95%9C%EA%B8%80/"/>
     
   </entry>
   
@@ -352,6 +377,8 @@ a.button {
     
       <category term="제이쿼리 셀렉터" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0/"/>
     
+      <category term="제이쿼리 셀렉터 여러개" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0-%EC%97%AC%EB%9F%AC%EA%B0%9C/"/>
+    
       <category term="제이쿼리 선택자" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%84%A0%ED%83%9D%EC%9E%90/"/>
     
       <category term="셀렉터" scheme="https://dullyshin.github.io/tags/%EC%85%80%EB%A0%89%ED%84%B0/"/>
@@ -363,8 +390,6 @@ a.button {
       <category term="All Selector" scheme="https://dullyshin.github.io/tags/All-Selector/"/>
     
       <category term="모든 요소 선택" scheme="https://dullyshin.github.io/tags/%EB%AA%A8%EB%93%A0-%EC%9A%94%EC%86%8C-%EC%84%A0%ED%83%9D/"/>
-    
-      <category term="제이쿼리 셀렉터 여러개" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0-%EC%97%AC%EB%9F%AC%EA%B0%9C/"/>
     
   </entry>
   
@@ -469,8 +494,6 @@ a.button {
       <category term="JSTL" scheme="https://dullyshin.github.io/categories/Programming/JSTL/"/>
     
     
-      <category term="jstl" scheme="https://dullyshin.github.io/tags/jstl/"/>
-    
       <category term="foreach" scheme="https://dullyshin.github.io/tags/foreach/"/>
     
       <category term="jstl foreach문" scheme="https://dullyshin.github.io/tags/jstl-foreach%EB%AC%B8/"/>
@@ -482,6 +505,8 @@ a.button {
       <category term="while" scheme="https://dullyshin.github.io/tags/while/"/>
     
       <category term="do-while" scheme="https://dullyshin.github.io/tags/do-while/"/>
+    
+      <category term="jstl" scheme="https://dullyshin.github.io/tags/jstl/"/>
     
       <category term="jstl foreach" scheme="https://dullyshin.github.io/tags/jstl-foreach/"/>
     
@@ -520,11 +545,11 @@ a.button {
       <category term="Hexo" scheme="https://dullyshin.github.io/categories/Hexo/"/>
     
     
+      <category term="마크다운 테이블" scheme="https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%ED%85%8C%EC%9D%B4%EB%B8%94/"/>
+    
       <category term="markdown" scheme="https://dullyshin.github.io/tags/markdown/"/>
     
       <category term="마크다운" scheme="https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4/"/>
-    
-      <category term="마크다운 테이블" scheme="https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%ED%85%8C%EC%9D%B4%EB%B8%94/"/>
     
       <category term="markdown table" scheme="https://dullyshin.github.io/tags/markdown-table/"/>
     
@@ -547,9 +572,9 @@ a.button {
     <link href="https://dullyshin.github.io/2019/02/25/JavaScript-TernaryOperator/"/>
     <id>https://dullyshin.github.io/2019/02/25/JavaScript-TernaryOperator/</id>
     <published>2019-02-24T15:18:39.000Z</published>
-    <updated>2019-02-25T14:45:48.055Z</updated>
+    <updated>2019-08-08T05:17:43.676Z</updated>
     
-    <content type="html"><![CDATA[<p>##[JavaScript] 삼항 연산자</p><h4 id="삼항-연산자-Ternary-operator"><a href="#삼항-연산자-Ternary-operator" class="headerlink" title="- 삼항 연산자(Ternary operator)"></a>- 삼항 연산자(Ternary operator)</h4><img src="https://dojang.io/pluginfile.php/202/mod_page/content/19/unit20-1.png" alt="삼항연산자"><p>if문을 줄여서 사용할 수 있는 삼항 연산자! 아래와 같이 사용할 수 있습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">( 조건 ) ? 명령문1 : 명령문2; // 삼항연산자의 표현</span><br></pre></td></tr></table></figure><p>조건 : 참 또는 거짓으로 평가되는 표현식입니다.<br>명령문1 : 조건이 참으로 평가될 경우 실행되는 문입니다.<br>명령문2 : 이 구문은 조건이 거짓일경우 다른 조항이 있을 때 실행되는 구문입니다.</p><p>예시를 들어 봅시다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int b1 = (5&gt;4) ? 50 : 40; // 결과 result : 50</span><br></pre></td></tr></table></figure><p>조건이 참(true)여서 결과는 50이 됩니다. 위의 삼항 연산자를 if문으로 바꿔 사용하면 아래와 같습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">int b2 = 0;</span><br><span class="line">if(5 &gt; 4)&#123;</span><br><span class="line">    b2 = 50;</span><br><span class="line">&#125;else&#123;</span><br><span class="line">    b2 = 40;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>저는 삼항 연산자를 아래와 같이 자주 사용합니다. 만약 action_type이 modify면 읽을 수 밖에 없고 그 외에는 input 박스를 입력 가능하도록 합니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=&quot;text&quot; name=&quot;country&quot; value=&quot;Norway&quot; $&#123;action_type == &apos;modify&apos; ? &apos;readonly&apos; : &apos;&apos; &#125;&gt;</span><br></pre></td></tr></table></figure><hr><h4 id="if…else"><a href="#if…else" class="headerlink" title="- if…else"></a>- if…else</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">if (조건)&#123;</span><br><span class="line">   명령문1 //true</span><br><span class="line">&#125;else &#123;</span><br><span class="line">   명령문2 //false</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>조건 : 참 또는 거짓으로 평가되는 표현식입니다.<br>명령문1 : 조건이 참으로 평가될 경우 실행되는 문입니다.<br>명령문2 : 이 구문은 조건이 거짓일경우 다른 조항이 있을 때 실행되는 구문입니다.</p><h4 id="여러-if…else를-사용할-경우"><a href="#여러-if…else를-사용할-경우" class="headerlink" title="- 여러 if…else를 사용할 경우"></a>- 여러 if…else를 사용할 경우</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">if (조건1)&#123;</span><br><span class="line">   명령문1</span><br><span class="line">&#125;else if (조건2)&#123;</span><br><span class="line">   명령문2</span><br><span class="line">&#125;else if (조건3)&#123;</span><br><span class="line">   명령문3</span><br><span class="line">&#125;else</span><br><span class="line">   명령문N</span><br></pre></td></tr></table></figure><p>조건 1, 2, 3 : 참 또는 거짓으로 평가되는 표현식입니다.<br>명령문 1, 2, 3 : 조건이 참으로 평가될 경우 실행되는 문입니다.<br>조건문 N : 모든 조건에 맞지 않을때 실행됩니다.</p><h4 id="else-if"><a href="#else-if" class="headerlink" title="- else if"></a>- else if</h4><p>자바 스크립트에는 <code>elseif</code> 구문이 없습니다. 대신 <code>else if</code> 를 사용할 수 있습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">if (x &gt; 5) &#123;</span><br><span class="line"></span><br><span class="line">&#125; else if (x &gt; 50) &#123;</span><br><span class="line"></span><br><span class="line">&#125; else &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>예시를 확인해 볼까요?</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">function example(…) &#123;</span><br><span class="line">    return condition1 ? value1</span><br><span class="line">         : condition2 ? value2</span><br><span class="line">         : condition3 ? value3</span><br><span class="line">         : value4;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 위의 example함수는 아래와 같습니다. Equivalent to:</span><br><span class="line"></span><br><span class="line">function example(…) &#123;</span><br><span class="line">    if (condition1) &#123; return value1; &#125;</span><br><span class="line">    else if (condition2) &#123; return value2; &#125;</span><br><span class="line">    else if (condition3) &#123; return value3; &#125;</span><br><span class="line">    else &#123; return value4; &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>아주 자주 사용하게 되는 if 문 삼항연산자에 대해 알아보았습니다. </p><h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><ul><li><a href="https://dojang.io/mod/page/view.php?id=145" target="_blank" rel="noopener">https://dojang.io/mod/page/view.php?id=145</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator</a></li></ul><h3 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h3>]]></content>
+    <content type="html"><![CDATA[<p>##[JavaScript] 삼항 연산자</p><h4 id="삼항-연산자-Ternary-operator"><a href="#삼항-연산자-Ternary-operator" class="headerlink" title="- 삼항 연산자(Ternary operator)"></a>- 삼항 연산자(Ternary operator)</h4><img src="https://dojang.io/pluginfile.php/202/mod_page/content/19/unit20-1.png" alt="삼항연산자"><p>if문을 줄여서 사용할 수 있는 삼항 연산자! 아래와 같이 사용할 수 있습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">( 조건 ) ? 명령문1 : 명령문2; // 삼항연산자의 표현</span><br></pre></td></tr></table></figure><p>조건 : 참 또는 거짓으로 평가되는 표현식입니다.<br>명령문1 : 조건이 참으로 평가될 경우 실행되는 문입니다.<br>명령문2 : 이 구문은 조건이 거짓일경우 다른 조항이 있을 때 실행되는 구문입니다.</p><p>예시를 들어 봅시다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int b1 = (5&gt;4) ? 50 : 40; // 결과 result : 50</span><br></pre></td></tr></table></figure><p>조건이 참(true)여서 결과는 50이 됩니다. 위의 삼항 연산자를 if문으로 바꿔 사용하면 아래와 같습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">int b2 = 0;</span><br><span class="line">if(5 &gt; 4)&#123;</span><br><span class="line">    b2 = 50;</span><br><span class="line">&#125;else&#123;</span><br><span class="line">    b2 = 40;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>저는 삼항 연산자를 아래와 같이 자주 사용합니다. 만약 action_type이 modify면 읽을 수 밖에 없고 그 외에는 input 박스를 입력 가능하도록 합니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=&quot;text&quot; name=&quot;country&quot; value=&quot;Norway&quot; $&#123;action_type == &apos;modify&apos; ? &apos;readonly&apos; : &apos;&apos; &#125;&gt;</span><br></pre></td></tr></table></figure><hr><h4 id="if…else"><a href="#if…else" class="headerlink" title="- if…else"></a>- if…else</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">if (조건)&#123;</span><br><span class="line">   명령문1 //true</span><br><span class="line">&#125;else &#123;</span><br><span class="line">   명령문2 //false</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>조건 : 참 또는 거짓으로 평가되는 표현식입니다.<br>명령문1 : 조건이 참으로 평가될 경우 실행되는 문입니다.<br>명령문2 : 이 구문은 조건이 거짓일경우 다른 조항이 있을 때 실행되는 구문입니다.</p><h4 id="여러-if…else를-사용할-경우"><a href="#여러-if…else를-사용할-경우" class="headerlink" title="- 여러 if…else를 사용할 경우"></a>- 여러 if…else를 사용할 경우</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">if (조건1)&#123;</span><br><span class="line">   명령문1</span><br><span class="line">&#125;else if (조건2)&#123;</span><br><span class="line">   명령문2</span><br><span class="line">&#125;else if (조건3)&#123;</span><br><span class="line">   명령문3</span><br><span class="line">&#125;else</span><br><span class="line">   명령문N</span><br></pre></td></tr></table></figure><p>조건 1, 2, 3 : 참 또는 거짓으로 평가되는 표현식입니다.<br>명령문 1, 2, 3 : 조건이 참으로 평가될 경우 실행되는 문입니다.<br>조건문 N : 모든 조건에 맞지 않을때 실행됩니다.</p><h4 id="else-if"><a href="#else-if" class="headerlink" title="- else if"></a>- else if</h4><p>자바 스크립트에는 <code>elseif</code> 구문이 없습니다. 대신 <code>else if</code> 를 사용할 수 있습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">if (x &gt; 5) &#123;</span><br><span class="line"></span><br><span class="line">&#125; else if (x &gt; 50) &#123;</span><br><span class="line"></span><br><span class="line">&#125; else &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>예시를 확인해 볼까요?</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">function example(…) &#123;</span><br><span class="line">    return condition1 ? value1</span><br><span class="line">         : condition2 ? value2</span><br><span class="line">         : condition3 ? value3</span><br><span class="line">         : value4;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 위의 example함수는 아래와 같습니다. Equivalent to:</span><br><span class="line"></span><br><span class="line">function example(…) &#123;</span><br><span class="line">    if (condition1) &#123; return value1; &#125;</span><br><span class="line">    else if (condition2) &#123; return value2; &#125;</span><br><span class="line">    else if (condition3) &#123; return value3; &#125;</span><br><span class="line">    else &#123; return value4; &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>아주 자주 사용하게 되는 if 문 삼항연산자에 대해 알아보았습니다.</p><h4 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h4><ul><li><a href="https://dojang.io/mod/page/view.php?id=145" target="_blank" rel="noopener">https://dojang.io/mod/page/view.php?id=145</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator</a></li></ul><h4 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h4><ul><li><a href="/2019/08/08/JavaScript-array/" title="JavaScript-array">JavaScript-array</a></li></ul>]]></content>
     
     <summary type="html">
     
@@ -566,9 +591,9 @@ a.button {
       <category term="JavaScript" scheme="https://dullyshin.github.io/categories/Programming/JavaScript/"/>
     
     
-      <category term="if" scheme="https://dullyshin.github.io/tags/if/"/>
-    
       <category term="삼항 연산자" scheme="https://dullyshin.github.io/tags/%EC%82%BC%ED%95%AD-%EC%97%B0%EC%82%B0%EC%9E%90/"/>
+    
+      <category term="if" scheme="https://dullyshin.github.io/tags/if/"/>
     
       <category term="자바 삼항 연산자" scheme="https://dullyshin.github.io/tags/%EC%9E%90%EB%B0%94-%EC%82%BC%ED%95%AD-%EC%97%B0%EC%82%B0%EC%9E%90/"/>
     
@@ -768,41 +793,6 @@ a.button {
       <category term="메모장" scheme="https://dullyshin.github.io/tags/%EB%A9%94%EB%AA%A8%EC%9E%A5/"/>
     
       <category term="html editor" scheme="https://dullyshin.github.io/tags/html-editor/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>HTML 기초 알아봅시다!</title>
-    <link href="https://dullyshin.github.io/2018/08/29/HTML-basic/"/>
-    <id>https://dullyshin.github.io/2018/08/29/HTML-basic/</id>
-    <published>2018-08-29T09:17:32.000Z</published>
-    <updated>2018-08-29T14:58:26.451Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="HTML에-기초부터-배워-봅시다"><a href="#HTML에-기초부터-배워-봅시다" class="headerlink" title="HTML에 기초부터 배워 봅시다."></a>HTML에 기초부터 배워 봅시다.</h1><p>오늘은 HTML에 대해서 배워봅시다. 정말 쉽고 간단하니 누구가 배울 수 있습니다. 차근차근 알아봅시다!</p><h4 id="HTML-기초적인-구조"><a href="#HTML-기초적인-구조" class="headerlink" title="HTML 기초적인 구조"></a>HTML 기초적인 구조</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;title&gt;Page Title&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;h1&gt;제목을 쓰는 태그 H1&lt;/h1&gt;</span><br><span class="line">&lt;p&gt;내용을 작성할 때 사용하는 p 태그&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure><h4 id="위에서-사용한-태그-설명"><a href="#위에서-사용한-태그-설명" class="headerlink" title="위에서 사용한 태그 설명"></a>위에서 사용한 태그 설명</h4><ul><li><code>&lt;!DOCTYPE html&gt;</code> : 이 문서를 html로 정의 합니다.</li><li><code>&lt;html&gt;</code> : html 페이지의 루트 요소 입니다.</li><li><code>&lt;head&gt;</code> : 문서에 대한 메타 정보가 포함되어 있습니다.</li><li><code>&lt;title&gt;</code> : 문서의 제목을 지정합니다.</li><li><code>&lt;body&gt;</code> : 표시되는 페이지 내용이 포함되어 있습니다.</li><li><code>&lt;h1&gt;</code> : 클 글씨를 작성할 수 있습니다. 주로 제목을 쓸 때 사용합니다.</li><li><code>&lt;p&gt;</code> : 내용을 작성할때 주로 사용 됩니다.</li></ul><h4 id="HTML-태그"><a href="#HTML-태그" class="headerlink" title="HTML 태그"></a>HTML 태그</h4><p>Html 태그는 보통 아래와 같이 생겼습니다.</p><blockquote><p>&lt;태그 이름&gt;내용을 적습니다…&lt;/태그 이름&gt;</p></blockquote><ul><li>html 태그는 보통 짝을 이루어 사용 됩니다. 작성하실 내용 앞과 뒤에 사용하실 태그를 이렇게 <code>&lt;p&gt;내용&lt;/p&gt;</code> 붙이면 됩니다.</li><li>첫 번쨰 태그는 시작태그, 두번째 태그는 끝 태그라 부릅니다.</li></ul><h4 id="웹-브라우져"><a href="#웹-브라우져" class="headerlink" title="웹 브라우져"></a>웹 브라우져</h4><p>웹브라우져(크롬, 인터넷익스플로어, 파이어 폭스, 사파리)의 목적은 html태그를 읽고 보여주는 것입니다.</p><p>브라우져는 html 태그를 보여주지는 않지만 그 태그를 사용하여 사용자에게 어떻게 보여줄지 결정합니다.</p><p>위의 결과를 브라우저에서 보면 아래와 같습니다.</p><p><img src="https://www.w3schools.com/html/img_chrome.png" alt="결과"></p><h4 id="HTML-페이지-구조"><a href="#HTML-페이지-구조" class="headerlink" title="HTML 페이지 구조"></a>HTML 페이지 구조</h4><p><img src="https://cdn-images-1.medium.com/max/800/0*qGP573TczgtT5gMK." alt="html 페이지 구조"></p><blockquote><p>주의 : <code>&lt;body&gt;</code> 태그안에 흰색으로 칠해진 부분만 브라우져에 표시 됩니다.</p></blockquote><h4 id="‘‘"><a href="#‘‘" class="headerlink" title="‘‘ ??"></a>‘<!DOCTYPE html>‘ ??</h4><p>‘&lt;!DOCTYPE&gt;’ 자체가 문서의 타입을 나타냅니다. 그래서 브라우져가 웹페이지를 정확하게 보여줄 수 있죠.<br>딱 한번만 사용하고 보통 html 문서에 맨 위에 작성됩니다. (html 태그를 사용하기 전에 사용하면 됩니다.)<br>대문자 소문자 상관없이 사용하셔도 괜찮습니다. HTML5 에서는 ‘<!DOCTYPE html>‘으로 정의 합니다.</p><p>다음은 html 에디터에 대해서 알아 봅시다. 궁금하신 점 있으면 물어봐 주세요.</p><h2 id="Related-posts"><a href="#Related-posts" class="headerlink" title="Related posts"></a>Related posts</h2><a href="/2018/08/29/HTML-Editor/" title="HTML에디터 (jsFiddle,메모장)">HTML에디터 (jsFiddle,메모장)</a>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;HTML에-기초부터-배워-봅시다&quot;&gt;&lt;a href=&quot;#HTML에-기초부터-배워-봅시다&quot; class=&quot;headerlink&quot; title=&quot;HTML에 기초부터 배워 봅시다.&quot;&gt;&lt;/a&gt;HTML에 기초부터 배워 봅시다.&lt;/h1&gt;&lt;p&gt;오늘은 HTML
-      
-    
-    </summary>
-    
-      <category term="Programming" scheme="https://dullyshin.github.io/categories/Programming/"/>
-    
-      <category term="HTML" scheme="https://dullyshin.github.io/categories/Programming/HTML/"/>
-    
-    
-      <category term="HTML 기초" scheme="https://dullyshin.github.io/tags/HTML-%EA%B8%B0%EC%B4%88/"/>
-    
-      <category term="HTML 기초적인 구조" scheme="https://dullyshin.github.io/tags/HTML-%EA%B8%B0%EC%B4%88%EC%A0%81%EC%9D%B8-%EA%B5%AC%EC%A1%B0/"/>
-    
-      <category term="웹 브라우져" scheme="https://dullyshin.github.io/tags/%EC%9B%B9-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%B8/"/>
-    
-      <category term="DOCTYPE" scheme="https://dullyshin.github.io/tags/DOCTYPE/"/>
-    
-      <category term="DOCTYPE html" scheme="https://dullyshin.github.io/tags/DOCTYPE-html/"/>
     
   </entry>
   
