@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://dullyshin.github.io/2019/02/25/JSTL-ForEach/</loc>
+        <lastmod>2019-08-08T04:25:29.861Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/2019/08/08/JSTL-if/</loc>
+        <lastmod>2019-08-08T04:24:43.923Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://dullyshin.github.io/2019/08/07/HTML-buttonLink/</loc>
         <lastmod>2019-08-07T08:03:09.071Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -98,14 +114,6 @@
     <url>
         <loc>https://dullyshin.github.io/2019/02/26/jQuery-Traversing/</loc>
         <lastmod>2019-02-25T15:44:01.178Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/2019/02/25/JSTL-ForEach/</loc>
-        <lastmod>2019-02-25T15:19:18.897Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
