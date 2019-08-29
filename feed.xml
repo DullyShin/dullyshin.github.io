@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://dullyshin.github.io/"/>
-  <updated>2019-08-29T07:29:02.161Z</updated>
+  <updated>2019-08-29T08:44:53.396Z</updated>
   <id>https://dullyshin.github.io/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>BEST 10 이클립스 단축키</title>
+    <link href="https://dullyshin.github.io/2019/08/29/eclipse-shortcut/"/>
+    <id>https://dullyshin.github.io/2019/08/29/eclipse-shortcut/</id>
+    <published>2019-08-29T07:43:39.000Z</published>
+    <updated>2019-08-29T08:44:53.396Z</updated>
+    
+    <content type="html"><![CDATA[<p>제가 개발시에 주로 사용하는 단축키 BEST 10을 선정해 보았습니다!</p><h5 id="1-되돌리기"><a href="#1-되돌리기" class="headerlink" title="1. 되돌리기"></a>1. 되돌리기</h5><p>Ctrl + Z : 수정하기 이전의 상태로 되돌립니다.</p><h5 id="2-복사-붙여넣기"><a href="#2-복사-붙여넣기" class="headerlink" title="2. 복사 붙여넣기"></a>2. 복사 붙여넣기</h5><p>Ctrl + C : 선택한 블록을 복사<br>Ctrl + V : 복사한 것을 붙여넣기<br>Ctrl + Alt + Up(Down) : 한 줄(블럭) 복사</p><h5 id="3-주석"><a href="#3-주석" class="headerlink" title="3. 주석"></a>3. 주석</h5><p>Ctrl + Shift + C : 선택한 블록을 주석으로 처리하거나 주석 해제</p><h5 id="4-저장"><a href="#4-저장" class="headerlink" title="4. 저장"></a>4. 저장</h5><p>Ctrl + S : 현재 켜져있는 소스를 저장</p><h5 id="5-삭제"><a href="#5-삭제" class="headerlink" title="5. 삭제"></a>5. 삭제</h5><p>Ctrl + D : 선택한 블록을 삭제</p><h5 id="6-자리-옮기기"><a href="#6-자리-옮기기" class="headerlink" title="6. 자리 옮기기"></a>6. 자리 옮기기</h5><p>Alt + Up(Down) : 위(아래) 줄과 바꾸기</p><h5 id="7-검색"><a href="#7-검색" class="headerlink" title="7. 검색"></a>7. 검색</h5><p>Ctrl + Shift + R : 파일의 이름으로 검색합니다.<br>Ctrl + H : 여러가지 검색 조건으로 검색할 수 있습니다.<br>Ctrl + K : 찾을 문자열을 블럭으로 지정하고 검색<br>Ctrl + F : 기본 검색</p><h5 id="8-대소문자-변환"><a href="#8-대소문자-변환" class="headerlink" title="8. 대소문자 변환"></a>8. 대소문자 변환</h5><p>Ctrl + Shift +X : 대문자로 변환<br>Ctrl + Shift + Y : 소문자로 변환</p><h5 id="9-여러-줄-동시-수정"><a href="#9-여러-줄-동시-수정" class="headerlink" title="9. 여러 줄 동시 수정"></a>9. 여러 줄 동시 수정</h5><p>Shift + Alt + A : 여러 줄을 수정하고 싶을떄 아주 유용합니다. 수정하기 원하는 곳에서 <code>Shift + Alt + A</code> 를 누르면 마우스 모양이 십자가 모양이 됩니다. 그 후 수정하기 원하는 줄을 드레그 한 후 수정하면 됩니다.</p><video controls autoplay loop>   <source src="\images\eclipse_shortcut.mp4" type="video/mp4">   IE 8 이하는 비디오가 나오지 않습니다. IE 버전을 업데이트 하시길 바랍니다.</video><h5 id="10-디버깅-Debugging"><a href="#10-디버깅-Debugging" class="headerlink" title="10. 디버깅 Debugging"></a>10. 디버깅 Debugging</h5><p>F11 : 디버깅 시작<br>F8 : 디버깅 계속<br>F6 : 한 줄씩 디버깅<br>F5 : 한 줄씩 디버깅할 때 함수인 경우 함수 내부까지 디버깅</p><h5 id="아쉬운-번외-단축키들"><a href="#아쉬운-번외-단축키들" class="headerlink" title="아쉬운 번외 단축키들"></a>아쉬운 번외 단축키들</h5><p>Ctrl + Shift + L : 모든 단축키 목록 표시<br>Ctrl + Shift + O : 자동 import<br>Ctrl + M : 전체 화면 전환</p><h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><ul><li><a href="https://seohs.tistory.com/488" target="_blank" rel="noopener">https://seohs.tistory.com/488</a> [Digital Recipe]</li><li></li></ul><h3 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h3><ul><li></li><li></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;제가 개발시에 주로 사용하는 단축키 BEST 10을 선정해 보았습니다!&lt;/p&gt;
+&lt;h5 id=&quot;1-되돌리기&quot;&gt;&lt;a href=&quot;#1-되돌리기&quot; class=&quot;headerlink&quot; title=&quot;1. 되돌리기&quot;&gt;&lt;/a&gt;1. 되돌리기&lt;/h5&gt;&lt;p&gt;Ctrl 
+      
+    
+    </summary>
+    
+      <category term="Eclipse" scheme="https://dullyshin.github.io/categories/Eclipse/"/>
+    
+    
+      <category term="이클립스 단축키" scheme="https://dullyshin.github.io/tags/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%EB%8B%A8%EC%B6%95%ED%82%A4/"/>
+    
+      <category term="이클립스 한줄 수정" scheme="https://dullyshin.github.io/tags/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%ED%95%9C%EC%A4%84-%EC%88%98%EC%A0%95/"/>
+    
+      <category term="이클립스 저장 단축키" scheme="https://dullyshin.github.io/tags/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%EC%A0%80%EC%9E%A5-%EB%8B%A8%EC%B6%95%ED%82%A4/"/>
+    
+      <category term="이클립스 한 줄 삭제" scheme="https://dullyshin.github.io/tags/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%ED%95%9C-%EC%A4%84-%EC%82%AD%EC%A0%9C/"/>
+    
+      <category term="이클립스 한 줄 주석" scheme="https://dullyshin.github.io/tags/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%ED%95%9C-%EC%A4%84-%EC%A3%BC%EC%84%9D/"/>
+    
+      <category term="이클립스 삭제" scheme="https://dullyshin.github.io/tags/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%EC%82%AD%EC%A0%9C/"/>
+    
+      <category term="이클립스 주석" scheme="https://dullyshin.github.io/tags/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%EC%A3%BC%EC%84%9D/"/>
+    
+      <category term="eclipse shortcuts" scheme="https://dullyshin.github.io/tags/eclipse-shortcuts/"/>
+    
+  </entry>
   
   <entry>
     <title>(jQuery)제이쿼리 map 함수 사용법</title>
@@ -332,8 +372,8 @@ a.button {
   
   <entry>
     <title>[error]The content of elements must consist of well-formed character data or markup.</title>
-    <link href="https://dullyshin.github.io/2019/07/25/PostgreSql-error1/"/>
-    <id>https://dullyshin.github.io/2019/07/25/PostgreSql-error1/</id>
+    <link href="https://dullyshin.github.io/2019/07/25/PostgreSQL-error1/"/>
+    <id>https://dullyshin.github.io/2019/07/25/PostgreSQL-error1/</id>
     <published>2019-07-25T02:29:34.000Z</published>
     <updated>2019-07-25T02:43:30.297Z</updated>
     
@@ -391,6 +431,8 @@ a.button {
       <category term="jQuery" scheme="https://dullyshin.github.io/categories/Programming/jQuery/"/>
     
     
+      <category term="jQuery" scheme="https://dullyshin.github.io/tags/jQuery/"/>
+    
       <category term="제이쿼리 셀렉터" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0/"/>
     
       <category term="제이쿼리 선택자" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%84%A0%ED%83%9D%EC%9E%90/"/>
@@ -398,8 +440,6 @@ a.button {
       <category term="셀렉터" scheme="https://dullyshin.github.io/tags/%EC%85%80%EB%A0%89%ED%84%B0/"/>
     
       <category term="제이쿼리 셀렉터 총정리" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0-%EC%B4%9D%EC%A0%95%EB%A6%AC/"/>
-    
-      <category term="jQuery" scheme="https://dullyshin.github.io/tags/jQuery/"/>
     
       <category term="jQuery selector" scheme="https://dullyshin.github.io/tags/jQuery-selector/"/>
     
@@ -434,6 +474,8 @@ a.button {
       <category term="jQuery" scheme="https://dullyshin.github.io/categories/Programming/jQuery/"/>
     
     
+      <category term="jQuery" scheme="https://dullyshin.github.io/tags/jQuery/"/>
+    
       <category term="제이쿼리 셀렉터" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0/"/>
     
       <category term="제이쿼리 셀렉터 여러개" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0-%EC%97%AC%EB%9F%AC%EA%B0%9C/"/>
@@ -443,8 +485,6 @@ a.button {
       <category term="셀렉터" scheme="https://dullyshin.github.io/tags/%EC%85%80%EB%A0%89%ED%84%B0/"/>
     
       <category term="제이쿼리 셀렉터 총정리" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0-%EC%B4%9D%EC%A0%95%EB%A6%AC/"/>
-    
-      <category term="jQuery" scheme="https://dullyshin.github.io/tags/jQuery/"/>
     
       <category term="jQuery selector" scheme="https://dullyshin.github.io/tags/jQuery-selector/"/>
     
@@ -518,9 +558,9 @@ a.button {
       <category term="jQuery" scheme="https://dullyshin.github.io/categories/Programming/jQuery/"/>
     
     
-      <category term="jQuery" scheme="https://dullyshin.github.io/tags/jQuery/"/>
-    
       <category term="jquery 트래버싱" scheme="https://dullyshin.github.io/tags/jquery-%ED%8A%B8%EB%9E%98%EB%B2%84%EC%8B%B1/"/>
+    
+      <category term="jQuery" scheme="https://dullyshin.github.io/tags/jQuery/"/>
     
       <category term="제이쿼리 돔 횡단" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EB%8F%94-%ED%9A%A1%EB%8B%A8/"/>
     
@@ -606,11 +646,11 @@ a.button {
       <category term="Hexo" scheme="https://dullyshin.github.io/categories/Hexo/"/>
     
     
+      <category term="마크다운 테이블" scheme="https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%ED%85%8C%EC%9D%B4%EB%B8%94/"/>
+    
       <category term="markdown" scheme="https://dullyshin.github.io/tags/markdown/"/>
     
       <category term="마크다운" scheme="https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4/"/>
-    
-      <category term="마크다운 테이블" scheme="https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%ED%85%8C%EC%9D%B4%EB%B8%94/"/>
     
       <category term="markdown table" scheme="https://dullyshin.github.io/tags/markdown-table/"/>
     
@@ -784,41 +824,6 @@ a.button {
       <category term="서브쿼리 SQL문장" scheme="https://dullyshin.github.io/tags/%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC-SQL%EB%AC%B8%EC%9E%A5/"/>
     
       <category term="테이블 3개 조인" scheme="https://dullyshin.github.io/tags/%ED%85%8C%EC%9D%B4%EB%B8%94-3%EA%B0%9C-%EC%A1%B0%EC%9D%B8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>HTML 이미지 링크거는 법</title>
-    <link href="https://dullyshin.github.io/2018/08/30/HTML-imgLink/"/>
-    <id>https://dullyshin.github.io/2018/08/30/HTML-imgLink/</id>
-    <published>2018-08-29T16:46:13.000Z</published>
-    <updated>2019-08-07T07:10:36.864Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="HTML-이미지-링크거는-법"><a href="#HTML-이미지-링크거는-법" class="headerlink" title="HTML 이미지 링크거는 법"></a>HTML 이미지 링크거는 법</h1><p>HTML에서 이미지를 누르면 링크가 연결되는 것을 배워 봅시다! 아주 아주 간단합니다.<br>결과만 보고 싶으신 급하신 분들은 이 포스트의 맨 마지막을 확인하세요.</p><h5 id="HTML-이미지-기본-형식"><a href="#HTML-이미지-기본-형식" class="headerlink" title="HTML 이미지 기본 형식"></a>HTML 이미지 기본 형식</h5><p>  HTML에서는 <code>&lt;img&gt;</code>태그를 이용해 이미지를 삽입 할 수 있습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;img src=&quot;http://t1.daumcdn.net/friends/prod/editor/dc8b3d02-a15a-4afa-a88b-989cf2a50476.jpg&quot;</span><br><span class="line">alt=&quot;카카오 라이언&quot; width=&quot;100&quot; height=&quot;50&quot; align=&quot;center&quot; border=&quot;0&quot;&gt;</span><br></pre></td></tr></table></figure><img src="http://t1.daumcdn.net/friends/prod/editor/dc8b3d02-a15a-4afa-a88b-989cf2a50476.jpg" alt="실행 결과" width="200" height="200" align="center" border="0"><ul><li>src : 이미지의 웹상의 주소</li><li>alt : 이미지 위에 마우스를 올렸을때 설명 글, 이미지가 보이지 않을 떄 설명</li><li>height : 이미지의 높이 설정 (세로 크기)</li><li>width : 이미지의 너비 설정 (가로 크기)</li><li>align : 이미지 정렬방식 (left, center, right)</li><li>border : 이미지 테두리 두께 (0이면 테두리가 없습니다.)</li></ul><hr><h5 id="HTML-링크-기본-형식"><a href="#HTML-링크-기본-형식" class="headerlink" title="HTML 링크 기본 형식"></a>HTML 링크 기본 형식</h5><p>링크를 연결할때 사용하는 <code>&lt;a&gt;</code> 태그를 알아봅시다. 하이퍼 링크라고도 불립니다. 기본적으로 <code>&lt;a&gt;</code>태그는 파란색으로 나타납니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;https://dullyshin.github.io/&quot; target=&quot;_blank&quot;&gt;HYEJIN IT BLOG&lt;a&gt;</span><br></pre></td></tr></table></figure><p><a href="https://dullyshin.github.io/" target="_blank">HYEJIN IT BLOG<a></a></a></p><ul><li>href : 연결 하고자 하는 주소</li><li>target<ul><li>_blank :웹 브라우저에서 새 창으로 연결 됩니다.</li><li>_self : default 기본 속성으로 현재 있는 창에서 연결됩니다.</li><li>_parent : 현재 창보다 상위 프레임 창에서 연결됩니다.</li><li>_top : 웹 브라우저 창이 전체 창으로 연결됩니다.</li></ul></li></ul><hr><h5 id="HTML-이미지-링크거는-법-1"><a href="#HTML-이미지-링크거는-법-1" class="headerlink" title="HTML 이미지 링크거는 법"></a>HTML 이미지 링크거는 법</h5><p> 위에서 배운 2가지의 링크를 종합하여 HTML 이미지 링크거실 수 있습니다. <code>&lt;a&gt;</code>태그 안에 <code>&lt;img&gt;</code>태그를 합쳐서 사용합니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;https://dullyshin.github.io/&quot; height=&quot;5&quot; width=&quot;10&quot; target=&quot;_blank&quot;&gt;</span><br><span class="line">&lt;img src=&quot;\images\logo.png&quot; alt=&quot;위의 이미지를 누르면 연결됩니다.&quot;&gt;</span><br><span class="line">&lt;a&gt;</span><br></pre></td></tr></table></figure><p><a href="https://dullyshin.github.io/" height="5" width="10" target="_blank"><img src="\images\logo.png" alt="위의 이미지를 누르면 연결됩니다."><a></a></a></p><p>아주 간단합니다. 문제 해결되길 바랄께요! 궁금하신 점 있다면 댓글 남겨주세요.</p><h3 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h3><ul><li><a href="/2019/08/07/HTML-table/" title="HTML 간단하게 표 만들기">HTML 간단하게 표 만들기</a></li><li><a href="/2018/08/29/HTML-Editor/" title="HTML 에디터 (jsFiddle,메모장)">HTML 에디터 (jsFiddle,메모장)</a></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;HTML-이미지-링크거는-법&quot;&gt;&lt;a href=&quot;#HTML-이미지-링크거는-법&quot; class=&quot;headerlink&quot; title=&quot;HTML 이미지 링크거는 법&quot;&gt;&lt;/a&gt;HTML 이미지 링크거는 법&lt;/h1&gt;&lt;p&gt;HTML에서 이미지를 누르면 링크
-      
-    
-    </summary>
-    
-      <category term="Programming" scheme="https://dullyshin.github.io/categories/Programming/"/>
-    
-      <category term="HTML" scheme="https://dullyshin.github.io/categories/Programming/HTML/"/>
-    
-    
-      <category term="html 이미지 링크" scheme="https://dullyshin.github.io/tags/html-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%A7%81%ED%81%AC/"/>
-    
-      <category term="html 이미지" scheme="https://dullyshin.github.io/tags/html-%EC%9D%B4%EB%AF%B8%EC%A7%80/"/>
-    
-      <category term="html 링크" scheme="https://dullyshin.github.io/tags/html-%EB%A7%81%ED%81%AC/"/>
-    
-      <category term="이미지 링크걸기" scheme="https://dullyshin.github.io/tags/%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%A7%81%ED%81%AC%EA%B1%B8%EA%B8%B0/"/>
-    
-      <category term="html 링크걸기" scheme="https://dullyshin.github.io/tags/html-%EB%A7%81%ED%81%AC%EA%B1%B8%EA%B8%B0/"/>
     
   </entry>
   

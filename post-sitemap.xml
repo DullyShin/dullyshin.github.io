@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://dullyshin.github.io/2019/08/29/eclipse-shortcut/</loc>
+        <lastmod>2019-08-29T08:44:53.396Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://dullyshin.github.io/2019/08/29/jQuery-map/</loc>
         <lastmod>2019-08-29T07:29:02.161Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -104,7 +112,7 @@
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/2019/07/25/PostgreSql-error1/</loc>
+        <loc>https://dullyshin.github.io/2019/07/25/PostgreSQL-error1/</loc>
         <lastmod>2019-07-25T02:43:30.297Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
