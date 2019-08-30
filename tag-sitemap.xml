@@ -3,6 +3,118 @@
 
 
     <url>
+        <loc>https://dullyshin.github.io/tags/Type-cast/</loc>
+        <lastmod>2019-08-30T08:21:12.779Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/postgresql-cast-intrger/</loc>
+        <lastmod>2019-08-30T08:21:12.779Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/PostgreSQL-Convert/</loc>
+        <lastmod>2019-08-30T08:21:12.779Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/PostgreSQL-CAST-To-Convert/</loc>
+        <lastmod>2019-08-30T08:21:12.779Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/postgresql-cast/</loc>
+        <lastmod>2019-08-30T08:21:12.779Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/postgresql/</loc>
+        <lastmod>2019-08-30T08:21:12.779Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/PostgreSQL/</loc>
+        <lastmod>2019-08-30T08:21:12.779Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/PostgreSQL-Basic/</loc>
+        <lastmod>2019-08-30T08:21:12.779Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/eclipse-shortcuts/</loc>
+        <lastmod>2019-08-30T07:44:54.514Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%EC%A3%BC%EC%84%9D/</loc>
+        <lastmod>2019-08-30T07:44:54.514Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%EC%82%AD%EC%A0%9C/</loc>
+        <lastmod>2019-08-30T07:44:54.514Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%ED%95%9C-%EC%A4%84-%EC%A3%BC%EC%84%9D/</loc>
+        <lastmod>2019-08-30T07:44:54.514Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%ED%95%9C-%EC%A4%84-%EC%82%AD%EC%A0%9C/</loc>
+        <lastmod>2019-08-30T07:44:54.514Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%EC%A0%80%EC%9E%A5-%EB%8B%A8%EC%B6%95%ED%82%A4/</loc>
+        <lastmod>2019-08-30T07:44:54.514Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%ED%95%9C%EC%A4%84-%EC%88%98%EC%A0%95/</loc>
+        <lastmod>2019-08-30T07:44:54.514Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%EB%8B%A8%EC%B6%95%ED%82%A4/</loc>
+        <lastmod>2019-08-30T07:44:54.514Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://dullyshin.github.io/tags/jstl-substring-%EB%92%A4%EC%97%90%EC%84%9C-%EC%9E%90%EB%A5%B4%EA%B8%B0/</loc>
         <lastmod>2019-08-30T07:25:45.081Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -124,62 +236,6 @@
     <url>
         <loc>https://dullyshin.github.io/tags/Windows/</loc>
         <lastmod>2019-08-30T07:19:53.013Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/eclipse-shortcuts/</loc>
-        <lastmod>2019-08-29T08:50:25.300Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%EC%A3%BC%EC%84%9D/</loc>
-        <lastmod>2019-08-29T08:50:25.300Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%EC%82%AD%EC%A0%9C/</loc>
-        <lastmod>2019-08-29T08:50:25.300Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%ED%95%9C-%EC%A4%84-%EC%A3%BC%EC%84%9D/</loc>
-        <lastmod>2019-08-29T08:50:25.300Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%ED%95%9C-%EC%A4%84-%EC%82%AD%EC%A0%9C/</loc>
-        <lastmod>2019-08-29T08:50:25.300Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%EC%A0%80%EC%9E%A5-%EB%8B%A8%EC%B6%95%ED%82%A4/</loc>
-        <lastmod>2019-08-29T08:50:25.300Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%ED%95%9C%EC%A4%84-%EC%88%98%EC%A0%95/</loc>
-        <lastmod>2019-08-29T08:50:25.300Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%EB%8B%A8%EC%B6%95%ED%82%A4/</loc>
-        <lastmod>2019-08-29T08:50:25.300Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -696,20 +752,6 @@
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/tags/PostgreSQL/</loc>
-        <lastmod>2019-07-25T02:43:30.297Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/PostgreSQL-Basic/</loc>
-        <lastmod>2019-07-25T02:43:30.297Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://dullyshin.github.io/tags/SQL/</loc>
         <lastmod>2019-07-25T02:43:30.297Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -738,13 +780,6 @@
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/tags/jQuery/</loc>
-        <lastmod>2019-07-25T02:22:50.058Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0-%EC%B4%9D%EC%A0%95%EB%A6%AC/</loc>
         <lastmod>2019-07-25T02:22:50.058Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -767,6 +802,13 @@
 
     <url>
         <loc>https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0/</loc>
+        <lastmod>2019-07-25T02:22:50.058Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/jQuery/</loc>
         <lastmod>2019-07-25T02:22:50.058Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -990,6 +1032,13 @@
     </url>
 
     <url>
+        <loc>https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%ED%85%8C%EC%9D%B4%EB%B8%94/</loc>
+        <lastmod>2019-02-25T13:45:02.457Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4/</loc>
         <lastmod>2019-02-25T13:45:02.457Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -998,13 +1047,6 @@
 
     <url>
         <loc>https://dullyshin.github.io/tags/markdown/</loc>
-        <lastmod>2019-02-25T13:45:02.457Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%ED%85%8C%EC%9D%B4%EB%B8%94/</loc>
         <lastmod>2019-02-25T13:45:02.457Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -1074,13 +1116,6 @@
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/tags/my-sql/</loc>
-        <lastmod>2018-09-02T16:00:56.403Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://dullyshin.github.io/tags/query/</loc>
         <lastmod>2018-09-02T16:00:56.403Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1089,6 +1124,13 @@
 
     <url>
         <loc>https://dullyshin.github.io/tags/sql/</loc>
+        <lastmod>2018-09-02T16:00:56.403Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/my-sql/</loc>
         <lastmod>2018-09-02T16:00:56.403Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -1242,14 +1284,14 @@
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%82%AC%EC%9A%A9%EB%B2%95/</loc>
+        <loc>https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%97%90%EB%94%94%ED%84%B0/</loc>
         <lastmod>2018-08-26T18:42:28.398Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%97%90%EB%94%94%ED%84%B0/</loc>
+        <loc>https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%82%AC%EC%9A%A9%EB%B2%95/</loc>
         <lastmod>2018-08-26T18:42:28.398Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>

@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://dullyshin.github.io/"/>
-  <updated>2019-08-30T07:23:54.204Z</updated>
+  <updated>2019-08-30T08:21:12.779Z</updated>
   <id>https://dullyshin.github.io/</id>
   
   <author>
@@ -15,6 +15,47 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[PostgreSQl] 타입 변환 (PostgreSQL CAST To Convert)</title>
+    <link href="https://dullyshin.github.io/2019/08/30/PostgreSQl-cast/"/>
+    <id>https://dullyshin.github.io/2019/08/30/PostgreSQl-cast/</id>
+    <published>2019-08-30T07:48:27.000Z</published>
+    <updated>2019-08-30T08:21:12.779Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="CAST-에-대한-간단한-소개"><a href="#CAST-에-대한-간단한-소개" class="headerlink" title="CAST 에 대한 간단한 소개"></a><code>CAST</code> 에 대한 간단한 소개</h4><p>PostgreSql 에서는 <code>Cast</code>를 사용하여 타입 변화를 할 수 있습니다.<br>숫자를 문자로 변환하거나, 숫자를 날짜로 변환할 수 있습니다.<br>아래에서 syntax를 확인해보죠.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CAST ( expression AS target_type );</span><br></pre></td></tr></table></figure><hr><h4 id="연산자"><a href="#연산자" class="headerlink" title=":: 연산자"></a><code>::</code> 연산자</h4><p><code>CAST</code>를 대신하여 <code>::</code> 연산자를 사용하여 더 간단하게 타입을 변환할 수 있습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">expression::type</span><br></pre></td></tr></table></figure><p>간단하게 예는 아래와 같습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT</span><br><span class="line">  &apos;100&apos;::INTEGER,</span><br><span class="line">  &apos;01-OCT-2015&apos;::DATE;</span><br></pre></td></tr></table></figure><p>주의할 점은 <code>::</code> 연산자는 PostgreSQL에서만 사용됩니다. SQL 스탠다드를 따르지 않습니다.</p><hr><h4 id="PostgreSQL-CAST-예시"><a href="#PostgreSQL-CAST-예시" class="headerlink" title="PostgreSQL CAST 예시"></a>PostgreSQL <code>CAST</code> 예시</h4><h5 id="1-문자를-숫자로-변환"><a href="#1-문자를-숫자로-변환" class="headerlink" title="1)문자를 숫자로 변환"></a>1)문자를 숫자로 변환</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT</span><br><span class="line">   CAST (&apos;100&apos; AS INTEGER);</span><br></pre></td></tr></table></figure><table><thead><tr><th>int4</th></tr></thead><tbody><tr><td>100</td></tr></tbody></table><p>하지만 아래와 같이 잘못된 변환을 시도한다면 오류가 발생할 것입니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT</span><br><span class="line">   CAST (&apos;10C&apos; AS INTEGER);</span><br></pre></td></tr></table></figure><p>SQL Error [22P02]: 오류: 정수 자료형 대한 잘못된 입력 구문: “10C”</p><hr><h5 id="2-문자를-날짜-형식으로-변환"><a href="#2-문자를-날짜-형식으로-변환" class="headerlink" title="2)문자를 날짜 형식으로 변환"></a>2)문자를 날짜 형식으로 변환</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT</span><br><span class="line">   CAST (&apos;2015-01-01&apos; AS DATE),</span><br><span class="line">   CAST (&apos;01-OCT-2015&apos; AS DATE);</span><br></pre></td></tr></table></figure><table><thead><tr><th>date</th><th>date</th></tr></thead><tbody><tr><td>2015-01-01</td><td>2015-10-01</td></tr></tbody></table><hr><h4 id="3-문자를-더블형으로-변환"><a href="#3-문자를-더블형으로-변환" class="headerlink" title="3)문자를 더블형으로 변환"></a>3)문자를 더블형으로 변환</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT</span><br><span class="line">   CAST (&apos;10.2&apos; AS DOUBLE);</span><br></pre></td></tr></table></figure><p>만약 위와 같이 쿼리문을 실행하면 <code>SQL Error [42704]: 오류: &quot;double&quot; 자료형 없음</code> 이라는 오류가 발생합니다.<br>오류를 고치기 위해서는 ‘double’ 대신에  <code>DOUBLE PRECISION</code>를 사용해주면 됩니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT</span><br><span class="line">   CAST (&apos;10.2&apos; AS DOUBLE PRECISION);</span><br></pre></td></tr></table></figure><table><thead><tr><th>float8</th></tr></thead><tbody><tr><td>10.2</td></tr></tbody></table><hr><h5 id="4-문자를-참거짓으로-변환"><a href="#4-문자를-참거짓으로-변환" class="headerlink" title="4)문자를 참거짓으로 변환"></a>4)문자를 참거짓으로 변환</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">SELECT</span><br><span class="line">   CAST(&apos;true&apos; AS BOOLEAN),</span><br><span class="line">   CAST(&apos;false&apos; as BOOLEAN),</span><br><span class="line">   CAST(&apos;T&apos; as BOOLEAN),</span><br><span class="line">   CAST(&apos;F&apos; as BOOLEAN);</span><br></pre></td></tr></table></figure><table><thead><tr><th>bool</th><th>bool</th><th>bool</th><th>bool</th></tr></thead><tbody><tr><td>true</td><td>false</td><td>true</td><td>false</td></tr></tbody></table><hr><h5 id="5-문자를-날짜-형식으로-변환"><a href="#5-문자를-날짜-형식으로-변환" class="headerlink" title="5)문자를 날짜 형식으로 변환"></a>5)문자를 날짜 형식으로 변환</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT &apos;2019-06-15 14:30:20&apos;::timestamp;</span><br></pre></td></tr></table></figure><table><thead><tr><th>timestamp</th></tr></thead><tbody><tr><td>2019-06-15 14:30:20</td></tr></tbody></table><hr><h5 id="6-문자를-인터벌-형식으로-변환"><a href="#6-문자를-인터벌-형식으로-변환" class="headerlink" title="6)문자를 인터벌 형식으로 변환"></a>6)문자를 인터벌 형식으로 변환</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">SELECT &apos;15 minute&apos;::interval,</span><br><span class="line"> &apos;2 hour&apos;::interval,</span><br><span class="line"> &apos;1 day&apos;::interval,</span><br><span class="line"> &apos;2 week&apos;::interval,</span><br><span class="line"> &apos;3 month&apos;::interval;</span><br></pre></td></tr></table></figure><table><thead><tr><th>interval</th><th>interval</th><th>interval</th><th>interval</th><th>interval</th></tr></thead><tbody><tr><td>00:15:00</td><td>02:00:00</td><td>1 day</td><td>14 days</td><td>3 mons</td></tr></tbody></table><h5 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h5><ul><li><a href="http://www.postgresqltutorial.com/postgresql-cast/" target="_blank" rel="noopener">http://www.postgresqltutorial.com/postgresql-cast/</a></li></ul><h5 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h5><ul><li><a href="/2018/08/27/PostgreSQL-Basic/" title="PostgreSql 란?">PostgreSql 란?</a></li><li><a href="/2019/07/25/PostgreSQL-error1/" title="[error]The content of elements must consist of well-formed character data or markup.">[error]The content of elements must consist of well-formed character data or markup.</a></li><li><a href="/2019/02/20/MSSQL-InsertPlusOne/" title="(MS SQL) 삽입시Insert 최대값 추가 +1">(MS SQL) 삽입시Insert 최대값 추가 +1</a></li><li><a href="/2018/05/11/SQL-sqlBasic/" title="SQL basic">SQL basic</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;CAST-에-대한-간단한-소개&quot;&gt;&lt;a href=&quot;#CAST-에-대한-간단한-소개&quot; class=&quot;headerlink&quot; title=&quot;CAST 에 대한 간단한 소개&quot;&gt;&lt;/a&gt;&lt;code&gt;CAST&lt;/code&gt; 에 대한 간단한 소개&lt;/h4&gt;&lt;p&gt;P
+      
+    
+    </summary>
+    
+      <category term="Programming" scheme="https://dullyshin.github.io/categories/Programming/"/>
+    
+      <category term="SQL" scheme="https://dullyshin.github.io/categories/Programming/SQL/"/>
+    
+    
+      <category term="PostgreSQL_Basic" scheme="https://dullyshin.github.io/tags/PostgreSQL-Basic/"/>
+    
+      <category term="PostgreSQL" scheme="https://dullyshin.github.io/tags/PostgreSQL/"/>
+    
+      <category term="postgresql" scheme="https://dullyshin.github.io/tags/postgresql/"/>
+    
+      <category term="postgresql cast" scheme="https://dullyshin.github.io/tags/postgresql-cast/"/>
+    
+      <category term="PostgreSQL CAST To Convert" scheme="https://dullyshin.github.io/tags/PostgreSQL-CAST-To-Convert/"/>
+    
+      <category term="PostgreSQL Convert" scheme="https://dullyshin.github.io/tags/PostgreSQL-Convert/"/>
+    
+      <category term="postgresql cast intrger" scheme="https://dullyshin.github.io/tags/postgresql-cast-intrger/"/>
+    
+      <category term="Type cast" scheme="https://dullyshin.github.io/tags/Type-cast/"/>
+    
+  </entry>
   
   <entry>
     <title>[SQL] 쿼리 where절의 Like 와 In 을 동시에 사용하기</title>
@@ -94,9 +135,9 @@
     <link href="https://dullyshin.github.io/2019/08/29/eclipse-shortcut/"/>
     <id>https://dullyshin.github.io/2019/08/29/eclipse-shortcut/</id>
     <published>2019-08-29T07:43:39.000Z</published>
-    <updated>2019-08-29T08:50:25.300Z</updated>
+    <updated>2019-08-30T07:44:54.514Z</updated>
     
-    <content type="html"><![CDATA[<p>제가 개발시에 주로 사용하는 단축키 BEST 10을 선정해 보았습니다!</p><h5 id="1-되돌리기"><a href="#1-되돌리기" class="headerlink" title="1. 되돌리기"></a>1. 되돌리기</h5><p>Ctrl + Z : 수정하기 이전의 상태로 되돌립니다.</p><h5 id="2-복사-붙여넣기"><a href="#2-복사-붙여넣기" class="headerlink" title="2. 복사 붙여넣기"></a>2. 복사 붙여넣기</h5><p>Ctrl + C : 선택한 블록을 복사<br>Ctrl + V : 복사한 것을 붙여넣기<br>Ctrl + Alt + Up(Down) : 한 줄(블럭) 복사</p><h5 id="3-주석"><a href="#3-주석" class="headerlink" title="3. 주석"></a>3. 주석</h5><p>Ctrl + Shift + C : 선택한 블록을 주석으로 처리하거나 주석 해제</p><h5 id="4-저장"><a href="#4-저장" class="headerlink" title="4. 저장"></a>4. 저장</h5><p>Ctrl + S : 현재 켜져있는 소스를 저장</p><h5 id="5-삭제"><a href="#5-삭제" class="headerlink" title="5. 삭제"></a>5. 삭제</h5><p>Ctrl + D : 선택한 블록을 삭제</p><h5 id="6-자리-옮기기"><a href="#6-자리-옮기기" class="headerlink" title="6. 자리 옮기기"></a>6. 자리 옮기기</h5><p>Alt + Up(Down) : 위(아래) 줄과 바꾸기</p><h5 id="7-검색"><a href="#7-검색" class="headerlink" title="7. 검색"></a>7. 검색</h5><p>Ctrl + Shift + R : 파일의 이름으로 검색합니다.<br>Ctrl + H : 여러가지 검색 조건으로 검색할 수 있습니다.<br>Ctrl + K : 찾을 문자열을 블럭으로 지정하고 검색<br>Ctrl + F : 기본 검색</p><h5 id="8-대소문자-변환"><a href="#8-대소문자-변환" class="headerlink" title="8. 대소문자 변환"></a>8. 대소문자 변환</h5><p>Ctrl + Shift +X : 대문자로 변환<br>Ctrl + Shift + Y : 소문자로 변환</p><h5 id="9-여러-줄-동시-수정"><a href="#9-여러-줄-동시-수정" class="headerlink" title="9. 여러 줄 동시 수정"></a>9. 여러 줄 동시 수정</h5><p>Shift + Alt + A : 여러 줄을 수정하고 싶을떄 아주 유용합니다. 수정하기 원하는 곳에서 <code>Shift + Alt + A</code> 를 누르면 마우스 모양이 십자가 모양이 됩니다. 그 후 수정하기 원하는 줄을 드레그 한 후 수정하면 됩니다.</p><blockquote><p>한글은 작성되지 않습니다. 주의하세요!</p></blockquote><video controls autoplay loop>   <source src="\images\eclipse_shortcut.mp4" type="video/mp4">   IE 8 이하는 비디오가 나오지 않습니다. IE 버전을 업데이트 하시길 바랍니다.</video><h5 id="10-디버깅-Debugging"><a href="#10-디버깅-Debugging" class="headerlink" title="10. 디버깅 Debugging"></a>10. 디버깅 Debugging</h5><p>F11 : 디버깅 시작<br>F8 : 디버깅 계속<br>F6 : 한 줄씩 디버깅<br>F5 : 한 줄씩 디버깅할 때 함수인 경우 함수 내부까지 디버깅</p><h5 id="아쉬운-번외-단축키들"><a href="#아쉬운-번외-단축키들" class="headerlink" title="아쉬운 번외 단축키들"></a>아쉬운 번외 단축키들</h5><p>Ctrl + Shift + L : 모든 단축키 목록 표시<br>Ctrl + Shift + O : 자동 import<br>Ctrl + M : 전체 화면 전환</p><h4 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h4><ul><li><a href="https://seohs.tistory.com/488" target="_blank" rel="noopener">https://seohs.tistory.com/488</a> [Digital Recipe]</li></ul><h4 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h4><ul><li><a href="/2019/07/26/Echarts-start/" title="ECharts를 통해 5분안에 차트를 만들자!">ECharts를 통해 5분안에 차트를 만들자!</a></li><li><a href="/2018/08/29/HTML-basic/" title="HTML 기초 알아봅시다!">HTML 기초 알아봅시다!</a></li><li><a href="/2018/08/30/HTML-imgLink/" title="HTML 이미지 링크거는 법">HTML 이미지 링크거는 법</a></li><li><a href="/2019/08/07/HTML-table/" title="HTML 간단하게 표 만들기">HTML 간단하게 표 만들기</a></li><li><ul><li><a href="/2019/02/25/JSTL-ForEach/" title="(jstl) ForEach 문">(jstl) ForEach 문</a></li></ul></li></ul>]]></content>
+    <content type="html"><![CDATA[<p>제가 개발시에 주로 사용하는 단축키 BEST 10을 선정해 보았습니다!</p><h5 id="1-되돌리기"><a href="#1-되돌리기" class="headerlink" title="1. 되돌리기"></a>1. 되돌리기</h5><p>Ctrl + Z : 수정하기 이전의 상태로 되돌립니다.</p><h5 id="2-복사-붙여넣기"><a href="#2-복사-붙여넣기" class="headerlink" title="2. 복사 붙여넣기"></a>2. 복사 붙여넣기</h5><p>Ctrl + C : 선택한 블록을 복사<br>Ctrl + V : 복사한 것을 붙여넣기<br>Ctrl + Alt + Up(Down) : 한 줄(블럭) 복사</p><h5 id="3-주석"><a href="#3-주석" class="headerlink" title="3. 주석"></a>3. 주석</h5><p>Ctrl + Shift + C : 선택한 블록을 주석으로 처리하거나 주석 해제</p><h5 id="4-저장"><a href="#4-저장" class="headerlink" title="4. 저장"></a>4. 저장</h5><p>Ctrl + S : 현재 켜져있는 소스를 저장</p><h5 id="5-삭제"><a href="#5-삭제" class="headerlink" title="5. 삭제"></a>5. 삭제</h5><p>Ctrl + D : 선택한 블록을 삭제</p><h5 id="6-자리-옮기기"><a href="#6-자리-옮기기" class="headerlink" title="6. 자리 옮기기"></a>6. 자리 옮기기</h5><p>Alt + Up(Down) : 위(아래) 줄과 바꾸기</p><h5 id="7-검색"><a href="#7-검색" class="headerlink" title="7. 검색"></a>7. 검색</h5><p>Ctrl + Shift + R : 파일의 이름으로 검색합니다.<br>Ctrl + H : 여러가지 검색 조건으로 검색할 수 있습니다.<br>Ctrl + K : 찾을 문자열을 블럭으로 지정하고 검색<br>Ctrl + F : 기본 검색</p><h5 id="8-대소문자-변환"><a href="#8-대소문자-변환" class="headerlink" title="8. 대소문자 변환"></a>8. 대소문자 변환</h5><p>Ctrl + Shift +X : 대문자로 변환<br>Ctrl + Shift + Y : 소문자로 변환</p><h5 id="9-여러-줄-동시-수정"><a href="#9-여러-줄-동시-수정" class="headerlink" title="9. 여러 줄 동시 수정"></a>9. 여러 줄 동시 수정</h5><p>Shift + Alt + A : 여러 줄을 수정하고 싶을떄 아주 유용합니다. 수정하기 원하는 곳에서 <code>Shift + Alt + A</code> 를 누르면 마우스 모양이 십자가 모양이 됩니다. 그 후 수정하기 원하는 줄을 드레그 한 후 수정하면 됩니다.</p><blockquote><p>한글은 작성되지 않습니다. 주의하세요!</p></blockquote><video controls autoplay loop>   <source src="\images\eclipse_shortcut.mp4" type="video/mp4">   IE 8 이하는 비디오가 나오지 않습니다. IE 버전을 업데이트 하시길 바랍니다.</video><h5 id="10-디버깅-Debugging"><a href="#10-디버깅-Debugging" class="headerlink" title="10. 디버깅 Debugging"></a>10. 디버깅 Debugging</h5><p>F11 : 디버깅 시작<br>F8 : 디버깅 계속<br>F6 : 한 줄씩 디버깅<br>F5 : 한 줄씩 디버깅할 때 함수인 경우 함수 내부까지 디버깅</p><h5 id="아쉬운-번외-단축키들"><a href="#아쉬운-번외-단축키들" class="headerlink" title="아쉬운 번외 단축키들"></a>아쉬운 번외 단축키들</h5><p>Ctrl + Shift + L : 모든 단축키 목록 표시<br>Ctrl + Shift + O : 자동 import<br>Ctrl + M : 전체 화면 전환</p><h4 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h4><ul><li><a href="https://seohs.tistory.com/488" target="_blank" rel="noopener">https://seohs.tistory.com/488</a> [Digital Recipe]</li></ul><h4 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h4><ul><li><a href="/2019/07/26/Echarts-start/" title="ECharts를 통해 5분안에 차트를 만들자!">ECharts를 통해 5분안에 차트를 만들자!</a></li><li><a href="/2018/08/29/HTML-basic/" title="HTML 기초 알아봅시다!">HTML 기초 알아봅시다!</a></li><li><a href="/2018/08/30/HTML-imgLink/" title="HTML 이미지 링크거는 법">HTML 이미지 링크거는 법</a></li><li><a href="/2019/08/07/HTML-table/" title="HTML 간단하게 표 만들기">HTML 간단하게 표 만들기</a></li><li><a href="/2019/02/25/JSTL-ForEach/" title="(jstl) ForEach 문">(jstl) ForEach 문</a></li></ul>]]></content>
     
     <summary type="html">
     
@@ -469,11 +510,11 @@ a.button {
       <category term="SQL" scheme="https://dullyshin.github.io/categories/Programming/SQL/"/>
     
     
-      <category term="SQL" scheme="https://dullyshin.github.io/tags/SQL/"/>
-    
       <category term="PostgreSQL_Basic" scheme="https://dullyshin.github.io/tags/PostgreSQL-Basic/"/>
     
       <category term="PostgreSQL" scheme="https://dullyshin.github.io/tags/PostgreSQL/"/>
+    
+      <category term="SQL" scheme="https://dullyshin.github.io/tags/SQL/"/>
     
       <category term="error" scheme="https://dullyshin.github.io/tags/error/"/>
     
@@ -504,6 +545,8 @@ a.button {
       <category term="jQuery" scheme="https://dullyshin.github.io/categories/Programming/jQuery/"/>
     
     
+      <category term="jQuery" scheme="https://dullyshin.github.io/tags/jQuery/"/>
+    
       <category term="제이쿼리 셀렉터" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0/"/>
     
       <category term="제이쿼리 선택자" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%84%A0%ED%83%9D%EC%9E%90/"/>
@@ -511,8 +554,6 @@ a.button {
       <category term="셀렉터" scheme="https://dullyshin.github.io/tags/%EC%85%80%EB%A0%89%ED%84%B0/"/>
     
       <category term="제이쿼리 셀렉터 총정리" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0-%EC%B4%9D%EC%A0%95%EB%A6%AC/"/>
-    
-      <category term="jQuery" scheme="https://dullyshin.github.io/tags/jQuery/"/>
     
       <category term="jQuery selector" scheme="https://dullyshin.github.io/tags/jQuery-selector/"/>
     
@@ -547,6 +588,8 @@ a.button {
       <category term="jQuery" scheme="https://dullyshin.github.io/categories/Programming/jQuery/"/>
     
     
+      <category term="jQuery" scheme="https://dullyshin.github.io/tags/jQuery/"/>
+    
       <category term="제이쿼리 셀렉터" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0/"/>
     
       <category term="제이쿼리 셀렉터 여러개" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0-%EC%97%AC%EB%9F%AC%EA%B0%9C/"/>
@@ -556,8 +599,6 @@ a.button {
       <category term="셀렉터" scheme="https://dullyshin.github.io/tags/%EC%85%80%EB%A0%89%ED%84%B0/"/>
     
       <category term="제이쿼리 셀렉터 총정리" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0-%EC%B4%9D%EC%A0%95%EB%A6%AC/"/>
-    
-      <category term="jQuery" scheme="https://dullyshin.github.io/tags/jQuery/"/>
     
       <category term="jQuery selector" scheme="https://dullyshin.github.io/tags/jQuery-selector/"/>
     
@@ -631,9 +672,9 @@ a.button {
       <category term="jQuery" scheme="https://dullyshin.github.io/categories/Programming/jQuery/"/>
     
     
-      <category term="jQuery" scheme="https://dullyshin.github.io/tags/jQuery/"/>
-    
       <category term="jquery 트래버싱" scheme="https://dullyshin.github.io/tags/jquery-%ED%8A%B8%EB%9E%98%EB%B2%84%EC%8B%B1/"/>
+    
+      <category term="jQuery" scheme="https://dullyshin.github.io/tags/jQuery/"/>
     
       <category term="제이쿼리 돔 횡단" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EB%8F%94-%ED%9A%A1%EB%8B%A8/"/>
     
@@ -719,11 +760,11 @@ a.button {
       <category term="Hexo" scheme="https://dullyshin.github.io/categories/Hexo/"/>
     
     
-      <category term="마크다운 테이블" scheme="https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%ED%85%8C%EC%9D%B4%EB%B8%94/"/>
-    
       <category term="markdown" scheme="https://dullyshin.github.io/tags/markdown/"/>
     
       <category term="마크다운" scheme="https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4/"/>
+    
+      <category term="마크다운 테이블" scheme="https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%ED%85%8C%EC%9D%B4%EB%B8%94/"/>
     
       <category term="markdown table" scheme="https://dullyshin.github.io/tags/markdown-table/"/>
     
@@ -780,57 +821,6 @@ a.button {
       <category term="자바스크립트 else if" scheme="https://dullyshin.github.io/tags/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-else-if/"/>
     
       <category term="자바스크립트 if" scheme="https://dullyshin.github.io/tags/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-if/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>(MS SQL) 삽입시Insert 최대값 추가 +1</title>
-    <link href="https://dullyshin.github.io/2019/02/20/MSSQL-InsertPlusOne/"/>
-    <id>https://dullyshin.github.io/2019/02/20/MSSQL-InsertPlusOne/</id>
-    <published>2019-02-20T11:16:14.000Z</published>
-    <updated>2019-02-25T15:47:50.966Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="MS-SQL-삽입시Insert-최대값-추가-1"><a href="#MS-SQL-삽입시Insert-최대값-추가-1" class="headerlink" title="[MS SQL] 삽입시Insert 최대값 추가 +1"></a>[MS SQL] 삽입시Insert 최대값 추가 +1</h2><p><img src="https://cdn-images-1.medium.com/max/1600/0*ngXgBNNdx6iiWP8q.png" alt="프로그램"></p><p>최대값에서 1을 더한 값을 삽입하고 싶을때 mssql에서는 Insert 문을 사용할때 시퀀스를 사용할 수도 있지만, 그렇지 않을 경우에 아래와 같은 쿼리를 사용할 수 있습니다.</p><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">INSERT INTO user</span><br><span class="line">     (user</span><br><span class="line">     , age</span><br><span class="line">     , order)</span><br><span class="line">VALUES</span><br><span class="line">     (&apos;dully&apos;</span><br><span class="line">     , 29</span><br><span class="line">     , (SELECT ISNULL(MAX(order) + 1, 1) FROM user))</span><br><span class="line">;</span><br></pre></td></tr></table></figure><p>여기서 주의 깊게 봐야하는 쿼리는 <span style="color:red">SELECT ISNULL(MAX(order) + 1, 1) FROM user</span>  입니다.<br>아주 간단한 ISNULL()과 MAX()를 함께 사용하는데요.</p><br><h3 id="ISNULL"><a href="#ISNULL" class="headerlink" title="-ISNULL()"></a>-ISNULL()</h3><p>ISNULL()은 데이터가 null인 부분을 조회하는 쿼리 입니다. 반대의 예시는 아래와 같습니다. 값이 있는 부분을 조회하는 쿼리죠.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SELECT FirstName, LastName, MiddleName</span><br><span class="line">FROM DIMEmployee</span><br><span class="line">WHERE MiddleName IS NOT NULL</span><br><span class="line">ORDER BY LastName DESC;</span><br></pre></td></tr></table></figure><h3 id="MAX"><a href="#MAX" class="headerlink" title="-MAX()"></a>-MAX()</h3><p>MAX()는 데이터 중 가장 큰 값을 조회합니다. 간단한 예시는 아래와 같습니다. () 괄효 안에 조회하고 싶은 컬럼 이름을 적으시면 됩니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT MAX(TaxRate)</span><br><span class="line">FROM Sales.SalesTaxRate;</span><br></pre></td></tr></table></figure><br>### -Result<p><code>SELECT MAX(order) + 1 FROM user</code> 으로도 최대값에 1을 더한 값을 구할 수 있지만, 위의 order의 값이 null일 경우를 대비해서 null일 경우에 1을 삽입하도록 하였습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT ISNULL(MAX(order) + 1, 1) FROM user</span><br><span class="line">//SELECT ISNULL(&apos;null이 아닐경우 실행 됨&apos;, &apos;null일때 실행됨&apos;) FROM user</span><br></pre></td></tr></table></figure><hr><ul><li><p>More Info</p><ol><li><p><a href="https://docs.microsoft.com/en-us/sql/t-sql/queries/is-null-transact-sql?view=sql-server-2017" target="_blank" rel="noopener">MS SQL - ISNULL</a></p></li><li><p><a href="https://docs.microsoft.com/en-us/sql/t-sql/functions/max-transact-sql?view=sql-server-2017" target="_blank" rel="noopener">MS SQL - MAX</a></p></li></ol></li></ul><ul><li>Reference<ol><li><a href="https://docs.microsoft.com/en-us/sql/t-sql/queries/is-null-transact-sql?view=sql-server-2017" target="_blank" rel="noopener">https://docs.microsoft.com/en-us/sql/t-sql/queries/is-null-transact-sql?view=sql-server-2017</a></li></ol></li></ul><h3 id="Related-posts"><a href="#Related-posts" class="headerlink" title="Related posts"></a>Related posts</h3><p>-<a href="/2018/05/11/SQL-sqlAdvanced/" title="SQL Advanced">SQL Advanced</a> SQL 중급 문법<br>-<a href="/2018/09/02/SQL-Oracle-Join/" title="Oracle-Join">Oracle-Join</a> 오라클 조인 문법<br>-<a href="/2018/05/11/SQL-sqlBasic/" title="SQL basic">SQL basic</a> SQL 기본 문법<br>-<a href="/2018/08/27/PostgreSQL-Basic/" title="PostgreSql 란?">PostgreSql 란?</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;MS-SQL-삽입시Insert-최대값-추가-1&quot;&gt;&lt;a href=&quot;#MS-SQL-삽입시Insert-최대값-추가-1&quot; class=&quot;headerlink&quot; title=&quot;[MS SQL] 삽입시Insert 최대값 추가 +1&quot;&gt;&lt;/a&gt;[MS SQL]
-      
-    
-    </summary>
-    
-      <category term="Programming" scheme="https://dullyshin.github.io/categories/Programming/"/>
-    
-      <category term="SQL" scheme="https://dullyshin.github.io/categories/Programming/SQL/"/>
-    
-    
-      <category term="mssql" scheme="https://dullyshin.github.io/tags/mssql/"/>
-    
-      <category term="max" scheme="https://dullyshin.github.io/tags/max/"/>
-    
-      <category term="isnull" scheme="https://dullyshin.github.io/tags/isnull/"/>
-    
-      <category term="sequence" scheme="https://dullyshin.github.io/tags/sequence/"/>
-    
-      <category term="널처리" scheme="https://dullyshin.github.io/tags/%EB%84%90%EC%B2%98%EB%A6%AC/"/>
-    
-      <category term="삽입시 최대값 추가 +1" scheme="https://dullyshin.github.io/tags/%EC%82%BD%EC%9E%85%EC%8B%9C-%EC%B5%9C%EB%8C%80%EA%B0%92-%EC%B6%94%EA%B0%80-1/"/>
-    
-      <category term="칼럼의 최대값 +1" scheme="https://dullyshin.github.io/tags/%EC%B9%BC%EB%9F%BC%EC%9D%98-%EC%B5%9C%EB%8C%80%EA%B0%92-1/"/>
-    
-      <category term="insert 구문에 max 사용" scheme="https://dullyshin.github.io/tags/insert-%EA%B5%AC%EB%AC%B8%EC%97%90-max-%EC%82%AC%EC%9A%A9/"/>
-    
-      <category term="insert할 때 최대값 +1" scheme="https://dullyshin.github.io/tags/insert%ED%95%A0-%EB%95%8C-%EC%B5%9C%EB%8C%80%EA%B0%92-1/"/>
-    
-      <category term="insert시 최대값 +1" scheme="https://dullyshin.github.io/tags/insert%EC%8B%9C-%EC%B5%9C%EB%8C%80%EA%B0%92-1/"/>
-    
-      <category term="삽입 구문에 max 사용" scheme="https://dullyshin.github.io/tags/%EC%82%BD%EC%9E%85-%EA%B5%AC%EB%AC%B8%EC%97%90-max-%EC%82%AC%EC%9A%A9/"/>
-    
-      <category term="삽입할 때 최대값 +1" scheme="https://dullyshin.github.io/tags/%EC%82%BD%EC%9E%85%ED%95%A0-%EB%95%8C-%EC%B5%9C%EB%8C%80%EA%B0%92-1/"/>
-    
-      <category term="삽입시 최대값 +1" scheme="https://dullyshin.github.io/tags/%EC%82%BD%EC%9E%85%EC%8B%9C-%EC%B5%9C%EB%8C%80%EA%B0%92-1/"/>
     
   </entry>
   
