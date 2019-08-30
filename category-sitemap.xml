@@ -8,6 +8,13 @@
     </url>
 
     <url>
+        <loc>https://dullyshin.github.io/categories/Windows/</loc>
+        <lastmod>2019-08-30T07:14:27.681Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://dullyshin.github.io/categories/Programming/SQL/</loc>
         <lastmod>2019-08-30T07:10:48.718Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -17,13 +24,6 @@
     <url>
         <loc>https://dullyshin.github.io/categories/Programming/</loc>
         <lastmod>2019-08-30T07:10:48.718Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/categories/Windows/</loc>
-        <lastmod>2019-08-30T06:39:25.001Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
