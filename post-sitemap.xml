@@ -8,8 +8,16 @@
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/2019/08/30/window-checkport/</loc>
-        <lastmod>2019-08-30T07:14:27.681Z</lastmod>
+        <loc>https://dullyshin.github.io/2019/08/08/JSTL-substring/</loc>
+        <lastmod>2019-08-30T07:25:45.081Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/2019/08/08/JavaScript-array/</loc>
+        <lastmod>2019-08-30T07:24:46.496Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +25,15 @@
 
     <url>
         <loc>https://dullyshin.github.io/2019/08/30/SQL-wherein/</loc>
-        <lastmod>2019-08-30T07:10:48.718Z</lastmod>
+        <lastmod>2019-08-30T07:23:54.204Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/2019/08/30/window-checkport/</loc>
+        <lastmod>2019-08-30T07:19:53.013Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -40,24 +56,8 @@
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/2019/08/08/JavaScript-array/</loc>
-        <lastmod>2019-08-08T05:26:11.104Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://dullyshin.github.io/2019/02/25/JavaScript-TernaryOperator/</loc>
         <lastmod>2019-08-08T05:17:43.676Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/2019/08/08/JSTL-substring/</loc>
-        <lastmod>2019-08-08T05:13:47.173Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
