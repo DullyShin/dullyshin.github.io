@@ -3,85 +3,99 @@
 
 
     <url>
-        <loc>https://dullyshin.github.io/tags/postgresql-%EB%AC%B8%EC%9E%90%EB%A5%BC-%EB%8D%94%EB%B8%94%ED%98%95%EC%9C%BC%EB%A1%9C/</loc>
-        <lastmod>2019-09-03T04:52:18.913Z</lastmod>
+        <loc>https://dullyshin.github.io/tags/error/</loc>
+        <lastmod>2019-09-03T04:59:50.959Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/tags/postgresql-%EB%AC%B8%EC%9E%90%EB%A5%BC-%EB%82%A0%EC%A7%9C%EB%A1%9C/</loc>
-        <lastmod>2019-09-03T04:52:18.913Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/postgresql-%EB%AC%B8%EC%9E%90%EB%A5%BC-%EC%88%AB%EC%9E%90%EB%A1%9C/</loc>
-        <lastmod>2019-09-03T04:52:18.913Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/%ED%8F%AC%EC%8A%A4%ED%8A%B8%EA%B7%B8%EB%9E%98%EC%8A%A4-%ED%83%80%EC%9E%85-%EB%B3%80%ED%99%98/</loc>
-        <lastmod>2019-09-03T04:52:18.913Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/Type-cast/</loc>
-        <lastmod>2019-09-03T04:52:18.913Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/postgresql-cast-intrger/</loc>
-        <lastmod>2019-09-03T04:52:18.913Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/PostgreSQL-Convert/</loc>
-        <lastmod>2019-09-03T04:52:18.913Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/PostgreSQL-CAST-To-Convert/</loc>
-        <lastmod>2019-09-03T04:52:18.913Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/postgresql-cast/</loc>
-        <lastmod>2019-09-03T04:52:18.913Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/postgresql/</loc>
-        <lastmod>2019-09-03T04:52:18.913Z</lastmod>
+        <loc>https://dullyshin.github.io/tags/SQL/</loc>
+        <lastmod>2019-09-03T04:59:50.959Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://dullyshin.github.io/tags/PostgreSQL/</loc>
-        <lastmod>2019-09-03T04:52:18.913Z</lastmod>
+        <lastmod>2019-09-03T04:59:50.959Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://dullyshin.github.io/tags/PostgreSQL-Basic/</loc>
-        <lastmod>2019-09-03T04:52:18.913Z</lastmod>
+        <lastmod>2019-09-03T04:59:50.959Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/postgresql-%EB%AC%B8%EC%9E%90%EB%A5%BC-%EB%8D%94%EB%B8%94%ED%98%95%EC%9C%BC%EB%A1%9C/</loc>
+        <lastmod>2019-09-03T04:57:50.682Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/postgresql-%EB%AC%B8%EC%9E%90%EB%A5%BC-%EB%82%A0%EC%A7%9C%EB%A1%9C/</loc>
+        <lastmod>2019-09-03T04:57:50.682Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/postgresql-%EB%AC%B8%EC%9E%90%EB%A5%BC-%EC%88%AB%EC%9E%90%EB%A1%9C/</loc>
+        <lastmod>2019-09-03T04:57:50.682Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/%ED%8F%AC%EC%8A%A4%ED%8A%B8%EA%B7%B8%EB%9E%98%EC%8A%A4-%ED%83%80%EC%9E%85-%EB%B3%80%ED%99%98/</loc>
+        <lastmod>2019-09-03T04:57:50.682Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/Type-cast/</loc>
+        <lastmod>2019-09-03T04:57:50.682Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/postgresql-cast-intrger/</loc>
+        <lastmod>2019-09-03T04:57:50.682Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/PostgreSQL-Convert/</loc>
+        <lastmod>2019-09-03T04:57:50.682Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/PostgreSQL-CAST-To-Convert/</loc>
+        <lastmod>2019-09-03T04:57:50.682Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/postgresql-cast/</loc>
+        <lastmod>2019-09-03T04:57:50.682Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/postgresql/</loc>
+        <lastmod>2019-09-03T04:57:50.682Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -768,20 +782,6 @@
     <url>
         <loc>https://dullyshin.github.io/tags/Echarts/</loc>
         <lastmod>2019-07-30T08:17:14.245Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/error/</loc>
-        <lastmod>2019-07-25T02:43:30.297Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/SQL/</loc>
-        <lastmod>2019-07-25T02:43:30.297Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

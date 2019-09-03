@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://dullyshin.github.io/2019/07/25/PostgreSQL-error1/</loc>
+        <lastmod>2019-09-03T04:59:50.959Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://dullyshin.github.io/2019/08/30/PostgreSQl-cast/</loc>
-        <lastmod>2019-09-03T04:52:18.913Z</lastmod>
+        <lastmod>2019-09-03T04:57:50.682Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -130,14 +138,6 @@
     <url>
         <loc>https://dullyshin.github.io/2019/07/26/Echarts-start/</loc>
         <lastmod>2019-07-30T08:15:25.735Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/2019/07/25/PostgreSQL-error1/</loc>
-        <lastmod>2019-07-25T02:43:30.297Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
