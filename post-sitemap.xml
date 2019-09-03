@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://dullyshin.github.io/2019/07/25/PostgreSQL-/</loc>
+        <lastmod>2019-09-03T05:04:12.373Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://dullyshin.github.io/2019/07/25/PostgreSQL-CDATA/</loc>
         <lastmod>2019-09-03T04:59:50.959Z</lastmod>
         <changefreq>weekly</changefreq>
