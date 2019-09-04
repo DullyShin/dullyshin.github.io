@@ -8,15 +8,36 @@
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/categories/Programming/SQL/</loc>
-        <lastmod>2019-09-03T07:19:34.089Z</lastmod>
+        <loc>https://dullyshin.github.io/categories/Programming/HTML/</loc>
+        <lastmod>2019-09-04T02:21:45.017Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://dullyshin.github.io/categories/Programming/</loc>
-        <lastmod>2019-09-03T07:19:34.089Z</lastmod>
+        <lastmod>2019-09-04T02:21:45.017Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/categories/Programming/jQuery/</loc>
+        <lastmod>2019-09-04T02:05:12.198Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/categories/Programming/Echarts/</loc>
+        <lastmod>2019-09-04T01:18:41.011Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/categories/Programming/SQL/</loc>
+        <lastmod>2019-09-04T01:15:13.931Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -45,27 +66,6 @@
     <url>
         <loc>https://dullyshin.github.io/categories/Windows/</loc>
         <lastmod>2019-08-30T07:19:53.013Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/categories/Programming/jQuery/</loc>
-        <lastmod>2019-08-29T07:29:02.161Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/categories/Programming/HTML/</loc>
-        <lastmod>2019-08-07T08:03:09.071Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/categories/Programming/Echarts/</loc>
-        <lastmod>2019-07-30T08:17:14.245Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
