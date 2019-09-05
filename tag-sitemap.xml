@@ -3,6 +3,69 @@
 
 
     <url>
+        <loc>https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%84%A4%EC%B9%98-%EC%A0%81%EC%9A%A9/</loc>
+        <lastmod>2019-09-05T08:28:35.917Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/jquery-cdn/</loc>
+        <lastmod>2019-09-05T08:28:35.917Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-CDN/</loc>
+        <lastmod>2019-09-05T08:28:35.917Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-%EC%9E%90%EC%84%B8%ED%9E%88/</loc>
+        <lastmod>2019-09-05T08:28:35.917Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/jquery-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-%EC%B5%9C%EC%8B%A0/</loc>
+        <lastmod>2019-09-05T08:28:35.917Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</loc>
+        <lastmod>2019-09-05T08:28:35.917Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/jquery-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</loc>
+        <lastmod>2019-09-05T08:28:35.917Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C/</loc>
+        <lastmod>2019-09-05T08:28:35.917Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/jquery-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C/</loc>
+        <lastmod>2019-09-05T08:28:35.917Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://dullyshin.github.io/tags/html-%EB%A7%81%ED%81%AC%EA%B1%B8%EA%B8%B0/</loc>
         <lastmod>2019-09-04T02:21:45.017Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -661,13 +724,6 @@
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/tags/jstl/</loc>
-        <lastmod>2019-08-08T04:29:53.708Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://dullyshin.github.io/tags/do-while/</loc>
         <lastmod>2019-08-08T04:29:53.708Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -704,6 +760,13 @@
 
     <url>
         <loc>https://dullyshin.github.io/tags/foreach/</loc>
+        <lastmod>2019-08-08T04:29:53.708Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/jstl/</loc>
         <lastmod>2019-08-08T04:29:53.708Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
