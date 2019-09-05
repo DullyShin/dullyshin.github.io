@@ -27,7 +27,7 @@
 <meta property="og:description" content="제이쿼리 다운로드 방법우선 제이쿼리를 설치하는 방법은 여러가지이지만 저는 크게 2가지 방법을 알려드리겠습니다. (2019년 9월 5일 기준으로 작성되었습니다.)  파일을 다운받아 적용 CDN을 통해 &amp;lt;head&amp;gt; 태그안에 입력  배포시에 만약 인터넷이 안되는 곳에 적용하는 것이라면 무조건 1번 방법으로 JQuery를 설치 받아야 추후에도 사용 가능">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://cdn-images-1.medium.com/max/1200/0*s1Goua9K1MuNuapv.jpg">
-<meta property="og:updated_time" content="2019-09-05T08:46:24.433Z">
+<meta property="og:updated_time" content="2019-09-05T08:51:45.688Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[jQuery] 다운로드 및 설치 방법">
 <meta name="twitter:description" content="제이쿼리 다운로드 방법우선 제이쿼리를 설치하는 방법은 여러가지이지만 저는 크게 2가지 방법을 알려드리겠습니다. (2019년 9월 5일 기준으로 작성되었습니다.)  파일을 다운받아 적용 CDN을 통해 &amp;lt;head&amp;gt; 태그안에 입력  배포시에 만약 인터넷이 안되는 곳에 적용하는 것이라면 무조건 1번 방법으로 JQuery를 설치 받아야 추후에도 사용 가능">
@@ -229,36 +229,43 @@ ga('send', 'pageview');
 
 
 <p><strong>2) 원하는 jQuery 파일을 다운 받습니다.</strong></p>
-<p>압축되지 않은 파일(Uncompressed) 보고 이해할 수 있도록 띄어쓰기로 구분되어 있지만 용량이 압축된 것보다 큽니다.<br><img src="\images\jquery-download3.png" alt="압축되지 않은 파일"></p>
+<p>압축되지 않은 파일(Uncompressed) 보고 이해할 수 있도록 띄어쓰기로 구분되어 있지만 용량이 압축된 것보다 큽니다.</p>
+<img src="\images\jquery-download3.png" alt="압축되지 않은 파일">
+
 <p>압축된 파일(Compressed)은 용량을 줄이기 위해서 띄어쓰기와 빈칸을 없애서 사람이 보고 이해하기 어렵게 작성되어 있습니다.<br>원하는 파일화면에 마우스 오른쪽 버튼을 클릭하여 <code>다른이름으로 저장</code>버튼을 클릭합니다.</p>
 <img src="\images\jquery-download4.png" alt="압축된 파일">
 
 
-<p>** 3) 원하는 경로에 다운로드 **</p>
+<p><strong>3) 원하는 경로에 다운로드</strong></p>
 <p>원하는 경로에 다운로드 합니다. 경로를 기억하셔야 합니다. Java의 경우 resource 파일 아래에 저장합니다.<br>파일이름은 <code>jquery-3.4.1.min.js</code> 입니다.</p>
 <img src="\images\jquery-download5.png" alt="다운로드 화면">
 
 
-<p>** 4) 적용시키기 **</p>
+<p><strong>4) 적용시키기</strong></p>
 <p><code>&lt;head&gt;&lt;/head&gt;</code> 태그 사이에 아래와 같이 입력합니다. 이때 3번에서 다운로드 받은 경로를 잘 기억하시고 입력하여주세요.<br>파일이름을 변경하셨다면 변경된 이름으로 적용하시면 됩니다.</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;../resource/jquery-3.4.1.min.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 
 <br>
 <br>
 
-<h3 id="2-CDN을-통해-lt-head-gt-태그안에-입력"><a href="#2-CDN을-통해-lt-head-gt-태그안에-입력" class="headerlink" title="2. CDN을 통해 &lt;head&gt; 태그안에 입력"></a>2. CDN을 통해 <code>&lt;head&gt;</code> 태그안에 입력</h3><p>__ 1) <a href="https://code.jquery.com/" target="_blank" rel="noopener">CND 다운로드</a> 접속 __</p>
+<h3 id="2-CDN을-통해-lt-head-gt-태그안에-입력"><a href="#2-CDN을-통해-lt-head-gt-태그안에-입력" class="headerlink" title="2. CDN을 통해 &lt;head&gt; 태그안에 입력"></a>2. CDN을 통해 <code>&lt;head&gt;</code> 태그안에 입력</h3><p><strong>1) <a href="https://code.jquery.com/" target="_blank" rel="noopener">CND 다운로드</a> 접속</strong></p>
 <p><a href="https://code.jquery.com/" target="_blank" rel="noopener">CND 다운로드</a>에 접속하여 최신버전의 jQuery CDN을 클릭합니다.</p>
 <img src="\images\jquery-download6.png" alt="jQuery CDN 화면">
 
 
-<p>** 2) 스크립트를 복사합니다. **</p>
-<p>화면에 스크립트 부분을 복사합니다.</p>
+<p><strong>2) 스크립트를 복사합니다.</strong></p>
+<p>위에서 클릭한 후 화면에 나오는 스크립트 부분을 복사합니다.</p>
 <img src="\images\jquery-download7.png" alt="jQuery CDN 스크립트">
 
 
-<p>** 3) 적용시키기 **</p>
+<p><strong>3) 적용시키기</strong></p>
 <p><code>&lt;head&gt;&lt;/head&gt;</code> 태그 사이에 위에서 복사한 스크립트를 입력합니다.</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script</span><br><span class="line">  src=&quot;https://code.jquery.com/jquery-3.4.1.min.js&quot;</span><br><span class="line">  integrity=&quot;sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=&quot;</span><br><span class="line">  crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>이제 jQuery를 사용해서 쉽고 간편하게 소스를 사용할 수 있게 되었습니다!</p>
+<iframe src="https://giphy.com/embed/Zcm5DaspYzhTxstkF4" width="480" height="479" frameborder="0" class="giphy-embed" allowfullscreen></iframe><p><a href="https://giphy.com/gifs/agt-nbc-tyra-banks-ameircas-got-talent-Zcm5DaspYzhTxstkF4" target="_blank" rel="noopener">via GIPHY</a></p>
+
+
 
 <h4 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h4><ul>
 <li><a href="https://jquery.com/" target="_blank" rel="noopener">https://jquery.com/</a></li>
