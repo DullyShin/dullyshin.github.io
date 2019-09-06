@@ -27,7 +27,7 @@
 <meta property="og:description" content="쿠키(Cookie)란??  쿠키는 클라이언트(브라우저) 로컬에 저장되는 키와 값이 들어있는 작은 데이터 파일입니다. 사용자 인증이 유효한 시간을 명시할 수 있으며, 유효 시간이 정해지면 브라우저가 종료되어도 인증이 유지된다는 특징이 있습니다. 쿠키는 클라이언트의 상태 정보를 로컬에 저장했다가 참조합니다. 클라이언트에 300개까지 쿠키저장 가능, 하나의 도메">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://www.primedesignsolutions.com/wp-content/uploads/2019/05/webCookies_normal-1.png">
-<meta property="og:updated_time" content="2019-09-06T08:35:50.449Z">
+<meta property="og:updated_time" content="2019-09-06T08:39:52.130Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[WEB] 쿠키와 세션을 간단하게 알아보자">
 <meta name="twitter:description" content="쿠키(Cookie)란??  쿠키는 클라이언트(브라우저) 로컬에 저장되는 키와 값이 들어있는 작은 데이터 파일입니다. 사용자 인증이 유효한 시간을 명시할 수 있으며, 유효 시간이 정해지면 브라우저가 종료되어도 인증이 유지된다는 특징이 있습니다. 쿠키는 클라이언트의 상태 정보를 로컬에 저장했다가 참조합니다. 클라이언트에 300개까지 쿠키저장 가능, 하나의 도메">
@@ -230,9 +230,8 @@ ga('send', 'pageview');
 <li>쇼핑몰의 장바구니</li>
 </ul>
 <br>
-![쿠키 전달 방법](https://d1avok0lzls2w.cloudfront.net/img_uploads/cookie-for-msn.gif)
 
-
+<p><img src="https://d1avok0lzls2w.cloudfront.net/img_uploads/cookie-for-msn.gif" alt="쿠키 전달 방법"></p>
 <p><strong>어느날 월요일 아침</strong><br>msn.com : (쿠키를 전달)꼭 가지고 있어, 알겠지?<br>컴퓨터 : 문제 없지!</p>
 <p><strong>수요일 오후</strong><br>컴퓨터 : (받았던 쿠키를 전달)MNS 여기에 월요일에 저장했던 쿠키가 있어.<br>msn.com : 고마워, 친구!</p>
 <p>위와 같이 쿠키를 가지고 있다면 msn.com 에 들어갈때 마다 로그인을 할 필요가 없어집니다.<br>하지만 브라우져에서 로그인 정보를 해커가 훔쳐갈 수 있어 보안에 취약합니다.</p>
@@ -249,13 +248,12 @@ ga('send', 'pageview');
 <li>보안에 중요한 로그인시에 사용</li>
 </ul>
 <p><img src="https://d1avok0lzls2w.cloudfront.net/img_uploads/session-id-passing.gif" alt="세션 전달 방법"></p>
-<p><strong>늦은 일요일 밤</strong><br>amazon.com : (Session id를 주며)여기에 있어.<br>브라우져 : 잘 받았어.</p>
+<p><strong>늦은 일요일 밤</strong><br>amazon.com : (SESSION ID를 주며)여기에 있어.<br>브라우져 : 잘 받았어.</p>
 <p><strong>한 시간 후</strong><br>브라우져: 이제 잘 시간이야.(브라우져를 종료한다.)</p>
 <p>위와 같이 세션은 서버에서 받은 세션 아이디 정보만 가지고 있습니다. 그에 따른 정보는 서버가 가지고 있죠.<br>그리고 브라우져 종료시 만료기간에 상관없이 삭제됩니다.</p>
 <br>
-### 쿠키와 세션의 차이
 
-<ul>
+<h3 id="쿠키와-세션의-차이"><a href="#쿠키와-세션의-차이" class="headerlink" title="쿠키와 세션의 차이"></a>쿠키와 세션의 차이</h3><ul>
 <li>쿠키와 세션은 비슷한 역할을 하며, 동작원리도 비슷합니다. 그 이유는 세션도 결국 쿠키를 사용하기 때문입니다.</li>
 <li>가장 큰 차이점은 사용자의 정보가 저장되는 위치입니다. 때문에 쿠키는 서버의 자원을 전혀 사용하지 않으며, 세션은 서버의 자원을 사용합니다.</li>
 <li>보안 면에서 세션이 더 우수하며, 요청 속도는 쿠키가 세션보다 더 빠릅니다. 그 이유는 세션은 서버의 처리가 필요하기 때문입니다.</li>
@@ -265,10 +263,11 @@ ga('send', 'pageview');
 <li>속도, 쿠키에 정보가 있기 때문에 서버에 요청시 속도가 빠르고 세션은 정보가 서버에 있기 때문에 처리가 요구되어 비교적 느린 속도를 낸다.</li>
 </ul>
 <br>
-#### Reference
-- https://interconnection.tistory.com/74
-- https://moz.com/blog/controlling-search-engine-access-with-cookies-session-ids
 
+<h4 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h4><ul>
+<li><a href="https://interconnection.tistory.com/74" target="_blank" rel="noopener">https://interconnection.tistory.com/74</a></li>
+<li><a href="https://moz.com/blog/controlling-search-engine-access-with-cookies-session-ids" target="_blank" rel="noopener">https://moz.com/blog/controlling-search-engine-access-with-cookies-session-ids</a></li>
+</ul>
 <h4 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h4><ul>
 <li><a href="/2019/08/29/eclipse-shortcut/" title="BEST 10 이클립스 단축키">BEST 10 이클립스 단축키</a></li>
 <li><a href="/2019/07/26/Echarts-start/" title="ECharts를 통해 5분안에 차트를 만들자!">ECharts를 통해 5분안에 차트를 만들자!</a></li>
