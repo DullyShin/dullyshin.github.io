@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://dullyshin.github.io/"/>
-  <updated>2019-09-05T08:56:40.289Z</updated>
+  <updated>2019-09-06T08:35:50.449Z</updated>
   <id>https://dullyshin.github.io/</id>
   
   <author>
@@ -15,6 +15,45 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[WEB] 쿠키와 세션을 간단하게 알아보자</title>
+    <link href="https://dullyshin.github.io/2019/09/06/WEB-cookieSession/"/>
+    <id>https://dullyshin.github.io/2019/09/06/WEB-cookieSession/</id>
+    <published>2019-09-06T08:00:37.000Z</published>
+    <updated>2019-09-06T08:35:50.449Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="쿠키-Cookie-란"><a href="#쿠키-Cookie-란" class="headerlink" title="쿠키(Cookie)란??"></a>쿠키(Cookie)란??</h4><p><img src="https://www.primedesignsolutions.com/wp-content/uploads/2019/05/webCookies_normal-1.png" alt="쿠키 이미지"></p><ul><li>쿠키는 클라이언트(브라우저) 로컬에 저장되는 키와 값이 들어있는 작은 데이터 파일입니다.</li><li>사용자 인증이 유효한 시간을 명시할 수 있으며, 유효 시간이 정해지면 브라우저가 종료되어도 인증이 유지된다는 특징이 있습니다.</li><li>쿠키는 클라이언트의 상태 정보를 로컬에 저장했다가 참조합니다.</li><li>클라이언트에 300개까지 쿠키저장 가능, 하나의 도메인당 20개의 값만 가질 수 있음, 하나의 쿠키값은 4KB까지 저장합니다.</li><li>Response Header에 Set-Cookie 속성을 사용하면 클라이언트에 쿠키를 만들 수 있습니다.</li><li>쿠키는 사용자가 따로 요청하지 않아도 브라우저가 Request시에 Request Header를 넣어서 자동으로 서버에 전송합니다.</li></ul><h5 id="쿠키-사용예시"><a href="#쿠키-사용예시" class="headerlink" title="쿠키 사용예시"></a>쿠키 사용예시</h5><ul><li>이전에 본 상품 목록</li><li>팝업에서 “오늘 더 이상 이 창을 보지 않음” 체크</li><li>쇼핑몰의 장바구니</li></ul><br>![쿠키 전달 방법](https://d1avok0lzls2w.cloudfront.net/img_uploads/cookie-for-msn.gif)<p><strong>어느날 월요일 아침</strong><br>msn.com : (쿠키를 전달)꼭 가지고 있어, 알겠지?<br>컴퓨터 : 문제 없지!</p><p><strong>수요일 오후</strong><br>컴퓨터 : (받았던 쿠키를 전달)MNS 여기에 월요일에 저장했던 쿠키가 있어.<br>msn.com : 고마워, 친구!</p><p>위와 같이 쿠키를 가지고 있다면 msn.com 에 들어갈때 마다 로그인을 할 필요가 없어집니다.<br>하지만 브라우져에서 로그인 정보를 해커가 훔쳐갈 수 있어 보안에 취약합니다.</p><p><br><br></p><h4 id="세션-Session-이란"><a href="#세션-Session-이란" class="headerlink" title="세션(Session)이란??"></a>세션(Session)이란??</h4><ul><li>세션은 쿠키를 기반하고 있지만, 사용자 정보 파일을 브라우저에 저장하는 쿠키와 달리 세션은 서버 측에서 관리합니다.</li><li>서버에서는 클라이언트를 구분하기 위해 세션 ID를 부여하며 웹 브라우저가 서버에 접속해서 브라우저를 종료할 때까지 인증상태를 유지합니다.</li><li>물론 접속 시간에 제한을 두어 일정 시간 응답이 없다면 정보가 유지되지 않게 설정이 가능 합니다.</li><li>사용자에 대한 정보를 서버에 두기 때문에 쿠키보다 보안에 좋지만, 사용자가 많아질수록 서버 메모리를 많이 차지하게 됩니다.</li><li>즉 동접자 수가 많은 웹 사이트인 경우 서버에 과부하를 주게 되므로 성능 저하의 요인이 됩니다.</li><li>클라이언트가 Request를 보내면, 해당 서버의 엔진이 클라이언트에게 유일한 ID를 부여하는 데 이것이 세션ID다.</li></ul><h5 id="세션-사용예시"><a href="#세션-사용예시" class="headerlink" title="세션 사용예시"></a>세션 사용예시</h5><ul><li>보안에 중요한 로그인시에 사용</li></ul><p><img src="https://d1avok0lzls2w.cloudfront.net/img_uploads/session-id-passing.gif" alt="세션 전달 방법"></p><p><strong>늦은 일요일 밤</strong><br>amazon.com : (Session id를 주며)여기에 있어.<br>브라우져 : 잘 받았어.</p><p><strong>한 시간 후</strong><br>브라우져: 이제 잘 시간이야.(브라우져를 종료한다.)</p><p>위와 같이 세션은 서버에서 받은 세션 아이디 정보만 가지고 있습니다. 그에 따른 정보는 서버가 가지고 있죠.<br>그리고 브라우져 종료시 만료기간에 상관없이 삭제됩니다.</p><br>### 쿠키와 세션의 차이<ul><li>쿠키와 세션은 비슷한 역할을 하며, 동작원리도 비슷합니다. 그 이유는 세션도 결국 쿠키를 사용하기 때문입니다.</li><li>가장 큰 차이점은 사용자의 정보가 저장되는 위치입니다. 때문에 쿠키는 서버의 자원을 전혀 사용하지 않으며, 세션은 서버의 자원을 사용합니다.</li><li>보안 면에서 세션이 더 우수하며, 요청 속도는 쿠키가 세션보다 더 빠릅니다. 그 이유는 세션은 서버의 처리가 필요하기 때문입니다.</li><li>보안, 쿠키는 클라이언트 로컬에 저장되기 때문에 변질되거나 request에서 스니핑 당할 우려가 있어서 보안에 취약하지만 세션은 쿠키를 이용해서 sessionid 만 저장하고 그것으로 구분해서 서버에서 처리하기 때문에 비교적 보안성이 좋습니다.</li><li>라이프 사이클, 쿠키도 만료시간이 있지만 파일로 저장되기 때문에 브라우저를 종료해도 계속해서 정보가 남아 있을 수 있다. 또한 만료기간을 넉넉하게 잡아두면 쿠키삭제를 할 때 까지 유지될 수도 있다.</li><li>반면에 세션도 만료시간을 정할 수 있지만 브라우저가 종료되면 만료시간에 상관없이 삭제된다.</li><li>속도, 쿠키에 정보가 있기 때문에 서버에 요청시 속도가 빠르고 세션은 정보가 서버에 있기 때문에 처리가 요구되어 비교적 느린 속도를 낸다.</li></ul><br>#### Reference- https://interconnection.tistory.com/74- https://moz.com/blog/controlling-search-engine-access-with-cookies-session-ids<h4 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h4><ul><li><a href="/2019/08/29/eclipse-shortcut/" title="BEST 10 이클립스 단축키">BEST 10 이클립스 단축키</a></li><li><a href="/2019/07/26/Echarts-start/" title="ECharts를 통해 5분안에 차트를 만들자!">ECharts를 통해 5분안에 차트를 만들자!</a></li><li><a href="/2019/08/30/window-checkport/" title="윈도우 - 간단하게 CMD 포트 검색, 포트 죽이기">윈도우 - 간단하게 CMD 포트 검색, 포트 죽이기</a></li><li><a href="/2019/08/07/HTML-table/" title="HTML 간단하게 표 만들기">HTML 간단하게 표 만들기</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;쿠키-Cookie-란&quot;&gt;&lt;a href=&quot;#쿠키-Cookie-란&quot; class=&quot;headerlink&quot; title=&quot;쿠키(Cookie)란??&quot;&gt;&lt;/a&gt;쿠키(Cookie)란??&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;https://www.primedes
+      
+    
+    </summary>
+    
+      <category term="Programming" scheme="https://dullyshin.github.io/categories/Programming/"/>
+    
+      <category term="Web" scheme="https://dullyshin.github.io/categories/Programming/Web/"/>
+    
+    
+      <category term="쿠키와 세션의 차이" scheme="https://dullyshin.github.io/tags/%EC%BF%A0%ED%82%A4%EC%99%80-%EC%84%B8%EC%85%98%EC%9D%98-%EC%B0%A8%EC%9D%B4/"/>
+    
+      <category term="쿠키와 세션" scheme="https://dullyshin.github.io/tags/%EC%BF%A0%ED%82%A4%EC%99%80-%EC%84%B8%EC%85%98/"/>
+    
+      <category term="쿠키 의미" scheme="https://dullyshin.github.io/tags/%EC%BF%A0%ED%82%A4-%EC%9D%98%EB%AF%B8/"/>
+    
+      <category term="세션 의미" scheme="https://dullyshin.github.io/tags/%EC%84%B8%EC%85%98-%EC%9D%98%EB%AF%B8/"/>
+    
+      <category term="쿠키" scheme="https://dullyshin.github.io/tags/%EC%BF%A0%ED%82%A4/"/>
+    
+      <category term="세션" scheme="https://dullyshin.github.io/tags/%EC%84%B8%EC%85%98/"/>
+    
+      <category term="쿠키와 세션의 개념" scheme="https://dullyshin.github.io/tags/%EC%BF%A0%ED%82%A4%EC%99%80-%EC%84%B8%EC%85%98%EC%9D%98-%EA%B0%9C%EB%85%90/"/>
+    
+  </entry>
   
   <entry>
     <title>[jQuery] 다운로드 및 설치 방법</title>
@@ -561,11 +600,11 @@ a.button {
       <category term="SQL" scheme="https://dullyshin.github.io/categories/Programming/SQL/"/>
     
     
+      <category term="SQL" scheme="https://dullyshin.github.io/tags/SQL/"/>
+    
       <category term="PostgreSQL_Basic" scheme="https://dullyshin.github.io/tags/PostgreSQL-Basic/"/>
     
       <category term="PostgreSQL" scheme="https://dullyshin.github.io/tags/PostgreSQL/"/>
-    
-      <category term="SQL" scheme="https://dullyshin.github.io/tags/SQL/"/>
     
       <category term="error" scheme="https://dullyshin.github.io/tags/error/"/>
     
@@ -684,9 +723,9 @@ a.button {
       <category term="jQuery" scheme="https://dullyshin.github.io/categories/Programming/jQuery/"/>
     
     
-      <category term="jQuery" scheme="https://dullyshin.github.io/tags/jQuery/"/>
-    
       <category term=".text()" scheme="https://dullyshin.github.io/tags/text/"/>
+    
+      <category term="jQuery" scheme="https://dullyshin.github.io/tags/jQuery/"/>
     
       <category term="jQuery_테이블_행_추가/삭제" scheme="https://dullyshin.github.io/tags/jQuery-%ED%85%8C%EC%9D%B4%EB%B8%94-%ED%96%89-%EC%B6%94%EA%B0%80-%EC%82%AD%EC%A0%9C/"/>
     
@@ -787,49 +826,6 @@ a.button {
       <category term="forEach 인덱스" scheme="https://dullyshin.github.io/tags/forEach-%EC%9D%B8%EB%8D%B1%EC%8A%A4/"/>
     
       <category term="forEach 카운트" scheme="https://dullyshin.github.io/tags/forEach-%EC%B9%B4%EC%9A%B4%ED%8A%B8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>마크다운 테이블 정렬 Markdown Table</title>
-    <link href="https://dullyshin.github.io/2019/02/25/Hexo-MarkdownTable/"/>
-    <id>https://dullyshin.github.io/2019/02/25/Hexo-MarkdownTable/</id>
-    <published>2019-02-25T12:38:17.000Z</published>
-    <updated>2019-02-25T13:45:02.457Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="마크다운-테이블-Markdown-table"><a href="#마크다운-테이블-Markdown-table" class="headerlink" title="마크다운 테이블 Markdown table"></a>마크다운 테이블 Markdown table</h3><p>마크다운 문법으로 테이블을 간편하게 그릴 수 있습니다. 보통 키보드에서 <code>Backspace</code>아래에 있는 <code>|</code>을 사용하는데요.<br><code>|</code> 이 기호는 영어로 파이프(pipe)라고 부릅니다.</p><p>마크다운 테이블 예시는 아래와 같습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">| Tables   |      Are      |  Cool |</span><br><span class="line">|----------|:-------------:|------:|</span><br><span class="line">| col 1 is |  left-aligned | $1600 |</span><br><span class="line">| col 2 is |    centered   |   $12 |</span><br><span class="line">| col 3 is | right-aligned |    $1 |</span><br></pre></td></tr></table></figure><table><thead><tr><th>Tables</th><th align="center">Are</th><th align="right">Cool</th></tr></thead><tbody><tr><td>col 1 is</td><td align="center">left-aligned</td><td align="right">$1600</td></tr><tr><td>col 2 is</td><td align="center">centered</td><td align="right">$12</td></tr><tr><td>col 3 is</td><td align="center">right-aligned</td><td align="right">$1</td></tr></tbody></table><p>가운데 정렬을 하기 위해  Are 밑에 <code>:-------------:</code>를 사용하고, 오른쪽 정렬을 사용할 때에는 <code>------:</code>를 사용하면 됩니다.<br>그리고 굳이 위와 같이 이쁘게 테이블 정렬을 하지 않아도 됩니다. 보기 편하라고 정렬을 하기는 하지만 굳이 바쁘다면 아래와 같이 테이블을 만들어도 상관 없습니다. 출력되는 결과는 위와 같습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">| Tables|Are|Cool |</span><br><span class="line">|----------|:-------------:|------:|</span><br><span class="line">|col 1 is|left-aligned|$1600|</span><br><span class="line">|col 2 is|centered|$12|</span><br><span class="line">|col 3 is| right-aligned |$1|</span><br></pre></td></tr></table></figure><hr><h4 id="꿀-TIP"><a href="#꿀-TIP" class="headerlink" title="꿀 TIP"></a>꿀 TIP</h4><p>마크다운에 테이블 안에 <code>|</code> 파이프 기호를 사용하려면 파이프 기호 대신에 <code>&amp;#124;</code> 를 입력하면 됩니다! HTML에서는 <code>&amp;#124;</code>가 파이프로 보입니다. 더해서 그 부분을 코드화 시키고 싶다면 <code>&lt;code&gt;&amp;#124;&lt;/code&gt;</code>입력하면 됩니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a     |  r  </span><br><span class="line">------------|-----</span><br><span class="line">`a += x;`  |  r1</span><br><span class="line">&lt;code&gt;a &amp;#124;= y;&lt;/code&gt;  |  r2</span><br></pre></td></tr></table></figure><table><thead><tr><th>a</th><th>r</th></tr></thead><tbody><tr><td><code>a += x;</code></td><td>r1</td></tr><tr><td><code>a &#124;= y;</code></td><td>r2</td></tr></tbody></table><hr><p>그리고 그리는 것도 못하고 안에 내용만 써서 테이블을 만들고 싶다! 귀찮은 분들은 아래의 링크를 클릭하도록 합시다. (저도 테이블 그리기 귀찮아서 잘 사용하고 있습니다.)</p><p><img src="https://image.fmkorea.com/files/attach/new/20180519/4330406/431231744/1063480301/b6f15de6f23d30fe6ae4592bf3071181.jpg" alt="귀찮음" height="300" width="300"></p><ul><li>마크다운 테이블을 만드는데 아주 유용한 사이트 :</li></ul><p><a href="https://www.tablesgenerator.com/markdown_tables" target="_blank" rel="noopener">Markdown Tables Generator</a></p><img src="\images\tableGenerator.png" alt="테이블 제너레이터 위의 이미지를 클릭하면 크게 볼 수 있습니다." height width>위의 이미지를 클릭하면 크게 볼 수 있습니다.<ol><li>1번에 테이블에 내용을 입력합니다.</li><li>2번의 Generate 버튼을 클릭합니다.</li><li>3번의 버튼을 클릭해 만들어진 내용을 복사합니다.</li><li>원하는 곳에 붙여넣기(Ctrl + v) 하시면 됩니다.</li></ol><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul><li><a href="https://stackoverflow.com/questions/17319940/how-to-escape-a-pipe-char-in-a-code-statement-in-a-markdown-table" target="_blank" rel="noopener">https://stackoverflow.com/questions/17319940/how-to-escape-a-pipe-char-in-a-code-statement-in-a-markdown-table</a></li><li><a href="https://www.tablesgenerator.com/markdown_tables" target="_blank" rel="noopener">https://www.tablesgenerator.com/markdown_tables</a></li></ul><h2 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h2><ul><li><a href="/2018/08/26/Hexo-error/" title="Hexo error">Hexo error</a> <br></li><li><a href="/2018/08/25/Github-markdown/" title="markdown">markdown</a> <br></li><li><a href="/2018/08/28/Hexo-tags/" title="Hexo에서 사용 가능한 태그들">Hexo에서 사용 가능한 태그들</a></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h3 id=&quot;마크다운-테이블-Markdown-table&quot;&gt;&lt;a href=&quot;#마크다운-테이블-Markdown-table&quot; class=&quot;headerlink&quot; title=&quot;마크다운 테이블 Markdown table&quot;&gt;&lt;/a&gt;마크다운 테이블 Markdown
-      
-    
-    </summary>
-    
-      <category term="Hexo" scheme="https://dullyshin.github.io/categories/Hexo/"/>
-    
-    
-      <category term="markdown" scheme="https://dullyshin.github.io/tags/markdown/"/>
-    
-      <category term="마크다운" scheme="https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4/"/>
-    
-      <category term="마크다운 테이블" scheme="https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%ED%85%8C%EC%9D%B4%EB%B8%94/"/>
-    
-      <category term="markdown table" scheme="https://dullyshin.github.io/tags/markdown-table/"/>
-    
-      <category term="pipe" scheme="https://dullyshin.github.io/tags/pipe/"/>
-    
-      <category term="마크다운 테이블 안에 코드" scheme="https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%ED%85%8C%EC%9D%B4%EB%B8%94-%EC%95%88%EC%97%90-%EC%BD%94%EB%93%9C/"/>
-    
-      <category term="마크다운 테이블 안에 |" scheme="https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%ED%85%8C%EC%9D%B4%EB%B8%94-%EC%95%88%EC%97%90/"/>
-    
-      <category term="마크다운 표" scheme="https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%ED%91%9C/"/>
-    
-      <category term="마크다운 테이블 정렬" scheme="https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%ED%85%8C%EC%9D%B4%EB%B8%94-%EC%A0%95%EB%A0%AC/"/>
-    
-      <category term="테이블 정렬" scheme="https://dullyshin.github.io/tags/%ED%85%8C%EC%9D%B4%EB%B8%94-%EC%A0%95%EB%A0%AC/"/>
     
   </entry>
   

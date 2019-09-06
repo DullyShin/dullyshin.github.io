@@ -8,14 +8,21 @@
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/categories/Programming/jQuery/</loc>
-        <lastmod>2019-09-05T08:56:40.289Z</lastmod>
+        <loc>https://dullyshin.github.io/categories/Programming/Web/</loc>
+        <lastmod>2019-09-06T08:35:50.449Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://dullyshin.github.io/categories/Programming/</loc>
+        <lastmod>2019-09-06T08:35:50.449Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/categories/Programming/jQuery/</loc>
         <lastmod>2019-09-05T08:56:40.289Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
