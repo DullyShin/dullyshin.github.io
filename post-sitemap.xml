@@ -8,6 +8,30 @@
     </url>
 
     <url>
+        <loc>https://dullyshin.github.io/2018/08/28/Hexo-tags/</loc>
+        <lastmod>2019-09-10T04:51:16.749Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/2018/08/30/HTML-imgLink/</loc>
+        <lastmod>2019-09-10T04:46:30.355Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/2019/08/30/PostgreSQl-cast/</loc>
+        <lastmod>2019-09-10T04:44:27.248Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://dullyshin.github.io/2019/09/06/WEB-cookieSession/</loc>
         <lastmod>2019-09-06T08:39:52.130Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -18,14 +42,6 @@
     <url>
         <loc>https://dullyshin.github.io/2019/09/05/jQuery-download/</loc>
         <lastmod>2019-09-05T08:56:40.289Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/2018/08/30/HTML-imgLink/</loc>
-        <lastmod>2019-09-04T02:21:45.017Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -74,14 +90,6 @@
     <url>
         <loc>https://dullyshin.github.io/2019/08/30/SQL-wherein/</loc>
         <lastmod>2019-09-04T01:15:13.931Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/2019/08/30/PostgreSQl-cast/</loc>
-        <lastmod>2019-09-03T07:19:34.089Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -242,14 +250,6 @@
     <url>
         <loc>https://dullyshin.github.io/2018/05/11/SQL-sqlAdvanced/</loc>
         <lastmod>2018-09-02T16:00:56.403Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/2018/08/28/Hexo-tags/</loc>
-        <lastmod>2018-09-02T15:59:15.550Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
