@@ -8,6 +8,20 @@
     </url>
 
     <url>
+        <loc>https://dullyshin.github.io/categories/Programming/Web/</loc>
+        <lastmod>2019-09-10T05:09:48.953Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/categories/Programming/</loc>
+        <lastmod>2019-09-10T05:09:48.953Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://dullyshin.github.io/categories/Hexo/</loc>
         <lastmod>2019-09-10T04:51:16.749Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -22,22 +36,8 @@
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/categories/Programming/</loc>
-        <lastmod>2019-09-10T04:46:30.355Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://dullyshin.github.io/categories/Programming/SQL/</loc>
         <lastmod>2019-09-10T04:44:27.248Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/categories/Programming/Web/</loc>
-        <lastmod>2019-09-06T08:39:52.130Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
