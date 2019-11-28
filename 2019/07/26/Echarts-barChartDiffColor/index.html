@@ -27,7 +27,7 @@
 <meta property="og:description" content="Echarts 바차트 색상 변경오늘은 여러가지 색상으로 표현된 바차트를 그려보겠습니다. 혹시 Echarts 에 관해 잘 모르신다면 ECharts를 통해 5분안에 차트를 만들자!을 통해 기본적으로 만드는 법을 아셔도 좋습니다. Echarts를 통해 차트를 그리면 기본적으로 1가지 시르즈에 1가지 색상으로만 표현 할 수 있습니다.그리고 색상을 정하지 않아도 기">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://dullyshin.github.io/images/echarts_basicChart.png">
-<meta property="og:updated_time" content="2019-11-28T05:30:50.513Z">
+<meta property="og:updated_time" content="2019-11-28T05:59:48.890Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ECharts 바차트 색상 변경!">
 <meta name="twitter:description" content="Echarts 바차트 색상 변경오늘은 여러가지 색상으로 표현된 바차트를 그려보겠습니다. 혹시 Echarts 에 관해 잘 모르신다면 ECharts를 통해 5분안에 차트를 만들자!을 통해 기본적으로 만드는 법을 아셔도 좋습니다. Echarts를 통해 차트를 그리면 기본적으로 1가지 시르즈에 1가지 색상으로만 표현 할 수 있습니다.그리고 색상을 정하지 않아도 기">
@@ -222,9 +222,9 @@ ga('send', 'pageview');
 <p>Echarts를 통해 차트를 그리면 기본적으로 1가지 시르즈에 1가지 색상으로만 표현 할 수 있습니다.<br>그리고 색상을 정하지 않아도 기본적으로 Echarts의 기본 색상열을 통해 차트의 색상이 변합니다.</p>
 <img src="\images\echartsDefaultColor.png" alt="Echarts 기본 색상">
 
-<p>색상은 기본적으로 11가지가 준비되어 있습니다.<br><code>[&#39;#c23531&#39;,&#39;#2f4554&#39;, &#39;#61a0a8&#39;, &#39;#d48265&#39;, &#39;#91c7ae&#39;,&#39;#749f83&#39;,  &#39;#ca8622&#39;, &#39;#bda29a&#39;,&#39;#6e7074&#39;, &#39;#546570&#39;, &#39;#c4ccd3&#39;]</code></p>
+<p>색상은 기본적으로 11가지가 준비되어 있습니다. (이미지는 클릭하면 크게 확인할 수 있습니다.)<br><code>[&#39;#c23531&#39;,&#39;#2f4554&#39;, &#39;#61a0a8&#39;, &#39;#d48265&#39;, &#39;#91c7ae&#39;,&#39;#749f83&#39;,  &#39;#ca8622&#39;, &#39;#bda29a&#39;,&#39;#6e7074&#39;, &#39;#546570&#39;, &#39;#c4ccd3&#39;]</code></p>
 <p>그 중 5가지만 눈으로 색을 확인해 보자면 아래와 같습니다.</p>
-<img src="\images\echartsDefaultColor5.png" alt="Echarts 앞의 5가지 기본 색상을 눈으로 확인">
+<img src="\images\echartDefaultColor5.png" alt="Echarts 앞의 5가지 기본 색상을 눈으로 확인">
 
 
 <h4 id="차트-색상-임의로-변경하기"><a href="#차트-색상-임의로-변경하기" class="headerlink" title="차트 색상 임의로 변경하기"></a>차트 색상 임의로 변경하기</h4><p>위의 기본색상 말고 다른 색상으로 변경하고 싶으시다면 <code>series[i]-bar.itemStyle.color</code>를 변경하시면 됩니다.<br>색상 설정은 ‘blue’, ‘red’처럼 영어색으로 변경하셔도 되고, Hex색상인 ‘#626A8E’ 형식을 사용하셔도 됩니다.<br>아래의 예시로 확인해보시죠.</p>
@@ -265,7 +265,7 @@ ga('send', 'pageview');
             data: [120, 200],
             type: 'bar',
             itemStyle:{
-                color: '#00cc00',
+                color: '#626A8E',
             },
         }]
     };
