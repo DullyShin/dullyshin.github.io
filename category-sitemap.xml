@@ -8,14 +8,21 @@
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/categories/Programming/Web/</loc>
-        <lastmod>2019-09-10T05:09:48.953Z</lastmod>
+        <loc>https://dullyshin.github.io/categories/Programming/jQuery/</loc>
+        <lastmod>2019-11-28T01:47:13.720Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://dullyshin.github.io/categories/Programming/</loc>
+        <lastmod>2019-11-28T01:47:13.720Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/categories/Programming/Web/</loc>
         <lastmod>2019-09-10T05:09:48.953Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -38,13 +45,6 @@
     <url>
         <loc>https://dullyshin.github.io/categories/Programming/SQL/</loc>
         <lastmod>2019-09-10T04:44:27.248Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/categories/Programming/jQuery/</loc>
-        <lastmod>2019-09-05T08:56:40.289Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
