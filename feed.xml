@@ -313,6 +313,8 @@
       <category term="jQuery" scheme="https://dullyshin.github.io/categories/Programming/jQuery/"/>
     
     
+      <category term=".text()" scheme="https://dullyshin.github.io/tags/text/"/>
+    
       <category term="맵" scheme="https://dullyshin.github.io/tags/%EB%A7%B5/"/>
     
       <category term="제이쿼리 맵" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EB%A7%B5/"/>
@@ -324,8 +326,6 @@
       <category term="맵 함수" scheme="https://dullyshin.github.io/tags/%EB%A7%B5-%ED%95%A8%EC%88%98/"/>
     
       <category term="makeArray" scheme="https://dullyshin.github.io/tags/makeArray/"/>
-    
-      <category term=".text()" scheme="https://dullyshin.github.io/tags/text/"/>
     
       <category term=".map()" scheme="https://dullyshin.github.io/tags/map/"/>
     
@@ -753,9 +753,9 @@ a.button {
     
       <category term="jQuery" scheme="https://dullyshin.github.io/tags/jQuery/"/>
     
-      <category term=".text()" scheme="https://dullyshin.github.io/tags/text/"/>
-    
       <category term="jQuery 테이블 행 추가 삭제" scheme="https://dullyshin.github.io/tags/jQuery-%ED%85%8C%EC%9D%B4%EB%B8%94-%ED%96%89-%EC%B6%94%EA%B0%80-%EC%82%AD%EC%A0%9C/"/>
+    
+      <category term=".text()" scheme="https://dullyshin.github.io/tags/text/"/>
     
       <category term=".append()" scheme="https://dullyshin.github.io/tags/append/"/>
     
