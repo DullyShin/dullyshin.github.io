@@ -9,14 +9,21 @@
 
     <url>
         <loc>https://dullyshin.github.io/categories/Programming/jQuery/</loc>
-        <lastmod>2019-11-28T01:47:13.720Z</lastmod>
+        <lastmod>2019-11-28T02:29:55.687Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://dullyshin.github.io/categories/Programming/</loc>
-        <lastmod>2019-11-28T01:47:13.720Z</lastmod>
+        <lastmod>2019-11-28T02:29:55.687Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/categories/Programming/Echarts/</loc>
+        <lastmod>2019-11-28T02:27:18.211Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -45,13 +52,6 @@
     <url>
         <loc>https://dullyshin.github.io/categories/Programming/SQL/</loc>
         <lastmod>2019-09-10T04:44:27.248Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/categories/Programming/Echarts/</loc>
-        <lastmod>2019-09-04T01:18:41.011Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
