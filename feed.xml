@@ -124,15 +124,15 @@
       <category term="Web" scheme="https://dullyshin.github.io/categories/Programming/Web/"/>
     
     
+      <category term="쿠키와 세션의 차이" scheme="https://dullyshin.github.io/tags/%EC%BF%A0%ED%82%A4%EC%99%80-%EC%84%B8%EC%85%98%EC%9D%98-%EC%B0%A8%EC%9D%B4/"/>
+    
+      <category term="쿠키와 세션" scheme="https://dullyshin.github.io/tags/%EC%BF%A0%ED%82%A4%EC%99%80-%EC%84%B8%EC%85%98/"/>
+    
       <category term="쿠키 의미" scheme="https://dullyshin.github.io/tags/%EC%BF%A0%ED%82%A4-%EC%9D%98%EB%AF%B8/"/>
     
       <category term="세션 의미" scheme="https://dullyshin.github.io/tags/%EC%84%B8%EC%85%98-%EC%9D%98%EB%AF%B8/"/>
     
       <category term="쿠키" scheme="https://dullyshin.github.io/tags/%EC%BF%A0%ED%82%A4/"/>
-    
-      <category term="쿠키와 세션의 차이" scheme="https://dullyshin.github.io/tags/%EC%BF%A0%ED%82%A4%EC%99%80-%EC%84%B8%EC%85%98%EC%9D%98-%EC%B0%A8%EC%9D%B4/"/>
-    
-      <category term="쿠키와 세션" scheme="https://dullyshin.github.io/tags/%EC%BF%A0%ED%82%A4%EC%99%80-%EC%84%B8%EC%85%98/"/>
     
       <category term="세션" scheme="https://dullyshin.github.io/tags/%EC%84%B8%EC%85%98/"/>
     
@@ -491,6 +491,8 @@
       <category term="JSTL" scheme="https://dullyshin.github.io/categories/Programming/JSTL/"/>
     
     
+      <category term="jstl" scheme="https://dullyshin.github.io/tags/jstl/"/>
+    
       <category term="JSTL if" scheme="https://dullyshin.github.io/tags/JSTL-if/"/>
     
       <category term="JSTL if문" scheme="https://dullyshin.github.io/tags/JSTL-if%EB%AC%B8/"/>
@@ -498,8 +500,6 @@
       <category term="jstl if else" scheme="https://dullyshin.github.io/tags/jstl-if-else/"/>
     
       <category term="jstl if else문" scheme="https://dullyshin.github.io/tags/jstl-if-else%EB%AC%B8/"/>
-    
-      <category term="jstl" scheme="https://dullyshin.github.io/tags/jstl/"/>
     
       <category term="if" scheme="https://dullyshin.github.io/tags/if/"/>
     
@@ -804,8 +804,6 @@ a.button {
       <category term="jQuery" scheme="https://dullyshin.github.io/categories/Programming/jQuery/"/>
     
     
-      <category term="jQuery" scheme="https://dullyshin.github.io/tags/jQuery/"/>
-    
       <category term="제이쿼리 셀렉터" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0/"/>
     
       <category term="제이쿼리 선택자" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%84%A0%ED%83%9D%EC%9E%90/"/>
@@ -813,6 +811,8 @@ a.button {
       <category term="셀렉터" scheme="https://dullyshin.github.io/tags/%EC%85%80%EB%A0%89%ED%84%B0/"/>
     
       <category term="제이쿼리 셀렉터 총정리" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0-%EC%B4%9D%EC%A0%95%EB%A6%AC/"/>
+    
+      <category term="jQuery" scheme="https://dullyshin.github.io/tags/jQuery/"/>
     
       <category term="jQuery selector" scheme="https://dullyshin.github.io/tags/jQuery-selector/"/>
     
