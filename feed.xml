@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://dullyshin.github.io/"/>
-  <updated>2019-11-28T02:29:55.687Z</updated>
+  <updated>2019-12-23T08:11:26.326Z</updated>
   <id>https://dullyshin.github.io/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java-약수 구하기</title>
+    <link href="https://dullyshin.github.io/2019/12/23/Java-divisor/"/>
+    <id>https://dullyshin.github.io/2019/12/23/Java-divisor/</id>
+    <published>2019-12-23T07:54:59.000Z</published>
+    <updated>2019-12-23T08:11:26.326Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="자바-약수-구하기"><a href="#자바-약수-구하기" class="headerlink" title="자바 약수 구하기"></a>자바 약수 구하기</h2><p>프로그래머스 스킬체크 테스트 Lwvel1</p><p>정수 n을 입력받아 n의 약수를 모두 더한 값을 리턴하는 함수, solution을 완성해주세요.</p><p>제한 사항</p><ul><li>n은 0 이상 3000이하인 정수입니다.</li></ul><p>입출력 예</p><table><thead><tr><th>n</th><th>return</th></tr></thead><tbody><tr><td>12</td><td>28</td></tr><tr><td>5</td><td>6</td></tr></tbody></table><p>입출력 예 설명<br>입출력 예 #1</p><ul><li>12의 약수는 1, 2, 3, 4, 6, 12입니다. 이를 모두 더하면 28입니다.</li></ul><p>입출력 예 #2</p><ul><li>5의 약수는 1, 5입니다. 이를 모두 더하면 6입니다.</li></ul><h2 id="문제풀이"><a href="#문제풀이" class="headerlink" title="문제풀이"></a>문제풀이</h2><p>for 문을 사용하여 약수를 찾고 문제의 답을 계속 더해나가면 되겠다고 생각했습니다.<br>(약수는 <code>%</code>로 나누었을때 <code>0</code>으로 결과가 나옵니다. 약수는 0보다 큰 수 입니다.)</p><p>위의 생각을 조합하여 아래의 함수를 완성하였습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">  public int solution(int n) &#123;</span><br><span class="line">      int answer = 0;</span><br><span class="line">      int divisor; //약수</span><br><span class="line"></span><br><span class="line">      //약수 구하기</span><br><span class="line">      for(divisor = 1; divisor &lt;= n ; divisor++)&#123;</span><br><span class="line">          if((n % divisor) == 0)&#123;</span><br><span class="line">              answer = answer + divisor;</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      return answer;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>위와 같은 방법이 아닌 좀 더 나은 방법이 있다면 공유 부탁드립니다.</p><h4 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h4><ul><li><a href="https://programmers.co.kr/skill_checks/80316#" target="_blank" rel="noopener">https://programmers.co.kr/skill_checks/80316#</a></li></ul><h4 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h4><ul><li><a href="/2019/08/08/JavaScript-array/" title="JavaScript-array">JavaScript-array</a></li><li><a href="/2019/02/25/JavaScript-TernaryOperator/" title="(JavaScript) 삼항 연산자 Ternary Operator">(JavaScript) 삼항 연산자 Ternary Operator</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;자바-약수-구하기&quot;&gt;&lt;a href=&quot;#자바-약수-구하기&quot; class=&quot;headerlink&quot; title=&quot;자바 약수 구하기&quot;&gt;&lt;/a&gt;자바 약수 구하기&lt;/h2&gt;&lt;p&gt;프로그래머스 스킬체크 테스트 Lwvel1&lt;/p&gt;
+&lt;p&gt;정수 n을 입력받아 n
+      
+    
+    </summary>
+    
+      <category term="Programming" scheme="https://dullyshin.github.io/categories/Programming/"/>
+    
+      <category term="JAVA" scheme="https://dullyshin.github.io/categories/Programming/JAVA/"/>
+    
+    
+      <category term="java 약수 구하기" scheme="https://dullyshin.github.io/tags/java-%EC%95%BD%EC%88%98-%EA%B5%AC%ED%95%98%EA%B8%B0/"/>
+    
+      <category term="약수" scheme="https://dullyshin.github.io/tags/%EC%95%BD%EC%88%98/"/>
+    
+      <category term="자바 약수" scheme="https://dullyshin.github.io/tags/%EC%9E%90%EB%B0%94-%EC%95%BD%EC%88%98/"/>
+    
+      <category term="프로그래머스 문제" scheme="https://dullyshin.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EB%AC%B8%EC%A0%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>[jQuery] jQuery를 사용해 쿠키관리하기 (읽기, 생성, 삭제, 생명주기)</title>
@@ -90,15 +124,15 @@
       <category term="Web" scheme="https://dullyshin.github.io/categories/Programming/Web/"/>
     
     
-      <category term="쿠키와 세션의 차이" scheme="https://dullyshin.github.io/tags/%EC%BF%A0%ED%82%A4%EC%99%80-%EC%84%B8%EC%85%98%EC%9D%98-%EC%B0%A8%EC%9D%B4/"/>
-    
-      <category term="쿠키와 세션" scheme="https://dullyshin.github.io/tags/%EC%BF%A0%ED%82%A4%EC%99%80-%EC%84%B8%EC%85%98/"/>
-    
       <category term="쿠키 의미" scheme="https://dullyshin.github.io/tags/%EC%BF%A0%ED%82%A4-%EC%9D%98%EB%AF%B8/"/>
     
       <category term="세션 의미" scheme="https://dullyshin.github.io/tags/%EC%84%B8%EC%85%98-%EC%9D%98%EB%AF%B8/"/>
     
       <category term="쿠키" scheme="https://dullyshin.github.io/tags/%EC%BF%A0%ED%82%A4/"/>
+    
+      <category term="쿠키와 세션의 차이" scheme="https://dullyshin.github.io/tags/%EC%BF%A0%ED%82%A4%EC%99%80-%EC%84%B8%EC%85%98%EC%9D%98-%EC%B0%A8%EC%9D%B4/"/>
+    
+      <category term="쿠키와 세션" scheme="https://dullyshin.github.io/tags/%EC%BF%A0%ED%82%A4%EC%99%80-%EC%84%B8%EC%85%98/"/>
     
       <category term="세션" scheme="https://dullyshin.github.io/tags/%EC%84%B8%EC%85%98/"/>
     
@@ -457,10 +491,6 @@
       <category term="JSTL" scheme="https://dullyshin.github.io/categories/Programming/JSTL/"/>
     
     
-      <category term="jstl" scheme="https://dullyshin.github.io/tags/jstl/"/>
-    
-      <category term="if" scheme="https://dullyshin.github.io/tags/if/"/>
-    
       <category term="JSTL if" scheme="https://dullyshin.github.io/tags/JSTL-if/"/>
     
       <category term="JSTL if문" scheme="https://dullyshin.github.io/tags/JSTL-if%EB%AC%B8/"/>
@@ -468,6 +498,10 @@
       <category term="jstl if else" scheme="https://dullyshin.github.io/tags/jstl-if-else/"/>
     
       <category term="jstl if else문" scheme="https://dullyshin.github.io/tags/jstl-if-else%EB%AC%B8/"/>
+    
+      <category term="jstl" scheme="https://dullyshin.github.io/tags/jstl/"/>
+    
+      <category term="if" scheme="https://dullyshin.github.io/tags/if/"/>
     
   </entry>
   
@@ -594,6 +628,49 @@ a.button {
   </entry>
   
   <entry>
+    <title>ECharts 최소 최대값 설정!</title>
+    <link href="https://dullyshin.github.io/2019/07/26/Echarts-MinMax/"/>
+    <id>https://dullyshin.github.io/2019/07/26/Echarts-MinMax/</id>
+    <published>2019-07-26T06:32:51.000Z</published>
+    <updated>2019-11-28T04:07:41.362Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="ECharts의-최대-최소값-설정"><a href="#ECharts의-최대-최소값-설정" class="headerlink" title="ECharts의 최대 최소값 설정!"></a>ECharts의 최대 최소값 설정!</h2><p>Echart를 사용해서 차트를 그리다 보면 최소 최대값이 자동으로 조절되는 것을 확인할 수 있습니다.<br>하지만 자동으로 설정하는 것보다 원하는 값으로 변경할 수 있는 방법을 알려 드릴려고 합니다.</p><p>Echarts를 잘 모르시는 분들은 <a href="/2019/07/26/Echarts-start/" title="ECharts를 통해 5분안에 차트를 만들자!">ECharts를 통해 5분안에 차트를 만들자!</a>을 확인한 후 보시면 이해가 더 편할겁니다.</p><h3 id="ECharts의-자동-최대-최소값-설정"><a href="#ECharts의-자동-최대-최소값-설정" class="headerlink" title="ECharts의 자동 최대 최소값 설정"></a>ECharts의 자동 최대 최소값 설정</h3><p>자동으로 설정하면 거의 최소 값은 <code>0</code>에 고정되어 있습니다.<br>만약 값이 전부 100으로 들어온다면 아래와 같이 그려지게 됩니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">//1번째 차트를 그릴 영역입니다.</span><br><span class="line">&lt;div id=&quot;chart1&quot; style=&quot;width:600px; height:400px;&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">// DOM을 준비하고 echart 객체를 만듭니다.</span><br><span class="line">    var myChart1 = echarts.init(document.getElementById(&apos;chart1&apos;));</span><br><span class="line"></span><br><span class="line">    var option1 = &#123;</span><br><span class="line">        xAxis: &#123;</span><br><span class="line">            type: &apos;category&apos;,</span><br><span class="line">            data: [&apos;Mon&apos;, &apos;Tue&apos;, &apos;Wed&apos;, &apos;Thu&apos;, &apos;Fri&apos;, &apos;Sat&apos;, &apos;Sun&apos;]</span><br><span class="line">        &#125;,</span><br><span class="line">        yAxis: &#123;</span><br><span class="line">            type: &apos;value&apos;</span><br><span class="line">        &#125;,</span><br><span class="line">        series: [&#123;</span><br><span class="line">        //date 값이 전부 똑같습니다.</span><br><span class="line">            data: [100, 100, 100, 100, 100, 100, 100],</span><br><span class="line">            type: &apos;line&apos;</span><br><span class="line">        &#125;]</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">// 위에서 설정한 속성을 차트에 반영합니다.</span><br><span class="line">    myChart1.setOption(option1);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure><div id="chart1" style="width:600px; height:400px;"></div><p>값이 전부 100으로 설정되어 있어서 잘 보이지도 않네요. 만약 선이 검은색 이었다면 아예 숨은그림 찾기 였을것 같아요 ㅋㅋ</p><h3 id="원하는-최대-최소-값으로-변경"><a href="#원하는-최대-최소-값으로-변경" class="headerlink" title="원하는 최대 최소 값으로 변경"></a>원하는 최대 최소 값으로 변경</h3><p>하지만 제가 차트를 그린다면 가운데에 차트가 그려졌으면 합니다. 그럴경우 min, max 의 값을 직접 설정할 수 있습니다.<br>바로 yAxis 안에 min, max설정을 변경하는 것입니다. 예제를 통해 확인 하시죠.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">//2번째 차트를 그릴 영역입니다.</span><br><span class="line">&lt;div id=&quot;chart2&quot; style=&quot;width:600px; height:400px;&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">// DOM을 준비하고 echart 객체를 만듭니다.</span><br><span class="line">    var myChart2 = echarts.init(document.getElementById(&apos;chart2&apos;));</span><br><span class="line"></span><br><span class="line">    var option2 = &#123;</span><br><span class="line">        xAxis: &#123;</span><br><span class="line">            type: &apos;category&apos;,</span><br><span class="line">            data: [&apos;Mon&apos;, &apos;Tue&apos;, &apos;Wed&apos;, &apos;Thu&apos;, &apos;Fri&apos;, &apos;Sat&apos;, &apos;Sun&apos;]</span><br><span class="line">        &#125;,</span><br><span class="line">        yAxis: &#123;</span><br><span class="line">            type: &apos;value&apos;,</span><br><span class="line">            min: 80,</span><br><span class="line">            max: 120</span><br><span class="line">            //위의 min, max를 설정한 모습을 확인할 수 있습니다.</span><br><span class="line">        &#125;,</span><br><span class="line">        series: [&#123;</span><br><span class="line">            data: [100, 100, 100, 100, 100, 100, 100],</span><br><span class="line">            type: &apos;line&apos;</span><br><span class="line">        &#125;]</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">// 위에서 설정한 속성을 차트에 반영합니다.</span><br><span class="line">    myChart2.setOption(option2);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure><div id="chart2" style="width:600px; height:400px;"></div><p>이렇게 가운대로 예쁘게 그려진 것을 확인할 수 있습니다.</p><h3 id="동적으로-최대-최소값-변경하기"><a href="#동적으로-최대-최소값-변경하기" class="headerlink" title="동적으로 최대 최소값 변경하기"></a>동적으로 최대 최소값 변경하기</h3><p>하지만 위의 예시 처럼 고정값으로 설정할 경우 값이 계속 변하고 값이 최대 최소 값보다 적거나 클경우 아예 화면 밖에 그려져 보이지 않을 수도 있고, 값이 계속 100으로만 들어온다는 보장도 없을때는 어떻게 해야할까요?</p><img src="\images\echartsapiminmax.png" alt="Echarts API"><p>echarts의 API를 확인하면 “<code>dataMin</code>, <code>dataMax</code>를 사용할 수 있고, 설정되지 않았을때는 자동으로 설정한다” 정도로 해석되는대요.(그림은 클릭하면 크게 볼 수 있습니다.)<br>저는 위아래 어느정도 떨어진 값을 설정해보도록 하겠습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">//3번째 차트를 그릴 영역입니다.</span><br><span class="line">&lt;div id=&quot;chart3&quot; style=&quot;width:600px; height:400px;&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">// DOM을 준비하고 echart 객체를 만듭니다.</span><br><span class="line">    var myChart3 = echarts.init(document.getElementById(&apos;chart3&apos;));</span><br><span class="line"></span><br><span class="line">var option3 = &#123;</span><br><span class="line">        xAxis: &#123;</span><br><span class="line">            type: &apos;category&apos;,</span><br><span class="line">            data: [&apos;Mon&apos;, &apos;Tue&apos;, &apos;Wed&apos;, &apos;Thu&apos;, &apos;Fri&apos;, &apos;Sat&apos;, &apos;Sun&apos;]</span><br><span class="line">        &#125;,</span><br><span class="line">        yAxis: &#123;</span><br><span class="line">            type: &apos;value&apos;,</span><br><span class="line">            //아래와 같이 min,max에서 function을 사용할 수 있습니다.</span><br><span class="line">            min: function(item)&#123;</span><br><span class="line">                var diff = item.max-item.min;</span><br><span class="line">                if(diff == 0) &#123;diff = 1&#125;</span><br><span class="line">                return (item.min - ((diff) * 0.2)).toFixed(2);</span><br><span class="line">            &#125;,</span><br><span class="line">            max: function(item)&#123;</span><br><span class="line">                var diff = item.max-item.min;</span><br><span class="line">                if(diff == 0) &#123;diff = 1&#125;</span><br><span class="line">                return (item.max + ((diff) * 0.2)).toFixed(2);</span><br><span class="line">            &#125;,</span><br><span class="line">        &#125;,</span><br><span class="line">        series: [&#123;</span><br><span class="line">            data: [1820, 1932, 901, 934, 1290, 1330, 1320],</span><br><span class="line">            type: &apos;line&apos;</span><br><span class="line">        &#125;]</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">// 위에서 설정한 속성을 차트에 반영합니다.</span><br><span class="line">    myChart3.setOption(option3);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure><div id="chart3" style="width:600px; height:400px;"></div><p>위와 같이 설정한다면 최소값과 최대값의 차이에 0.2정도를 위 아래 여백으로 설정할 수 있게 되었습니다.<br>소수점이 정확하게 안 떨어질 경우를 대비해서 <code>toFixed(2)</code>를 사용해 소수점 정리를 하였습니다.<br><code>if(diff == 0) {diff = 1}</code>는 값이 전부 같을 경우 0값이 들어가기 때문에 조정하였습니다.</p><p>모두 원하는 차트 그리셨기를 바랍니다!</p><h4 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h4><ul><li><a href="https://echarts.apache.org/" target="_blank" rel="noopener">https://echarts.apache.org/</a></li></ul><h4 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h4><ul><li><a href="/2019/07/26/Echarts-start/" title="ECharts를 통해 5분안에 차트를 만들자!">ECharts를 통해 5분안에 차트를 만들자!</a></li><li><a href="/2019/07/26/Echarts-heatmap/" title="ECharts를 통해 간단한 Heatmap 만들기!">ECharts를 통해 간단한 Heatmap 만들기!</a></li></ul><script type="text/javascript">    var myChart1 = echarts.init(document.getElementById('chart1'));    var option1 = {        xAxis: {            type: 'category',            data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']        },        yAxis: {            type: 'value'        },        series: [{            data: [100, 100, 100, 100, 100, 100, 100],            type: 'line'        }]    };    myChart1.setOption(option1);    var myChart2 = echarts.init(document.getElementById('chart2'));    var option2 = {        xAxis: {            type: 'category',            data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']        },        yAxis: {            type: 'value',            min: 80,            max: 120            //위의 min, max를 설정한 모습을 확인할 수 있습니다.        },        series: [{            data: [100, 100, 100, 100, 100, 100, 100],            type: 'line'        }]    };    myChart2.setOption(option2);    // DOM을 준비하고 echart 객체를 만듭니다.    var myChart3 = echarts.init(document.getElementById('chart3'));    var option3 = {        xAxis: {            type: 'category',            data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']        },        yAxis: {            type: 'value',            //아래와 같이 min,max에서 function을 사용할 수 있습니다.            min: function(item){                var diff = item.max-item.min;                if(diff == 0) {diff = 1}                return (item.min - ((diff) * 0.2)).toFixed(2);            },            max: function(item){                var diff = item.max-item.min;                if(diff == 0) {diff = 1}                return (item.max + ((diff) * 0.2)).toFixed(2);            },        },        series: [{            data: [1820, 1932, 901, 934, 1290, 1330, 1320],            type: 'line'        }]    };    // 위에서 설정한 속성을 차트에 반영합니다.    myChart3.setOption(option3);</script><script type="text/javascript"></script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;ECharts의-최대-최소값-설정&quot;&gt;&lt;a href=&quot;#ECharts의-최대-최소값-설정&quot; class=&quot;headerlink&quot; title=&quot;ECharts의 최대 최소값 설정!&quot;&gt;&lt;/a&gt;ECharts의 최대 최소값 설정!&lt;/h2&gt;&lt;p&gt;Echa
+      
+    
+    </summary>
+    
+      <category term="Programming" scheme="https://dullyshin.github.io/categories/Programming/"/>
+    
+      <category term="Echarts" scheme="https://dullyshin.github.io/categories/Programming/Echarts/"/>
+    
+    
+      <category term="Echarts" scheme="https://dullyshin.github.io/tags/Echarts/"/>
+    
+      <category term="이차트" scheme="https://dullyshin.github.io/tags/%EC%9D%B4%EC%B0%A8%ED%8A%B8/"/>
+    
+      <category term="echart" scheme="https://dullyshin.github.io/tags/echart/"/>
+    
+      <category term="echart 한글" scheme="https://dullyshin.github.io/tags/echart-%ED%95%9C%EA%B8%80/"/>
+    
+      <category term="echart min" scheme="https://dullyshin.github.io/tags/echart-min/"/>
+    
+      <category term="echart max" scheme="https://dullyshin.github.io/tags/echart-max/"/>
+    
+      <category term="echarts min" scheme="https://dullyshin.github.io/tags/echarts-min/"/>
+    
+      <category term="echarts max" scheme="https://dullyshin.github.io/tags/echarts-max/"/>
+    
+      <category term="이차트 최대 최소값" scheme="https://dullyshin.github.io/tags/%EC%9D%B4%EC%B0%A8%ED%8A%B8-%EC%B5%9C%EB%8C%80-%EC%B5%9C%EC%86%8C%EA%B0%92/"/>
+    
+  </entry>
+  
+  <entry>
     <title>ECharts를 통해 5분안에 차트를 만들자!</title>
     <link href="https://dullyshin.github.io/2019/07/26/Echarts-start/"/>
     <id>https://dullyshin.github.io/2019/07/26/Echarts-start/</id>
@@ -663,49 +740,6 @@ a.button {
       <category term="히트맵" scheme="https://dullyshin.github.io/tags/%ED%9E%88%ED%8A%B8%EB%A7%B5/"/>
     
       <category term="heatmap data" scheme="https://dullyshin.github.io/tags/heatmap-data/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ECharts 최소 최대값 설정!</title>
-    <link href="https://dullyshin.github.io/2019/07/26/Echarts-MinMax/"/>
-    <id>https://dullyshin.github.io/2019/07/26/Echarts-MinMax/</id>
-    <published>2019-07-26T06:32:51.000Z</published>
-    <updated>2019-11-28T04:07:41.362Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="ECharts의-최대-최소값-설정"><a href="#ECharts의-최대-최소값-설정" class="headerlink" title="ECharts의 최대 최소값 설정!"></a>ECharts의 최대 최소값 설정!</h2><p>Echart를 사용해서 차트를 그리다 보면 최소 최대값이 자동으로 조절되는 것을 확인할 수 있습니다.<br>하지만 자동으로 설정하는 것보다 원하는 값으로 변경할 수 있는 방법을 알려 드릴려고 합니다.</p><p>Echarts를 잘 모르시는 분들은 <a href="/2019/07/26/Echarts-start/" title="ECharts를 통해 5분안에 차트를 만들자!">ECharts를 통해 5분안에 차트를 만들자!</a>을 확인한 후 보시면 이해가 더 편할겁니다.</p><h3 id="ECharts의-자동-최대-최소값-설정"><a href="#ECharts의-자동-최대-최소값-설정" class="headerlink" title="ECharts의 자동 최대 최소값 설정"></a>ECharts의 자동 최대 최소값 설정</h3><p>자동으로 설정하면 거의 최소 값은 <code>0</code>에 고정되어 있습니다.<br>만약 값이 전부 100으로 들어온다면 아래와 같이 그려지게 됩니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">//1번째 차트를 그릴 영역입니다.</span><br><span class="line">&lt;div id=&quot;chart1&quot; style=&quot;width:600px; height:400px;&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">// DOM을 준비하고 echart 객체를 만듭니다.</span><br><span class="line">    var myChart1 = echarts.init(document.getElementById(&apos;chart1&apos;));</span><br><span class="line"></span><br><span class="line">    var option1 = &#123;</span><br><span class="line">        xAxis: &#123;</span><br><span class="line">            type: &apos;category&apos;,</span><br><span class="line">            data: [&apos;Mon&apos;, &apos;Tue&apos;, &apos;Wed&apos;, &apos;Thu&apos;, &apos;Fri&apos;, &apos;Sat&apos;, &apos;Sun&apos;]</span><br><span class="line">        &#125;,</span><br><span class="line">        yAxis: &#123;</span><br><span class="line">            type: &apos;value&apos;</span><br><span class="line">        &#125;,</span><br><span class="line">        series: [&#123;</span><br><span class="line">        //date 값이 전부 똑같습니다.</span><br><span class="line">            data: [100, 100, 100, 100, 100, 100, 100],</span><br><span class="line">            type: &apos;line&apos;</span><br><span class="line">        &#125;]</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">// 위에서 설정한 속성을 차트에 반영합니다.</span><br><span class="line">    myChart1.setOption(option1);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure><div id="chart1" style="width:600px; height:400px;"></div><p>값이 전부 100으로 설정되어 있어서 잘 보이지도 않네요. 만약 선이 검은색 이었다면 아예 숨은그림 찾기 였을것 같아요 ㅋㅋ</p><h3 id="원하는-최대-최소-값으로-변경"><a href="#원하는-최대-최소-값으로-변경" class="headerlink" title="원하는 최대 최소 값으로 변경"></a>원하는 최대 최소 값으로 변경</h3><p>하지만 제가 차트를 그린다면 가운데에 차트가 그려졌으면 합니다. 그럴경우 min, max 의 값을 직접 설정할 수 있습니다.<br>바로 yAxis 안에 min, max설정을 변경하는 것입니다. 예제를 통해 확인 하시죠.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">//2번째 차트를 그릴 영역입니다.</span><br><span class="line">&lt;div id=&quot;chart2&quot; style=&quot;width:600px; height:400px;&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">// DOM을 준비하고 echart 객체를 만듭니다.</span><br><span class="line">    var myChart2 = echarts.init(document.getElementById(&apos;chart2&apos;));</span><br><span class="line"></span><br><span class="line">    var option2 = &#123;</span><br><span class="line">        xAxis: &#123;</span><br><span class="line">            type: &apos;category&apos;,</span><br><span class="line">            data: [&apos;Mon&apos;, &apos;Tue&apos;, &apos;Wed&apos;, &apos;Thu&apos;, &apos;Fri&apos;, &apos;Sat&apos;, &apos;Sun&apos;]</span><br><span class="line">        &#125;,</span><br><span class="line">        yAxis: &#123;</span><br><span class="line">            type: &apos;value&apos;,</span><br><span class="line">            min: 80,</span><br><span class="line">            max: 120</span><br><span class="line">            //위의 min, max를 설정한 모습을 확인할 수 있습니다.</span><br><span class="line">        &#125;,</span><br><span class="line">        series: [&#123;</span><br><span class="line">            data: [100, 100, 100, 100, 100, 100, 100],</span><br><span class="line">            type: &apos;line&apos;</span><br><span class="line">        &#125;]</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">// 위에서 설정한 속성을 차트에 반영합니다.</span><br><span class="line">    myChart2.setOption(option2);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure><div id="chart2" style="width:600px; height:400px;"></div><p>이렇게 가운대로 예쁘게 그려진 것을 확인할 수 있습니다.</p><h3 id="동적으로-최대-최소값-변경하기"><a href="#동적으로-최대-최소값-변경하기" class="headerlink" title="동적으로 최대 최소값 변경하기"></a>동적으로 최대 최소값 변경하기</h3><p>하지만 위의 예시 처럼 고정값으로 설정할 경우 값이 계속 변하고 값이 최대 최소 값보다 적거나 클경우 아예 화면 밖에 그려져 보이지 않을 수도 있고, 값이 계속 100으로만 들어온다는 보장도 없을때는 어떻게 해야할까요?</p><img src="\images\echartsapiminmax.png" alt="Echarts API"><p>echarts의 API를 확인하면 “<code>dataMin</code>, <code>dataMax</code>를 사용할 수 있고, 설정되지 않았을때는 자동으로 설정한다” 정도로 해석되는대요.(그림은 클릭하면 크게 볼 수 있습니다.)<br>저는 위아래 어느정도 떨어진 값을 설정해보도록 하겠습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">//3번째 차트를 그릴 영역입니다.</span><br><span class="line">&lt;div id=&quot;chart3&quot; style=&quot;width:600px; height:400px;&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">// DOM을 준비하고 echart 객체를 만듭니다.</span><br><span class="line">    var myChart3 = echarts.init(document.getElementById(&apos;chart3&apos;));</span><br><span class="line"></span><br><span class="line">var option3 = &#123;</span><br><span class="line">        xAxis: &#123;</span><br><span class="line">            type: &apos;category&apos;,</span><br><span class="line">            data: [&apos;Mon&apos;, &apos;Tue&apos;, &apos;Wed&apos;, &apos;Thu&apos;, &apos;Fri&apos;, &apos;Sat&apos;, &apos;Sun&apos;]</span><br><span class="line">        &#125;,</span><br><span class="line">        yAxis: &#123;</span><br><span class="line">            type: &apos;value&apos;,</span><br><span class="line">            //아래와 같이 min,max에서 function을 사용할 수 있습니다.</span><br><span class="line">            min: function(item)&#123;</span><br><span class="line">                var diff = item.max-item.min;</span><br><span class="line">                if(diff == 0) &#123;diff = 1&#125;</span><br><span class="line">                return (item.min - ((diff) * 0.2)).toFixed(2);</span><br><span class="line">            &#125;,</span><br><span class="line">            max: function(item)&#123;</span><br><span class="line">                var diff = item.max-item.min;</span><br><span class="line">                if(diff == 0) &#123;diff = 1&#125;</span><br><span class="line">                return (item.max + ((diff) * 0.2)).toFixed(2);</span><br><span class="line">            &#125;,</span><br><span class="line">        &#125;,</span><br><span class="line">        series: [&#123;</span><br><span class="line">            data: [1820, 1932, 901, 934, 1290, 1330, 1320],</span><br><span class="line">            type: &apos;line&apos;</span><br><span class="line">        &#125;]</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">// 위에서 설정한 속성을 차트에 반영합니다.</span><br><span class="line">    myChart3.setOption(option3);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure><div id="chart3" style="width:600px; height:400px;"></div><p>위와 같이 설정한다면 최소값과 최대값의 차이에 0.2정도를 위 아래 여백으로 설정할 수 있게 되었습니다.<br>소수점이 정확하게 안 떨어질 경우를 대비해서 <code>toFixed(2)</code>를 사용해 소수점 정리를 하였습니다.<br><code>if(diff == 0) {diff = 1}</code>는 값이 전부 같을 경우 0값이 들어가기 때문에 조정하였습니다.</p><p>모두 원하는 차트 그리셨기를 바랍니다!</p><h4 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h4><ul><li><a href="https://echarts.apache.org/" target="_blank" rel="noopener">https://echarts.apache.org/</a></li></ul><h4 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h4><ul><li><a href="/2019/07/26/Echarts-start/" title="ECharts를 통해 5분안에 차트를 만들자!">ECharts를 통해 5분안에 차트를 만들자!</a></li><li><a href="/2019/07/26/Echarts-heatmap/" title="ECharts를 통해 간단한 Heatmap 만들기!">ECharts를 통해 간단한 Heatmap 만들기!</a></li></ul><script type="text/javascript">    var myChart1 = echarts.init(document.getElementById('chart1'));    var option1 = {        xAxis: {            type: 'category',            data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']        },        yAxis: {            type: 'value'        },        series: [{            data: [100, 100, 100, 100, 100, 100, 100],            type: 'line'        }]    };    myChart1.setOption(option1);    var myChart2 = echarts.init(document.getElementById('chart2'));    var option2 = {        xAxis: {            type: 'category',            data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']        },        yAxis: {            type: 'value',            min: 80,            max: 120            //위의 min, max를 설정한 모습을 확인할 수 있습니다.        },        series: [{            data: [100, 100, 100, 100, 100, 100, 100],            type: 'line'        }]    };    myChart2.setOption(option2);    // DOM을 준비하고 echart 객체를 만듭니다.    var myChart3 = echarts.init(document.getElementById('chart3'));    var option3 = {        xAxis: {            type: 'category',            data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']        },        yAxis: {            type: 'value',            //아래와 같이 min,max에서 function을 사용할 수 있습니다.            min: function(item){                var diff = item.max-item.min;                if(diff == 0) {diff = 1}                return (item.min - ((diff) * 0.2)).toFixed(2);            },            max: function(item){                var diff = item.max-item.min;                if(diff == 0) {diff = 1}                return (item.max + ((diff) * 0.2)).toFixed(2);            },        },        series: [{            data: [1820, 1932, 901, 934, 1290, 1330, 1320],            type: 'line'        }]    };    // 위에서 설정한 속성을 차트에 반영합니다.    myChart3.setOption(option3);</script><script type="text/javascript"></script>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;ECharts의-최대-최소값-설정&quot;&gt;&lt;a href=&quot;#ECharts의-최대-최소값-설정&quot; class=&quot;headerlink&quot; title=&quot;ECharts의 최대 최소값 설정!&quot;&gt;&lt;/a&gt;ECharts의 최대 최소값 설정!&lt;/h2&gt;&lt;p&gt;Echa
-      
-    
-    </summary>
-    
-      <category term="Programming" scheme="https://dullyshin.github.io/categories/Programming/"/>
-    
-      <category term="Echarts" scheme="https://dullyshin.github.io/categories/Programming/Echarts/"/>
-    
-    
-      <category term="Echarts" scheme="https://dullyshin.github.io/tags/Echarts/"/>
-    
-      <category term="이차트" scheme="https://dullyshin.github.io/tags/%EC%9D%B4%EC%B0%A8%ED%8A%B8/"/>
-    
-      <category term="echart" scheme="https://dullyshin.github.io/tags/echart/"/>
-    
-      <category term="echart 한글" scheme="https://dullyshin.github.io/tags/echart-%ED%95%9C%EA%B8%80/"/>
-    
-      <category term="echart min" scheme="https://dullyshin.github.io/tags/echart-min/"/>
-    
-      <category term="echart max" scheme="https://dullyshin.github.io/tags/echart-max/"/>
-    
-      <category term="echarts min" scheme="https://dullyshin.github.io/tags/echarts-min/"/>
-    
-      <category term="echarts max" scheme="https://dullyshin.github.io/tags/echarts-max/"/>
-    
-      <category term="이차트 최대 최소값" scheme="https://dullyshin.github.io/tags/%EC%9D%B4%EC%B0%A8%ED%8A%B8-%EC%B5%9C%EB%8C%80-%EC%B5%9C%EC%86%8C%EA%B0%92/"/>
     
   </entry>
   
@@ -785,51 +819,6 @@ a.button {
       <category term="All Selector" scheme="https://dullyshin.github.io/tags/All-Selector/"/>
     
       <category term="모든 요소 선택" scheme="https://dullyshin.github.io/tags/%EB%AA%A8%EB%93%A0-%EC%9A%94%EC%86%8C-%EC%84%A0%ED%83%9D/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>(jQuery)제이쿼리 셀렉터 총정리 01편! jQuery Selector</title>
-    <link href="https://dullyshin.github.io/2019/07/25/jQuery-selector1/"/>
-    <id>https://dullyshin.github.io/2019/07/25/jQuery-selector1/</id>
-    <published>2019-07-25T01:37:24.000Z</published>
-    <updated>2019-07-25T02:22:27.646Z</updated>
-    
-    <content type="html"><![CDATA[<p>jQuery에서 필수적으로 사용하게 되는 셀렉터! 에 대해 알아보겠습니다.</p><hr><h3 id="모든-셀렉터-All-Selector-“-”"><a href="#모든-셀렉터-All-Selector-“-”" class="headerlink" title="모든 셀렉터 All Selector (“*”)"></a>모든 셀렉터 All Selector (“*”)</h3><blockquote><p><strong>jQuery( “*” )</strong><br>Selects all elements.<br>모든 요소를 선택합니다.</p></blockquote><script async src="//jsfiddle.net/srwtnhe8/embed/"></script><hr><h4 id="속성-프리픽스-셀렉터-Prefix-Selector-name-”value”"><a href="#속성-프리픽스-셀렉터-Prefix-Selector-name-”value”" class="headerlink" title="속성 프리픽스 셀렉터 Prefix Selector [name|=”value”]"></a>속성 프리픽스 셀렉터 Prefix Selector [name|=”value”]</h4><blockquote><p><strong>jQuery( “[attribute|=’value’]” )</strong><br>Selects elements that have the specified attribute with a value either equal to a given string or starting with that string followed by a hyphen (-).<br>특정한 속성값을 가진 요소를 선택합니다. 특정 문자열이 원하는 문자열로 시작하여 띄어쓰기로 나누어져 있거나 (-) 하이픈으로 나누어져 있어야 합니다.</p></blockquote><script async src="//jsfiddle.net/taw3e46n/embed/"></script><hr><h4 id="속성-컨테인-셀렉터-Attribute-Contains-Selector-name-”value”"><a href="#속성-컨테인-셀렉터-Attribute-Contains-Selector-name-”value”" class="headerlink" title="속성 컨테인 셀렉터 Attribute Contains Selector [name*=”value”]"></a>속성 컨테인 셀렉터 Attribute Contains Selector [name*=”value”]</h4><blockquote><p><strong>jQuery( “[attribute*=’value’]” )</strong><br>Selects elements that have the specified attribute with a value containing a given substring.<br>원하는 문자를 포함하고 있으면 선택됩니다.</p></blockquote><script async src="//jsfiddle.net/h5fbgu3m/embed/"></script><hr><h4 id="속성-컨테인-워드-셀렉터-Attribute-Contains-Word-Selector-name-”value”"><a href="#속성-컨테인-워드-셀렉터-Attribute-Contains-Word-Selector-name-”value”" class="headerlink" title="속성 컨테인 워드 셀렉터 Attribute Contains Word Selector [name~=”value”]"></a>속성 컨테인 워드 셀렉터 Attribute Contains Word Selector [name~=”value”]</h4><blockquote><p><strong>jQuery( “[attribute~=’value’]” )</strong><br>Selects elements that have the specified attribute with a value containing a given word, delimited by spaces.<br>속성에 원하는 문자를 선택하는데 공백으로 구분합니다. 문자가 앞에서 시작하든 중간에서 시작하든 상관없지만, 공백으로 나누어 있어야 합니다.</p></blockquote><script async src="//jsfiddle.net/wpn2mchb/embed/"></script><hr><h4 id="속성-엔드-셀렉터-Attribute-Ends-With-Selector-name-”value”"><a href="#속성-엔드-셀렉터-Attribute-Ends-With-Selector-name-”value”" class="headerlink" title="속성 엔드 셀렉터 Attribute Ends With Selector [name$=”value”]"></a>속성 엔드 셀렉터 Attribute Ends With Selector [name$=”value”]</h4><blockquote><p><strong>jQuery( “[attribute$=’value’]” )</strong><br>Selects elements that have the specified attribute with a value ending exactly with a given string. The comparison is case sensitive.<br>속성에 원하는 문자열로 정확하게 끝나야 선택됩니다. 대소문자를 구별하여 선택됩니다.</p></blockquote><script async src="//jsfiddle.net/w5Lqrk9g/embed/"></script><hr><h4 id="속성-이퀄-셀렉터-Attribute-Equals-Selector-name-”value”"><a href="#속성-이퀄-셀렉터-Attribute-Equals-Selector-name-”value”" class="headerlink" title="속성 이퀄 셀렉터 Attribute Equals Selector [name=”value”]"></a>속성 이퀄 셀렉터 Attribute Equals Selector [name=”value”]</h4><blockquote><p><strong>jQuery( “[attribute=’value’]” )</strong><br>Selects elements that have the specified attribute with a value exactly equal to a certain value.<br>속성에 원하는 문자열로 정확 일치하는 요소를 선택합니다. 대소문자를 구별하여 선택됩니다.</p></blockquote><script async src="//jsfiddle.net/4s2oebcu/embed/"></script><hr><h4 id="속성-스타트-셀렉터-Attribute-Starts-With-Selector-name-”value”"><a href="#속성-스타트-셀렉터-Attribute-Starts-With-Selector-name-”value”" class="headerlink" title="속성 스타트 셀렉터 Attribute Starts With Selector [name^=”value”]"></a>속성 스타트 셀렉터 Attribute Starts With Selector [name^=”value”]</h4><blockquote><p><strong>jQuery( “[attribute^=’value’]” )</strong><br>Selects elements that have the specified attribute with a value beginning exactly with a given string.<br>속성에 원하는 문자열로 정확하게 시작해야 선택됩니다. 대소문자를 구별하여 선택됩니다.</p></blockquote><script async src="//jsfiddle.net/edpj1qf3/embed/"></script><hr><iframe src="https://giphy.com/embed/l3V0gpbjA6fD7ym9W" width="300" height="331" frameborder="0" class="giphy-embed" allowfullscreen></iframe><p>더 많은 셀렉터는 다음 기회에 만나보겠습니다.</p><h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><ul><li><a href="https://api.jquery.com/category/selectors/" target="_blank" rel="noopener">https://api.jquery.com/category/selectors/</a></li></ul><h3 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h3><ul><li><a href="/2019/07/25/jQuery-tablerowdelete/" title="(jQuery) 테이블 행 추가, 삭제 / 랜덤함수 이용">(jQuery) 테이블 행 추가, 삭제 / 랜덤함수 이용</a></li><li><a href="/2019/02/26/jQuery-Traversing/" title="(jQuery) 제이쿼리 트래버싱 Traversing">(jQuery) 제이쿼리 트래버싱 Traversing</a></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;jQuery에서 필수적으로 사용하게 되는 셀렉터! 에 대해 알아보겠습니다.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;모든-셀렉터-All-Selector-“-”&quot;&gt;&lt;a href=&quot;#모든-셀렉터-All-Selector-“-”&quot; class=&quot;headerlink&quot;
-      
-    
-    </summary>
-    
-      <category term="Programming" scheme="https://dullyshin.github.io/categories/Programming/"/>
-    
-      <category term="jQuery" scheme="https://dullyshin.github.io/categories/Programming/jQuery/"/>
-    
-    
-      <category term="jQuery" scheme="https://dullyshin.github.io/tags/jQuery/"/>
-    
-      <category term="제이쿼리 셀렉터" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0/"/>
-    
-      <category term="제이쿼리 선택자" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%84%A0%ED%83%9D%EC%9E%90/"/>
-    
-      <category term="셀렉터" scheme="https://dullyshin.github.io/tags/%EC%85%80%EB%A0%89%ED%84%B0/"/>
-    
-      <category term="제이쿼리 셀렉터 총정리" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0-%EC%B4%9D%EC%A0%95%EB%A6%AC/"/>
-    
-      <category term="jQuery selector" scheme="https://dullyshin.github.io/tags/jQuery-selector/"/>
-    
-      <category term="All Selector" scheme="https://dullyshin.github.io/tags/All-Selector/"/>
-    
-      <category term="모든 요소 선택" scheme="https://dullyshin.github.io/tags/%EB%AA%A8%EB%93%A0-%EC%9A%94%EC%86%8C-%EC%84%A0%ED%83%9D/"/>
-    
-      <category term="제이쿼리 셀렉터 여러개" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EC%85%80%EB%A0%89%ED%84%B0-%EC%97%AC%EB%9F%AC%EA%B0%9C/"/>
     
   </entry>
   
