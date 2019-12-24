@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://dullyshin.github.io/2019/12/24/Java-ScrambleWord/</loc>
+        <lastmod>2019-12-24T02:55:43.709Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://dullyshin.github.io/2019/12/23/Java-divisor/</loc>
-        <lastmod>2019-12-23T08:22:46.162Z</lastmod>
+        <lastmod>2019-12-24T02:13:44.459Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
