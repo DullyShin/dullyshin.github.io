@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://dullyshin.github.io/2020/01/06/Java-StringSplit2/</loc>
+        <lastmod>2020-01-06T02:21:48.192Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/2019/12/26/Java-ScrambleWord4/</loc>
+        <lastmod>2020-01-02T07:28:45.483Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://dullyshin.github.io/2018/08/28/Hexo-tags/</loc>
         <lastmod>2020-01-02T06:05:36.131Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -50,14 +66,6 @@
     <url>
         <loc>https://dullyshin.github.io/2020/01/02/Java-StringSplit/</loc>
         <lastmod>2020-01-02T05:39:01.619Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/2019/12/26/Java-ScrambleWord4/</loc>
-        <lastmod>2020-01-02T04:14:34.972Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
