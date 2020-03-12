@@ -3,6 +3,104 @@
 
 
     <url>
+        <loc>https://dullyshin.github.io/tags/echarts-click-event/</loc>
+        <lastmod>2020-03-12T02:15:18.300Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/echarts-event/</loc>
+        <lastmod>2020-03-12T02:15:18.300Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/%EC%9D%B4%EC%B0%A8%ED%8A%B8-%EC%9D%B4%EB%B2%A4%ED%8A%B8/</loc>
+        <lastmod>2020-03-12T02:15:18.300Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/echart-%ED%95%9C%EA%B8%80/</loc>
+        <lastmod>2020-03-12T02:15:18.300Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/echart/</loc>
+        <lastmod>2020-03-12T02:15:18.300Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/%EC%9D%B4%EC%B0%A8%ED%8A%B8/</loc>
+        <lastmod>2020-03-12T02:15:18.300Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/Echarts/</loc>
+        <lastmod>2020-03-12T02:15:18.300Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/heatmap-data/</loc>
+        <lastmod>2020-03-12T01:43:51.918Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/%ED%9E%88%ED%8A%B8%EB%A7%B5/</loc>
+        <lastmod>2020-03-12T01:43:51.918Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/heatmap/</loc>
+        <lastmod>2020-03-12T01:43:51.918Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/echarts-%EC%83%89%EC%83%81/</loc>
+        <lastmod>2020-01-07T02:25:10.198Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/echarts-%EB%B0%94-%EC%B0%A8%ED%8A%B8-%EC%83%89%EC%83%81/</loc>
+        <lastmod>2020-01-07T02:25:10.198Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/echarts-bar-chart-color/</loc>
+        <lastmod>2020-01-07T02:25:10.198Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/echarts-%ED%95%9C%EA%B8%80/</loc>
+        <lastmod>2020-01-07T02:25:10.198Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://dullyshin.github.io/tags/%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D/</loc>
         <lastmod>2020-01-06T02:24:40.671Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -145,62 +243,6 @@
     <url>
         <loc>https://dullyshin.github.io/tags/%EC%9E%90%EB%B0%94-%EB%9E%9C%EB%8D%A4/</loc>
         <lastmod>2020-01-02T05:41:25.635Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/echarts-%EC%83%89%EC%83%81/</loc>
-        <lastmod>2019-11-28T05:59:48.890Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/echarts-%EB%B0%94-%EC%B0%A8%ED%8A%B8-%EC%83%89%EC%83%81/</loc>
-        <lastmod>2019-11-28T05:59:48.890Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/echarts-bar-chart-color/</loc>
-        <lastmod>2019-11-28T05:59:48.890Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/echarts-%ED%95%9C%EA%B8%80/</loc>
-        <lastmod>2019-11-28T05:59:48.890Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/echart-%ED%95%9C%EA%B8%80/</loc>
-        <lastmod>2019-11-28T05:59:48.890Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/echart/</loc>
-        <lastmod>2019-11-28T05:59:48.890Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/%EC%9D%B4%EC%B0%A8%ED%8A%B8/</loc>
-        <lastmod>2019-11-28T05:59:48.890Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/Echarts/</loc>
-        <lastmod>2019-11-28T05:59:48.890Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -1088,6 +1130,13 @@
     </url>
 
     <url>
+        <loc>https://dullyshin.github.io/tags/jstl/</loc>
+        <lastmod>2019-08-08T04:29:53.708Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://dullyshin.github.io/tags/do-while/</loc>
         <lastmod>2019-08-08T04:29:53.708Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1124,13 +1173,6 @@
 
     <url>
         <loc>https://dullyshin.github.io/tags/foreach/</loc>
-        <lastmod>2019-08-08T04:29:53.708Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/jstl/</loc>
         <lastmod>2019-08-08T04:29:53.708Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -1244,27 +1286,6 @@
     <url>
         <loc>https://dullyshin.github.io/tags/HTML-%ED%91%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0/</loc>
         <lastmod>2019-08-07T08:01:36.032Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/heatmap-data/</loc>
-        <lastmod>2019-07-30T08:17:14.245Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/%ED%9E%88%ED%8A%B8%EB%A7%B5/</loc>
-        <lastmod>2019-07-30T08:17:14.245Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/heatmap/</loc>
-        <lastmod>2019-07-30T08:17:14.245Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -1585,6 +1606,13 @@
     </url>
 
     <url>
+        <loc>https://dullyshin.github.io/tags/my-sql/</loc>
+        <lastmod>2018-09-02T16:00:56.403Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://dullyshin.github.io/tags/query/</loc>
         <lastmod>2018-09-02T16:00:56.403Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1593,13 +1621,6 @@
 
     <url>
         <loc>https://dullyshin.github.io/tags/sql/</loc>
-        <lastmod>2018-09-02T16:00:56.403Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/my-sql/</loc>
         <lastmod>2018-09-02T16:00:56.403Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
