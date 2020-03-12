@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://dullyshin.github.io/2019/07/26/Echarts-start/</loc>
+        <lastmod>2020-03-12T07:10:43.710Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://dullyshin.github.io/2020/03/12/Echarts-movingChart/</loc>
-        <lastmod>2020-03-12T06:29:18.382Z</lastmod>
+        <lastmod>2020-03-12T06:37:08.761Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +25,7 @@
 
     <url>
         <loc>https://dullyshin.github.io/2020/03/12/Echarts-Event01/</loc>
-        <lastmod>2020-03-12T06:11:17.196Z</lastmod>
+        <lastmod>2020-03-12T06:33:04.776Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
