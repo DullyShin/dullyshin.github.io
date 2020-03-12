@@ -27,7 +27,7 @@
 <meta property="og:description" content="Echarts-차트에 클릭 이벤트 생성하기 01차트에 클릭 이벤트를 생성해보자우선 차트의 클릭 이벤트를 만들기 위해 아래와 같이 사용할 수 있습니다.아래의 방법으로 params 에 무슨 값이 넘어오는지 확인 할 수 있습니다. 123456789101112131415161718192021222324252627// 준비된 돔에 Echarts 인스턴스를 생성합니다">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://image.shutterstock.com/image-vector/click-icon-vector-trendy-flat-260nw-742697146.jpg">
-<meta property="og:updated_time" content="2020-03-12T03:27:25.661Z">
+<meta property="og:updated_time" content="2020-03-12T04:47:27.448Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Echarts-차트에 클릭 이벤트 생성하기 01">
 <meta name="twitter:description" content="Echarts-차트에 클릭 이벤트 생성하기 01차트에 클릭 이벤트를 생성해보자우선 차트의 클릭 이벤트를 만들기 위해 아래와 같이 사용할 수 있습니다.아래의 방법으로 params 에 무슨 값이 넘어오는지 확인 할 수 있습니다. 123456789101112131415161718192021222324252627// 준비된 돔에 Echarts 인스턴스를 생성합니다">
@@ -288,7 +288,9 @@ ga('send', 'pageview');
                 interval: 0,
             },
         },
-        yAxis: {},
+        yAxis: {
+            triggerEvent: true,
+        },
         series: [{
             name: 'Sales',
             type: 'bar',
@@ -321,6 +323,12 @@ ga('send', 'pageview');
         }
         else if(params.componentType === 'xAxis'){
             alert('xAxis 클릭하였습니다.');
+        }
+         else if(params.componentType === 'yAxis'){
+            alert('yAxis 클릭하였습니다.');
+        }
+        else if(params.componentType === 'title'){
+            alert('title 클릭하였습니다.');
         }
     });
 
