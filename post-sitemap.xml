@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://dullyshin.github.io/2020/03/13/PostgreSQL-generateSeries/</loc>
+        <lastmod>2020-03-16T08:25:07.814Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://dullyshin.github.io/2019/07/26/Echarts-start/</loc>
         <lastmod>2020-03-12T07:10:43.710Z</lastmod>
         <changefreq>weekly</changefreq>
