@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://dullyshin.github.io/2019/02/25/JSTL-ForEach/</loc>
+        <lastmod>2021-01-22T07:09:09.615Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://dullyshin.github.io/2020/03/13/PostgreSQL-generateSeries/</loc>
         <lastmod>2020-03-16T08:40:31.391Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -258,14 +266,6 @@
     <url>
         <loc>https://dullyshin.github.io/2019/02/25/JavaScript-TernaryOperator/</loc>
         <lastmod>2019-08-08T05:17:43.676Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/2019/02/25/JSTL-ForEach/</loc>
-        <lastmod>2019-08-08T04:29:53.708Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

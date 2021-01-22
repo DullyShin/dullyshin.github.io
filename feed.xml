@@ -714,6 +714,8 @@
       <category term="jQuery" scheme="https://dullyshin.github.io/categories/Programming/jQuery/"/>
     
     
+      <category term=".text()" scheme="https://dullyshin.github.io/tags/text/"/>
+    
       <category term="맵" scheme="https://dullyshin.github.io/tags/%EB%A7%B5/"/>
     
       <category term="제이쿼리 맵" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EB%A7%B5/"/>
@@ -725,8 +727,6 @@
       <category term="맵 함수" scheme="https://dullyshin.github.io/tags/%EB%A7%B5-%ED%95%A8%EC%88%98/"/>
     
       <category term="makeArray" scheme="https://dullyshin.github.io/tags/makeArray/"/>
-    
-      <category term=".text()" scheme="https://dullyshin.github.io/tags/text/"/>
     
       <category term=".map()" scheme="https://dullyshin.github.io/tags/map/"/>
     

@@ -8,14 +8,21 @@
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/categories/Programming/SQL/</loc>
-        <lastmod>2020-03-16T08:40:31.391Z</lastmod>
+        <loc>https://dullyshin.github.io/categories/Programming/JSTL/</loc>
+        <lastmod>2021-01-22T07:09:09.615Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://dullyshin.github.io/categories/Programming/</loc>
+        <lastmod>2021-01-22T07:09:09.615Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/categories/Programming/SQL/</loc>
         <lastmod>2020-03-16T08:40:31.391Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -66,13 +73,6 @@
     <url>
         <loc>https://dullyshin.github.io/categories/Eclipse/</loc>
         <lastmod>2019-08-30T07:44:54.514Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/categories/Programming/JSTL/</loc>
-        <lastmod>2019-08-30T07:25:45.081Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
