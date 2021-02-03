@@ -27,7 +27,7 @@
 <meta property="og:description" content="Echarts  이미지 다운로드 버튼 따로 분리하기Echarts 에서 제공하는 기본 기능인 이미지 다운로드 기능이 있습니다. 그 기능을 바로 toolbox 안에 saveAsImage 입니다. 12345678option = &amp;#123;	... //다른 옵션은 제외 되었습니다.	toolbox: &amp;#123;        feature: &amp;#123;">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://dullyshin.github.io/images/imgdown.png">
-<meta property="og:updated_time" content="2021-02-03T07:07:31.054Z">
+<meta property="og:updated_time" content="2021-02-03T07:10:56.767Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Echarts - 이미지 다운로드 버튼 따로 만들기">
 <meta name="twitter:description" content="Echarts  이미지 다운로드 버튼 따로 분리하기Echarts 에서 제공하는 기본 기능인 이미지 다운로드 기능이 있습니다. 그 기능을 바로 toolbox 안에 saveAsImage 입니다. 12345678option = &amp;#123;	... //다른 옵션은 제외 되었습니다.	toolbox: &amp;#123;        feature: &amp;#123;">
@@ -222,7 +222,7 @@ ga('send', 'pageview');
 <p>그 기능을 바로 <code>toolbox</code> 안에 <code>saveAsImage</code> 입니다.</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">option = &#123;</span><br><span class="line">	... //다른 옵션은 제외 되었습니다.</span><br><span class="line">	toolbox: &#123;</span><br><span class="line">        feature: &#123;</span><br><span class="line">            saveAsImage: &#123;&#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>이차트 옵션에 위와 같이 옵션을 주면 아래와 같이 차트 영역안에 이미지를 다운로드 할수 있는 버튼이 생성됩니다. 기본적으로 차트의 오른쪽 위쪽에 생성됩니다. 아래는 예시 이미지로 실제 작동하지 않습니다.</p>
+<p>이차트 옵션에 위와 같이 옵션을 주면 아래와 같이 차트 영역안에 이미지를 다운로드 할수 있는 버튼이 생성됩니다. 기본적으로 차트의 오른쪽 위쪽에 생성됩니다. (아래는 예시 이미지로 실제 작동하지 않습니다. 아래에 그려진 차트에서 실제 작동하는 것을 확인 할 수 있습니다.)</p>
 <img src="\images\imgdown.png" alt="echarts toolbox example">
 
 <p>저는 이 기능이 차트 안에서 있는게 아니라 <code>따로 만들어낸 버튼</code>에서 실행하고 싶었습니다.</p>
@@ -265,6 +265,11 @@ ga('send', 'pageview');
             text: 'ECharts entry example'
         },
         tooltip: {},
+        toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
         legend: {
             data:['Sales']
         },
@@ -289,7 +294,7 @@ ga('send', 'pageview');
             // create label
             let tempA = document.createElement("a");
             // Set download name
-            tempA.download = "echarts download" +".png";
+            tempA.download = "echarts download" + ".png";
             // Set address and file type
             tempA.href = canvas[0].toDataURL("image/png");
             document.body.appendChild(tempA);
