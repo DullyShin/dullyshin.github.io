@@ -18,20 +18,20 @@
           
             <meta name="keywords" content="Echarts,이차트,echart,echart 한글,echart 이미지 다운로드 버튼 따로 빼기,echart 이미지 다운로드 버튼,echart 이미지 다운로드,echart image download button seperately,차트 이미지 다운로드">
             
-              <meta name="description" content="Echarts  이미지 다운로드 버튼 따로 분리하기Echarts 에서 제공하는 기본 기능인 이미지 다운로드 기능이 있습니다. 바로 toolbox 안에 saveAsImage 입니다. 12345678option = &amp;#123;	... //다른 옵션은 제외 되었습니다.	toolbox: &amp;#123;        feature: &amp;#123;            sa">
+              <meta name="description" content="Echarts  이미지 다운로드 버튼 따로 분리하기Echarts 에서 제공하는 기본 기능인 이미지 다운로드 기능이 있습니다. 그 기능을 바로 toolbox 안에 saveAsImage 입니다. 12345678option = &amp;#123;	... //다른 옵션은 제외 되었습니다.	toolbox: &amp;#123;        feature: &amp;#123;">
 <meta name="keywords" content="Echarts,이차트,echart,echart 한글,echart 이미지 다운로드 버튼 따로 빼기,echart 이미지 다운로드 버튼,echart 이미지 다운로드,echart image download button seperately,차트 이미지 다운로드">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Echarts - 이미지 다운로드 버튼 따로 만들기">
 <meta property="og:url" content="https://dullyshin.github.io/2021/02/03/Echarts-ImageDownloadBtn/index.html">
 <meta property="og:site_name" content="Geek Coading">
-<meta property="og:description" content="Echarts  이미지 다운로드 버튼 따로 분리하기Echarts 에서 제공하는 기본 기능인 이미지 다운로드 기능이 있습니다. 바로 toolbox 안에 saveAsImage 입니다. 12345678option = &amp;#123;	... //다른 옵션은 제외 되었습니다.	toolbox: &amp;#123;        feature: &amp;#123;            sa">
+<meta property="og:description" content="Echarts  이미지 다운로드 버튼 따로 분리하기Echarts 에서 제공하는 기본 기능인 이미지 다운로드 기능이 있습니다. 그 기능을 바로 toolbox 안에 saveAsImage 입니다. 12345678option = &amp;#123;	... //다른 옵션은 제외 되었습니다.	toolbox: &amp;#123;        feature: &amp;#123;">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="c:%5CUsers%5Csgj00%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210203150730591.png">
-<meta property="og:updated_time" content="2021-02-03T06:29:04.141Z">
+<meta property="og:image" content="https://dullyshin.github.io/images/imgdown.png">
+<meta property="og:updated_time" content="2021-02-03T07:00:49.571Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Echarts - 이미지 다운로드 버튼 따로 만들기">
-<meta name="twitter:description" content="Echarts  이미지 다운로드 버튼 따로 분리하기Echarts 에서 제공하는 기본 기능인 이미지 다운로드 기능이 있습니다. 바로 toolbox 안에 saveAsImage 입니다. 12345678option = &amp;#123;	... //다른 옵션은 제외 되었습니다.	toolbox: &amp;#123;        feature: &amp;#123;            sa">
-<meta name="twitter:image" content="c:%5CUsers%5Csgj00%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210203150730591.png">
+<meta name="twitter:description" content="Echarts  이미지 다운로드 버튼 따로 분리하기Echarts 에서 제공하는 기본 기능인 이미지 다운로드 기능이 있습니다. 그 기능을 바로 toolbox 안에 saveAsImage 입니다. 12345678option = &amp;#123;	... //다른 옵션은 제외 되었습니다.	toolbox: &amp;#123;        feature: &amp;#123;">
+<meta name="twitter:image" content="https://dullyshin.github.io/images/imgdown.png">
                 
                   <link rel="canonical" href="https://dullyshin.github.io/2021/02/03/echarts-imagedownloadbtn/">
                     
@@ -219,15 +219,17 @@ ga('send', 'pageview');
 	
 	<div class="article-entry" itemprop="articleBody">
 		<h1 id="Echarts-이미지-다운로드-버튼-따로-분리하기"><a href="#Echarts-이미지-다운로드-버튼-따로-분리하기" class="headerlink" title="Echarts  이미지 다운로드 버튼 따로 분리하기"></a>Echarts  이미지 다운로드 버튼 따로 분리하기</h1><p>Echarts 에서 제공하는 기본 기능인 <code>이미지 다운로드</code> 기능이 있습니다.</p>
-<p>바로 <code>toolbox</code> 안에 <code>saveAsImage</code> 입니다.</p>
+<p>그 기능을 바로 <code>toolbox</code> 안에 <code>saveAsImage</code> 입니다.</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">option = &#123;</span><br><span class="line">	... //다른 옵션은 제외 되었습니다.</span><br><span class="line">	toolbox: &#123;</span><br><span class="line">        feature: &#123;</span><br><span class="line">            saveAsImage: &#123;&#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>그러면 아래와 같이 차트 영역안에 이미지를 다운로드 할수 있는 버튼이 생성됩니다. 기본적으로 차트의 오른쪽 위쪽에 생성됩니다. 아래는 예시 이미지로 실제 작동하지 않습니다.</p>
-<p><img src="C:%5CUsers%5Csgj00%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210203150730591.png" alt="image-20210203150730591"></p>
+<p>이차트 옵션에 위와 같이 옵션을 주면 아래와 같이 차트 영역안에 이미지를 다운로드 할수 있는 버튼이 생성됩니다. 기본적으로 차트의 오른쪽 위쪽에 생성됩니다. 아래는 예시 이미지로 실제 작동하지 않습니다.</p>
+<img src="\images\imgdown.png" alt="echarts toolbox example">
+
 <p>저는 이 기능이 차트 안에서 있는게 아니라 <code>따로 만들어낸 버튼</code>에서 실행하고 싶었습니다.</p>
 <p>echarts 다이어그램 자체가 캔버스 요소에 그려져 있으므로 캔버스 개체를 가져 와서 해당 캔버스 정보를 주소로 변환 할 수 있습니다.</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">//버튼 생성</span><br><span class="line">&lt;button name=&quot;button&quot; onclick=&quot;getChartImg()&quot;&gt;차트 이미지 다운로드&lt;/button&gt;</span><br><span class="line"></span><br><span class="line">//버튼을 클릭했을때 실행될 함수를 만듭니다.</span><br><span class="line">function getChartImg()&#123;</span><br><span class="line"></span><br><span class="line">	//캔버스의 정보를 가져옵니다.</span><br><span class="line">    let canvas = document.getElementsByTagName(&quot;canvas&quot;);</span><br><span class="line"></span><br><span class="line">    if(canvas&amp;&amp;canvas.length&gt;0)&#123;</span><br><span class="line">        //레이블 생성</span><br><span class="line">        let tempA = document.createElement(&quot;a&quot;);</span><br><span class="line">        //다운로드될 이름 생성</span><br><span class="line">        tempA.download = &quot;echarts download&quot; +&quot;.png&quot;;</span><br><span class="line">        //address 설정하고 파일의 타입 정하기</span><br><span class="line">        tempA.href = canvas[1].toDataURL(&quot;image/png&quot;);</span><br><span class="line">        document.body.appendChild(tempA);</span><br><span class="line">        //클릭 다운로드 이벤트</span><br><span class="line">        tempA.click();</span><br><span class="line">        //태그를 제거합니다</span><br><span class="line">        tempA.remove();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<p>아래의 버튼을 누르면 차트를 이미지로 다운 받을 수 있습니다.</p>
 <p><button name="button" onclick="getChartImg()">차트 이미지 다운로드</button></p>
 <div id="mainechart" style="width: 500px; height:500px;"></div>
 
@@ -248,60 +250,59 @@ ga('send', 'pageview');
 
 
 
+
+
+
+
 </li>
 </ul>
 <script type="text/javascript">
     // DOM을 준비하고 echart 객체를 만듭니다.
     var myChart = echarts.init(document.getElementById('mainechart'));
 
-// 차트 속성과 데이터를 지정합니다.
-var option = {
-    title: {
-        text: 'ECharts entry example'
-    },
-    tooltip: {},
-    legend: {
-        data:['Sales']
-    },
-    xAxis: {
-        data: ["shirt","cardign","chiffon shirt","pants","heels","socks"]
-    },
-    yAxis: {},
-    series: [{
-        name: 'Sales',
-        type: 'bar',
-        data: [5, 20, 36, 10, 10, 20]
-    }]
-};
+    var option = {
+        title: {
+            text: 'ECharts entry example'
+        },
+        tooltip: {},
+        legend: {
+            data:['Sales']
+        },
+        xAxis: {
+            data: ["shirt","cardign","chiffon shirt","pants","heels","socks"]
+        },
+        yAxis: {},
+        series: [{
+            name: 'Sales',
+            type: 'bar',
+            data: [5, 20, 36, 10, 10, 20]
+        }]
+    };
 
-// 위에서 설정한 속성을 차트에 반영합니다.
-myChart.setOption(option);
-
+    // 위에서 설정한 속성을 차트에 반영합니다.
+    myChart.setOption(option);
 
 
-//버튼을 클릭했을때 실행될 함수를 만듭니다.
-function getChartImg(){
-
-​    //캔버스의 정보를 가져옵니다.
-​    let canvas = document.getElementsByTagName("canvas");
-
-​    if(canvas&&canvas.length>0){
-​        //레이블 생성
-        let tempA = document.createElement("a");
-        //다운로드될 이름 생성
-​        tempA.download = "echarts download" +".png";
-​        //address 설정하고 파일의 타입 정하기
-​        tempA.href = canvas[1].toDataURL("image/png");
-​        document.body.appendChild(tempA);
-​        //클릭 다운로드 이벤트
-​        tempA.click();
-​        //태그를 제거합니다
-​        tempA.remove();
-​    }
-
-}
+    function getChartImg(){
+        let canvas = document.getElementsByTagName("canvas");
+        if(canvas&&canvas.length > 0){
+            // create label
+            let tempA = document.createElement("a");
+            // Set download name
+            tempA.download = "echarts download" +".png";
+            // Set address and file type
+            tempA.href = canvas[1].toDataURL("image/png");
+            document.body.appendChild(tempA);
+            // Trigger download event
+            tempA.click();
+            // Remove Tag
+            tempA.remove();
+         }
+    }
 
 </script>
+
+
 	</div>
 	<!-- ad start -->
 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -320,7 +321,7 @@ function getChartImg(){
 
 
 
-    <a data-url="https://dullyshin.github.io/2021/02/03/Echarts-ImageDownloadBtn/" data-id="ckkp1wmng0001nwvo05nr3xk9" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://dullyshin.github.io/2021/02/03/Echarts-ImageDownloadBtn/" data-id="ckkp318he0001hgvoz0k9s6z6" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -494,7 +495,7 @@ function getChartImg(){
                             <a href="/2021/02/03/Echarts-ImageDownloadBtn/" class="thumbnail">
     
     
-        <span style="background-image:url(C:%5CUsers%5Csgj00%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210203150730591.png)" alt="Echarts - 이미지 다운로드 버튼 따로 만들기" class="thumbnail-image"></span>
+        <span style="background-image:url(\images\imgdown.png)" alt="Echarts - 이미지 다운로드 버튼 따로 만들기" class="thumbnail-image"></span>
     
     
 </a>
