@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hyejin Shin</title>
+  <title>Geek Coading</title>
   
   <subtitle>IT blog / Thanks to everyone!</subtitle>
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://dullyshin.github.io/"/>
-  <updated>2020-03-16T08:40:31.391Z</updated>
+  <updated>2021-02-03T06:29:04.141Z</updated>
   <id>https://dullyshin.github.io/</id>
   
   <author>
@@ -15,6 +15,49 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Echarts - 이미지 다운로드 버튼 따로 만들기</title>
+    <link href="https://dullyshin.github.io/2021/02/03/Echarts-ImageDownloadBtn/"/>
+    <id>https://dullyshin.github.io/2021/02/03/Echarts-ImageDownloadBtn/</id>
+    <published>2021-02-03T05:57:17.000Z</published>
+    <updated>2021-02-03T06:29:04.141Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Echarts-이미지-다운로드-버튼-따로-분리하기"><a href="#Echarts-이미지-다운로드-버튼-따로-분리하기" class="headerlink" title="Echarts  이미지 다운로드 버튼 따로 분리하기"></a>Echarts  이미지 다운로드 버튼 따로 분리하기</h1><p>Echarts 에서 제공하는 기본 기능인 <code>이미지 다운로드</code> 기능이 있습니다.</p><p>바로 <code>toolbox</code> 안에 <code>saveAsImage</code> 입니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">option = &#123;</span><br><span class="line">... //다른 옵션은 제외 되었습니다.</span><br><span class="line">toolbox: &#123;</span><br><span class="line">        feature: &#123;</span><br><span class="line">            saveAsImage: &#123;&#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>그러면 아래와 같이 차트 영역안에 이미지를 다운로드 할수 있는 버튼이 생성됩니다. 기본적으로 차트의 오른쪽 위쪽에 생성됩니다. 아래는 예시 이미지로 실제 작동하지 않습니다.</p><p><img src="C:%5CUsers%5Csgj00%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210203150730591.png" alt="image-20210203150730591"></p><p>저는 이 기능이 차트 안에서 있는게 아니라 <code>따로 만들어낸 버튼</code>에서 실행하고 싶었습니다.</p><p>echarts 다이어그램 자체가 캔버스 요소에 그려져 있으므로 캔버스 개체를 가져 와서 해당 캔버스 정보를 주소로 변환 할 수 있습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">//버튼 생성</span><br><span class="line">&lt;button name=&quot;button&quot; onclick=&quot;getChartImg()&quot;&gt;차트 이미지 다운로드&lt;/button&gt;</span><br><span class="line"></span><br><span class="line">//버튼을 클릭했을때 실행될 함수를 만듭니다.</span><br><span class="line">function getChartImg()&#123;</span><br><span class="line"></span><br><span class="line">//캔버스의 정보를 가져옵니다.</span><br><span class="line">    let canvas = document.getElementsByTagName(&quot;canvas&quot;);</span><br><span class="line"></span><br><span class="line">    if(canvas&amp;&amp;canvas.length&gt;0)&#123;</span><br><span class="line">        //레이블 생성</span><br><span class="line">        let tempA = document.createElement(&quot;a&quot;);</span><br><span class="line">        //다운로드될 이름 생성</span><br><span class="line">        tempA.download = &quot;echarts download&quot; +&quot;.png&quot;;</span><br><span class="line">        //address 설정하고 파일의 타입 정하기</span><br><span class="line">        tempA.href = canvas[1].toDataURL(&quot;image/png&quot;);</span><br><span class="line">        document.body.appendChild(tempA);</span><br><span class="line">        //클릭 다운로드 이벤트</span><br><span class="line">        tempA.click();</span><br><span class="line">        //태그를 제거합니다</span><br><span class="line">        tempA.remove();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><button name="button" onclick="getChartImg()">차트 이미지 다운로드</button></p><div id="mainechart" style="width: 500px; height:500px;"></div><h4 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h4><ul><li><a href="https://echarts.apache.org/examples/zh/editor.html?c=line-stack" target="_blank" rel="noopener">https://echarts.apache.org/examples/zh/editor.html?c=line-stack</a></li><li><a href="https://programmer.group/5dce28410815c.html" target="_blank" rel="noopener">https://programmer.group/5dce28410815c.html</a></li></ul><h4 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h4><ul><li><a href="/2019/07/26/Echarts-start/" title="ECharts를 통해 5분안에 차트를 만들자!">ECharts를 통해 5분안에 차트를 만들자!</a></li><li><a href="/2019/07/26/Echarts-barChartDiffColor/" title="ECharts 바차트 색상 변경!">ECharts 바차트 색상 변경!</a></li><li><a href="/2019/07/26/Echarts-heatmap/" title="ECharts를 통해 간단한 Heatmap 만들기!">ECharts를 통해 간단한 Heatmap 만들기!</a></li><li><a href="/2019/07/26/Echarts-MinMax/" title="ECharts 최소 최대값 설정!">ECharts 최소 최대값 설정!</a></li><li><a href="/2020/03/12/Echarts-Event01/" title="Echarts-차트에 클릭 이벤트 생성하기 01">Echarts-차트에 클릭 이벤트 생성하기 01</a></li></ul><script type="text/javascript">    // DOM을 준비하고 echart 객체를 만듭니다.    var myChart = echarts.init(document.getElementById('mainechart'));// 차트 속성과 데이터를 지정합니다.var option = {    title: {        text: 'ECharts entry example'    },    tooltip: {},    legend: {        data:['Sales']    },    xAxis: {        data: ["shirt","cardign","chiffon shirt","pants","heels","socks"]    },    yAxis: {},    series: [{        name: 'Sales',        type: 'bar',        data: [5, 20, 36, 10, 10, 20]    }]};// 위에서 설정한 속성을 차트에 반영합니다.myChart.setOption(option);//버튼을 클릭했을때 실행될 함수를 만듭니다.function getChartImg(){​    //캔버스의 정보를 가져옵니다.​    let canvas = document.getElementsByTagName("canvas");​    if(canvas&&canvas.length>0){​        //레이블 생성        let tempA = document.createElement("a");        //다운로드될 이름 생성​        tempA.download = "echarts download" +".png";​        //address 설정하고 파일의 타입 정하기​        tempA.href = canvas[1].toDataURL("image/png");​        document.body.appendChild(tempA);​        //클릭 다운로드 이벤트​        tempA.click();​        //태그를 제거합니다​        tempA.remove();​    }}</script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Echarts-이미지-다운로드-버튼-따로-분리하기&quot;&gt;&lt;a href=&quot;#Echarts-이미지-다운로드-버튼-따로-분리하기&quot; class=&quot;headerlink&quot; title=&quot;Echarts  이미지 다운로드 버튼 따로 분리하기&quot;&gt;&lt;/a&gt;Echa
+      
+    
+    </summary>
+    
+      <category term="Programming" scheme="https://dullyshin.github.io/categories/Programming/"/>
+    
+      <category term="Echarts" scheme="https://dullyshin.github.io/categories/Programming/Echarts/"/>
+    
+    
+      <category term="Echarts" scheme="https://dullyshin.github.io/tags/Echarts/"/>
+    
+      <category term="이차트" scheme="https://dullyshin.github.io/tags/%EC%9D%B4%EC%B0%A8%ED%8A%B8/"/>
+    
+      <category term="echart" scheme="https://dullyshin.github.io/tags/echart/"/>
+    
+      <category term="echart 한글" scheme="https://dullyshin.github.io/tags/echart-%ED%95%9C%EA%B8%80/"/>
+    
+      <category term="echart 이미지 다운로드 버튼 따로 빼기" scheme="https://dullyshin.github.io/tags/echart-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-%EB%B2%84%ED%8A%BC-%EB%94%B0%EB%A1%9C-%EB%B9%BC%EA%B8%B0/"/>
+    
+      <category term="echart 이미지 다운로드 버튼" scheme="https://dullyshin.github.io/tags/echart-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-%EB%B2%84%ED%8A%BC/"/>
+    
+      <category term="echart 이미지 다운로드" scheme="https://dullyshin.github.io/tags/echart-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C/"/>
+    
+      <category term="echart image download button seperately" scheme="https://dullyshin.github.io/tags/echart-image-download-button-seperately/"/>
+    
+      <category term="차트 이미지 다운로드" scheme="https://dullyshin.github.io/tags/%EC%B0%A8%ED%8A%B8-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>[PostgreSQL] 날짜 &amp; 시간 생성하기(generate_series)</title>
@@ -468,15 +511,15 @@
       <category term="Web" scheme="https://dullyshin.github.io/categories/Programming/Web/"/>
     
     
+      <category term="쿠키와 세션의 차이" scheme="https://dullyshin.github.io/tags/%EC%BF%A0%ED%82%A4%EC%99%80-%EC%84%B8%EC%85%98%EC%9D%98-%EC%B0%A8%EC%9D%B4/"/>
+    
+      <category term="쿠키와 세션" scheme="https://dullyshin.github.io/tags/%EC%BF%A0%ED%82%A4%EC%99%80-%EC%84%B8%EC%85%98/"/>
+    
       <category term="쿠키 의미" scheme="https://dullyshin.github.io/tags/%EC%BF%A0%ED%82%A4-%EC%9D%98%EB%AF%B8/"/>
     
       <category term="세션 의미" scheme="https://dullyshin.github.io/tags/%EC%84%B8%EC%85%98-%EC%9D%98%EB%AF%B8/"/>
     
       <category term="쿠키" scheme="https://dullyshin.github.io/tags/%EC%BF%A0%ED%82%A4/"/>
-    
-      <category term="쿠키와 세션의 차이" scheme="https://dullyshin.github.io/tags/%EC%BF%A0%ED%82%A4%EC%99%80-%EC%84%B8%EC%85%98%EC%9D%98-%EC%B0%A8%EC%9D%B4/"/>
-    
-      <category term="쿠키와 세션" scheme="https://dullyshin.github.io/tags/%EC%BF%A0%ED%82%A4%EC%99%80-%EC%84%B8%EC%85%98/"/>
     
       <category term="세션" scheme="https://dullyshin.github.io/tags/%EC%84%B8%EC%85%98/"/>
     
@@ -714,8 +757,6 @@
       <category term="jQuery" scheme="https://dullyshin.github.io/categories/Programming/jQuery/"/>
     
     
-      <category term=".text()" scheme="https://dullyshin.github.io/tags/text/"/>
-    
       <category term="맵" scheme="https://dullyshin.github.io/tags/%EB%A7%B5/"/>
     
       <category term="제이쿼리 맵" scheme="https://dullyshin.github.io/tags/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-%EB%A7%B5/"/>
@@ -727,6 +768,8 @@
       <category term="맵 함수" scheme="https://dullyshin.github.io/tags/%EB%A7%B5-%ED%95%A8%EC%88%98/"/>
     
       <category term="makeArray" scheme="https://dullyshin.github.io/tags/makeArray/"/>
+    
+      <category term=".text()" scheme="https://dullyshin.github.io/tags/text/"/>
     
       <category term=".map()" scheme="https://dullyshin.github.io/tags/map/"/>
     
@@ -772,43 +815,6 @@
     
       <category term="JavaScript" scheme="https://dullyshin.github.io/categories/Programming/JavaScript/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>JSTL-substring 뒤에서 문자 자르기</title>
-    <link href="https://dullyshin.github.io/2019/08/08/JSTL-substring/"/>
-    <id>https://dullyshin.github.io/2019/08/08/JSTL-substring/</id>
-    <published>2019-08-08T04:28:51.000Z</published>
-    <updated>2019-08-30T07:25:45.081Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="JSTL-substring-문자-뒤에서-자르기"><a href="#JSTL-substring-문자-뒤에서-자르기" class="headerlink" title="JSTL substring 문자 뒤에서 자르기"></a>JSTL substring 문자 뒤에서 자르기</h3><p>JSTL은 <code>fn:substring</code>을 사용하여 문자를 자를수 있습니다.<br>만약 <code>aaaa3</code> 문자의 맨 마지막 숫자만 가져오고 싶을때 아래와 같이 사용할 수 있습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ taglib uri = &quot;http://java.sun.com/jsp/jstl/core&quot; prefix = &quot;c&quot; %&gt;</span><br><span class="line">&lt;%@ taglib uri = &quot;http://java.sun.com/jsp/jstl/functions&quot; prefix = &quot;fn&quot; %&gt;</span><br><span class="line"></span><br><span class="line">&lt;html&gt;</span><br><span class="line">   &lt;head&gt;</span><br><span class="line">      &lt;title&gt;문자열 뒤에서 자르기&lt;/title&gt;</span><br><span class="line">   &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">   &lt;body&gt;</span><br><span class="line">&lt;c:set var = &quot;string1&quot; value = &quot;aaaa3&quot;/&gt;</span><br><span class="line">    &lt;c:set var = &quot;length&quot; value = &quot;$&#123;fn:length(string1)&#125;&quot;/&gt;</span><br><span class="line">    &lt;c:set var = &quot;string2&quot; value = &quot;$&#123;fn:substring(string1, length -1, length)&#125;&quot; /&gt;</span><br><span class="line"></span><br><span class="line">    &lt;h1&gt;뒤에서 자르기 : $&#123;string2&#125;&lt;/h1&gt;</span><br><span class="line">   &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure><p>결과는 아래와 같습니다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">뒤에서 자르기 : 3</span><br></pre></td></tr></table></figure><hr><h3 id="JSTL-문자-자르기"><a href="#JSTL-문자-자르기" class="headerlink" title="JSTL 문자 자르기"></a>JSTL 문자 자르기</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ taglib uri = &quot;http://java.sun.com/jsp/jstl/core&quot; prefix = &quot;c&quot; %&gt;</span><br><span class="line">&lt;%@ taglib uri = &quot;http://java.sun.com/jsp/jstl/functions&quot; prefix = &quot;fn&quot; %&gt;</span><br><span class="line"></span><br><span class="line">&lt;html&gt;</span><br><span class="line">   &lt;head&gt;</span><br><span class="line">      &lt;title&gt;Using JSTL Functions&lt;/title&gt;</span><br><span class="line">   &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">   &lt;body&gt;</span><br><span class="line">      &lt;c:set var = &quot;string1&quot; value = &quot;This is first String.&quot;/&gt;</span><br><span class="line">      &lt;c:set var = &quot;string2&quot; value = &quot;$&#123;fn:substring(string1, 5, 15)&#125;&quot; /&gt;</span><br><span class="line"></span><br><span class="line">      &lt;p&gt;Final sub string : $&#123;string2&#125;&lt;/p&gt;</span><br><span class="line">   &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Final sub string : is first S</span><br></pre></td></tr></table></figure><hr><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ taglib uri = &quot;http://java.sun.com/jsp/jstl/core&quot; prefix = &quot;c&quot; %&gt;</span><br><span class="line">&lt;%@ taglib uri = &quot;http://java.sun.com/jsp/jstl/functions&quot; prefix = &quot;fn&quot; %&gt;</span><br><span class="line"></span><br><span class="line">&lt;html&gt;</span><br><span class="line">   &lt;head&gt;</span><br><span class="line">      &lt;title&gt;Using JSTL Functions&lt;/title&gt;</span><br><span class="line">   &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">   &lt;body&gt;</span><br><span class="line">      &lt;c:set var = &quot;num&quot; value = &quot;1234567890&quot;/&gt;</span><br><span class="line">      &lt;c:set var = &quot;numSubString&quot; value = &quot;$&#123;fn:substring(num, 5, 7)&#125;&quot; /&gt;</span><br><span class="line"></span><br><span class="line">      &lt;p&gt;subtring : $&#123;numSubString&#125;&lt;/p&gt;</span><br><span class="line">   &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">subtring : 67</span><br></pre></td></tr></table></figure><h4 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h4><ul><li><a href="https://www.tutorialspoint.com/jsp/jstl_function_substring.htm" target="_blank" rel="noopener">https://www.tutorialspoint.com/jsp/jstl_function_substring.htm</a></li></ul><h4 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h4><ul><li><a href="/2019/02/25/JSTL-ForEach/" title="(jstl) ForEach 문">(jstl) ForEach 문</a></li><li><a href="/2019/08/08/JSTL-if/" title="JSTL-if, if else 5분안에 정복하기">JSTL-if, if else 5분안에 정복하기</a></li><li><a href="/2018/08/29/HTML-basic/" title="HTML 기초 알아봅시다!">HTML 기초 알아봅시다!</a></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h3 id=&quot;JSTL-substring-문자-뒤에서-자르기&quot;&gt;&lt;a href=&quot;#JSTL-substring-문자-뒤에서-자르기&quot; class=&quot;headerlink&quot; title=&quot;JSTL substring 문자 뒤에서 자르기&quot;&gt;&lt;/a&gt;JSTL substr
-      
-    
-    </summary>
-    
-      <category term="Programming" scheme="https://dullyshin.github.io/categories/Programming/"/>
-    
-      <category term="JSTL" scheme="https://dullyshin.github.io/categories/Programming/JSTL/"/>
-    
-    
-      <category term="substring 문자 자르기" scheme="https://dullyshin.github.io/tags/substring-%EB%AC%B8%EC%9E%90-%EC%9E%90%EB%A5%B4%EA%B8%B0/"/>
-    
-      <category term="JSTL-substring 문자 자르기" scheme="https://dullyshin.github.io/tags/JSTL-substring-%EB%AC%B8%EC%9E%90-%EC%9E%90%EB%A5%B4%EA%B8%B0/"/>
-    
-      <category term="jstl substring" scheme="https://dullyshin.github.io/tags/jstl-substring/"/>
-    
-      <category term="jstl fn" scheme="https://dullyshin.github.io/tags/jstl-fn/"/>
-    
-      <category term="jstl substring 뒤에서" scheme="https://dullyshin.github.io/tags/jstl-substring-%EB%92%A4%EC%97%90%EC%84%9C/"/>
-    
-      <category term="jstl substring 뒤에서 자르기" scheme="https://dullyshin.github.io/tags/jstl-substring-%EB%92%A4%EC%97%90%EC%84%9C-%EC%9E%90%EB%A5%B4%EA%B8%B0/"/>
     
   </entry>
   
