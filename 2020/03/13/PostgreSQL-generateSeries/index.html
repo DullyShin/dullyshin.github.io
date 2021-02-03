@@ -18,19 +18,19 @@
           
             <meta name="keywords" content="SQL,PostgreSQL_Basic,PostgreSQL,generate_series,postgresql generate_series,날짜, 시간 생성하기,날짜, 시간 만들기">
             
-              <meta name="description" content="[PostgreSQL] 날짜 &amp;amp; 시간 생성하기(generate_series)제가 PostgreSql 에서 가장 잘 사용하고 있는 function 중 하나는 generate_series 입니다!    Function Argument Type Return Type Description    generate_series(start, stop) int or">
+              <meta name="description" content="[PostgreSQL] 날짜 &amp;amp; 시간 생성하기(generate_series)제가 PostgreSql 에서 가장 잘 사용하고 있는 function 중 하나는 generate_series 입니다!    Function Argument Type Return Type Description    generate_series  (start, stop) int">
 <meta name="keywords" content="SQL,PostgreSQL_Basic,PostgreSQL,generate_series,postgresql generate_series,날짜, 시간 생성하기,날짜, 시간 만들기">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[PostgreSQL] 날짜 &amp; 시간 생성하기(generate_series)">
 <meta property="og:url" content="https://dullyshin.github.io/2020/03/13/PostgreSQL-generateSeries/index.html">
 <meta property="og:site_name" content="Geek Coading">
-<meta property="og:description" content="[PostgreSQL] 날짜 &amp;amp; 시간 생성하기(generate_series)제가 PostgreSql 에서 가장 잘 사용하고 있는 function 중 하나는 generate_series 입니다!    Function Argument Type Return Type Description    generate_series(start, stop) int or">
+<meta property="og:description" content="[PostgreSQL] 날짜 &amp;amp; 시간 생성하기(generate_series)제가 PostgreSql 에서 가장 잘 사용하고 있는 function 중 하나는 generate_series 입니다!    Function Argument Type Return Type Description    generate_series  (start, stop) int">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://images.idgesg.net/images/article/2019/04/google-calendar-android-100794956-large.jpg">
-<meta property="og:updated_time" content="2020-03-16T08:40:31.391Z">
+<meta property="og:updated_time" content="2021-02-03T08:12:07.446Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[PostgreSQL] 날짜 &amp; 시간 생성하기(generate_series)">
-<meta name="twitter:description" content="[PostgreSQL] 날짜 &amp;amp; 시간 생성하기(generate_series)제가 PostgreSql 에서 가장 잘 사용하고 있는 function 중 하나는 generate_series 입니다!    Function Argument Type Return Type Description    generate_series(start, stop) int or">
+<meta name="twitter:description" content="[PostgreSQL] 날짜 &amp;amp; 시간 생성하기(generate_series)제가 PostgreSql 에서 가장 잘 사용하고 있는 function 중 하나는 generate_series 입니다!    Function Argument Type Return Type Description    generate_series  (start, stop) int">
 <meta name="twitter:image" content="https://images.idgesg.net/images/article/2019/04/google-calendar-android-100794956-large.jpg">
                 
                   <link rel="canonical" href="https://dullyshin.github.io/2020/03/13/postgresql-generateseries/">
@@ -229,19 +229,19 @@ ga('send', 'pageview');
 </tr>
 </thead>
 <tbody><tr>
-<td>generate_series(start, stop)</td>
+<td>generate_series <br> (start, stop)</td>
 <td>int or bigint</td>
 <td>(same as argument type)</td>
 <td>1의 단위로 증감합니다</td>
 </tr>
 <tr>
-<td>generate_series(start, stop, step)</td>
+<td>generate_series<br>(start, stop, step)</td>
 <td>int or bigint</td>
 <td>(same as argument type)</td>
 <td>step에서 설정한 단위로 증감합니다</td>
 </tr>
 <tr>
-<td>generate_series(start, stop, step interval)</td>
+<td>generate_series<br>(start, stop, step interval)</td>
 <td>timestamp or timestamp with time zone</td>
 <td>(same as argument type)</td>
 <td>step에서 설정한 단위로 증감합니다</td>
@@ -265,83 +265,83 @@ ga('send', 'pageview');
 </thead>
 <tbody><tr>
 <td>HH</td>
-<td>hour of day (01-12)</td>
-<td>하루의 시간 (01-12)</td>
+<td>hour of day <br>(01-12)</td>
+<td>하루의 시간 <br>(01-12)</td>
 </tr>
 <tr>
 <td>HH12</td>
-<td>hour of day (01-12)</td>
-<td>하루의 시간 (01-12)</td>
+<td>hour of day <br>(01-12)</td>
+<td>하루의 시간 <br>(01-12)</td>
 </tr>
 <tr>
 <td>HH24</td>
-<td>hour of day (00-23)</td>
-<td>하루의 시간 (00-23)</td>
+<td>hour of day <br>(00-23)</td>
+<td>하루의 시간 <br>(00-23)</td>
 </tr>
 <tr>
 <td>MI</td>
-<td>minute (00-59)</td>
-<td>분 (00-59)</td>
+<td>minute <br>(00-59)</td>
+<td>분 <br>(00-59)</td>
 </tr>
 <tr>
 <td>SS</td>
-<td>second (00-59)</td>
-<td>초(00-59)</td>
+<td>second <br>(00-59)</td>
+<td>초<br>(00-59)</td>
 </tr>
 <tr>
 <td>MS</td>
-<td>millisecond (000-999)</td>
-<td>밀리초 (000-999)</td>
+<td>millisecond <br>(000-999)</td>
+<td>밀리초 <br>(000-999)</td>
 </tr>
 <tr>
 <td>US</td>
-<td>microsecond (000000-999999)</td>
-<td>마이크로초(000000-999999)</td>
+<td>microsecond <br>(000000-999999)</td>
+<td>마이크로초<br>(000000-999999)</td>
 </tr>
 <tr>
 <td>AM, am, PM or pm</td>
-<td>meridiem indicator (without periods)</td>
-<td>정오 표기 (마침표 없이)</td>
+<td>meridiem indicator <br>(without periods)</td>
+<td>정오 표기 <br>(마침표 없이)</td>
 </tr>
 <tr>
 <td>A.M., a.m., P.M. or p.m.</td>
-<td>meridiem indicator (with periods)</td>
-<td>정오 표기 (마침표 포함)</td>
+<td>meridiem indicator <br>(with periods)</td>
+<td>정오 표기 <br>(마침표 포함)</td>
 </tr>
 <tr>
 <td>Y,YYY</td>
-<td>year (4 or more digits) with comma</td>
-<td>컴마와 연도 (4 또는 그 이상의 숫자)</td>
+<td>year <br>(4 or more digits)<br> with comma</td>
+<td>컴마와 연도 <br>(4 또는 그 이상의 숫자)</td>
 </tr>
 <tr>
 <td>YYYY</td>
-<td>year (4 or more digits)</td>
-<td>연도 (4 또는 그 이상의 숫자)</td>
+<td>year <br>(4 or more digits)</td>
+<td>연도 <br>(4 또는 그 이상의 숫자)</td>
 </tr>
 <tr>
 <td>YYY</td>
 <td>last 3 digits of year</td>
-<td>연도의 마지막 3자리 숫자</td>
+<td>연도의 마지막 <br>3자리 숫자</td>
 </tr>
 <tr>
 <td>YY</td>
 <td>last 2 digits of year</td>
-<td>연도의 마지막 2자리 숫자</td>
+<td>연도의 마지막 <br>2자리 숫자</td>
 </tr>
 <tr>
 <td>Y</td>
 <td>last digit of year</td>
-<td>연도의 마지막 1자리 숫자</td>
+<td>연도의 마지막 <br>1자리 숫자</td>
 </tr>
 <tr>
 <td>MM</td>
-<td>month number (01-12)</td>
-<td>달의 숫자 (01-12)</td>
+<td>month number <br>(01-12)</td>
+<td>달의 숫자 <br>(01-12)</td>
 </tr>
 <tr>
 <td>DD</td>
-<td>day of month (01-31)</td>
-<td>일의 숫자 (01-31)</td>
+<td>day of month <br>(01-31)</td>
+<td>일의 숫자 <br>(01-31)</td>
 </tr>
 </tbody></table>
 <h4 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h4><ul>

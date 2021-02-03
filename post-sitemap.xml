@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://dullyshin.github.io/2020/03/13/PostgreSQL-generateSeries/</loc>
+        <lastmod>2021-02-03T08:12:07.446Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://dullyshin.github.io/2021/02/03/Echarts-ImageDownloadBtn/</loc>
-        <lastmod>2021-02-03T07:10:56.767Z</lastmod>
+        <lastmod>2021-02-03T07:16:05.745Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -18,14 +26,6 @@
     <url>
         <loc>https://dullyshin.github.io/2019/02/25/JSTL-ForEach/</loc>
         <lastmod>2021-01-22T07:09:09.615Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/2020/03/13/PostgreSQL-generateSeries/</loc>
-        <lastmod>2020-03-16T08:40:31.391Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
