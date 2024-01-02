@@ -8,22 +8,29 @@
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/categories/Programming/Spring-Framework/</loc>
-        <lastmod>2023-08-21T14:23:52.847Z</lastmod>
+        <loc>https://dullyshin.github.io/categories/Programming/SQL/</loc>
+        <lastmod>2024-01-02T12:09:32.569Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://dullyshin.github.io/categories/Programming/</loc>
-        <lastmod>2023-08-21T14:23:52.847Z</lastmod>
+        <lastmod>2024-01-02T12:09:32.569Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/categories/Programming/SQL/</loc>
-        <lastmod>2023-08-21T14:22:11.764Z</lastmod>
+        <loc>https://dullyshin.github.io/categories/Hexo/</loc>
+        <lastmod>2023-08-22T11:55:06.362Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/categories/Programming/Spring-Framework/</loc>
+        <lastmod>2023-08-21T14:23:52.847Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -38,13 +45,6 @@
     <url>
         <loc>https://dullyshin.github.io/categories/Programming/Echarts/</loc>
         <lastmod>2023-08-21T14:15:22.586Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/categories/Hexo/</loc>
-        <lastmod>2023-08-21T14:08:22.809Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

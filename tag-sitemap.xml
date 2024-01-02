@@ -3,6 +3,104 @@
 
 
     <url>
+        <loc>https://dullyshin.github.io/tags/MySQL%EA%B3%BC-PostgreSQL%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90/</loc>
+        <lastmod>2024-01-02T12:09:32.569Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/postgresql-mysql-%EC%B0%A8%EC%9D%B4%EC%A0%90/</loc>
+        <lastmod>2024-01-02T12:09:32.569Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/postgresql-vs-mysql/</loc>
+        <lastmod>2024-01-02T12:09:32.569Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/ostgresql-vs-mysql/</loc>
+        <lastmod>2024-01-02T12:09:32.569Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/PostgreSQL/</loc>
+        <lastmod>2024-01-02T12:09:32.569Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/PostgreSQL-Basic/</loc>
+        <lastmod>2024-01-02T12:09:32.569Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/SQL/</loc>
+        <lastmod>2024-01-02T12:09:32.569Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/Programming/</loc>
+        <lastmod>2024-01-02T11:32:00.643Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/hexo-%EC%BD%94%EB%A7%A8%EB%93%9C/</loc>
+        <lastmod>2023-08-22T11:55:06.362Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/hexo-%EC%BD%94%EB%A9%98%EB%93%9C/</loc>
+        <lastmod>2023-08-22T11:55:06.362Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/%ED%97%A5%EC%86%8C-%EC%BD%94%EB%A7%A8%EB%93%9C/</loc>
+        <lastmod>2023-08-22T11:55:06.362Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/%ED%97%A5%EC%86%8C-%EC%BD%94%EB%A9%98%EB%93%9C/</loc>
+        <lastmod>2023-08-22T11:55:06.362Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/hexo-commands/</loc>
+        <lastmod>2023-08-22T11:55:06.362Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/commands/</loc>
+        <lastmod>2023-08-22T11:55:06.362Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://dullyshin.github.io/tags/%EC%8A%A4%ED%94%84%EB%A7%81-%EA%B8%B0%EC%B4%88/</loc>
         <lastmod>2023-08-21T14:23:52.847Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -32,27 +130,6 @@
 
     <url>
         <loc>https://dullyshin.github.io/tags/error/</loc>
-        <lastmod>2023-08-21T14:22:11.764Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/PostgreSQL/</loc>
-        <lastmod>2023-08-21T14:22:11.764Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/PostgreSQL-Basic/</loc>
-        <lastmod>2023-08-21T14:22:11.764Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/SQL/</loc>
         <lastmod>2023-08-21T14:22:11.764Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -276,13 +353,6 @@
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/tags/my-sql/</loc>
-        <lastmod>2023-08-12T15:36:09.045Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://dullyshin.github.io/tags/sql-%EA%B8%B0%EB%B3%B8/</loc>
         <lastmod>2023-08-12T15:36:09.045Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -298,6 +368,13 @@
 
     <url>
         <loc>https://dullyshin.github.io/tags/sql/</loc>
+        <lastmod>2023-08-12T15:36:09.045Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/my-sql/</loc>
         <lastmod>2023-08-12T15:36:09.045Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -376,13 +453,6 @@
     <url>
         <loc>https://dullyshin.github.io/tags/postgresql/</loc>
         <lastmod>2023-08-12T15:35:38.034Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/Programming/</loc>
-        <lastmod>2023-08-12T15:34:43.181Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -1949,13 +2019,6 @@
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%ED%85%8C%EC%9D%B4%EB%B8%94/</loc>
-        <lastmod>2019-02-25T13:45:02.457Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4/</loc>
         <lastmod>2019-02-25T13:45:02.457Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1964,6 +2027,13 @@
 
     <url>
         <loc>https://dullyshin.github.io/tags/markdown/</loc>
+        <lastmod>2019-02-25T13:45:02.457Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%ED%85%8C%EC%9D%B4%EB%B8%94/</loc>
         <lastmod>2019-02-25T13:45:02.457Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -2075,14 +2145,14 @@
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%97%90%EB%94%94%ED%84%B0/</loc>
+        <loc>https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%82%AC%EC%9A%A9%EB%B2%95/</loc>
         <lastmod>2018-08-26T18:42:28.398Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%82%AC%EC%9A%A9%EB%B2%95/</loc>
+        <loc>https://dullyshin.github.io/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%97%90%EB%94%94%ED%84%B0/</loc>
         <lastmod>2018-08-26T18:42:28.398Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
