@@ -3,50 +3,134 @@
 
 
     <url>
+        <loc>https://dullyshin.github.io/tags/%EC%9E%90%EB%B0%94-%EC%A3%BC%EC%84%9D/</loc>
+        <lastmod>2024-01-03T12:33:47.257Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/java-%EC%A3%BC%EC%84%9D/</loc>
+        <lastmod>2024-01-03T12:33:47.257Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/JSP-%EC%A3%BC%EC%84%9D/</loc>
+        <lastmod>2024-01-03T12:33:47.257Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/org-apache-jasper-JasperException/</loc>
+        <lastmod>2024-01-03T12:33:47.257Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/jstl/</loc>
+        <lastmod>2024-01-03T12:33:47.257Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/jstl-%EC%A3%BC%EC%84%9D/</loc>
+        <lastmod>2024-01-03T12:33:47.257Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/HTML-%EC%A3%BC%EC%84%9D/</loc>
+        <lastmod>2024-01-03T12:33:47.257Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/if/</loc>
+        <lastmod>2024-01-03T12:18:21.565Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/jstl-if-else%EB%AC%B8/</loc>
+        <lastmod>2024-01-03T12:18:21.565Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/jstl-if-else/</loc>
+        <lastmod>2024-01-03T12:18:21.565Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/JSTL-if%EB%AC%B8/</loc>
+        <lastmod>2024-01-03T12:18:21.565Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/tags/JSTL-if/</loc>
+        <lastmod>2024-01-03T12:18:21.565Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://dullyshin.github.io/tags/MySQL%EA%B3%BC-PostgreSQL%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90/</loc>
-        <lastmod>2024-01-02T12:09:32.569Z</lastmod>
+        <lastmod>2024-01-02T12:16:00.233Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://dullyshin.github.io/tags/postgresql-mysql-%EC%B0%A8%EC%9D%B4%EC%A0%90/</loc>
-        <lastmod>2024-01-02T12:09:32.569Z</lastmod>
+        <lastmod>2024-01-02T12:16:00.233Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://dullyshin.github.io/tags/postgresql-vs-mysql/</loc>
-        <lastmod>2024-01-02T12:09:32.569Z</lastmod>
+        <lastmod>2024-01-02T12:16:00.233Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://dullyshin.github.io/tags/ostgresql-vs-mysql/</loc>
-        <lastmod>2024-01-02T12:09:32.569Z</lastmod>
+        <lastmod>2024-01-02T12:16:00.233Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://dullyshin.github.io/tags/PostgreSQL/</loc>
-        <lastmod>2024-01-02T12:09:32.569Z</lastmod>
+        <lastmod>2024-01-02T12:16:00.233Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://dullyshin.github.io/tags/PostgreSQL-Basic/</loc>
-        <lastmod>2024-01-02T12:09:32.569Z</lastmod>
+        <lastmod>2024-01-02T12:16:00.233Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://dullyshin.github.io/tags/SQL/</loc>
-        <lastmod>2024-01-02T12:09:32.569Z</lastmod>
+        <lastmod>2024-01-02T12:16:00.233Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -131,48 +215,6 @@
     <url>
         <loc>https://dullyshin.github.io/tags/error/</loc>
         <lastmod>2023-08-21T14:22:11.764Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/if/</loc>
-        <lastmod>2023-08-21T14:17:16.968Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/jstl/</loc>
-        <lastmod>2023-08-21T14:17:16.968Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/jstl-if-else%EB%AC%B8/</loc>
-        <lastmod>2023-08-21T14:17:16.968Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/jstl-if-else/</loc>
-        <lastmod>2023-08-21T14:17:16.968Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/JSTL-if%EB%AC%B8/</loc>
-        <lastmod>2023-08-21T14:17:16.968Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/JSTL-if/</loc>
-        <lastmod>2023-08-21T14:17:16.968Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -353,6 +395,13 @@
     </url>
 
     <url>
+        <loc>https://dullyshin.github.io/tags/my-sql/</loc>
+        <lastmod>2023-08-12T15:36:09.045Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://dullyshin.github.io/tags/sql-%EA%B8%B0%EB%B3%B8/</loc>
         <lastmod>2023-08-12T15:36:09.045Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -368,13 +417,6 @@
 
     <url>
         <loc>https://dullyshin.github.io/tags/sql/</loc>
-        <lastmod>2023-08-12T15:36:09.045Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/my-sql/</loc>
         <lastmod>2023-08-12T15:36:09.045Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -550,13 +592,6 @@
 
     <url>
         <loc>https://dullyshin.github.io/tags/HTML-%EC%A3%BC%EC%84%9D-%EC%82%AC%EC%9A%A9%EB%B2%95/</loc>
-        <lastmod>2021-10-25T12:05:12.914Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/tags/HTML-%EC%A3%BC%EC%84%9D/</loc>
         <lastmod>2021-10-25T12:05:12.914Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
