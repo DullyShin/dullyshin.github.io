@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://dullyshin.github.io/"/>
-  <updated>2024-01-03T12:33:47.257Z</updated>
+  <updated>2024-01-08T11:51:42.381Z</updated>
   <id>https://dullyshin.github.io/</id>
   
   <author>
@@ -15,6 +15,74 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HTML-블록과 인라인</title>
+    <link href="https://dullyshin.github.io/2024/01/08/HTML-BlockAndInline/"/>
+    <id>https://dullyshin.github.io/2024/01/08/HTML-BlockAndInline/</id>
+    <published>2024-01-08T11:32:06.000Z</published>
+    <updated>2024-01-08T11:51:42.381Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="HTML-블록과-인라인"><a href="#HTML-블록과-인라인" class="headerlink" title="HTML-블록과 인라인"></a>HTML-블록과 인라인</h2><p>HTML의 모든 요소는 해당 요소가 웹 브라우저에 어떻게 보이는가를 결정짓는 display 속성을 가집니다.</p><p>대부분의 HTML 요소는 이러한 display 속성값으로 다음 두 가지 값 중 하나를 가지게 됩니다.</p><blockquote><ol><li>블록(block)</li><li>인라인(inline)</li></ol></blockquote><p>블록은 새로운 라인에서 시작하고 모든 줄을 사용하고, 인라인은 내용만큼만 자리를 사용합니다.</p><h3 id="블록-block-타입의-요소"><a href="#블록-block-타입의-요소" class="headerlink" title="블록(block) 타입의 요소"></a>블록(block) 타입의 요소</h3><p>display 속성값이 블록(block)인 요소는 언제나 새로운 라인(line)에서 시작하며, 해당 라인의 모든 너비를 차지합니다.</p><p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="MWxyMaK" data-user="Dully-Dully" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/Dully-Dully/pen/MWxyMaK" target="_blank" rel="noopener">  Untitled</a> by Dully Dully (<a href="https://codepen.io/Dully-Dully" target="_blank" rel="noopener">@Dully-Dully</a>)  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script><blockquote><p><code>&lt;p&gt;</code>, <code>&lt;div&gt;</code>, <code>&lt;h&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;form&gt;</code> 요소는 display 속성값이 블록(block)인 대표적인 요소입니다.</p></blockquote><h3 id="lt-div-gt-요소"><a href="#lt-div-gt-요소" class="headerlink" title="&lt;div&gt;요소"></a><code>&lt;div&gt;</code>요소</h3><p><code>&lt;div&gt;</code>요소는 다른 HTML 요소들을 하나로 묶는 데 자주 사용되는 대표적인 블록(block) 요소입니다.</p><p><code>&lt;div&gt;</code>요소는 주로 여러 요소들의 스타일을 한 번에 적용하기 위해 사용됩니다.</p><p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="eYXZwZd" data-user="Dully-Dully" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/Dully-Dully/pen/eYXZwZd" target="_blank" rel="noopener">  block div tag</a> by Dully Dully (<a href="https://codepen.io/Dully-Dully" target="_blank" rel="noopener">@Dully-Dully</a>)  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script><h3 id="인라인-inline-타입의-요소"><a href="#인라인-inline-타입의-요소" class="headerlink" title="인라인(inline) 타입의 요소"></a>인라인(inline) 타입의 요소</h3><p>display 속성값이 인라인(inline)인 요소는 새로운 라인(line)에서 시작하지 않습니다.</p><p>또한, 요소의 너비도 해당 라인 전체가 아닌 해당 HTML 요소의 내용(content)만큼만 차지합니다.</p><p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="eYXZwdB" data-user="Dully-Dully" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/Dully-Dully/pen/eYXZwdB" target="_blank" rel="noopener">  Untitled</a> by Dully Dully (<a href="https://codepen.io/Dully-Dully" target="_blank" rel="noopener">@Dully-Dully</a>)  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script><blockquote><p><code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;img&gt;</code>요소는 display 속성값이 인라인(inline)인 대표적인 요소입니다.</p></blockquote><h3 id="lt-span-gt-요소"><a href="#lt-span-gt-요소" class="headerlink" title="&lt;span&gt;요소"></a><code>&lt;span&gt;</code>요소</h3><p><span>요소는 텍스트(text)의 특정 부분을 묶는 데 자주 사용되는 인라인(inline) 요소입니다.</span></p><p><span>요소는 주로 텍스트의 특정 부분에 따로 스타일을 적용하기 위해 사용됩니다.</span></p><p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="poYyXRg" data-user="Dully-Dully" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/Dully-Dully/pen/poYyXRg" target="_blank" rel="noopener">  inline span tag 2</a> by Dully Dully (<a href="https://codepen.io/Dully-Dully" target="_blank" rel="noopener">@Dully-Dully</a>)  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script><h4 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h4><ul><li><a href="https://tcpschool.com/html/html_space_blockInline" target="_blank" rel="noopener">Tcpschool</a></li></ul><h4 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h4><ul><li><a href="/2019/08/07/HTML-table/" title="HTML 간단하게 표 만들기">HTML 간단하게 표 만들기</a></li><li><a href="/2018/08/29/HTML-Editor/" title="HTML 에디터 (jsFiddle,메모장)">HTML 에디터 (jsFiddle,메모장)</a></li><li><a href="/2019/08/07/HTML-buttonLink/" title="HTML-버튼에 링크 거는 방법">HTML-버튼에 링크 거는 방법</a></li><li><a href="/2021/10/25/HTML-comment/" title="HTML - 주석 태그 <!-- -->">HTML - 주석 태그 <!-- --></a></li><li><a href="/2018/08/30/HTML-imgLink/" title="HTML 이미지 링크거는 법">HTML 이미지 링크거는 법</a></li><li><a href="/2018/08/27/HTML-MailtoTag/" title="Mailto 태그">Mailto 태그</a></li><li><a href="/2024/01/04/HTML-enter/" title="HTML 줄바꿈 입력하기">HTML 줄바꿈 입력하기</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;HTML-블록과-인라인&quot;&gt;&lt;a href=&quot;#HTML-블록과-인라인&quot; class=&quot;headerlink&quot; title=&quot;HTML-블록과 인라인&quot;&gt;&lt;/a&gt;HTML-블록과 인라인&lt;/h2&gt;&lt;p&gt;HTML의 모든 요소는 해당 요소가 웹 브라우저에 어떻
+      
+    
+    </summary>
+    
+      <category term="Programming" scheme="https://dullyshin.github.io/categories/Programming/"/>
+    
+      <category term="HTML" scheme="https://dullyshin.github.io/categories/Programming/HTML/"/>
+    
+    
+      <category term="HTML 블록과 인라인" scheme="https://dullyshin.github.io/tags/HTML-%EB%B8%94%EB%A1%9D%EA%B3%BC-%EC%9D%B8%EB%9D%BC%EC%9D%B8/"/>
+    
+      <category term="HTML span" scheme="https://dullyshin.github.io/tags/HTML-span/"/>
+    
+      <category term="HTML div" scheme="https://dullyshin.github.io/tags/HTML-div/"/>
+    
+      <category term="HTML 블록" scheme="https://dullyshin.github.io/tags/HTML-%EB%B8%94%EB%A1%9D/"/>
+    
+      <category term="HTML 인라인" scheme="https://dullyshin.github.io/tags/HTML-%EC%9D%B8%EB%9D%BC%EC%9D%B8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTML 줄바꿈 입력하기</title>
+    <link href="https://dullyshin.github.io/2024/01/04/HTML-enter/"/>
+    <id>https://dullyshin.github.io/2024/01/04/HTML-enter/</id>
+    <published>2024-01-04T11:32:16.000Z</published>
+    <updated>2024-01-08T11:32:53.228Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="HTML-줄바꿈-사용하기"><a href="#HTML-줄바꿈-사용하기" class="headerlink" title="HTML 줄바꿈 사용하기"></a>HTML 줄바꿈 사용하기</h1><p>HTML에서는 줄바꿈을 사용할때 태그를 이용하여 줄을 변경할 수 있습니다.</p><blockquote><p><code>&lt;br&gt;</code><br><code>&lt;p&gt;&lt;/p&gt;</code><br><code>&lt;pre&gt;&lt;/pre&gt;</code></p></blockquote><p>더 자세한 설명은 아래에서 확인 할 수 있습니다.</p><h2 id="lt-br-gt"><a href="#lt-br-gt" class="headerlink" title="&lt;br&gt;"></a><code>&lt;br&gt;</code></h2><p>br 태그는 ‘break’(휴식)의 약자로 단순히 HTML에서 줄바꿈을 할 때 사용됩니다.여러개의 <code>&lt;br&gt;</code> 태그를 입력하면 입력된 갯수만큼 줄바꿈이 실행되죠.다른 태그들과 달리 열고<code>&lt;br&gt;</code> 닫는<code>&lt;/br&gt;</code> 태그가 존재하지 않고 그냥 <code>&lt;br&gt;</code> 태그만 써 주어도 무방합니다.</p><p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="abMdVvq" data-user="Dully-Dully" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/Dully-Dully/pen/abMdVvq" target="_blank" rel="noopener">  HTML br tag</a> by Dully Dully (<a href="https://codepen.io/Dully-Dully" target="_blank" rel="noopener">@Dully-Dully</a>)  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script><p>문단 사이에 여백을 두기 위한  용도로 <br>을 사용하지 마세요. 대신 </p><p> 요소로 감싼 후 CSS의 margin 속성으로 여백의 크기를 조절하세요.</p><h2 id="lt-p-gt-lt-p-gt"><a href="#lt-p-gt-lt-p-gt" class="headerlink" title="&lt;p&gt;&lt;/p&gt;"></a><code>&lt;p&gt;&lt;/p&gt;</code></h2><p>p 태그는 ‘paragraph’(단락)의 약자로, html에서 문단을 표현 할 때 사용됩니다. <code>&lt;p&gt;</code>와  <code>&lt;/p&gt;</code> 태그로 내용을 감싸면, 내용의 위와 아래쪽에 일정 크기의 공백이 생깁니다.</p><p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="zYbrPrP" data-user="Dully-Dully" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/Dully-Dully/pen/zYbrPrP" target="_blank" rel="noopener">  HTML p tag</a> by Dully Dully (<a href="https://codepen.io/Dully-Dully" target="_blank" rel="noopener">@Dully-Dully</a>)  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script><p>이것은 </p><p>와 </p> 태그 위와 아래쪽에 일정 크기의 공백이 생긴 것으로이 공백의 크기는 css의 margin 속성을 이용하여 조정할 수도 있습니다.<p></p><h2 id="lt-pre-gt-lt-pre-gt"><a href="#lt-pre-gt-lt-pre-gt" class="headerlink" title="&lt;pre&gt;&lt;/pre&gt;"></a><code>&lt;pre&gt;&lt;/pre&gt;</code></h2><p>pre는 ‘preformatted’(먼저 포멧 된) 약자로, <code>&lt;pre&gt;&lt;/pre&gt;</code> 태그 내에 있는 엔터와 스페이스가 그대로 웹 브라우저에 적용되어 보여지게 됩니다.</p><p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="poYgdyN" data-user="Dully-Dully" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/Dully-Dully/pen/poYgdyN" target="_blank" rel="noopener">  HTML pre tag</a> by Dully Dully (<a href="https://codepen.io/Dully-Dully" target="_blank" rel="noopener">@Dully-Dully</a>)  on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script><p>위의 예에서 <code>&lt;pre&gt;&lt;/pre&gt;</code> 태그 안에서는 <code>&lt;p&gt;</code>태그나 <code>&lt;br&gt;</code>, <code>&amp;nbsp;</code> 태그를 사용하지 않아도 공백과 줄바꿈이 태그 안에 입력된 대로 적용되는 것을 볼 수 있습니다.이 태그는 보통 컴퓨터 소스 코드와 같은 특별한 내용을 표현하기 위해서 종종 사용됩니다.</p><h4 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h4><ul><li><a href="https://hianna.tistory.com/300" target="_blank" rel="noopener">어제 오늘 내일:티스토리</a></li><li><a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/br" target="_blank" rel="noopener">Mozilla</a></li></ul><h4 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h4><ul><li><a href="/2019/08/07/HTML-table/" title="HTML 간단하게 표 만들기">HTML 간단하게 표 만들기</a></li><li><a href="/2018/08/29/HTML-Editor/" title="HTML 에디터 (jsFiddle,메모장)">HTML 에디터 (jsFiddle,메모장)</a></li><li><a href="/2019/08/07/HTML-buttonLink/" title="HTML-버튼에 링크 거는 방법">HTML-버튼에 링크 거는 방법</a></li><li><a href="/2021/10/25/HTML-comment/" title="HTML - 주석 태그 <!-- -->">HTML - 주석 태그 <!-- --></a></li><li><a href="/2018/08/30/HTML-imgLink/" title="HTML 이미지 링크거는 법">HTML 이미지 링크거는 법</a></li><li><a href="/2018/08/27/HTML-MailtoTag/" title="Mailto 태그">Mailto 태그</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;HTML-줄바꿈-사용하기&quot;&gt;&lt;a href=&quot;#HTML-줄바꿈-사용하기&quot; class=&quot;headerlink&quot; title=&quot;HTML 줄바꿈 사용하기&quot;&gt;&lt;/a&gt;HTML 줄바꿈 사용하기&lt;/h1&gt;&lt;p&gt;HTML에서는 줄바꿈을 사용할때 태그를 이용하여
+      
+    
+    </summary>
+    
+      <category term="Programming" scheme="https://dullyshin.github.io/categories/Programming/"/>
+    
+      <category term="HTML" scheme="https://dullyshin.github.io/categories/Programming/HTML/"/>
+    
+    
+      <category term="HTML 줄바꿈" scheme="https://dullyshin.github.io/tags/HTML-%EC%A4%84%EB%B0%94%EA%BF%88/"/>
+    
+      <category term="HTML br" scheme="https://dullyshin.github.io/tags/HTML-br/"/>
+    
+      <category term="HTML p" scheme="https://dullyshin.github.io/tags/HTML-p/"/>
+    
+      <category term="HTML pre" scheme="https://dullyshin.github.io/tags/HTML-pre/"/>
+    
+  </entry>
   
   <entry>
     <title>JSTL-HTML안에서 IF문을 사용하고 싶을때</title>
@@ -41,9 +109,9 @@
     
       <category term="HTML 주석" scheme="https://dullyshin.github.io/tags/HTML-%EC%A3%BC%EC%84%9D/"/>
     
-      <category term="jstl 주석" scheme="https://dullyshin.github.io/tags/jstl-%EC%A3%BC%EC%84%9D/"/>
-    
       <category term="jstl" scheme="https://dullyshin.github.io/tags/jstl/"/>
+    
+      <category term="jstl 주석" scheme="https://dullyshin.github.io/tags/jstl-%EC%A3%BC%EC%84%9D/"/>
     
       <category term="org.apache.jasper.JasperException" scheme="https://dullyshin.github.io/tags/org-apache-jasper-JasperException/"/>
     
@@ -78,8 +146,6 @@
       <category term="JSTL" scheme="https://dullyshin.github.io/categories/Programming/JSTL/"/>
     
     
-      <category term="jstl" scheme="https://dullyshin.github.io/tags/jstl/"/>
-    
       <category term="JSTL if" scheme="https://dullyshin.github.io/tags/JSTL-if/"/>
     
       <category term="JSTL if문" scheme="https://dullyshin.github.io/tags/JSTL-if%EB%AC%B8/"/>
@@ -87,6 +153,8 @@
       <category term="jstl if else" scheme="https://dullyshin.github.io/tags/jstl-if-else/"/>
     
       <category term="jstl if else문" scheme="https://dullyshin.github.io/tags/jstl-if-else%EB%AC%B8/"/>
+    
+      <category term="jstl" scheme="https://dullyshin.github.io/tags/jstl/"/>
     
       <category term="if" scheme="https://dullyshin.github.io/tags/if/"/>
     
@@ -727,80 +795,6 @@
       <category term="자바 문제" scheme="https://dullyshin.github.io/tags/%EC%9E%90%EB%B0%94-%EB%AC%B8%EC%A0%9C/"/>
     
       <category term="자바 입력" scheme="https://dullyshin.github.io/tags/%EC%9E%90%EB%B0%94-%EC%9E%85%EB%A0%A5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>[Java1000제] Word Scramble</title>
-    <link href="https://dullyshin.github.io/2019/12/24/Java-ScrambleWord/"/>
-    <id>https://dullyshin.github.io/2019/12/24/Java-ScrambleWord/</id>
-    <published>2019-12-24T02:07:07.000Z</published>
-    <updated>2020-01-02T05:41:25.635Z</updated>
-    
-    <content type="html"><![CDATA[<p>[Java 1000제] Word Scramble 단어 맞추기</p><p>자바 공부의 필요성을 절실하게 느끼고 있는 요즘입니다… 저는 자바 스크립트가 더 편하게 느껴져서 자바를 소홀하게 대했습니다.. ㅠㅠ<br>이제라도 하나씩 공부해 나가겠습니다!</p><iframe src="https://giphy.com/embed/XKwWJQuBJTT8Y" width="480" height="346" frameborder="0" class="giphy-embed" allowfullscreen></iframe><p><a href="https://giphy.com/gifs/kids-fighting-exercise-XKwWJQuBJTT8ㅛ" target="_blank" rel="noopener">via GIPHY</a></p><p>문제는 남궁성의 코드초보스터디에서 가져온 문제입니다. 혹시 문제된다면 삭제할테니 알려주세요.</p><h2 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h2><p>getAnswer(String[] strArr)는 배열strArr의 요소중의 하나를 임의로 골라서 반환한다.(Math.random()사용)</p><p>getScrambledWord(String str)는 주어진 문자열 str의 각 문자의 순서를 뒤섞은 다음, 새로운 문자열로 반환한다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">WordScrambleEx1</span> </span>&#123;</span><br><span class="line">      <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">            String[] strArr = &#123; <span class="string">"CHANGE"</span>, <span class="string">"LOVE"</span>, <span class="string">"HOPE"</span>, <span class="string">"VIEW"</span>&#125;;</span><br><span class="line"></span><br><span class="line">            String answer = getAnswer(strArr);</span><br><span class="line">            String question = getScrambledWord(answer);</span><br><span class="line"></span><br><span class="line">            System.out.println(<span class="string">"Question:"</span>+question);</span><br><span class="line">            System.out.println(<span class="string">"Answer:"</span>+answer);</span><br><span class="line">      &#125; <span class="comment">// main</span></span><br><span class="line"></span><br><span class="line">      <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">getAnswer</span><span class="params">(String[] strArr)</span> </span>&#123;</span><br><span class="line">      <span class="comment">// 내용을 완성하세요.</span></span><br><span class="line"></span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">getScrambledWord</span><span class="params">(String str)</span> </span>&#123;</span><br><span class="line">            <span class="comment">// 내용을 완성하세요.</span></span><br><span class="line"></span><br><span class="line">      &#125; <span class="comment">// scramble(String str)</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[실행결과]</span><br><span class="line">Question:HEPO</span><br><span class="line">Answer:HOPE</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>랜덤으로 값을 선정하기때문에 결과가 다를 수 있습니다.</p><hr><h2 id="문제-풀이"><a href="#문제-풀이" class="headerlink" title="문제 풀이"></a>문제 풀이</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">WordScrambleEx1</span> </span>&#123;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        String[] strArr = &#123; <span class="string">"CHANGE"</span>, <span class="string">"LOVE"</span>, <span class="string">"HOPE"</span>, <span class="string">"VIEW"</span>&#125;;</span><br><span class="line"></span><br><span class="line">        String answer = getAnswer(strArr);</span><br><span class="line">        String question = getScrambledWord(answer);</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">"Question:"</span>+question);</span><br><span class="line">        System.out.println(<span class="string">"Answer:"</span>+answer);</span><br><span class="line">&#125; <span class="comment">// main</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//문제의 답을 랜덤하게 선정하는 함수</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">getAnswer</span><span class="params">(String[] strArr)</span> </span>&#123;</span><br><span class="line">Random ran = <span class="keyword">new</span> Random();</span><br><span class="line">String answer = strArr[ran.nextInt(strArr.length -<span class="number">1</span>)+<span class="number">1</span>];</span><br><span class="line"><span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//답의 단어를 섞는 함수</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">getScrambledWord</span><span class="params">(String str)</span> </span>&#123;</span><br><span class="line">        List&lt;Character&gt; characters = <span class="keyword">new</span> ArrayList&lt;Character&gt;();</span><br><span class="line"></span><br><span class="line"><span class="comment">//문자 하나씩 배열에 넣음</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">char</span> c : str.toCharArray()) &#123;</span><br><span class="line">        characters.add(c);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        StringBuilder output = <span class="keyword">new</span> StringBuilder(str.length());</span><br><span class="line"></span><br><span class="line">        <span class="comment">//output에 랜덤하게 append 한다</span></span><br><span class="line">        <span class="keyword">while</span>(characters.size() != <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">int</span> randPicker = (<span class="keyword">int</span>)(Math.random()*characters.size());</span><br><span class="line">        output.append(characters.remove(randPicker));</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> output.toString();</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>저는 위와 같이 해답을 생각했었습니다.<br>하지만 남궁성님은 getScrambledWord 함수를 아래와 같이 만들었습니다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">getScrambledWord</span><span class="params">(String str)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">char</span>[] chArr = str.toCharArray();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;str.length();i++) &#123;</span><br><span class="line"><span class="keyword">int</span> idx = (<span class="keyword">int</span>)(Math.random()*str.length());</span><br><span class="line"></span><br><span class="line"><span class="comment">//tmp에 임시로 값을 지정한 후에</span></span><br><span class="line">        <span class="keyword">char</span> tmp = chArr[i];</span><br><span class="line"></span><br><span class="line">        <span class="comment">//값을 섞어 사용합니다.</span></span><br><span class="line">        chArr[i] = chArr[idx];</span><br><span class="line">        chArr[idx] = tmp;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> <span class="keyword">new</span> String(chArr);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>제가 생각했을때는 제가 생각한 해결책보다 간단하게 접근하시고, 더 쉽게 만들어진 것 같습니다.<br>저도 for문을 알고 있었는데 너무 어렵게 접근한것 같아요…</p><h4 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h4><ul><li><a href="https://cafe.naver.com/javachobostudy" target="_blank" rel="noopener">https://cafe.naver.com/javachobostudy</a></li></ul><h4 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h4><ul><li><a href="/2019/12/23/Java-divisor/" title="Java-약수 구하기">Java-약수 구하기</a></li><li><a href="/2019/08/08/JavaScript-array/" title="JavaScript-array">JavaScript-array</a></li><li><a href="/2019/12/24/Java-ScrambleWord2/" title="[Java1000제] Word Scramble2">[Java1000제] Word Scramble2</a></li><li><a href="/2019/12/26/Java-ScrambleWord3/" title="[Java1000제] Word Scramble3">[Java1000제] Word Scramble3</a></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;[Java 1000제] Word Scramble 단어 맞추기&lt;/p&gt;
-&lt;p&gt;자바 공부의 필요성을 절실하게 느끼고 있는 요즘입니다… 저는 자바 스크립트가 더 편하게 느껴져서 자바를 소홀하게 대했습니다.. ㅠㅠ&lt;br&gt;이제라도 하나씩 공부해 나가겠습니다
-      
-    
-    </summary>
-    
-      <category term="Programming" scheme="https://dullyshin.github.io/categories/Programming/"/>
-    
-      <category term="JAVA" scheme="https://dullyshin.github.io/categories/Programming/JAVA/"/>
-    
-    
-      <category term="자바 문제풀이" scheme="https://dullyshin.github.io/tags/%EC%9E%90%EB%B0%94-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/"/>
-    
-      <category term="자바 기초" scheme="https://dullyshin.github.io/tags/%EC%9E%90%EB%B0%94-%EA%B8%B0%EC%B4%88/"/>
-    
-      <category term="자바 문제" scheme="https://dullyshin.github.io/tags/%EC%9E%90%EB%B0%94-%EB%AC%B8%EC%A0%9C/"/>
-    
-      <category term="자바 랜덤" scheme="https://dullyshin.github.io/tags/%EC%9E%90%EB%B0%94-%EB%9E%9C%EB%8D%A4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java-약수 구하기</title>
-    <link href="https://dullyshin.github.io/2019/12/23/Java-divisor/"/>
-    <id>https://dullyshin.github.io/2019/12/23/Java-divisor/</id>
-    <published>2019-12-23T07:54:59.000Z</published>
-    <updated>2020-01-02T05:55:30.945Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="자바-약수-구하기"><a href="#자바-약수-구하기" class="headerlink" title="자바 약수 구하기"></a>자바 약수 구하기</h2><p>프로그래머스 스킬체크 테스트 LEVEL.1</p><p>정수 n을 입력받아 n의 약수를 모두 더한 값을 리턴하는 함수, solution을 완성해주세요.</p><p>제한 사항</p><ul><li>n은 0 이상 3000이하인 정수입니다.</li></ul><h4 id="입출력-예"><a href="#입출력-예" class="headerlink" title="입출력 예"></a>입출력 예</h4><table><thead><tr><th>n</th><th>return</th></tr></thead><tbody><tr><td>12</td><td>28</td></tr><tr><td>5</td><td>6</td></tr></tbody></table><h4 id="입출력-예-설명"><a href="#입출력-예-설명" class="headerlink" title="입출력 예 설명"></a>입출력 예 설명</h4><ul><li><p>입출력 예 #1<br>12의 약수는 1, 2, 3, 4, 6, 12입니다. 이를 모두 더하면 28입니다.</p></li><li><p>입출력 예 #2<br>5의 약수는 1, 5입니다. 이를 모두 더하면 6입니다.</p></li></ul><h2 id="문제풀이"><a href="#문제풀이" class="headerlink" title="문제풀이"></a>문제풀이</h2><p>for 문을 사용하여 약수를 찾고 문제의 답을 계속 더해나가면 되겠다고 생각했습니다.<br>(약수는 <code>%</code>로 나누었을때 <code>0</code>으로 결과가 나옵니다. 약수는 0보다 큰 수 입니다.)</p><p>위의 생각을 조합하여 아래의 함수를 완성하였습니다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">solution</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">      <span class="keyword">int</span> answer = <span class="number">0</span>;</span><br><span class="line">      <span class="keyword">int</span> divisor; <span class="comment">//약수</span></span><br><span class="line"></span><br><span class="line">      <span class="comment">//약수 구하기</span></span><br><span class="line">      <span class="keyword">for</span>(divisor = <span class="number">1</span>; divisor &lt;= n ; divisor++)&#123;</span><br><span class="line">        <span class="comment">//나눈 값이 0이면 약수</span></span><br><span class="line">          <span class="keyword">if</span>((n % divisor) == <span class="number">0</span>)&#123;</span><br><span class="line">              answer = answer + divisor;</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">return</span> answer;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>위와 같은 방법이 아닌 좀 더 나은 방법이 있다면 공유 부탁드립니다.</p><h4 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h4><ul><li><a href="https://programmers.co.kr/skill_checks/80316" target="_blank" rel="noopener">https://programmers.co.kr/skill_checks/80316</a></li></ul><h4 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h4><ul><li><a href="/2019/08/08/JavaScript-array/" title="JavaScript-array">JavaScript-array</a></li><li><a href="/2019/02/25/JavaScript-TernaryOperator/" title="(JavaScript) 삼항 연산자 Ternary Operator">(JavaScript) 삼항 연산자 Ternary Operator</a></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;자바-약수-구하기&quot;&gt;&lt;a href=&quot;#자바-약수-구하기&quot; class=&quot;headerlink&quot; title=&quot;자바 약수 구하기&quot;&gt;&lt;/a&gt;자바 약수 구하기&lt;/h2&gt;&lt;p&gt;프로그래머스 스킬체크 테스트 LEVEL.1&lt;/p&gt;
-&lt;p&gt;정수 n을 입력받아 
-      
-    
-    </summary>
-    
-      <category term="Programming" scheme="https://dullyshin.github.io/categories/Programming/"/>
-    
-      <category term="JAVA" scheme="https://dullyshin.github.io/categories/Programming/JAVA/"/>
-    
-    
-      <category term="자바 문제풀이" scheme="https://dullyshin.github.io/tags/%EC%9E%90%EB%B0%94-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/"/>
-    
-      <category term="자바 기초" scheme="https://dullyshin.github.io/tags/%EC%9E%90%EB%B0%94-%EA%B8%B0%EC%B4%88/"/>
-    
-      <category term="자바 문제" scheme="https://dullyshin.github.io/tags/%EC%9E%90%EB%B0%94-%EB%AC%B8%EC%A0%9C/"/>
-    
-      <category term="java 약수 구하기" scheme="https://dullyshin.github.io/tags/java-%EC%95%BD%EC%88%98-%EA%B5%AC%ED%95%98%EA%B8%B0/"/>
-    
-      <category term="약수" scheme="https://dullyshin.github.io/tags/%EC%95%BD%EC%88%98/"/>
-    
-      <category term="자바 약수" scheme="https://dullyshin.github.io/tags/%EC%9E%90%EB%B0%94-%EC%95%BD%EC%88%98/"/>
-    
-      <category term="프로그래머스 문제" scheme="https://dullyshin.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EB%AC%B8%EC%A0%9C/"/>
     
   </entry>
   

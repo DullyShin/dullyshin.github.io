@@ -8,14 +8,21 @@
     </url>
 
     <url>
-        <loc>https://dullyshin.github.io/categories/Programming/JSTL/</loc>
-        <lastmod>2024-01-03T12:33:47.257Z</lastmod>
+        <loc>https://dullyshin.github.io/categories/Programming/HTML/</loc>
+        <lastmod>2024-01-08T11:51:42.381Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://dullyshin.github.io/categories/Programming/</loc>
+        <lastmod>2024-01-08T11:51:42.381Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dullyshin.github.io/categories/Programming/JSTL/</loc>
         <lastmod>2024-01-03T12:33:47.257Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -45,13 +52,6 @@
     <url>
         <loc>https://dullyshin.github.io/categories/Programming/Echarts/</loc>
         <lastmod>2023-08-21T14:15:22.586Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dullyshin.github.io/categories/Programming/HTML/</loc>
-        <lastmod>2023-08-12T15:34:01.480Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
