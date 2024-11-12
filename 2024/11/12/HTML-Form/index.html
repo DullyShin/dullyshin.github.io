@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html>
+
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+
+  
+
+    
+      <title>
+        
+          HTML 폼의 기본 구조 |
+            
+              Geek Coading
+      </title>
+      
+          <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+          
+            <meta name="keywords" content="HTML 폼의 기본 구조,다양한 폼 요소들,input,textarea,select,button">
+            
+              <meta name="description" content="HTML 폼(Form) 요소는 웹 애플리케이션에서 사용자와 상호작용할 수 있는 중요한 부분입니다. HTML 폼을 사용하면 사용자가 정보를 입력하고, 서버로 전송하거나 다른 방식으로 데이터를 처리할 수 있습니다. 다양한 폼 요소와 속성들이 제공되어 웹 폼을 매우 유연하고 효율적으로 만들 수 있습니다. 이 글에서는 HTML 폼 요소의 기본부터 고급 기능까지 깊">
+<meta name="keywords" content="HTML 폼의 기본 구조,다양한 폼 요소들,input,textarea,select,button">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML 폼의 기본 구조">
+<meta property="og:url" content="https://dullyshin.github.io/2024/11/12/HTML-Form/index.html">
+<meta property="og:site_name" content="Geek Coading">
+<meta property="og:description" content="HTML 폼(Form) 요소는 웹 애플리케이션에서 사용자와 상호작용할 수 있는 중요한 부분입니다. HTML 폼을 사용하면 사용자가 정보를 입력하고, 서버로 전송하거나 다른 방식으로 데이터를 처리할 수 있습니다. 다양한 폼 요소와 속성들이 제공되어 웹 폼을 매우 유연하고 효율적으로 만들 수 있습니다. 이 글에서는 HTML 폼 요소의 기본부터 고급 기능까지 깊">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://dullyshin.github.io/images/HTML.PNG">
+<meta property="og:updated_time" content="2024-11-12T03:01:36.745Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTML 폼의 기본 구조">
+<meta name="twitter:description" content="HTML 폼(Form) 요소는 웹 애플리케이션에서 사용자와 상호작용할 수 있는 중요한 부분입니다. HTML 폼을 사용하면 사용자가 정보를 입력하고, 서버로 전송하거나 다른 방식으로 데이터를 처리할 수 있습니다. 다양한 폼 요소와 속성들이 제공되어 웹 폼을 매우 유연하고 효율적으로 만들 수 있습니다. 이 글에서는 HTML 폼 요소의 기본부터 고급 기능까지 깊">
+<meta name="twitter:image" content="https://dullyshin.github.io/images/HTML.PNG">
+                
+                  <link rel="canonical" href="https://dullyshin.github.io/2024/11/12/html-form/">
+                    
+
+                        
+                          <link rel="icon" href="/like.png">
+                          
+
+                            <meta property="og:type" content="website">
+                            <meta property="og:title" content="Hyejin Shin">
+                            <meta property="og:description" content="Hyejin IT blog">
+                            <meta property="og:image" content="images/logo-header.png">
+                            <meta property="og:url" content="https://dullyshin.github.io/">
+
+                            <!-- naver-site-verification -->
+                            <meta name="naver-site-verification" content="f7ff6e0a4a618ed07a18908eb35d85df4b752ab6">
+
+
+                            <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+							<link rel="stylesheet" href="/libs/titillium-web/styles.css">
+							<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+							<link rel="stylesheet" href="/css/style.css">
+
+							<script src="/libs/jquery/3.3.1/jquery.min.js"></script>
+							<script src="/libs/echarts.min.js"></script>
+							
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+        <script type="text/javascript">
+(function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-124602183-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+    
+    
+
+
+							
+							<!-- 나눔고딕 폰트 주석처리-->
+								
+							
+							
+							
+							
+							<!-- robot 폰트 -->
+							<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+							<!-- 스포카 한 산스 폰트 -->
+							<link rel="stylesheet" href="/libs/spoqa-han-sans/styles.css">
+
+							
+							<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+KR|Noto+Serif+SC&display=swap">
+							
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J7ETGRX1JH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J7ETGRX1JH');
+</script></html>
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">IT blog / Thanks to everyone!</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">Home</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Eclipse/">Eclipse</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Hexo/">Hexo</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Programming/">Programming</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Programming/Echarts/">Echarts</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Programming/Github/">Github</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Programming/HTML/">HTML</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Programming/JAVA/">JAVA</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Programming/JSTL/">JSTL</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Programming/JavaScript/">JavaScript</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Programming/SQL/">SQL</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Programming/Spring-Framework/">Spring Framework</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Programming/Web/">Web</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Programming/jQuery/">jQuery</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Review/">Review</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Windows/">Windows</a></li></ul>
+                                    
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/Programming/HTML/">HTML</a>
+    </h1>
+</div>
+                        <div class="main-body-content">
+							
+							<!-- ad start -->
+							<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-9342495295140046"
+     data-ad-slot="6306843775"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+							<!-- ad end -->
+							
+                            <article id="post-HTML-Form" class="article article-single article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+    
+        <h1 class="article-title" itemprop="name">
+        HTML 폼의 기본 구조
+        </h1>
+    
+
+
+      </header>
+	
+	
+		<div class="article-meta">
+			
+    <div class="article-date">
+        <a href="/2024/11/12/HTML-Form/" class="article-date">
+            <time datetime="2024-11-12T02:58:09.000Z" itemprop="datePublished">2024-11-12</time>
+        </a>
+    </div>
+
+			
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/HTML-폼의-기본-구조/">HTML 폼의 기본 구조</a>, <a class="tag-link" href="/tags/button/">button</a>, <a class="tag-link" href="/tags/input/">input</a>, <a class="tag-link" href="/tags/select/">select</a>, <a class="tag-link" href="/tags/textarea/">textarea</a>, <a class="tag-link" href="/tags/다양한-폼-요소들/">다양한 폼 요소들</a>
+    </div>
+
+		</div>
+	
+	
+	<div class="article-entry" itemprop="articleBody">
+		<p>HTML 폼(Form) 요소는 웹 애플리케이션에서 사용자와 상호작용할 수 있는 중요한 부분입니다. HTML 폼을 사용하면 사용자가 정보를 입력하고, 서버로 전송하거나 다른 방식으로 데이터를 처리할 수 있습니다. 다양한 폼 요소와 속성들이 제공되어 웹 폼을 매우 유연하고 효율적으로 만들 수 있습니다. 이 글에서는 HTML 폼 요소의 기본부터 고급 기능까지 깊이 파헤쳐 보겠습니다.</p>
+<hr>
+<h2 id="HTML-폼-Form-요소-깊이-파헤치기"><a href="#HTML-폼-Form-요소-깊이-파헤치기" class="headerlink" title="HTML 폼(Form) 요소 깊이 파헤치기"></a>HTML 폼(Form) 요소 깊이 파헤치기</h2><p>HTML 폼은 웹 페이지에서 사용자로부터 데이터를 입력받을 수 있는 핵심 요소입니다. 기본적인 텍스트 입력부터 파일 업로드, 날짜 선택, 심지어 사용자 인증까지 다양한 기능을 제공합니다. 이번 블로그 글에서는 HTML 폼 요소의 다양한 종류와 그 활용법을 자세히 알아보겠습니다.</p>
+<h3 id="1-HTML-폼의-기본-구조"><a href="#1-HTML-폼의-기본-구조" class="headerlink" title="1. HTML 폼의 기본 구조"></a>1. <strong>HTML 폼의 기본 구조</strong></h3><p>HTML 폼은 기본적으로 <code>&lt;form&gt;</code> 태그를 사용하여 구성됩니다. 폼 안에는 다양한 입력 요소들이 포함되며, 이들 요소는 데이터를 입력받는 필드 역할을 합니다. HTML 폼의 구조는 아래와 같습니다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">"/submit"</span> <span class="attr">method</span>=<span class="string">"POST"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"username"</span>&gt;</span>사용자 이름:<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"username"</span> <span class="attr">name</span>=<span class="string">"username"</span>&gt;</span></span><br><span class="line">  </span><br><span class="line">  <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"email"</span>&gt;</span>이메일:<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"email"</span> <span class="attr">id</span>=<span class="string">"email"</span> <span class="attr">name</span>=<span class="string">"email"</span>&gt;</span></span><br><span class="line">  </span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">value</span>=<span class="string">"제출"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong><code>&lt;form&gt;</code></strong>: 폼을 정의하는 태그입니다. <code>action</code> 속성은 데이터를 전송할 URL을 지정하고, <code>method</code> 속성은 데이터 전송 방법(GET 또는 POST)을 지정합니다.</li>
+<li><strong><code>&lt;label&gt;</code></strong>: 폼 요소에 대한 레이블을 정의합니다. 사용자가 필드를 이해하는 데 도움이 됩니다.</li>
+<li><strong><code>&lt;input&gt;</code></strong>: 실제 데이터를 입력하는 필드입니다. 다양한 타입을 지정할 수 있습니다.</li>
+<li><strong><code>&lt;submit&gt;</code></strong>: 폼을 제출하는 버튼입니다.</li>
+</ul>
+<h3 id="2-주요-폼-입력-요소들"><a href="#2-주요-폼-입력-요소들" class="headerlink" title="2. 주요 폼 입력 요소들"></a>2. <strong>주요 폼 입력 요소들</strong></h3><h4 id="2-1-텍스트-입력-필드-lt-input-type-quot-text-quot-gt"><a href="#2-1-텍스트-입력-필드-lt-input-type-quot-text-quot-gt" class="headerlink" title="2.1. 텍스트 입력 필드 (&lt;input type=&quot;text&quot;&gt;)"></a><strong>2.1. 텍스트 입력 필드 (<code>&lt;input type=&quot;text&quot;&gt;</code>)</strong></h4><p>텍스트 필드는 가장 기본적인 입력 요소입니다. 사용자가 텍스트를 입력할 수 있는 필드를 생성합니다. <code>name</code> 속성은 서버로 전송되는 데이터의 이름을 지정합니다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"username"</span>&gt;</span>사용자 이름:<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"username"</span> <span class="attr">name</span>=<span class="string">"username"</span> <span class="attr">required</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>required</code>: 이 필드는 반드시 입력해야 한다는 의미입니다.</li>
+<li><code>placeholder</code>: 필드가 비어 있을 때 표시되는 안내 텍스트입니다.</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"username"</span> <span class="attr">placeholder</span>=<span class="string">"사용자 이름을 입력하세요"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-2-이메일-입력-필드-lt-input-type-quot-email-quot-gt"><a href="#2-2-이메일-입력-필드-lt-input-type-quot-email-quot-gt" class="headerlink" title="2.2. 이메일 입력 필드 (&lt;input type=&quot;email&quot;&gt;)"></a><strong>2.2. 이메일 입력 필드 (<code>&lt;input type=&quot;email&quot;&gt;</code>)</strong></h4><p>이메일 주소를 입력 받는 필드로, 브라우저는 이메일 형식을 검증하고 올바른 형식이 아닐 경우 경고를 표시합니다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"email"</span>&gt;</span>이메일:<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"email"</span> <span class="attr">id</span>=<span class="string">"email"</span> <span class="attr">name</span>=<span class="string">"email"</span> <span class="attr">required</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-3-비밀번호-입력-필드-lt-input-type-quot-password-quot-gt"><a href="#2-3-비밀번호-입력-필드-lt-input-type-quot-password-quot-gt" class="headerlink" title="2.3. 비밀번호 입력 필드 (&lt;input type=&quot;password&quot;&gt;)"></a><strong>2.3. 비밀번호 입력 필드 (<code>&lt;input type=&quot;password&quot;&gt;</code>)</strong></h4><p>비밀번호를 입력 받을 때는 텍스트를 가리는 <code>password</code> 타입을 사용합니다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"password"</span>&gt;</span>비밀번호:<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"password"</span> <span class="attr">id</span>=<span class="string">"password"</span> <span class="attr">name</span>=<span class="string">"password"</span> <span class="attr">required</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-4-라디오-버튼-lt-input-type-quot-radio-quot-gt"><a href="#2-4-라디오-버튼-lt-input-type-quot-radio-quot-gt" class="headerlink" title="2.4. 라디오 버튼 (&lt;input type=&quot;radio&quot;&gt;)"></a><strong>2.4. 라디오 버튼 (<code>&lt;input type=&quot;radio&quot;&gt;</code>)</strong></h4><p>라디오 버튼은 사용자가 여러 옵션 중 하나를 선택할 수 있게 해 줍니다. <code>name</code> 속성을 동일하게 설정하여 그룹화할 수 있습니다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"male"</span>&gt;</span>남성<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"radio"</span> <span class="attr">id</span>=<span class="string">"male"</span> <span class="attr">name</span>=<span class="string">"gender"</span> <span class="attr">value</span>=<span class="string">"male"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"female"</span>&gt;</span>여성<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"radio"</span> <span class="attr">id</span>=<span class="string">"female"</span> <span class="attr">name</span>=<span class="string">"gender"</span> <span class="attr">value</span>=<span class="string">"female"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-5-체크박스-lt-input-type-quot-checkbox-quot-gt"><a href="#2-5-체크박스-lt-input-type-quot-checkbox-quot-gt" class="headerlink" title="2.5. 체크박스 (&lt;input type=&quot;checkbox&quot;&gt;)"></a><strong>2.5. 체크박스 (<code>&lt;input type=&quot;checkbox&quot;&gt;</code>)</strong></h4><p>체크박스는 여러 개의 옵션 중에서 여러 개를 선택할 수 있게 해 줍니다. 여러 개의 체크박스를 그룹으로 묶을 수 있습니다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"subscribe"</span>&gt;</span>뉴스레터 구독<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">id</span>=<span class="string">"subscribe"</span> <span class="attr">name</span>=<span class="string">"subscribe"</span> <span class="attr">value</span>=<span class="string">"yes"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-6-셀렉트-박스-lt-select-gt-와-lt-option-gt"><a href="#2-6-셀렉트-박스-lt-select-gt-와-lt-option-gt" class="headerlink" title="2.6. 셀렉트 박스 (&lt;select&gt;와 &lt;option&gt;)"></a><strong>2.6. 셀렉트 박스 (<code>&lt;select&gt;</code>와 <code>&lt;option&gt;</code>)</strong></h4><p>셀렉트 박스는 드롭다운 목록을 표시할 때 사용됩니다. 사용자가 선택할 수 있는 여러 옵션을 제공합니다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"country"</span>&gt;</span>국가:<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">"country"</span> <span class="attr">name</span>=<span class="string">"country"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"kr"</span>&gt;</span>대한민국<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"us"</span>&gt;</span>미국<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"jp"</span>&gt;</span>일본<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-7-텍스트-영역-lt-textarea-gt"><a href="#2-7-텍스트-영역-lt-textarea-gt" class="headerlink" title="2.7. 텍스트 영역 (&lt;textarea&gt;)"></a><strong>2.7. 텍스트 영역 (<code>&lt;textarea&gt;</code>)</strong></h4><p><code>&lt;textarea&gt;</code>는 여러 줄로 이루어진 텍스트 입력 필드로, 긴 텍스트나 메모를 입력받을 때 사용됩니다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"message"</span>&gt;</span>메시지:<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">textarea</span> <span class="attr">id</span>=<span class="string">"message"</span> <span class="attr">name</span>=<span class="string">"message"</span> <span class="attr">rows</span>=<span class="string">"4"</span> <span class="attr">cols</span>=<span class="string">"50"</span> <span class="attr">required</span>&gt;</span><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-8-파일-업로드-lt-input-type-quot-file-quot-gt"><a href="#2-8-파일-업로드-lt-input-type-quot-file-quot-gt" class="headerlink" title="2.8. 파일 업로드 (&lt;input type=&quot;file&quot;&gt;)"></a><strong>2.8. 파일 업로드 (<code>&lt;input type=&quot;file&quot;&gt;</code>)</strong></h4><p>파일 업로드 필드는 사용자가 파일을 선택할 수 있게 해줍니다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"file"</span>&gt;</span>파일 업로드:<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"file"</span> <span class="attr">id</span>=<span class="string">"file"</span> <span class="attr">name</span>=<span class="string">"file"</span> <span class="attr">accept</span>=<span class="string">".jpg, .png, .pdf"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>accept</code>: 업로드 가능한 파일 타입을 제한할 수 있습니다.</li>
+</ul>
+<h4 id="2-9-날짜와-시간-lt-input-type-quot-date-quot-gt-lt-input-type-quot-time-quot-gt"><a href="#2-9-날짜와-시간-lt-input-type-quot-date-quot-gt-lt-input-type-quot-time-quot-gt" class="headerlink" title="2.9. 날짜와 시간 (&lt;input type=&quot;date&quot;&gt;, &lt;input type=&quot;time&quot;&gt;)"></a><strong>2.9. 날짜와 시간 (<code>&lt;input type=&quot;date&quot;&gt;</code>, <code>&lt;input type=&quot;time&quot;&gt;</code>)</strong></h4><p>HTML5에서는 날짜와 시간을 입력받을 수 있는 필드를 추가했습니다. 이 입력 요소들은 브라우저에서 날짜와 시간 선택 UI를 제공합니다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"birthday"</span>&gt;</span>생일:<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"date"</span> <span class="attr">id</span>=<span class="string">"birthday"</span> <span class="attr">name</span>=<span class="string">"birthday"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"meeting-time"</span>&gt;</span>미팅 시간:<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"time"</span> <span class="attr">id</span>=<span class="string">"meeting-time"</span> <span class="attr">name</span>=<span class="string">"meeting-time"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-폼-제출과-전송"><a href="#3-폼-제출과-전송" class="headerlink" title="3. 폼 제출과 전송"></a>3. <strong>폼 제출과 전송</strong></h3><p>폼을 제출할 때는 <code>&lt;input type=&quot;submit&quot;&gt;</code> 버튼을 사용합니다. 사용자가 데이터를 입력하고 이 버튼을 클릭하면, 폼이 제출되어 서버로 데이터를 전송합니다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">value</span>=<span class="string">"제출"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="3-1-폼-제출을-위한-버튼과-리셋-버튼"><a href="#3-1-폼-제출을-위한-버튼과-리셋-버튼" class="headerlink" title="3.1. 폼 제출을 위한 버튼과 리셋 버튼"></a><strong>3.1. 폼 제출을 위한 버튼과 리셋 버튼</strong></h4><ul>
+<li><strong><code>&lt;input type=&quot;reset&quot;&gt;</code></strong>: 폼의 모든 필드를 초기화하는 버튼을 추가할 수 있습니다.</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"reset"</span> <span class="attr">value</span>=<span class="string">"초기화"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong><code>&lt;button&gt;</code></strong>: 버튼 태그를 사용해 제출 버튼을 만들 수도 있습니다. 이 경우 JavaScript를 사용하여 폼을 제어할 수 있습니다.</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"submit"</span>&gt;</span>제출<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="4-폼-검증-Validation"><a href="#4-폼-검증-Validation" class="headerlink" title="4. 폼 검증 (Validation)"></a>4. <strong>폼 검증 (Validation)</strong></h3><p>HTML5는 클라이언트 측에서 기본적인 폼 검증을 지원합니다. <code>required</code>, <code>pattern</code>, <code>minlength</code>, <code>maxlength</code>, <code>type</code> 등 다양한 속성을 사용하여 입력값을 검증할 수 있습니다.</p>
+<ul>
+<li><strong><code>required</code></strong>: 필수 입력 항목으로 설정합니다.</li>
+<li><strong><code>pattern</code></strong>: 정규 표현식을 사용하여 입력값을 검증합니다.</li>
+<li><strong><code>min</code>과 <code>max</code></strong>: 숫자 입력 시 최소값과 최대값을 설정합니다.</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"age"</span>&gt;</span>나이:<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"number"</span> <span class="attr">id</span>=<span class="string">"age"</span> <span class="attr">name</span>=<span class="string">"age"</span> <span class="attr">min</span>=<span class="string">"18"</span> <span class="attr">max</span>=<span class="string">"100"</span> <span class="attr">required</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="5-폼-데이터-전송-방식"><a href="#5-폼-데이터-전송-방식" class="headerlink" title="5. 폼 데이터 전송 방식"></a>5. <strong>폼 데이터 전송 방식</strong></h3><p>HTML 폼은 두 가지 주요 방식으로 데이터를 전송할 수 있습니다:</p>
+<ul>
+<li><strong>GET</strong>: URL에 데이터를 쿼리 문자열로 전송합니다. 일반적으로 검색이나 필터링에 사용됩니다.</li>
+<li><strong>POST</strong>: 데이터를 HTTP 요청 본문에 포함하여 서버로 전송합니다. 보안이 필요한 데이터나 파일 업로드에 사용됩니다.</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">"/submit"</span> <span class="attr">method</span>=<span class="string">"POST"</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- 폼 필드들 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">value</span>=<span class="string">"제출"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="6-결론"><a href="#6-결론" class="headerlink" title="6. 결론"></a>6. <strong>결론</strong></h3><p>HTML 폼 요소는 웹에서 데이터를 수집하고 처리하는 데 중요한 역할을 합니다. 다양한 폼 요소들(<code>input</code>, <code>textarea</code>, <code>select</code>, <code>button</code> 등)을 적절히 활용하면, 사용자 경험을 크게 향상시킬 수 있습니다. 또한 HTML5의 새로운 입력 유형과 폼 검증 기능을 통해 더 편리하고 안전한 폼을 만들 수 있습니다. 폼은 웹 애플리케이션의 핵심적인 부분이므로, 폼을 다룰 때 정확한 구조와 기능을 이해하고 활용하는 것이 중요합니다.</p>
+<h4 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h4><ul>
+<li></li>
+<li><a href="/2019/08/07/HTML-table/" title="HTML 간단하게 표 만들기">HTML 간단하게 표 만들기</a></li>
+<li><a href="/2018/08/29/HTML-Editor/" title="HTML 에디터 (jsFiddle,메모장)">HTML 에디터 (jsFiddle,메모장)</a></li>
+<li><a href="/2019/08/07/HTML-buttonLink/" title="HTML-버튼에 링크 거는 방법">HTML-버튼에 링크 거는 방법</a></li>
+<li><a href="/2021/10/25/HTML-comment/" title="HTML - 주석 태그 <!-- -->">HTML - 주석 태그 <!-- --></a></li>
+<li><a href="/2018/08/30/HTML-imgLink/" title="HTML 이미지 링크거는 법">HTML 이미지 링크거는 법</a></li>
+<li><a href="/2018/08/27/HTML-MailtoTag/" title="Mailto 태그">Mailto 태그</a></li>
+<li><a href="/2024/01/04/HTML-enter/" title="HTML 줄바꿈 입력하기">HTML 줄바꿈 입력하기</a>
+
+
+</li>
+</ul>
+<h4 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h4><ul>
+<li><a href="https://chatgpt.com/" target="_blank" rel="noopener">https://chatgpt.com/</a></li>
+</ul>
+
+	</div>
+	<!-- ad start -->
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-9342495295140046"
+     data-ad-slot="6306843775"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+	<!-- ad end -->
+	<footer class="article-footer">
+	  
+
+
+
+    <a data-url="https://dullyshin.github.io/2024/11/12/HTML-Form/" data-id="cm3dvij6h0037rgvoryxvt6fm" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+	</footer>
+	
+<nav id="article-nav">
+    
+        <a href="/2024/11/12/HTML-SEOOptimization/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
+        <p class="article-nav-title">
+        
+            SEO 최적화를 위한 HTML 태그 활용법
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2024/11/12/HTML-mainfunctionchange/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">HTML5의 주요 기능과 변화</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+  </div>
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
+
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>follow:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="google" href="mailto:sgj00038@google.com" target="_blank" rel="noopener">
+                        <i class="icon fa fa-google"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="envelope" href="mailto:sgj00038@naver.com" target="_blank" rel="noopener">
+                        <i class="icon fa fa-envelope"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="user" href="https://about.me/hyejin_shin" target="_blank" rel="noopener">
+                        <i class="icon fa fa-user"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/DullyShin?tab=repositories" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+	<!-- ad start -->
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-h8+c-21-3i+ec"
+     data-ad-client="ca-pub-9342495295140046"
+     data-ad-slot="9977074595"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+	<!-- ad end -->
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2024/11/12/HTML-SEOOptimization/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
+        <p class="article-nav-title">
+        
+            SEO 최적화를 위한 HTML 태그 활용법
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2024/11/12/HTML-mainfunctionchange/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">HTML5의 주요 기능과 변화</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">recents</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2024/11/12/HTML-SEOOptimization/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/HTML.PNG)" alt="SEO 최적화를 위한 HTML 태그 활용법" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/HTML/">HTML</a></p>
+                            <p class="item-title"><a href="/2024/11/12/HTML-SEOOptimization/" class="title">SEO 최적화를 위한 HTML 태그 활용법</a></p>
+                            <p class="item-date"><time datetime="2024-11-12T03:02:53.000Z" itemprop="datePublished">2024-11-12</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2024/11/12/HTML-Form/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/HTML.PNG)" alt="HTML 폼의 기본 구조" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/HTML/">HTML</a></p>
+                            <p class="item-title"><a href="/2024/11/12/HTML-Form/" class="title">HTML 폼의 기본 구조</a></p>
+                            <p class="item-date"><time datetime="2024-11-12T02:58:09.000Z" itemprop="datePublished">2024-11-12</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2024/11/12/HTML-mainfunctionchange/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/HTML.PNG)" alt="HTML5의 주요 기능과 변화" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/HTML/">HTML</a></p>
+                            <p class="item-title"><a href="/2024/11/12/HTML-mainfunctionchange/" class="title">HTML5의 주요 기능과 변화</a></p>
+                            <p class="item-date"><time datetime="2024-11-12T02:51:19.000Z" itemprop="datePublished">2024-11-12</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2024/11/12/HTML-webAccessibility/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/HTML.PNG)" alt="웹 접근성 개선을 위한 HTML 태그 사용법" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/HTML/">HTML</a></p>
+                            <p class="item-title"><a href="/2024/11/12/HTML-webAccessibility/" class="title">웹 접근성 개선을 위한 HTML 태그 사용법</a></p>
+                            <p class="item-date"><time datetime="2024-11-12T02:44:23.000Z" itemprop="datePublished">2024-11-12</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2024/01/08/HTML-BlockAndInline/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/HTML.PNG)" alt="HTML-블록과 인라인" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Programming/">Programming</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/HTML/">HTML</a></p>
+                            <p class="item-title"><a href="/2024/01/08/HTML-BlockAndInline/" class="title">HTML-블록과 인라인</a></p>
+                            <p class="item-date"><time datetime="2024-01-08T11:32:06.000Z" itemprop="datePublished">2024-01-08</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Eclipse/">Eclipse</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/">Programming</a><span class="category-list-count">58</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/Echarts/">Echarts</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/Github/">Github</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/HTML/">HTML</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/JAVA/">JAVA</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/JSTL/">JSTL</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/JavaScript/">JavaScript</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/SQL/">SQL</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/Spring-Framework/">Spring Framework</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/Web/">Web</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/jQuery/">jQuery</a><span class="category-list-count">7</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Review/">Review</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Windows/">Windows</a><span class="category-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">archives</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/11/">November 2024</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/01/">January 2024</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/10/">October 2021</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">February 2021</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">12</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">2</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/map/" style="font-size: 10px;">$.map()</a> <a href="/tags/append/" style="font-size: 10px;">.append()</a> <a href="/tags/eq/" style="font-size: 10px;">.eq()</a> <a href="/tags/map/" style="font-size: 10px;">.map()</a> <a href="/tags/text/" style="font-size: 11.43px;">.text()</a> <a href="/tags/c-forEach/" style="font-size: 10px;"><c:forEach></a> <a href="/tags/c-forEach-태그/" style="font-size: 10px;"><c:forEach> 태그</a> <a href="/tags/All-Selector/" style="font-size: 11.43px;">All Selector</a> <a href="/tags/Block-Quote/" style="font-size: 10px;">Block Quote</a> <a href="/tags/DOCTYPE/" style="font-size: 10px;">DOCTYPE</a> <a href="/tags/DOCTYPE-html/" style="font-size: 10px;">DOCTYPE html</a> <a href="/tags/Echarts/" style="font-size: 18.57px;">Echarts</a> <a href="/tags/Engineer-Information-Processing/" style="font-size: 10px;">Engineer-Information-Processing</a> <a href="/tags/Geolocation-API/" style="font-size: 10px;">Geolocation API</a> <a href="/tags/Gist/" style="font-size: 10px;">Gist</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/HTML-br/" style="font-size: 10px;">HTML br</a> <a href="/tags/HTML-comment-tag/" style="font-size: 10px;">HTML comment tag</a> <a href="/tags/HTML-div/" style="font-size: 10px;">HTML div</a> <a href="/tags/HTML-p/" style="font-size: 10px;">HTML p</a> <a href="/tags/HTML-pre/" style="font-size: 10px;">HTML pre</a> <a href="/tags/HTML-span/" style="font-size: 10px;">HTML span</a> <a href="/tags/HTML-기초/" style="font-size: 10px;">HTML 기초</a> <a href="/tags/HTML-기초적인-구조/" style="font-size: 10px;">HTML 기초적인 구조</a> <a href="/tags/HTML-블록/" style="font-size: 10px;">HTML 블록</a> <a href="/tags/HTML-블록과-인라인/" style="font-size: 10px;">HTML 블록과 인라인</a> <a href="/tags/HTML-인라인/" style="font-size: 10px;">HTML 인라인</a> <a href="/tags/HTML-주석/" style="font-size: 11.43px;">HTML 주석</a> <a href="/tags/HTML-주석-tag/" style="font-size: 10px;">HTML 주석 tag</a> <a href="/tags/HTML-주석-사용방법/" style="font-size: 10px;">HTML 주석 사용방법</a> <a href="/tags/HTML-주석-사용법/" style="font-size: 10px;">HTML 주석 사용법</a> <a href="/tags/HTML-주석-사전적-정의/" style="font-size: 10px;">HTML 주석 사전적 정의</a> <a href="/tags/HTML-줄바꿈/" style="font-size: 10px;">HTML 줄바꿈</a> <a href="/tags/HTML-태그-사용법/" style="font-size: 10px;">HTML 태그 사용법</a> <a href="/tags/HTML-폼의-기본-구조/" style="font-size: 10px;">HTML 폼의 기본 구조</a> <a href="/tags/HTML-표-그리기/" style="font-size: 10px;">HTML 표 그리기</a> <a href="/tags/HTML-표-만들기/" style="font-size: 10px;">HTML 표 만들기</a> <a href="/tags/HTML5의-주요-기능과-변화/" style="font-size: 10px;">HTML5의 주요 기능과 변화</a> <a href="/tags/Hexo/" style="font-size: 11.43px;">Hexo</a> <a href="/tags/Hexo-Tag-Plugins/" style="font-size: 10px;">Hexo Tag Plugins</a> <a href="/tags/Hexo-Theme/" style="font-size: 10px;">Hexo Theme</a> <a href="/tags/Hexo-Theme-Hueman/" style="font-size: 10px;">Hexo Theme Hueman</a> <a href="/tags/Hueman-사용법/" style="font-size: 10px;">Hueman 사용법</a> <a href="/tags/JOIN-종류/" style="font-size: 10px;">JOIN 종류</a> <a href="/tags/JSP-주석/" style="font-size: 10px;">JSP 주석</a> <a href="/tags/JSTL-if/" style="font-size: 11.43px;">JSTL if</a> <a href="/tags/JSTL-if문/" style="font-size: 11.43px;">JSTL if문</a> <a href="/tags/JSTL-substring-문자-자르기/" style="font-size: 10px;">JSTL-substring 문자 자르기</a> <a href="/tags/Join문-기초/" style="font-size: 10px;">Join문 기초</a> <a href="/tags/Mailto-태그/" style="font-size: 10px;">Mailto 태그</a> <a href="/tags/MySQL과-PostgreSQL의-차이점/" style="font-size: 10px;">MySQL과 PostgreSQL의 차이점</a> <a href="/tags/Oracle-PostgreSQL변환/" style="font-size: 10px;">Oracle PostgreSQL변환</a> <a href="/tags/Oracle의-nvl함수/" style="font-size: 10px;">Oracle의 nvl함수</a> <a href="/tags/PostgreSQL/" style="font-size: 20px;">PostgreSQL</a> <a href="/tags/PostgreSQL-Basic/" style="font-size: 10px;">PostgreSQL Basic</a> <a href="/tags/PostgreSQL-CAST-To-Convert/" style="font-size: 10px;">PostgreSQL CAST To Convert</a> <a href="/tags/PostgreSQL-COALESCE/" style="font-size: 10px;">PostgreSQL COALESCE</a> <a href="/tags/PostgreSQL-Convert/" style="font-size: 10px;">PostgreSQL Convert</a> <a href="/tags/PostgreSQL-Vacuum/" style="font-size: 10px;">PostgreSQL Vacuum</a> <a href="/tags/PostgreSQL-comment/" style="font-size: 10px;">PostgreSQL comment</a> <a href="/tags/PostgreSQL-베큠/" style="font-size: 10px;">PostgreSQL 베큠</a> <a href="/tags/PostgreSQL-저장-공간-확보/" style="font-size: 10px;">PostgreSQL 저장 공간 확보</a> <a href="/tags/PostgreSQL-주석/" style="font-size: 10px;">PostgreSQL 주석</a> <a href="/tags/PostgreSQL-주석-남기기/" style="font-size: 10px;">PostgreSQL 주석 남기기</a> <a href="/tags/PostgreSQL-주석-달기/" style="font-size: 10px;">PostgreSQL 주석 달기</a> <a href="/tags/PostgreSQL-코멘트/" style="font-size: 10px;">PostgreSQL 코멘트</a> <a href="/tags/PostgreSQL-Basic/" style="font-size: 17.14px;">PostgreSQL_Basic</a> <a href="/tags/PostgreSQL의-coalesce함수/" style="font-size: 10px;">PostgreSQL의 coalesce함수</a> <a href="/tags/Programming/" style="font-size: 11.43px;">Programming</a> <a href="/tags/SEO-최적화를-위한-HTML-태그-활용법/" style="font-size: 10px;">SEO 최적화를 위한 HTML 태그 활용법</a> <a href="/tags/SQL/" style="font-size: 17.14px;">SQL</a> <a href="/tags/SQL-Error-42601/" style="font-size: 10px;">SQL Error [42601]</a> <a href="/tags/Semantic-Tags/" style="font-size: 10px;">Semantic Tags</a> <a href="/tags/Spring-Framework/" style="font-size: 10px;">Spring Framework</a> <a href="/tags/Ternary-operator/" style="font-size: 10px;">Ternary operator</a> <a href="/tags/Tomcat-강제-종료/" style="font-size: 10px;">Tomcat 강제 종료</a> <a href="/tags/Type-cast/" style="font-size: 10px;">Type cast</a> <a href="/tags/URL-구조-최적화/" style="font-size: 10px;">URL 구조 최적화</a> <a href="/tags/Web-Fonts/" style="font-size: 10px;">Web Fonts</a> <a href="/tags/Web-Workers/" style="font-size: 10px;">Web Workers</a> <a href="/tags/WebSockets/" style="font-size: 10px;">WebSockets</a> <a href="/tags/Windows/" style="font-size: 10px;">Windows</a> <a href="/tags/YouTube/" style="font-size: 10px;">YouTube</a> <a href="/tags/object-Object/" style="font-size: 10px;">[object Object]</a> <a href="/tags/button/" style="font-size: 10px;">button</a> <a href="/tags/char-비교-자바/" style="font-size: 12.86px;">char 비교 자바</a> <a href="/tags/commands/" style="font-size: 10px;">commands</a> <a href="/tags/comment/" style="font-size: 10px;">comment</a> <a href="/tags/do-while/" style="font-size: 10px;">do-while</a> <a href="/tags/echart/" style="font-size: 18.57px;">echart</a> <a href="/tags/echart-image-download-button-seperately/" style="font-size: 10px;">echart image download button seperately</a> <a href="/tags/echart-max/" style="font-size: 10px;">echart max</a> <a href="/tags/echart-min/" style="font-size: 10px;">echart min</a> <a href="/tags/echart-이미지-다운로드/" style="font-size: 10px;">echart 이미지 다운로드</a> <a href="/tags/echart-이미지-다운로드-버튼/" style="font-size: 10px;">echart 이미지 다운로드 버튼</a> <a href="/tags/echart-이미지-다운로드-버튼-따로-빼기/" style="font-size: 10px;">echart 이미지 다운로드 버튼 따로 빼기</a> <a href="/tags/echart-한글/" style="font-size: 18.57px;">echart 한글</a> <a href="/tags/echarts-bar-chart-color/" style="font-size: 10px;">echarts bar chart color</a> <a href="/tags/echarts-click-event/" style="font-size: 10px;">echarts click event</a> <a href="/tags/echarts-dynamic/" style="font-size: 10px;">echarts dynamic</a> <a href="/tags/echarts-event/" style="font-size: 10px;">echarts event</a> <a href="/tags/echarts-max/" style="font-size: 10px;">echarts max</a> <a href="/tags/echarts-min/" style="font-size: 10px;">echarts min</a> <a href="/tags/echarts-moving/" style="font-size: 10px;">echarts moving</a> <a href="/tags/echarts-바-차트-색상/" style="font-size: 10px;">echarts 바 차트 색상</a> <a href="/tags/echarts-색상/" style="font-size: 10px;">echarts 색상</a> <a href="/tags/echarts-한글/" style="font-size: 10px;">echarts 한글</a> <a href="/tags/eclipse-shortcuts/" style="font-size: 10px;">eclipse shortcuts</a> <a href="/tags/error/" style="font-size: 10px;">error</a> <a href="/tags/for/" style="font-size: 10px;">for</a> <a href="/tags/for-문/" style="font-size: 10px;">for 문</a> <a href="/tags/forEach-인덱스/" style="font-size: 10px;">forEach 인덱스</a> <a href="/tags/forEach-카운트/" style="font-size: 10px;">forEach 카운트</a> <a href="/tags/foreach/" style="font-size: 10px;">foreach</a> <a href="/tags/garbage-collect/" style="font-size: 10px;">garbage-collect</a> <a href="/tags/generate-series/" style="font-size: 10px;">generate_series</a> <a href="/tags/github-token/" style="font-size: 10px;">github token</a> <a href="/tags/heatmap/" style="font-size: 10px;">heatmap</a> <a href="/tags/heatmap-data/" style="font-size: 10px;">heatmap data</a> <a href="/tags/hexo/" style="font-size: 11.43px;">hexo</a> <a href="/tags/hexo-commands/" style="font-size: 10px;">hexo commands</a> <a href="/tags/hexo-github-token/" style="font-size: 10px;">hexo github token</a> <a href="/tags/hexo-language-set/" style="font-size: 10px;">hexo language set</a> <a href="/tags/hexo-에러/" style="font-size: 10px;">hexo 에러</a> <a href="/tags/hexo-코맨드/" style="font-size: 10px;">hexo 코맨드</a> <a href="/tags/hexo-코멘드/" style="font-size: 10px;">hexo 코멘드</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/html-button-link/" style="font-size: 10px;">html button link</a> <a href="/tags/html-chart/" style="font-size: 10px;">html chart</a> <a href="/tags/html-editor/" style="font-size: 10px;">html editor</a> <a href="/tags/html-table/" style="font-size: 10px;">html table</a> <a href="/tags/html-tags/" style="font-size: 10px;">html tags</a> <a href="/tags/html-링크/" style="font-size: 10px;">html 링크</a> <a href="/tags/html-링크걸기/" style="font-size: 10px;">html 링크걸기</a> <a href="/tags/html-버튼-링크/" style="font-size: 10px;">html 버튼 링크</a> <a href="/tags/html-에디터/" style="font-size: 10px;">html 에디터</a> <a href="/tags/html-이미지/" style="font-size: 10px;">html 이미지</a> <a href="/tags/html-이미지-링크/" style="font-size: 10px;">html 이미지 링크</a> <a href="/tags/html-태그/" style="font-size: 10px;">html 태그</a> <a href="/tags/html-테이블/" style="font-size: 10px;">html 테이블</a> <a href="/tags/html-테이블-그리기/" style="font-size: 10px;">html 테이블 그리기</a> <a href="/tags/html-테이블-만들기/" style="font-size: 10px;">html 테이블 만들기</a> <a href="/tags/html-표/" style="font-size: 10px;">html 표</a> <a href="/tags/if/" style="font-size: 12.86px;">if</a> <a href="/tags/if-else/" style="font-size: 10px;">if...else</a> <a href="/tags/in-like-sql/" style="font-size: 10px;">in like sql</a> <a href="/tags/in-연산자/" style="font-size: 10px;">in 연산자</a> <a href="/tags/in-연산자와-like-동시에-사용/" style="font-size: 10px;">in 연산자와 like 동시에 사용</a> <a href="/tags/input/" style="font-size: 10px;">input</a> <a href="/tags/insert-구문에-max-사용/" style="font-size: 10px;">insert 구문에 max 사용</a> <a href="/tags/insert시-최대값-1/" style="font-size: 10px;">insert시 최대값 +1</a> <a href="/tags/insert할-때-최대값-1/" style="font-size: 10px;">insert할 때 최대값 +1</a> <a href="/tags/isnull/" style="font-size: 10px;">isnull</a> <a href="/tags/jQuery/" style="font-size: 14.29px;">jQuery</a> <a href="/tags/jQuery-selector/" style="font-size: 11.43px;">jQuery selector</a> <a href="/tags/jQuery-테이블-행-추가-삭제/" style="font-size: 10px;">jQuery 테이블 행 추가 삭제</a> <a href="/tags/jQuery-map/" style="font-size: 10px;">jQuery.map()</a> <a href="/tags/jQuery-text/" style="font-size: 10px;">jQuery.text()</a> <a href="/tags/java-for문/" style="font-size: 10px;">java for문</a> <a href="/tags/java-string-split/" style="font-size: 11.43px;">java string split</a> <a href="/tags/java-약수-구하기/" style="font-size: 10px;">java 약수 구하기</a> <a href="/tags/java-주석/" style="font-size: 10px;">java 주석</a> <a href="/tags/jquery/" style="font-size: 10px;">jquery</a> <a href="/tags/jquery-cdn/" style="font-size: 10px;">jquery cdn</a> <a href="/tags/jquery-map/" style="font-size: 10px;">jquery map</a> <a href="/tags/jquery-다운로드/" style="font-size: 10px;">jquery 다운로드</a> <a href="/tags/jquery-다운로드-최신/" style="font-size: 10px;">jquery 다운로드 최신</a> <a href="/tags/jquery-설치하기/" style="font-size: 10px;">jquery 설치하기</a> <a href="/tags/jquery-쿠키/" style="font-size: 10px;">jquery 쿠키</a> <a href="/tags/jquery-쿠키-읽기/" style="font-size: 10px;">jquery 쿠키 읽기</a> <a href="/tags/jquery-트래버싱/" style="font-size: 10px;">jquery 트래버싱</a> <a href="/tags/jquery로-쿠키-만들기/" style="font-size: 10px;">jquery로 쿠키 만들기</a> <a href="/tags/jsFiddle/" style="font-size: 11.43px;">jsFiddle</a> <a href="/tags/jsp-문법/" style="font-size: 10px;">jsp 문법</a> <a href="/tags/jstl/" style="font-size: 14.29px;">jstl</a> <a href="/tags/jstl-fn/" style="font-size: 10px;">jstl fn</a> <a href="/tags/jstl-foreach/" style="font-size: 10px;">jstl foreach</a> <a href="/tags/jstl-foreach문/" style="font-size: 10px;">jstl foreach문</a> <a href="/tags/jstl-if-else/" style="font-size: 11.43px;">jstl if else</a> <a href="/tags/jstl-if-else문/" style="font-size: 11.43px;">jstl if else문</a> <a href="/tags/jstl-substring/" style="font-size: 10px;">jstl substring</a> <a href="/tags/jstl-substring-뒤에서/" style="font-size: 10px;">jstl substring 뒤에서</a> <a href="/tags/jstl-substring-뒤에서-자르기/" style="font-size: 10px;">jstl substring 뒤에서 자르기</a> <a href="/tags/jstl-주석/" style="font-size: 10px;">jstl 주석</a> <a href="/tags/like-연산자/" style="font-size: 10px;">like 연산자</a> <a href="/tags/makeArray/" style="font-size: 10px;">makeArray</a> <a href="/tags/map-객체/" style="font-size: 10px;">map 객체</a> <a href="/tags/map-메소드/" style="font-size: 10px;">map 메소드</a> <a href="/tags/map-배열/" style="font-size: 10px;">map 배열</a> <a href="/tags/markdown/" style="font-size: 11.43px;">markdown</a> <a href="/tags/markdown-Editors/" style="font-size: 10px;">markdown Editors</a> <a href="/tags/markdown-editor/" style="font-size: 10px;">markdown editor</a> <a href="/tags/markdown-table/" style="font-size: 10px;">markdown table</a> <a href="/tags/max/" style="font-size: 10px;">max</a> <a href="/tags/mssql/" style="font-size: 10px;">mssql</a> <a href="/tags/my-sql/" style="font-size: 11.43px;">my sql</a> <a href="/tags/my-sql-조인문/" style="font-size: 10px;">my sql 조인문</a> <a href="/tags/netstat-ano/" style="font-size: 10px;">netstat ano</a> <a href="/tags/optionally-analyze-a-database/" style="font-size: 10px;">optionally analyze a database</a> <a href="/tags/org-apache-jasper-JasperException/" style="font-size: 10px;">org.apache.jasper.JasperException</a> <a href="/tags/ostgresql-vs-mysql/" style="font-size: 10px;">ostgresql-vs-mysql</a> <a href="/tags/pipe/" style="font-size: 10px;">pipe</a> <a href="/tags/postgresql/" style="font-size: 11.43px;">postgresql</a> <a href="/tags/postgresql-DELETE-해도-storage가-변하지-않는-이유/" style="font-size: 10px;">postgresql DELETE 해도 storage가 변하지 않는 이유</a> <a href="/tags/postgresql-Vacuum/" style="font-size: 10px;">postgresql Vacuum</a> <a href="/tags/postgresql-cast/" style="font-size: 10px;">postgresql cast</a> <a href="/tags/postgresql-cast-intrger/" style="font-size: 10px;">postgresql cast intrger</a> <a href="/tags/postgresql-generate-series/" style="font-size: 10px;">postgresql generate_series</a> <a href="/tags/postgresql-mysql-차이점/" style="font-size: 10px;">postgresql mysql 차이점</a> <a href="/tags/postgresql-vs-mysql/" style="font-size: 10px;">postgresql vs mysql</a> <a href="/tags/postgresql-문자를-날짜로/" style="font-size: 10px;">postgresql 문자를 날짜로</a> <a href="/tags/postgresql-문자를-더블형으로/" style="font-size: 10px;">postgresql 문자를 더블형으로</a> <a href="/tags/postgresql-문자를-숫자로/" style="font-size: 10px;">postgresql 문자를 숫자로</a> <a href="/tags/postgresql-베큠/" style="font-size: 10px;">postgresql 베큠</a> <a href="/tags/postgresql-저장-공간/" style="font-size: 10px;">postgresql 저장 공간</a> <a href="/tags/query/" style="font-size: 11.43px;">query</a> <a href="/tags/select/" style="font-size: 10px;">select</a> <a href="/tags/sequence/" style="font-size: 10px;">sequence</a> <a href="/tags/sql/" style="font-size: 11.43px;">sql</a> <a href="/tags/sql-기본/" style="font-size: 10px;">sql 기본</a> <a href="/tags/string-split/" style="font-size: 11.43px;">string[] split</a> <a href="/tags/strong와-em-태그-강조-및-강조-표시/" style="font-size: 10px;">strong와 em 태그 (강조 및 강조 표시)</a> <a href="/tags/substring-문자-자르기/" style="font-size: 10px;">substring 문자 자르기</a> <a href="/tags/taskkill/" style="font-size: 10px;">taskkill</a> <a href="/tags/tasklist/" style="font-size: 10px;">tasklist</a> <a href="/tags/textarea/" style="font-size: 10px;">textarea</a> <a href="/tags/title-태그/" style="font-size: 10px;">title 태그</a> <a href="/tags/traversing/" style="font-size: 10px;">traversing</a> <a href="/tags/while/" style="font-size: 10px;">while</a> <a href="/tags/while-문/" style="font-size: 10px;">while 문</a> <a href="/tags/깃헙-token/" style="font-size: 10px;">깃헙 token</a> <a href="/tags/깃헙-토큰/" style="font-size: 10px;">깃헙 토큰</a> <a href="/tags/깃헙-토큰-사용/" style="font-size: 10px;">깃헙 토큰 사용</a> <a href="/tags/깃헙-토큰-사용법/" style="font-size: 10px;">깃헙 토큰 사용법</a> <a href="/tags/날짜-시간-만들기/" style="font-size: 10px;">날짜, 시간 만들기</a> <a href="/tags/날짜-시간-생성하기/" style="font-size: 10px;">날짜, 시간 생성하기</a> <a href="/tags/널처리/" style="font-size: 10px;">널처리</a> <a href="/tags/다양한-폼-요소들/" style="font-size: 10px;">다양한 폼 요소들</a> <a href="/tags/랜덤-정수/" style="font-size: 10px;">랜덤 정수</a> <a href="/tags/마크다운/" style="font-size: 11.43px;">마크다운</a> <a href="/tags/마크다운-사용법/" style="font-size: 10px;">마크다운 사용법</a> <a href="/tags/마크다운-에디터/" style="font-size: 11.43px;">마크다운 에디터</a> <a href="/tags/마크다운-테이블/" style="font-size: 11.43px;">마크다운 테이블</a> <a href="/tags/마크다운-테이블-안에/" style="font-size: 10px;">마크다운 테이블 안에 |</a> <a href="/tags/마크다운-테이블-안에-코드/" style="font-size: 10px;">마크다운 테이블 안에 코드</a> <a href="/tags/마크다운-테이블-정렬/" style="font-size: 10px;">마크다운 테이블 정렬</a> <a href="/tags/마크다운-표/" style="font-size: 10px;">마크다운 표</a> <a href="/tags/맵/" style="font-size: 10px;">맵</a> <a href="/tags/맵-함수/" style="font-size: 10px;">맵 함수</a> <a href="/tags/멀티미디어-지원/" style="font-size: 10px;">멀티미디어 지원</a> <a href="/tags/메모장/" style="font-size: 10px;">메모장</a> <a href="/tags/모든-요소-선택/" style="font-size: 11.43px;">모든 요소 선택</a> <a href="/tags/모바일-친화적인-웹페이지-만들기/" style="font-size: 10px;">모바일 친화적인 웹페이지 만들기</a> <a href="/tags/버튼-링크/" style="font-size: 10px;">버튼 링크</a> <a href="/tags/버튼에-링크-연결하기/" style="font-size: 10px;">버튼에 링크 연결하기</a> <a href="/tags/비전공자-정보처리기사/" style="font-size: 10px;">비전공자 정보처리기사</a> <a href="/tags/삼항-연산자/" style="font-size: 10px;">삼항 연산자</a> <a href="/tags/삽입-구문에-max-사용/" style="font-size: 10px;">삽입 구문에 max 사용</a> <a href="/tags/삽입시-최대값-1/" style="font-size: 10px;">삽입시 최대값 +1</a> <a href="/tags/삽입시-최대값-추가-1/" style="font-size: 10px;">삽입시 최대값 추가 +1</a> <a href="/tags/삽입할-때-최대값-1/" style="font-size: 10px;">삽입할 때 최대값 +1</a> <a href="/tags/새로운-배열요소로-변경/" style="font-size: 10px;">새로운 배열요소로 변경</a> <a href="/tags/서브쿼리-SQL문장/" style="font-size: 10px;">서브쿼리 SQL문장</a> <a href="/tags/세션/" style="font-size: 10px;">세션</a> <a href="/tags/세션-의미/" style="font-size: 11.43px;">세션 의미</a> <a href="/tags/셀렉터/" style="font-size: 11.43px;">셀렉터</a> <a href="/tags/스프링-기초/" style="font-size: 10px;">스프링 기초</a> <a href="/tags/스프링-실습/" style="font-size: 10px;">스프링 실습</a> <a href="/tags/스프링-프레임워크/" style="font-size: 10px;">스프링 프레임워크</a> <a href="/tags/시맨틱-태그/" style="font-size: 10px;">시맨틱 태그</a> <a href="/tags/약수/" style="font-size: 10px;">약수</a> <a href="/tags/여러-if-else를-사용할-경우/" style="font-size: 10px;">여러 if...else를 사용할 경우</a> <a href="/tags/오라클-NVL/" style="font-size: 10px;">오라클 NVL</a> <a href="/tags/웹-브라우져/" style="font-size: 10px;">웹 브라우져</a> <a href="/tags/웹-소켓/" style="font-size: 10px;">웹 소켓</a> <a href="/tags/웹-접근성-개선/" style="font-size: 10px;">웹 접근성 개선</a> <a href="/tags/이미지-링크걸기/" style="font-size: 10px;">이미지 링크걸기</a> <a href="/tags/이차트/" style="font-size: 18.57px;">이차트</a> <a href="/tags/이차트-움직이기/" style="font-size: 10px;">이차트 움직이기</a> <a href="/tags/이차트-이벤트/" style="font-size: 10px;">이차트 이벤트</a> <a href="/tags/이차트-최대-최소값/" style="font-size: 10px;">이차트 최대 최소값</a> <a href="/tags/이클립스-단축키/" style="font-size: 10px;">이클립스 단축키</a> <a href="/tags/이클립스-삭제/" style="font-size: 10px;">이클립스 삭제</a> <a href="/tags/이클립스-저장-단축키/" style="font-size: 10px;">이클립스 저장 단축키</a> <a href="/tags/이클립스-주석/" style="font-size: 10px;">이클립스 주석</a> <a href="/tags/이클립스-한-줄-삭제/" style="font-size: 10px;">이클립스 한 줄 삭제</a> <a href="/tags/이클립스-한-줄-주석/" style="font-size: 10px;">이클립스 한 줄 주석</a> <a href="/tags/이클립스-한줄-수정/" style="font-size: 10px;">이클립스 한줄 수정</a> <a href="/tags/자바-기초/" style="font-size: 18.57px;">자바 기초</a> <a href="/tags/자바-단어-맞추기/" style="font-size: 10px;">자바 단어 맞추기</a> <a href="/tags/자바-랜덤/" style="font-size: 10px;">자바 랜덤</a> <a href="/tags/자바-문제/" style="font-size: 18.57px;">자바 문제</a> <a href="/tags/자바-문제풀이/" style="font-size: 18.57px;">자바 문제풀이</a> <a href="/tags/자바-삼항-연산자/" style="font-size: 10px;">자바 삼항 연산자</a> <a href="/tags/자바-약수/" style="font-size: 10px;">자바 약수</a> <a href="/tags/자바-입력/" style="font-size: 15.71px;">자바 입력</a> <a href="/tags/자바-주석/" style="font-size: 10px;">자바 주석</a> <a href="/tags/자바스크립트-else-if/" style="font-size: 10px;">자바스크립트 else if</a> <a href="/tags/자바스크립트-if/" style="font-size: 10px;">자바스크립트 if</a> <a href="/tags/정규표현식/" style="font-size: 11.43px;">정규표현식</a> <a href="/tags/정보처리기사-공부법/" style="font-size: 10px;">정보처리기사 공부법</a> <a href="/tags/정보처리기사-단기간/" style="font-size: 10px;">정보처리기사 단기간</a> <a href="/tags/정보처리기사-독학/" style="font-size: 10px;">정보처리기사 독학</a> <a href="/tags/정보처리기사-필기/" style="font-size: 10px;">정보처리기사 필기</a> <a href="/tags/정수-랜덤/" style="font-size: 10px;">정수 랜덤</a> <a href="/tags/제이쿼리-CDN/" style="font-size: 10px;">제이쿼리 CDN</a> <a href="/tags/제이쿼리-다운로드/" style="font-size: 10px;">제이쿼리 다운로드</a> <a href="/tags/제이쿼리-다운로드-자세히/" style="font-size: 10px;">제이쿼리 다운로드 자세히</a> <a href="/tags/제이쿼리-돔-횡단/" style="font-size: 10px;">제이쿼리 돔 횡단</a> <a href="/tags/제이쿼리-맵/" style="font-size: 10px;">제이쿼리 맵</a> <a href="/tags/제이쿼리-선택자/" style="font-size: 11.43px;">제이쿼리 선택자</a> <a href="/tags/제이쿼리-설치-적용/" style="font-size: 10px;">제이쿼리 설치 적용</a> <a href="/tags/제이쿼리-설치하기/" style="font-size: 10px;">제이쿼리 설치하기</a> <a href="/tags/제이쿼리-셀렉터/" style="font-size: 11.43px;">제이쿼리 셀렉터</a> <a href="/tags/제이쿼리-셀렉터-여러개/" style="font-size: 10px;">제이쿼리 셀렉터 여러개</a> <a href="/tags/제이쿼리-셀렉터-총정리/" style="font-size: 11.43px;">제이쿼리 셀렉터 총정리</a> <a href="/tags/제이쿼리-텍스트/" style="font-size: 10px;">제이쿼리 텍스트</a> <a href="/tags/차트-이미지-다운로드/" style="font-size: 10px;">차트 이미지 다운로드</a> <a href="/tags/칼럼의-최대값-1/" style="font-size: 10px;">칼럼의 최대값 +1</a> <a href="/tags/쿠키/" style="font-size: 11.43px;">쿠키</a> <a href="/tags/쿠키-만들기/" style="font-size: 10px;">쿠키 만들기</a> <a href="/tags/쿠키-삭재/" style="font-size: 10px;">쿠키 삭재</a> <a href="/tags/쿠키-삭제/" style="font-size: 10px;">쿠키 삭제</a> <a href="/tags/쿠키-생명주기/" style="font-size: 10px;">쿠키 생명주기</a> <a href="/tags/쿠키-생성하기/" style="font-size: 10px;">쿠키 생성하기</a> <a href="/tags/쿠키-의미/" style="font-size: 11.43px;">쿠키 의미</a> <a href="/tags/쿠키-읽기/" style="font-size: 10px;">쿠키 읽기</a> <a href="/tags/쿠키-읽어오기/" style="font-size: 10px;">쿠키 읽어오기</a> <a href="/tags/쿠키와-세션/" style="font-size: 10px;">쿠키와 세션</a> <a href="/tags/쿠키와-세션의-개념/" style="font-size: 10px;">쿠키와 세션의 개념</a> <a href="/tags/쿠키와-세션의-차이/" style="font-size: 10px;">쿠키와 세션의 차이</a> <a href="/tags/테이블-3개-조인/" style="font-size: 10px;">테이블 3개 조인</a> <a href="/tags/테이블-정렬/" style="font-size: 10px;">테이블 정렬</a> <a href="/tags/트래버/" style="font-size: 10px;">트래버</a> <a href="/tags/트레버싱/" style="font-size: 10px;">트레버싱</a> <a href="/tags/포스트그래스-타입-변환/" style="font-size: 10px;">포스트그래스 타입 변환</a> <a href="/tags/포스트그레스-주석/" style="font-size: 10px;">포스트그레스 주석</a> <a href="/tags/포스트그레스-주석-남기기/" style="font-size: 10px;">포스트그레스 주석 남기기</a> <a href="/tags/포스트그레스-주석-달기/" style="font-size: 10px;">포스트그레스 주석 달기</a> <a href="/tags/포트-검색/" style="font-size: 10px;">포트 검색</a> <a href="/tags/포트-죽이기/" style="font-size: 10px;">포트 죽이기</a> <a href="/tags/폼-요소의-개선/" style="font-size: 10px;">폼 요소의 개선</a> <a href="/tags/프로그래머스-문제/" style="font-size: 10px;">프로그래머스 문제</a> <a href="/tags/헥소/" style="font-size: 10px;">헥소</a> <a href="/tags/헥소-깃헙-token/" style="font-size: 10px;">헥소 깃헙 token</a> <a href="/tags/헥소-깃헙-토큰/" style="font-size: 10px;">헥소 깃헙 토큰</a> <a href="/tags/헥소-언어-설정/" style="font-size: 10px;">헥소 언어 설정</a> <a href="/tags/헥소-코맨드/" style="font-size: 10px;">헥소 코맨드</a> <a href="/tags/헥소-코멘드/" style="font-size: 10px;">헥소 코멘드</a> <a href="/tags/히트맵/" style="font-size: 10px;">히트맵</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">links</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        
+<footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2024 Hyejin Shin</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            </div>
+            <div class="footer-plugins">
+              
+    
+
+
+            </div>          
+        </div>
+    </div>
+</footer>
+
+        
+    
+    <script>
+    var disqus_shortname = 'https-dullyshin-github-io';
+    
+    
+    var disqus_url = 'https://dullyshin.github.io/2024/11/12/HTML-Form/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
